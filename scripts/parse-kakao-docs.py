@@ -22,26 +22,26 @@ ALLOWED_DOMAIN = "docs.kakaocloud.com"
 # 챕터별 크롤링 대상 URL 목록 (URL을 팀이 확인 후 추가/수정)
 CHAPTER_URLS: dict[str, list[tuple[str, str]]] = {
     "01-cloud-fundamentals": [
-        ("https://docs.kakaocloud.com/intro", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/service", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start", "Cloud Fundamentals"),
     ],
     "02-bcs": [
-        ("https://docs.kakaocloud.com/service/bcs/bcs-ov", "Beyond Compute Service"),
-        ("https://docs.kakaocloud.com/service/bcs/bcs-instance/bcs-instance-overview", "BCS Instance"),
+        ("https://docs.kakaocloud.com/service/bcs", "Beyond Compute Service"),
     ],
     "03-bns": [
-        ("https://docs.kakaocloud.com/service/bns/bns-ov", "Beyond Networking Service"),
+        ("https://docs.kakaocloud.com/service/networking", "Beyond Networking Service"),
     ],
     "04-bss": [
-        ("https://docs.kakaocloud.com/service/bss/bss-ov", "Beyond Storage Service"),
+        ("https://docs.kakaocloud.com/service/storage", "Beyond Storage Service"),
     ],
     "05-container-pack": [
-        ("https://docs.kakaocloud.com/service/container/container-ov", "Container Pack"),
+        ("https://docs.kakaocloud.com/service/container-pack", "Container Pack"),
     ],
     "06-data-store": [
-        ("https://docs.kakaocloud.com/service/datastore/datastore-ov", "Data Store"),
+        ("https://docs.kakaocloud.com/service/data-store", "Data Store"),
     ],
     "07-management-iam": [
-        ("https://docs.kakaocloud.com/service/management/management-ov", "Management & IAM"),
+        ("https://docs.kakaocloud.com/service/management", "Management & IAM"),
     ],
 }
 
