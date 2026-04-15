@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+import time
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -59,22 +60,34 @@ def _assert_allowed_domain(url: str) -> None:
         sys.exit(1)
 
 
+FETCH_RETRIES = 3
+FETCH_RETRY_DELAY = 2  # seconds
+
+
 def fetch_page(url: str, logger: AgentLogger) -> str | None:
+    """URL을 fetch. 일시적 오류 시 최대 FETCH_RETRIES회 재시도."""
     _assert_allowed_domain(url)
-    try:
-        r = requests.get(
-            url,
-            timeout=10,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; kc-question-bank/1.0)"},
-        )
-        if r.status_code != 200:
-            logger.log(f"FETCH {url} FAIL (HTTP {r.status_code})")
+    for attempt in range(1, FETCH_RETRIES + 1):
+        try:
+            r = requests.get(
+                url,
+                timeout=10,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; kc-question-bank/1.0)"},
+            )
+            if r.status_code == 200:
+                logger.log(f"FETCH {url} OK (attempt={attempt})")
+                return r.text
+            logger.log(f"FETCH {url} FAIL (HTTP {r.status_code}, attempt={attempt})")
+            return None  # HTTP 오류는 재시도해도 의미 없음
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            logger.log(f"FETCH {url} RETRY ({e}, attempt={attempt}/{FETCH_RETRIES})")
+            if attempt < FETCH_RETRIES:
+                time.sleep(FETCH_RETRY_DELAY)
+        except Exception as e:
+            logger.log(f"FETCH {url} FAIL ({e})")
             return None
-        logger.log(f"FETCH {url} OK")
-        return r.text
-    except Exception as e:
-        logger.log(f"FETCH {url} FAIL ({e})")
-        return None
+    logger.log(f"FETCH {url} FAIL (최대 재시도 횟수 초과)")
+    return None
 
 
 def html_to_text(html: str) -> str:
@@ -175,7 +188,10 @@ def run(chapter: str, logger: AgentLogger) -> None:
 
     out_path = ref_path(chapter)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(new_content, encoding="utf-8")
+    # 원자적 쓰기: 임시 파일에 먼저 저장 후 replace (중간 실패 시 기존 파일 보존)
+    tmp_path = out_path.with_suffix(".tmp")
+    tmp_path.write_text(new_content, encoding="utf-8")
+    tmp_path.replace(out_path)
     logger.log(f"WRITE {out_path} ({len(new_content)} chars)")
 
 

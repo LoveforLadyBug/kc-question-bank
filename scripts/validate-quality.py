@@ -16,7 +16,7 @@ import requests
 from harness import (
     ROOT, CHAPTER_TOPICS, CHAPTER_KEYWORDS,
     AgentLogger, load_question_file, save_question_file,
-    extract_sections, parse_choices,
+    extract_sections, parse_choices, token_jaccard,
 )
 
 REQUIRED_FM_FIELDS = ["id", "chapter", "topic", "difficulty", "type", "tags", "source", "status", "created"]
@@ -37,8 +37,14 @@ def score_a(fm: dict) -> tuple[int, str | None]:
         if r.status_code == 200:
             return 20, None
         return 10, f"A_source: URL 접근 불가 (HTTP {r.status_code})"
-    except Exception:
-        return 10, "A_source: URL 접근 타임아웃"
+    except requests.exceptions.Timeout:
+        return 10, "A_source: URL 접근 타임아웃 (5초 초과)"
+    except requests.exceptions.SSLError:
+        return 10, "A_source: SSL 인증서 오류"
+    except requests.exceptions.ConnectionError:
+        return 10, "A_source: 네트워크 연결 실패"
+    except Exception as e:
+        return 10, f"A_source: URL 검증 실패 ({type(e).__name__})"
 
 
 def score_b(fm: dict, sections: dict, choices: dict) -> tuple[int, list[str]]:
@@ -78,7 +84,7 @@ def score_c1(fm: dict, sections: dict, choices: dict) -> tuple[int, list[str]]:
 
     # C-1-1: 정답과 단어 90% 이상 겹치는 오답 존재
     for v in wrong_choices.values():
-        if _token_overlap(answer_text, v) >= 0.9:
+        if token_jaccard(answer_text, v) >= 0.9:
             deduct += 5
             issues.append("C_choices: 오답 보기 중 정답과 단어 90% 이상 겹치는 항목 존재 (-5점)")
             break
@@ -217,14 +223,6 @@ def write_review_notes(chapter: str, results: list[dict]) -> None:
 
 def _wrong_point_count(wrong_points_text: str) -> int:
     return len([l for l in wrong_points_text.splitlines() if re.match(r"^-\s*[A-D]:", l.strip())])
-
-
-def _token_overlap(a: str, b: str) -> float:
-    ta = set(a.lower().split())
-    tb = set(b.lower().split())
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / max(len(ta), len(tb))
 
 
 # ---------------------------------------------------------------------------

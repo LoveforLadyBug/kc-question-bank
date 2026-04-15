@@ -7,11 +7,15 @@ from __future__ import annotations
 import os
 import re
 import sys
+import time
 import yaml
 from datetime import datetime
 from pathlib import Path
 
 import anthropic
+
+# 사용할 Claude 모델. 환경변수 CLAUDE_MODEL로 재정의 가능.
+CLAUDE_MODEL: str = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 
 ROOT = Path(__file__).parent.parent
 
@@ -80,15 +84,28 @@ def get_client() -> anthropic.Anthropic:
 # ---------------------------------------------------------------------------
 
 class AgentLogger:
+    LOG_KEEP_DAYS = 30
+
     def __init__(self, agent_name: str, chapter: str = ""):
         self.agent_name = agent_name
         self.chapter = chapter
         date_str = datetime.now().strftime("%Y-%m-%d")
         log_dir = ROOT / "logs" / agent_name
         log_dir.mkdir(parents=True, exist_ok=True)
+        self._rotate_logs(log_dir)
         suffix = f"_{chapter}" if chapter else ""
         self.log_path = log_dir / f"{date_str}{suffix}.log"
         self._start = datetime.now()
+
+    def _rotate_logs(self, log_dir: Path) -> None:
+        """LOG_KEEP_DAYS일 이상 된 로그 파일 삭제 (ARCHITECTURE.md §7)."""
+        cutoff = time.time() - self.LOG_KEEP_DAYS * 86400
+        for f in log_dir.glob("*.log"):
+            try:
+                if f.stat().st_mtime < cutoff:
+                    f.unlink()
+            except OSError:
+                pass
 
     def log(self, message: str) -> None:
         ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -158,9 +175,16 @@ def load_question_file(path: Path) -> tuple[dict, str]:
 
 
 def save_question_file(path: Path, fm: dict, body: str) -> None:
-    """frontmatter + body를 q{NNN}.md 포맷으로 저장."""
+    """frontmatter + body를 q{NNN}.md 포맷으로 원자적 저장.
+
+    임시 파일(.tmp)에 먼저 쓴 뒤 os.replace()로 교체해
+    중간 실패 시 기존 파일이 손상되지 않도록 합니다.
+    """
     fm_str = yaml.dump(fm, allow_unicode=True, default_flow_style=False, sort_keys=False)
-    path.write_text(f"---\n{fm_str}---\n\n{body}\n", encoding="utf-8")
+    content = f"---\n{fm_str}---\n\n{body}\n"
+    tmp_path = path.with_suffix(".tmp")
+    tmp_path.write_text(content, encoding="utf-8")
+    os.replace(tmp_path, path)
 
 
 # ---------------------------------------------------------------------------
@@ -193,3 +217,21 @@ def parse_choices(choices_text: str) -> dict[str, str]:
         if m:
             choices[m.group(1)] = m.group(2).strip()
     return choices
+
+
+# ---------------------------------------------------------------------------
+# 공통 유사도 계산
+# ---------------------------------------------------------------------------
+
+def token_jaccard(a: str, b: str) -> float:
+    """두 문자열의 Jaccard 유사도 (토큰 기반).
+
+    Jaccard = |교집합| / |합집합|  (ARCHITECTURE.md §2 정의 기준)
+    두 집합이 모두 비어 있으면 0.0 반환.
+    """
+    ta = set(a.lower().split())
+    tb = set(b.lower().split())
+    union = ta | tb
+    if not union:
+        return 0.0
+    return len(ta & tb) / len(union)
