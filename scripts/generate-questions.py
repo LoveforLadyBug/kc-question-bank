@@ -13,11 +13,11 @@ from datetime import date
 from pathlib import Path
 
 from harness import (
-    ROOT, CHAPTER_TOPICS,
+    ROOT, CHAPTER_TOPICS, CLAUDE_MODEL,
     get_client, AgentLogger,
     check_references_exist, get_next_question_id,
     load_question_file, save_question_file,
-    extract_sections, parse_choices,
+    extract_sections, parse_choices, token_jaccard,
 )
 
 MAX_BATCH = 10
@@ -93,16 +93,8 @@ quality_score: ~
 # 중복 감지
 # ---------------------------------------------------------------------------
 
-def _token_similarity(a: str, b: str) -> float:
-    ta = set(a.lower().split())
-    tb = set(b.lower().split())
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / max(len(ta), len(tb))
-
-
 def is_duplicate(topic: str, choices_text: str, existing_paths: list[Path]) -> bool:
-    """기존 active/review 문제와 topic + 보기가 80% 이상 유사하면 True."""
+    """기존 active/review 문제와 topic + 보기의 Jaccard 유사도가 80% 이상이면 True."""
     for p in existing_paths:
         fm, body = load_question_file(p)
         if fm.get("status") not in ("active", "review"):
@@ -110,7 +102,7 @@ def is_duplicate(topic: str, choices_text: str, existing_paths: list[Path]) -> b
         if fm.get("topic") != topic:
             continue
         sections = extract_sections(body)
-        if _token_similarity(choices_text, sections.get("보기", "")) >= 0.8:
+        if token_jaccard(choices_text, sections.get("보기", "")) >= 0.8:
             return True
     return False
 
@@ -219,7 +211,7 @@ def generate(chapter: str, topic: str | None, count: int) -> None:
     client = get_client()
     logger.log(f"CALL claude API (count={count})")
     message = client.messages.create(
-        model="claude-sonnet-4-6",
+        model=CLAUDE_MODEL,
         max_tokens=8192,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
