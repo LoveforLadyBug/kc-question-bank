@@ -201,7 +201,9 @@ def main() -> None:
 
     if content:
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(content, encoding="utf-8")
+        tmp_path = out.with_suffix(".tmp")
+        tmp_path.write_text(content, encoding="utf-8")
+        tmp_path.replace(out)
         logger.log(f"WRITE {out}")
 
     logger.end()
