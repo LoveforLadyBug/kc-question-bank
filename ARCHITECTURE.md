@@ -139,6 +139,14 @@
     ├── generate-questions.py       # AI 문제 초안 생성 → questions/
     ├── validate-quality.py         # QUALITY_SCORE 자동 계산
     └── build-exam.py               # 시험 세트 조립
+
+logs/                               # 에이전트 실행 로그 (.gitignore 처리)
+    ├── parser/
+    ├── generator/
+    └── validator/
+
+.env                                # API 키 등 환경변수 (.gitignore 처리)
+.env.example                        # 환경변수 템플릿 (Git에 커밋)
 ```
 
 ---
@@ -243,27 +251,72 @@ active →  (정보 변경 감지 시)         →  deprecated
 
 ## 7. 스크립트 역할 정의
 
+### 환경변수 요구사항 (`.env.example`)
+
+스크립트 실행 전 아래 환경변수를 설정해야 합니다.
+
+```bash
+# Claude API (generate-questions.py 에서 사용)
+ANTHROPIC_API_KEY=sk-ant-...
+
+# 선택 사항
+LOG_LEVEL=INFO           # DEBUG | INFO | WARNING | ERROR
+LOG_RETENTION_DAYS=30    # 로그 보존 기간 (기본 30일)
+```
+
+> API 키는 `.env` 파일에 저장하고 `.gitignore`에 등록합니다. 절대 커밋하지 않습니다.
+
+---
+
 ### `parse-kakao-docs.py`
-- 입력: `docs.kakaocloud.com` URL 목록
-- 출력: `docs/references/*-llms.txt`
+- 입력: `docs.kakaocloud.com`, `kakaocloud.com`, `blog.kakaocloud.com` URL 목록
+- 출력: `docs/references/*-llms.txt` (atomic write 보장)
 - 실행 주기: 월 1회 또는 공식 문서 업데이트 감지 시
 
 ### `generate-questions.py`
-- 입력: `docs/references/*-llms.txt` + `docs/product-specs/*.md` (출제 스펙)
+- 입력: `docs/references/*-llms.txt` + `docs/product-specs/*.md`
 - 출력: `questions/{chapter}/q{NNN}.md` (status: draft)
+- 환경변수: `ANTHROPIC_API_KEY` 필수
 - 주의: 생성된 문제는 반드시 팀 리뷰 후 active 처리
 
 ### `validate-quality.py`
 - 입력: `questions/**/*.md`
-- 동작: `QUALITY_SCORE.md` 기준으로 항목별 점수 계산 → frontmatter의 `quality_score` 업데이트
+- 동작: `QUALITY_SCORE.md` + `db-schema.md` 기준으로 점수 계산 → frontmatter 갱신
+- `quality_schema_version` 불일치 감지 시 경고 출력
 - 75점 미만 → status를 `review`로 변경
 
 ### `build-exam.py`
 - 입력: `questions/**/*.md` (status: active 만 포함)
 - 모드:
   - `--mode weekly --chapter 02-bcs` → 주차별 스터디 세트
-  - `--mode random --tags VPC,LoadBalancer` → 태그 기반 랜덤 세트
+  - `--mode random --tags VPC,LoadBalancer [--seed N]` → 태그 기반 랜덤 세트
   - `--mode mock --count 40` → 전체 범위 모의시험
+
+**랜덤 시드 관리** (`--mode random`, `--mode mock`):
+```
+- --seed 미지정 시: 현재 타임스탬프를 시드로 사용
+- 생성된 exams/*.md 파일 헤더에 시드값과 출제 문제 ID 목록을 기록
+- 동일 시드로 재실행하면 동일한 세트 재현 가능
+```
+```markdown
+<!-- 생성 메타데이터 예시 (exams/mock-exam-01.md 상단) -->
+<!--
+generated_at: 2026-04-15T14:00:00
+seed: 20260415140000
+mode: mock
+count: 40
+questions: [01-cloud-fundamentals/q003, 02-bcs/q007, ...]
+-->
+```
+
+**비중→문항 수 변환 규칙** (`--mode mock --count N`):
+```
+변환 방식: 각 챕터 비중 × count → floor 적용 후 나머지를 비중 큰 순서로 배분
+보장: 최종 합계가 반드시 count와 일치
+예시 (count=30):
+  01: 15% → floor(4.5)=4, 02: 20% → floor(6)=6, ...
+  소수점 나머지 합=2 → 비중 큰 02,03 챕터에 1문제씩 추가
+```
 
 ---
 
@@ -296,7 +349,70 @@ review/{question-id}
 
 ---
 
-## 10. 관련 문서
+## 10. 용어 설명
+
+처음 이 문서를 보는 분을 위한 핵심 용어 정리입니다.
+
+| 용어 | 설명 |
+|------|------|
+| **frontmatter** | Markdown 파일 맨 위에 `---`로 감싼 YAML 메타데이터 블록. 문제 파일에서 id, chapter, status 등을 여기에 씁니다 |
+| **llms.txt** | AI가 읽기 좋게 정제된 텍스트 포맷. 공식 문서를 파싱한 결과를 이 형식으로 저장합니다 |
+| **atomic write** | 파일을 중간에 실패해도 원본이 손상되지 않도록 임시 파일에 쓴 뒤 한 번에 교체하는 방식 |
+| **Jaccard 유사도** | 두 집합의 유사도를 0~1로 표현. `교집합 크기 ÷ 합집합 크기`. 중복 문제 감지에 사용 |
+| **status: draft/review/active/deprecated** | 문제의 상태. draft(초안) → review(검토중) → active(사용가능) → deprecated(폐기) 순으로 진행 |
+| **quality_schema_version** | 채점 기준의 버전. 기준이 바뀌면 이 값이 올라가고 재채점이 필요합니다 |
+
+---
+
+## 11. 자주 발생하는 에러 대응
+
+### parse-kakao-docs.py 에러
+
+```
+ConnectionError: HTTPSConnectionPool ...
+→ 인터넷 연결 확인. VPN 사용 중이라면 해제 후 재시도.
+
+PermissionError: [Errno 13] ...
+→ docs/references/ 디렉토리가 없거나 쓰기 권한 없음.
+   python scripts/setup.py 를 먼저 실행하세요.
+```
+
+### generate-questions.py 에러
+
+```
+AuthenticationError: API key is invalid
+→ .env 파일의 ANTHROPIC_API_KEY 값 확인. sk-ant- 로 시작해야 함.
+
+[ERROR] source 필드가 없는 문제는 생성할 수 없습니다
+→ 해당 챕터의 *-llms.txt 파일이 없음.
+   parse-kakao-docs.py --chapter {챕터명} 를 먼저 실행하세요.
+
+[ERROR] 배치 상한 초과: --count 20 은 최대 10개를 초과합니다
+→ --count 10 이하로 줄이거나, 나눠서 두 번 실행하세요.
+```
+
+### validate-quality.py 에러
+
+```
+[WARN] 스키마 버전 불일치 문제 N개 발견
+→ validate-quality.py --force 로 전체 재채점하세요.
+
+질문: quality_score가 예상보다 낮게 나와요
+→ _review-notes.md 파일을 열어 항목별 감점 이유를 확인하세요.
+   QUALITY_SCORE.md §2 에서 각 항목 기준을 다시 읽어보세요.
+```
+
+### build-exam.py 에러
+
+```
+ValueError: active 문제가 부족합니다 (요청: 40, 보유: N)
+→ 먼저 questions/ 에 active 문제를 충분히 확보하세요.
+   PLANS.md §3 의 챕터별 목표 문제 수를 확인하세요.
+```
+
+---
+
+## 12. 관련 문서
 
 - [`AGENTS.md`](./AGENTS.md) — AI 에이전트 역할 및 금지 행동 정의
 - [`docs/QUALITY_SCORE.md`](./docs/QUALITY_SCORE.md) — 문제 품질 기준

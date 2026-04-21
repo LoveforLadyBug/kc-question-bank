@@ -112,14 +112,50 @@ def is_duplicate(topic: str, choices_text: str, existing_paths: list[Path]) -> b
 # ---------------------------------------------------------------------------
 
 def parse_question_blocks(text: str) -> list[str]:
-    """AI 응답 텍스트에서 문제 블록(YAML frontmatter + 본문) 목록 추출."""
+    """AI 응답 텍스트에서 문제 블록(YAML frontmatter + 본문) 목록 추출.
+
+    AI 출력 형식 편차를 모두 처리:
+    - 표준:          ---\\nYAML\\n---\\nbody
+    - 빈줄 포함:     ---\\n\\nYAML\\n---\\n\\nbody
+    - 종료선 없음:   ---\\nYAML\\n\\n## 문제\\nbody
+
+    핵심 전략: frontmatter 시작은 --- 다음에 id: 필드가 오는 패턴으로 식별.
+    이 방식이 닫는 ---와 여는 ---를 구별하는 가장 안정적인 방법.
+    """
     blocks: list[str] = []
-    # 빈 줄로 구분된 블록 분리, --- 로 시작하는 블록만 선택
-    raw = re.split(r"\n{2,}(?=---\n)", text.strip())
-    for block in raw:
-        block = block.strip()
-        if block.startswith("---") and "## 문제" in block:
-            blocks.append(block)
+
+    # --- 다음에 (빈줄 선택적으로) id: 가 오는 위치에서 분리
+    # 이 패턴이 매칭되는 --- 만이 frontmatter 시작
+    split_pattern = re.compile(
+        r"(?m)(?:^|\n)(?=---[ \t]*\n(?:[ \t]*\n)*[ \t]*id:)"
+    )
+    chunks = split_pattern.split(text)
+
+    for chunk in chunks:
+        chunk = chunk.strip()
+        if not chunk.startswith("---") or "## 문제" not in chunk:
+            continue
+
+        inner = chunk[3:]  # 첫 --- 제거
+
+        # frontmatter 종료 --- 탐색 (본문 시작 전)
+        closing = re.search(r"(?m)^---[ \t]*$", inner)
+        if closing:
+            yaml_part = inner[: closing.start()].strip()
+            body_part = inner[closing.end() :].strip()
+        else:
+            # 닫는 --- 없을 때: 첫 ## 헤더 직전까지가 YAML
+            first_header = re.search(r"(?m)^##\s+", inner)
+            if not first_header:
+                continue
+            yaml_part = inner[: first_header.start()].strip()
+            body_part = inner[first_header.start() :].strip()
+
+        if not yaml_part or "## 문제" not in body_part:
+            continue
+
+        blocks.append(f"---\n{yaml_part}\n---\n\n{body_part}")
+
     return blocks
 
 

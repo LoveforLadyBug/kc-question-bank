@@ -177,11 +177,16 @@ quality_breakdown:
   B_structure:   20
   C_choices:     17   # C-1 자동 감점 -8점 적용
   D_explanation: 20
-  E_chapter:     15
+  E_chapter:     5    # topic 매칭 부분 감점
 quality_checked_at: 2026-04-13
+quality_schema_version: 1.0.0   # 채점 시점의 db-schema.md SCHEMA_VERSION
 status: review        # 75점 이상이므로 review 유지 (active는 사람이 결정)
 ---
 ```
+
+> `quality_schema_version` 이 현재 `db-schema.md`의 `SCHEMA_VERSION` 과 다른 문제는
+> `validate-quality.py` 실행 시 경고로 표시되며 `--force` 재채점을 권장합니다.
+> 스키마 변경 절차는 `docs/generated/db-schema.md §4` 참조.
 
 75점 미만인 경우:
 

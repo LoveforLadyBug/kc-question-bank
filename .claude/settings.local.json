@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(python3 scripts/parse-kakao-docs.py --chapter 02-bcs)"
+      "Bash(python3 scripts/parse-kakao-docs.py --chapter 02-bcs)",
+      "Bash(python3 -c ':*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
