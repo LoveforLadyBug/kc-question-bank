@@ -1,12 +1,91 @@
 # SOURCE: https://docs.kakaocloud.com/service/container-pack
-# FETCHED: 2026-04-14
+# FETCHED: 2026-04-21
 # CATEGORY: Container Pack
 
-Container Packì ì»¨íì´ë íê²½ì í¨ì¨ì ì¼ë¡ íì©íê³  ê´ë¦¬íê¸° ìí ì¹´ì¹´ì¤í´ë¼ì°ëì ìë¹ì¤ ê·¸ë£¹ìëë¤.
-Container Packìë Kubernetes Engine, Container Registry ìë¹ì¤ê° í¬í¨ë©ëë¤.
+Container Pack은 컨테이너 환경을 효율적으로 활용하고 관리하기 위한 카카오클라우드의 서비스 그룹입니다.
+Container Pack에는 Kubernetes Engine, Container Registry 서비스가 포함됩니다.
 
-#### ìë¹ì¤ â
+#### 서비스 ​
 
-VPCë¥¼ ê¸°ë°ì¼ë¡ ìì½ê² Kubernetesë¥¼ ì¤íí  ì ìë ì¹´ì¹´ì¤í´ë¼ì°ëì ê´ë¦¬í Kubernetes ìë¹ì¤ìëë¤.
-í´ë¼ì°ë íê²½ìì ëì»¤ì ì»¨íì´ë ì´ë¯¸ì§ë¥¼ í´ë¼ì°ëì ìì íê² ë³´ê´íê³  ê´ë¦¬í  ì ìë ë¹ê³µê° ì´ë¯¸ì§ ì ì¥ììëë¤.
-ë¤ìí ì ë³´ë¥¼ íí ë¦¬ì¼ê³¼ ë¸ë¡ê·¸ìì íì¸íì¤ ì ììµëë¤.
+VPC를 기반으로 손쉽게 Kubernetes를 실행할 수 있는 카카오클라우드의 관리형 Kubernetes 서비스입니다.
+클라우드 환경에서 도커의 컨테이너 이미지를 클라우드에 안전하게 보관하고 관리할 수 있는 비공개 이미지 저장소입니다.
+다양한 정보를 튜토리얼과 블로그에서 확인하실 수 있습니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/container-pack/k8se
+# FETCHED: 2026-04-21
+# CATEGORY: Container Pack
+
+카카오클라우드의 Kubernetes Engine은 VPC(Virtual Private Cloud)를 기반으로 손쉽게 Kubernetes를 실행할 수 있는 카카오클라우드의 관리형 Kubernetes 서비스입니다.
+이 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+카카오클라우드 Kubernetes Engine에 대해 소개합니다.
+
+## 📄️ 주요 개념
+
+Kubernetes Engine 서비스의 주요 개념을 설명합니다.
+
+## 🗃️ How-to Guides
+
+10 항목
+
+## 📄️ 문제 해결
+
+Kubernetes Engine 서비스의 문제를 해결하는 방법에 대해 설명합니다.
+
+## 📄️ 서비스 요금 및 쿼터
+
+서비스 요금과 쿼터 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Kubernetes Engine의 릴리즈 내역을 제공합니다.
+
+#### 관련 핸즈온 튜토리얼 ​
+
+Kubernetes Engine 서비스를 활용한 다양한 실습 예제를 소개합니다.
+Kubernetes Engine으로 쿠버네티스 클러스터 구축
+Kubernetes Engine 클러스터에 NVIDIA GPU 워크노드 사용
+Kubernetes Engine 클러스터에 NVIDIA GPU 모니터링 환경 구축
+Kubernetes Engine 클러스터 모니터링 환경 구축
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/container-pack/cr
+# FETCHED: 2026-04-21
+# CATEGORY: Container Pack
+
+카카오클라우드 Container Registry 서비스는 클라우드 환경에서 도커의 컨테이너 이미지를 클라우드에 안전하게 보관하고 관리할 수 있는 비공개 이미지 저장소입니다. 카카오클라우드의 관리형 Kubernetes 서비스인 Kubernetes Engine과도 연동되며, 컨테이너 기반의 애플리케이션과 서비스의 컨테이너 이미지를 효율적으로 관리하고 배포할 수 있도록 지원합니다.
+Container Registry 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Container Registry 활용 사례 및 특징에 대해 소개합니다.
+
+## 📄️ 주요 개념
+
+Container Registry 주요 개념을 설명합니다.
+
+## 🗃️ How-to Guides
+
+3 항목
+
+## 📄️ 문제 해결
+
+Container Registry 서비스 문제 해결
+
+## 📄️ 서비스 요금 및 쿼터
+
+서비스 요금과 쿼터 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Container Registry의 릴리즈 내역을 제공합니다.
+
+#### 관련 핸즈온 튜토리얼 ​
+
+Container Registry 서비스를 활용한 다양한 실습 예제를 소개합니다.
+Container Registry를 이용한 이미지 저장 및 사용

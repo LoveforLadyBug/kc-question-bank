@@ -1,16 +1,308 @@
 # SOURCE: https://docs.kakaocloud.com/service/bcs
-# FETCHED: 2026-04-14
+# FETCHED: 2026-04-21
 # CATEGORY: Beyond Compute Service
 
-Beyond Compute Service(BCS)ë ë¬¼ë¦¬ì  ì¸íë¼ë¥¼ ìì íê±°ë ì ì§í  íì ìì´ ì¬ì©ìê° íìí ë§í¼ ê°ì ìë²ë¥¼ ìì±íê³  ì¬ì©í  ì ìë ì¹´ì¹´ì¤í´ë¼ì°ëì ì»´í¨í ìë¹ì¤ ê·¸ë£¹ìëë¤.
+Beyond Compute Service(BCS)는 물리적 인프라를 소유하거나 유지할 필요 없이 사용자가 필요한 만큼 가상 서버를 생성하고 사용할 수 있는 카카오클라우드의 컴퓨팅 서비스 그룹입니다.
 
-#### ê´ë ¨ ë¬¸ì â
+#### 관련 문서 ​
 
-Beyond Compute Service(BCS)ì í¹ì§, ì£¼ì ê°ë ë±ì ì¤ëªí©ëë¤.
-Beyond Compute Service(BCS)ì ì¸ì¤í´ì¤ ì íê³¼ ì¸ì¤í´ì¤ í¨ë°ë¦¬ë¥¼ ìë´í©ëë¤.
+Beyond Compute Service(BCS)의 특징, 주요 개념 등을 설명합니다.
+Beyond Compute Service(BCS)의 인스턴스 유형과 인스턴스 패밀리를 안내합니다.
 
-#### ìë¹ì¤ êµ¬ì± â
+#### 서비스 구성 ​
 
-ê°ìí ê¸°ì ì íì©íì¬ ë¬¼ë¦¬ì ì¸ íëì¨ì´ ìì¤íì ê°ìì¼ë¡ ì¬êµ¬ì±í í´ë¼ì°ë ì»´í¨í íê²½ìëë¤.
-ê°ìíë íê²½ì´ ìë íëì¨ì´ ë¦¬ìì¤ë¥¼ ëª¨ë íì©í  ì ìë ë¨ë ìë² ííì í´ë¼ì°ë ìë¹ì¤ìëë¤.
-ë¤ìí ì ë³´ë¥¼ íí ë¦¬ì¼ê³¼ ë¸ë¡ê·¸ìì íì¸íì¤ ì ììµëë¤.
+가상화 기술을 활용하여 물리적인 하드웨어 시스템을 가상으로 재구성한 클라우드 컴퓨팅 환경입니다.
+가상화된 환경이 아닌 하드웨어 리소스를 모두 활용할 수 있는 단독 서버 형태의 클라우드 서비스입니다.
+다양한 정보를 튜토리얼과 블로그에서 확인하실 수 있습니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/bcs/instance-overview
+# FETCHED: 2026-04-21
+# CATEGORY: Beyond Compute Service
+
+클라우드 컴퓨팅 환경에서 인스턴스란 가상화된 컴퓨팅 리소스의 단위를 의미합니다. 인스턴스는 일반적으로 Virtual Machine 으로 구현되지만,  경우에 따라 가상화되지 않은 물리 서버인 Bare Metal Server 에서도 구현할 수 있습니다.
+모든 Beyond Compute Service(BCS) 인스턴스는 대부분 일반적인 프레임워크와 라이브러리를 지원할 뿐만 아니라, TensorRT, cuDNN, NCCL과 같은 NVIDIA 특화 라이브러리도 지원합니다. 또한, 클라우드 플랫폼에서 제공하는 다양한 기능과 서비스를 활용할 수 있으며, 필요에 따라 유연하게 인스턴스를 조정하거나, 여러 대의 인스턴스를 연결하여 병렬 처리를 수행할 수 있습니다.
+
+## 인스턴스 유형 ​
+
+클라우드 환경에서 비즈니스에 최적화된 인스턴스 유형을 선택하기 위해서는 CPU, 메모리, 스토리지, 네트워크 및 기타 리소스를 포함한 워크로드 요구 사항을 먼저 검토해야 합니다. 예를 들어, 애플리케이션의 성능 요구 사항, 데이터 세트의 크기, 지원해야 하는 사용자 또는 요청 수를 면밀하게 고려할 필요가 있습니다. 또한, 인스턴스 유형에 따라 성능과 비용 수준이 다를 수 있으므로, 지출할 수 있는 예산 범위를 결정하기 위해 예산 제약 조건도 고려해야 합니다.
+워크로드 요구 사항과 예산을 파악한 후에는 카카오클라우드에서 사용할 수 있는 다양한 인스턴스 유형 제품군을 살펴보아야 합니다. 각 인스턴스 제품군은 CPU, 메모리 및 네트워크 리소스에 따라 다양한 유형의 워크로드에 최적화될 수 있기 때문에, 사용자는 비즈니스 목적에 맞는 인스턴스 유형을 고려해야 합니다. 카카오클라우드는 일반적인 인스턴스 유형과 컴퓨팅 집약적 또는 메모리 집약적인 특정 워크로드에 적합한 인스턴스 유형 또한 지원합니다.
+카카오클라우드가 제공하는 인스턴스 유형은 다음과 같습니다.
+인스턴스 유형 인스턴스 패밀리 범용 인스턴스 (General purpose instance) m3az , m2a , m1ie , t1i - 다양한 워크로드에서 사용 가능한 범용 인스턴스 컴퓨팅 최적화 인스턴스 (Compute optimized instance) c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+인스턴스 패밀리 범용 인스턴스 (General purpose instance) m3az , m2a , m1ie , t1i - 다양한 워크로드에서 사용 가능한 범용 인스턴스 컴퓨팅 최적화 인스턴스 (Compute optimized instance) c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+범용 인스턴스 (General purpose instance) m3az , m2a , m1ie , t1i - 다양한 워크로드에서 사용 가능한 범용 인스턴스 컴퓨팅 최적화 인스턴스 (Compute optimized instance) c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+m3az , m2a , m1ie , t1i - 다양한 워크로드에서 사용 가능한 범용 인스턴스 컴퓨팅 최적화 인스턴스 (Compute optimized instance) c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+m3az
+m2a
+m1ie
+t1i
+컴퓨팅 최적화 인스턴스 (Compute optimized instance) c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+c2a - 컴퓨팅 집약적 워크로드에 적합한 인스턴스 메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+c2a
+메모리 최적화 인스턴스 (Memory optimized instance) r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+r2a - 대규모 데이터 처리에 적합한 메모리 집약적 워크로드에 최적화 - 코어당 더 많은 메모리 제공 가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+r2a
+가속 컴퓨팅 인스턴스 (Accelerated computing instance) p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+p2a , p2i , p1i , gf1i , gn1i - GPU, FPGA 등을 필요로 하는 머신러닝(ML), 고성능 컴퓨팅(HPC) 워크로드에 적합
+p2a
+p2i
+p1i
+gf1i
+gn1i
+요구사항에 적합한 인스턴스 유형인지 확인하기 위해서는, 인스턴스를 시작한 후 벤치마킹 도구를 사용하여 성능을 측정하는 것이 좋습니다. 이후, 리소스 사용량을 지속해서 모니터링하여 요구사항이 변경되거나 비용의 변화에 따라 인스턴스 유형을 신속하게 변경할 수 있습니다.
+
+## 인스턴스 패밀리 ​
+
+인스턴스 패밀리는 특정한 종류의 워크로드나 용도에 최적화되어 있으며, 비슷한 특성을 가진 여러 인스턴스를 포함하는 그룹입니다. 카카오클라우드가 제공하는 다양한 인스턴스 패밀리는 고유한 특징과 조건을 가지고 있으며, Virtual Machine과 Bare Metal Server를 포함한 다양한 형태로 제공됩니다.
+인스턴스 패밀리 Virtual Machine Bare Metal Server m3az m3az.large , m3az.xlarge , m3az.2xlarge , m3az.4xlarge , m3az.6xlarge , m3az.8xlarge - m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+Virtual Machine Bare Metal Server m3az m3az.large , m3az.xlarge , m3az.2xlarge , m3az.4xlarge , m3az.6xlarge , m3az.8xlarge - m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+Bare Metal Server m3az m3az.large , m3az.xlarge , m3az.2xlarge , m3az.4xlarge , m3az.6xlarge , m3az.8xlarge - m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m3az m3az.large , m3az.xlarge , m3az.2xlarge , m3az.4xlarge , m3az.6xlarge , m3az.8xlarge - m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m3az
+m3az.large , m3az.xlarge , m3az.2xlarge , m3az.4xlarge , m3az.6xlarge , m3az.8xlarge - m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m3az.large
+m3az.xlarge
+m3az.2xlarge
+m3az.4xlarge
+m3az.6xlarge
+m3az.8xlarge
+- m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m2a m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m2a
+m2a.large , m2a.xlarge , m2a.2xlarge , m2a.4xlarge , m2a.8xlarge , m2a.12xlarge , m2a.16xlarge , m2a.24xlarge - t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m2a.large
+m2a.xlarge
+m2a.2xlarge
+m2a.4xlarge
+m2a.8xlarge
+m2a.12xlarge
+m2a.16xlarge
+m2a.24xlarge
+- t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+t1i t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+t1i
+t1i.nano , t1i.micro , t1i.small , t1i.medium , t1i.large , t1i.xlarge , t1i.2xlarge - m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+t1i.nano
+t1i.micro
+t1i.small
+t1i.medium
+t1i.large
+t1i.xlarge
+t1i.2xlarge
+- m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m1ie - m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m1ie
+- m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m1ie.baremetal c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+m1ie.baremetal
+c2a c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+c2a
+c2a.large , c2a.xlarge , c2a.2xlarge , c2a.4xlarge , c2a.8xlarge , c2a.12xlarge , c2a.16xlarge , c2a.24xlarge - r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+c2a.large
+c2a.xlarge
+c2a.2xlarge
+c2a.4xlarge
+c2a.8xlarge
+c2a.12xlarge
+c2a.16xlarge
+c2a.24xlarge
+- r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+r2a r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+r2a
+r2a.large , r2a.xlarge , r2a.2xlarge , r2a.4xlarge , r2a.8xlarge , r2a.12xlarge , r2a.16xlarge , r2a.24xlarge r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+r2a.large
+r2a.xlarge
+r2a.2xlarge
+r2a.4xlarge
+r2a.8xlarge
+r2a.12xlarge
+r2a.16xlarge
+r2a.24xlarge
+r2a.baremetal p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+r2a.baremetal
+p2a - p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p2a
+- p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p2a.baremetal p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p2a.baremetal
+p2i p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p2i
+p2i.6xlarge , p2i.12xlarge , p2i.24xlarge - p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p2i.6xlarge
+p2i.12xlarge
+p2i.24xlarge
+- p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p1i - p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p1i
+- p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p1i.baremetal gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+p1i.baremetal
+gf1i gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+gf1i
+gf1i.6xlarge , gf1i.12xlarge , gf1i.24xlarge - gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+gf1i.6xlarge
+gf1i.12xlarge
+gf1i.24xlarge
+- gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+gn1i gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+gn1i
+gn1i.xlarge , gn1i.2xlarge , gn1i.4xlarge , gn1i.8xlarge , gn1i.12xlarge , gn1i.16xlarge -
+gn1i.xlarge
+gn1i.2xlarge
+gn1i.4xlarge
+gn1i.8xlarge
+gn1i.12xlarge
+gn1i.16xlarge
+-
+Virtual Machine 인스턴스는 하이퍼바이저를 통해 가상화된 리소스를 사용하는 반면, Bare Metal Server 인스턴스는 물리 서버에 직접 액세스할 수 있는 인스턴스 입니다. 즉, 사용자는 애플리케이션이 필요로 하는 메모리, 디스크, 네트워크 등의 물리적 리소스에 직접 접근할 수 있습니다. 카카오클라우드 Bare Metal Server 인스턴스는 r2a.baremetal , p2a.baremetal 등의 인스턴스 명칭에 .baremetal 이 포함됩니다.
+카카오클라우드 Bare Metal Server 인스턴스는 r2a.baremetal , p2a.baremetal 등의 인스턴스 명칭에 .baremetal 이 포함됩니다.
+r2a.baremetal
+p2a.baremetal
+.baremetal
+
+## 인스턴스 명명 규칙 ​
+
+각 인스턴스 유형의 명칭은 각 인스턴스 유형의 목적, 용도, 세대, 프로세서, 세부 정보와 크기를 조합하여 표기됩니다.
+구분 설명 인스턴스 패밀리 m : 범용 r : 메모리 최적화 c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+설명 인스턴스 패밀리 m : 범용 r : 메모리 최적화 c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+인스턴스 패밀리 m : 범용 r : 메모리 최적화 c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+m : 범용 r : 메모리 최적화 c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+m
+r : 메모리 최적화 c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+r
+c : 컴퓨팅 최적화 t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+c
+t : 버스터블 g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+t
+g : 가속 컴퓨팅 중 그래픽 집약적 p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+g
+p : 가속 컴퓨팅 중 GPU 가속 인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+p
+인스턴스 세대 숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+숫자가 높을수록 최신 세대 프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+프로세서 i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+i : Intel a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+i
+a : AMD 옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+a
+옵션 n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+n : 네트워크 최적화 z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+n
+z : 고성능 f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+z
+f : NPU e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+f
+e : 추가 스토리지 또는 로컬디스크, 메모리 인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+e
+인스턴스 크기 vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+vCPU 수, Memory에 따라 상이 - VM: nano , micro , small , medium , large , xlarge , 2xlarge 등 - BM: baremetal
+nano
+micro
+small
+medium
+large
+xlarge
+2xlarge
+baremetal
+인스턴스 유형 인스턴스 패밀리 인스턴스 명명 규칙
+인스턴스 패밀리 인스턴스 명명 규칙
+인스턴스 명명 규칙
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/bcs/bcs-specifications
+# FETCHED: 2026-04-21
+# CATEGORY: Beyond Compute Service
+
+사용자의 애플리케이션에 따라 카카오클라우드 BCS 서비스에서 제공하는 다양한 인스턴스 유형을 사용할 수 있습니다.
+
+## 🗃️ 범용
+
+2 항목
+
+## 📄️ 컴퓨팅 최적화
+
+프로세서를 활용하는 컴퓨팅 집약적인 애플리케이션에 적합한 컴퓨팅 최적화 인스턴스를 설명합니다.
+
+## 📄️ 메모리 최적화
+
+메모리에서 대규모 데이터를 처리하는 워크로드에 대해 빠른 성능을 제공하는 메모리 최적화 인스턴스를 설명합니다.
+
+## 🗃️ 가속 컴퓨팅
+
+2 항목
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/bcs/vm
+# FETCHED: 2026-04-21
+# CATEGORY: Beyond Compute Service
+
+카카오클라우드 Virtual Machine(VM) 서비스에 대해 소개합니다. 사용자는 VM 서비스를 이용하여 비즈니스 환경에 적합한 다양한 유형의 서버를 구축할 수 있습니다. VM 서비스의 특징과 기본적인 사용 방법, 요금 등 더 자세한 정보를 확인해 보세요.
+
+## 📄️ 개요
+
+Virtual Machine의 특징에 대해 설명합니다.
+
+## 📄️ 주요 개념
+
+인스턴스, 볼륨, 네트워크 등 구성 요소를 설명합니다.
+
+## 📄️ 아키텍처
+
+VM 아키텍처와 구성 요소를 설명합니다.
+
+## 📄️ 모니터링
+
+포괄적인 VM 모니터링 방식을 소개합니다.
+
+## 🗃️ How-to Guides
+
+7 항목
+
+## 🗃️ 문제 해결
+
+4 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드에서 제공하는 VM 서비스의 요금과 쿼터(Quota) 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Virtual Machine의 릴리즈 내역을 제공합니다.
+
+#### 관련 핸즈온 튜토리얼 ​
+
+VM 서비스를 이용한 다양한 실습 예제를 소개합니다.
+VM 기반의 웹 서비스 구성하기
+VM으로 MongoDB Replicaset 프로비저닝하기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/bcs/bms
+# FETCHED: 2026-04-21
+# CATEGORY: Beyond Compute Service
+
+카카오클라우드의 Bare Metal Server를 사용해보세요. 이 서비스는 뛰어난 성능과 안정성이 요구되는 워크로드에서 좋은 선택이 될 수 있습니다.
+
+## 📄️ 개요
+
+카카오클라우드 베어 메탈 서버 (Bare Metal Server)의 사용 목적 및 사례와 특징을 설명합니다.
+
+## 📄️ 주요 개념
+
+인스턴스, 인스턴스 유형, 이미지 등 카카오클라우드의 Bare Metal Server에서 사용하는 주요 개념을 설명합니다.
+
+## 🗃️ How-to Guides
+
+5 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드에서 제공하는 베어 메탈 서버 (Bare Metal Server) 서비스의 요금과 쿼터(Quota) 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+카카오클라우드 베어 메탈 서버 (Bare Metal Server)의 릴리즈 내역을 제공합니다.

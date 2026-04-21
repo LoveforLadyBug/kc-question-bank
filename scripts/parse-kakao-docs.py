@@ -20,7 +20,8 @@ from harness import ROOT, CHAPTER_REF_SLUG, AgentLogger, ref_path, load_question
 
 ALLOWED_DOMAIN = "docs.kakaocloud.com"
 
-# 챕터별 크롤링 대상 URL 목록 (URL을 팀이 확인 후 추가/수정)
+# 챕터별 크롤링 대상 URL 목록
+# 공식 docs 사이드바 기준으로 세부 문서 URL까지 포함
 CHAPTER_URLS: dict[str, list[tuple[str, str]]] = {
     "01-cloud-fundamentals": [
         ("https://docs.kakaocloud.com/service", "Cloud Fundamentals"),
@@ -28,21 +29,40 @@ CHAPTER_URLS: dict[str, list[tuple[str, str]]] = {
     ],
     "02-bcs": [
         ("https://docs.kakaocloud.com/service/bcs", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/instance-overview", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/bcs-specifications", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/vm", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/bms", "Beyond Compute Service"),
     ],
     "03-bns": [
         ("https://docs.kakaocloud.com/service/networking", "Beyond Networking Service"),
+        ("https://docs.kakaocloud.com/service/networking/vpc", "Beyond Networking Service"),
+        ("https://docs.kakaocloud.com/service/networking/lb", "Beyond Networking Service"),
+        ("https://docs.kakaocloud.com/service/networking/dns", "Beyond Networking Service"),
+        ("https://docs.kakaocloud.com/service/networking/tgw", "Beyond Networking Service"),
     ],
     "04-bss": [
         ("https://docs.kakaocloud.com/service/storage", "Beyond Storage Service"),
+        ("https://docs.kakaocloud.com/service/storage/object-storage", "Beyond Storage Service"),
+        ("https://docs.kakaocloud.com/service/storage/file-storage", "Beyond Storage Service"),
     ],
     "05-container-pack": [
         ("https://docs.kakaocloud.com/service/container-pack", "Container Pack"),
+        ("https://docs.kakaocloud.com/service/container-pack/k8se", "Container Pack"),
+        ("https://docs.kakaocloud.com/service/container-pack/cr", "Container Pack"),
     ],
     "06-data-store": [
         ("https://docs.kakaocloud.com/service/data-store", "Data Store"),
+        ("https://docs.kakaocloud.com/service/data-store/mysql", "Data Store"),
+        ("https://docs.kakaocloud.com/service/data-store/postgresql", "Data Store"),
+        ("https://docs.kakaocloud.com/service/data-store/memstore", "Data Store"),
     ],
     "07-management-iam": [
         ("https://docs.kakaocloud.com/service/management", "Management & IAM"),
+        ("https://docs.kakaocloud.com/service/management/iam", "Management & IAM"),
+        ("https://docs.kakaocloud.com/service/management/monitoring", "Management & IAM"),
+        ("https://docs.kakaocloud.com/service/management/alert-center", "Management & IAM"),
+        ("https://docs.kakaocloud.com/service/management/cloud-trail", "Management & IAM"),
     ],
 }
 
@@ -64,8 +84,16 @@ FETCH_RETRIES = 3
 FETCH_RETRY_DELAY = 2  # seconds
 
 
+def korean_char_ratio(text: str) -> float:
+    """텍스트 내 한글(가-힣) 문자 비율을 반환. 0에 가까울수록 인코딩 깨짐 또는 JS 렌더링 필요."""
+    if not text:
+        return 0.0
+    korean = sum(1 for c in text if '\uAC00' <= c <= '\uD7A3')
+    return korean / len(text)
+
+
 def fetch_page(url: str, logger: AgentLogger) -> str | None:
-    """URL을 fetch. 일시적 오류 시 최대 FETCH_RETRIES회 재시도."""
+    """URL을 fetch. UTF-8 강제 디코딩. 일시적 오류 시 최대 FETCH_RETRIES회 재시도."""
     _assert_allowed_domain(url)
     for attempt in range(1, FETCH_RETRIES + 1):
         try:
@@ -75,6 +103,9 @@ def fetch_page(url: str, logger: AgentLogger) -> str | None:
                 headers={"User-Agent": "Mozilla/5.0 (compatible; kc-question-bank/1.0)"},
             )
             if r.status_code == 200:
+                # requests가 Content-Type 헤더 기반으로 인코딩을 잘못 감지할 수 있으므로
+                # UTF-8로 강제 지정하여 한국어 깨짐 방지
+                r.encoding = 'utf-8'
                 logger.log(f"FETCH {url} OK (attempt={attempt})")
                 return r.text
             logger.log(f"FETCH {url} FAIL (HTTP {r.status_code}, attempt={attempt})")
@@ -175,6 +206,17 @@ def run(chapter: str, logger: AgentLogger) -> None:
         html = fetch_page(url, logger)
         if html:
             text = html_to_text(html)
+            ratio = korean_char_ratio(text)
+            if ratio < 0.03:
+                # 한글 비율이 3% 미만 → JS 렌더링 필요 또는 인코딩 문제 의심
+                logger.log(f"[WARN] {url} 한글 비율 {ratio:.1%} — JS 렌더링 필요 의심, RAG_NEEDED 표기")
+                text = (
+                    f"[RAG_NEEDED] 이 페이지는 JS 렌더링이 필요하여 자동 파싱이 불완전합니다.\n"
+                    f"원문 URL: {url}\n"
+                    f"추후 RAG 검색 데이터 또는 수동 입력으로 보완 필요."
+                )
+            else:
+                logger.log(f"PARSE {url} (한글 비율: {ratio:.1%}, {len(text)} chars)")
             pages.append((url, today, text))
         else:
             logger.log(f"[WARN] {url} 파싱 실패 — 건너뜀")
