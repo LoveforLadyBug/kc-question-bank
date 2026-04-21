@@ -12,9 +12,10 @@
 ## 1. 현재 스키마 버전
 
 ```
-SCHEMA_VERSION: 1.0.0
+SCHEMA_VERSION: 1.1.0
 최초 작성: 2026-04-13
-최종 변경: 2026-04-13
+최종 변경: 2026-04-21
+변경 내용: evidence 필드 추가, hallucination-suspect 상태 추가
 ```
 
 > `quality_schema_version` 필드가 이 버전을 추적합니다.
@@ -90,7 +91,7 @@ tags:
     - architecture
     - constraint
 
-# ── 출처 ──────────────────────────────────────────────────
+# ── 출처 & 근거 인용 ──────────────────────────────────────────────────
 source:
   type: string
   format: URL
@@ -103,15 +104,38 @@ source:
     allowed_domains 변경은 이 파일 + AGENTS.md §2 도메인 화이트리스트를
     동시에 수정해야 함. 이 파일이 정의, AGENTS.md가 참조.
 
+evidence:
+  type: string | null
+  required: false
+  set_by: generator (LLM이 llms.txt에서 인용한 근거 원문)
+  note: |
+    정답 보기를 뒷받침하는 공식 문서 원문 문장을 그대로 인용합니다.
+    할루시네이션 검증(grounding_check)의 기준 문자열로 사용됩니다.
+    null = 검증 불가 (구버전 문제 또는 수동 생성 문제).
+
+verify_result:
+  type: string | null
+  allowed: ["PASS", "FAIL", null]
+  set_by: generator (3단계 검증 결과)
+
+verify_reason:
+  type: string | null
+  set_by: generator (검증 실패 시 실패 단계 및 이유 기록)
+  note: "PASS 시 null, FAIL 시 실패한 단계명과 이유를 기록"
+
 # ── 상태 ──────────────────────────────────────────────────
 status:
   type: string
-  allowed: ["draft", "review", "active", "deprecated"]
+  allowed: ["draft", "hallucination-suspect", "review", "active", "deprecated"]
   transitions:
-    draft    → review:      "validate-quality.py 실행 시 자동"
-    review   → active:      "사람만 가능"
-    active   → deprecated:  "사람만 가능 (팀 합의 후)"
-  note: AGENTS.md §5 사람 전용 작업 목록 참조
+    draft                  → review:               "validate-quality.py 실행 시 자동"
+    hallucination-suspect  → draft:                "사람이 수동 수정 후 재생성"
+    review                 → active:               "사람만 가능"
+    active                 → deprecated:           "사람만 가능 (팀 합의 후)"
+  note: |
+    hallucination-suspect: 생성 후 3단계 할루시네이션 검증 실패 시 generator가 자동 지정.
+    verify_reason 필드에 실패 이유가 기록됨.
+    AGENTS.md §5 사람 전용 작업 목록 참조
 
 # ── 메타데이터 ─────────────────────────────────────────────
 created:

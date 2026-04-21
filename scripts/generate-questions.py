@@ -18,6 +18,7 @@ from harness import (
     check_references_exist, get_next_question_id,
     load_question_file, save_question_file,
     extract_sections, parse_choices, token_jaccard,
+    HALLUCINATION_SUSPECT, run_hallucination_checks,
 )
 
 MAX_BATCH = 10
@@ -40,10 +41,14 @@ difficulty: {1-5}
 type: single
 tags: [tag1, tag2]
 source: https://docs.kakaocloud.com/...
+evidence: |
+  [여기에 정답을 뒷받침하는 llms.txt의 원문 문장을 그대로 인용]
 status: draft
 created: {YYYY-MM-DD}
 reviewed_by: []
 quality_score: ~
+verify_result: ~
+verify_reason: ~
 ---
 
 ## 문제
@@ -75,17 +80,19 @@ quality_score: ~
 
 필수 규칙:
 1. source는 반드시 사용자가 제공한 llms.txt의 SOURCE URL 중 하나여야 합니다. 추측하거나 만들지 않습니다.
-2. status는 반드시 draft입니다. 절대 변경하지 않습니다.
-3. type은 반드시 single, 보기 4개(A/B/C/D), 정답은 반드시 1개입니다.
-4. "다음 중 틀린 것은?" 형식의 부정 문항을 사용하지 않습니다.
-5. 보기에 "모두 맞다", "모두 틀리다", "해당 없음"을 포함하지 않습니다.
-6. 오답 포인트는 오답 보기 개수(3개)만큼 반드시 작성합니다.
-7. tags는 영문 소문자만 사용합니다. 서비스 태그 1~2개 + 인지 유형 태그 1~2개 = 총 2~4개.
-8. 정답 보기가 다른 보기보다 3배 이상 길지 않도록 합니다 (힌트 유출 방지).
-9. 공식 문서 문장을 그대로 복사하지 않습니다.
-10. quality_score는 반드시 ~ (null)로 설정합니다.
-11. topic은 반드시 사용자가 제공한 출제 스펙의 topic 목록 중 하나를 사용합니다. 임의로 만들지 않습니다.
-12. 해설은 반드시 2줄 이상 작성합니다. 첫 번째 줄은 정답의 핵심 근거, 두 번째 줄은 보충 설명 또는 관련 개념을 추가합니다. 한 문장으로 끝내지 않습니다.
+2. evidence는 반드시 llms.txt의 원문 문장을 한 문장 이상 그대로 인용합니다. 요약, 파라프레이즈, 생략 금지.
+3. status는 반드시 draft입니다. 절대 변경하지 않습니다.
+4. type은 반드시 single, 보기 4개(A/B/C/D), 정답은 반드시 1개입니다.
+5. "다음 중 틀린 것은?" 형식의 부정 문항을 사용하지 않습니다.
+6. 보기에 "모두 맞다", "모두 틀리다", "해당 없음"을 포함하지 않습니다.
+7. 오답 포인트는 오답 보기 개수(3개)만큼 반드시 작성합니다.
+8. tags는 영문 소문자만 사용합니다. 서비스 태그 1~2개 + 인지 유형 태그 1~2개 = 총 2~4개.
+9. 정답 보기가 다른 보기보다 3배 이상 길지 않도록 합니다 (힙트 유출 방지).
+10. 공식 문서 문장을 그대로 복사하지 않습니다.
+11. quality_score는 반드시 ~ (null)로 설정합니다.
+12. topic은 반드시 사용자가 제공한 출제 스펙의 topic 목록 중 하나를 사용합니다. 임의로 만들지 않습니다.
+13. 해설은 반드시 2줄 이상 작성합니다. 첫 번째 줄은 정답의 핵심 근거, 두 번째 줄은 보충 설명 또는 관련 개념을 추가합니다. 한 문장으로 끝내지 않습니다.
+14. verify_result와 verify_reason은 반드시 ~ (null)로 설정합니다. (검증 시스템이 자동 기록)
 """
 
 
@@ -286,16 +293,42 @@ def generate(chapter: str, topic: str | None, count: int) -> None:
             logger.log(f"[SKIP] 중복 감지: {fm.get('id')} topic={fm.get('topic')}")
             continue
 
-        # Post-check 3: status / quality_score 강제 (AGENTS.md §3)
+        # Post-check 3: status / quality_score / verify 강제 (AGENTS.md §3)
         fm["status"] = "draft"
         fm["quality_score"] = None
+        fm["verify_result"] = None
+        fm["verify_reason"] = None
+
+        # ── 할루시네이션 방지 3단계 검증 ────────────────────────────────────
+        question_block = (
+            f"---\n{yaml.dump(fm, allow_unicode=True, default_flow_style=False, sort_keys=False)}"
+            f"---\n\n{body}"
+        )
+        passed, failed_stage, reason = run_hallucination_checks(
+            client=client,
+            fm=fm,
+            body=body,
+            question_block=question_block,
+            chapter=chapter,
+            llms_content=llms_content,
+            logger=logger,
+        )
+
+        if not passed:
+            fm["status"] = HALLUCINATION_SUSPECT
+            fm["verify_result"] = "FAIL"
+            fm["verify_reason"] = f"[{failed_stage}] {reason}"
+            logger.log(f"[HALLUCINATION-SUSPECT] {fm.get('id')} → {fm['verify_reason']}")
+        else:
+            fm["verify_result"] = "PASS"
+            fm["verify_reason"] = None
+        # ─────────────────────────────────────────────────────────────
 
         out_path = q_dir / f"{fm['id']}.md"
         save_question_file(out_path, fm, body)
-        logger.log(f"WRITE {out_path}")
+        logger.log(f"WRITE {out_path} [verify={fm['verify_result']}]")
         existing_paths.append(out_path)
         saved += 1
-
     logger.log(f"DONE saved={saved}/{len(blocks)}")
     logger.end()
 

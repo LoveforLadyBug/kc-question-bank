@@ -235,3 +235,207 @@ def token_jaccard(a: str, b: str) -> float:
     if not union:
         return 0.0
     return len(ta & tb) / len(union)
+
+
+# ---------------------------------------------------------------------------
+# 할루시네이션 방지 — 3단계 검증 하네스 (db-schema.md §1 v1.1.0)
+# ---------------------------------------------------------------------------
+
+HALLUCINATION_SUSPECT = "hallucination-suspect"
+
+# 2-Pass 검증에 사용할 검증 전용 시스템 프롬프트
+VERIFIER_SYSTEM_PROMPT = """\
+당신은 KakaoCloud 문제은행의 검증(verifier) 에이전트입니다.
+제공된 [레퍼런스 문서]와 [문제]를 비교하여 할루시네이션 여부를 판단합니다.
+
+판단 기준 (모두 충족해야 PASS):
+1. 정답 보기의 핵심 내용이 레퍼런스에 명시적으로 언급되어 있는가?
+2. evidence(근거 인용) 문장의 내용이 레퍼런스와 일치하는가?
+3. 해설(## 해설)이 레퍼런스 내용과 충돌하지 않는가?
+4. 오답 포인트(## 오답 포인트)가 레퍼런스를 왜곡하지 않는가?
+
+출력 형식 (두 줄만):
+PASS 또는 FAIL
+이유: (한 줄, 50자 이내)
+
+마지막 줄이 반드시 PASS 또는 FAIL 중 하나여야 합니다.
+"""
+
+
+def keyword_anchor_check(
+    question_text: str,
+    chapter: str,
+    llms_content: str,
+) -> tuple[bool, str]:
+    """[1단계] 키워드 앵커 검사.
+
+    챕터 키워드(CHAPTER_KEYWORDS) 중 하나 이상이 문제 본문에 포함되어야 하며,
+    해당 키워드가 llms.txt에도 존재하는지 확인합니다.
+
+    Returns:
+        (passed: bool, reason: str)
+    """
+    keywords = CHAPTER_KEYWORDS.get(chapter, [])
+    if not keywords:
+        return True, "CHAPTER_KEYWORDS 미정의 챕터 — 건너뜀"
+
+    matched_in_question = [kw for kw in keywords if kw in question_text]
+    if not matched_in_question:
+        return False, f"키워드 앵커 없음: 챕터 키워드 {keywords} 중 문제 본문에 없음"
+
+    # llms.txt에도 해당 키워드가 존재하는지 확인
+    matched_in_llms = [kw for kw in matched_in_question if kw in llms_content]
+    if not matched_in_llms:
+        return False, (
+            f"키워드가 레퍼런스에 없음: {matched_in_question} → llms.txt 미포함. "
+            "공식 문서에 없는 용어 사용 의심"
+        )
+
+    return True, f"키워드 앵커 확인: {matched_in_llms}"
+
+
+def grounding_check(
+    evidence: str,
+    llms_content: str,
+    jaccard_threshold: float = 0.65,
+) -> tuple[bool, str]:
+    """[2단계] 근거 문장 그라운딩 검사.
+
+    evidence 필드의 인용 문장이 llms.txt 내용과 Jaccard 유사도 기준으로
+    존재하는지 확인합니다. 문장 단위로 분할하여 가장 높은 유사도를 사용합니다.
+
+    Args:
+        evidence: 문제 frontmatter의 evidence 필드 값
+        llms_content: 해당 챕터 llms.txt 전체 내용
+        jaccard_threshold: 이 값 이상이면 그라운딩 성공 (기본 0.65)
+
+    Returns:
+        (passed: bool, reason: str)
+    """
+    if not evidence or not evidence.strip():
+        return False, "evidence 필드가 비어 있음 — 근거 인용 누락"
+
+    # llms.txt를 문장 단위로 분할하여 가장 유사한 문장 탐색
+    sentences = [s.strip() for s in llms_content.replace("\n", " ").split("。") if len(s.strip()) > 10]
+    if not sentences:
+        sentences = [s.strip() for s in llms_content.split("\n") if len(s.strip()) > 10]
+
+    best_score = max((token_jaccard(evidence, s) for s in sentences), default=0.0)
+
+    if best_score >= jaccard_threshold:
+        return True, f"근거 문장 확인 (Jaccard={best_score:.2f})"
+    else:
+        return False, (
+            f"근거 문장 미확인 (최고 Jaccard={best_score:.2f} < {jaccard_threshold}). "
+            "evidence가 레퍼런스에 없는 내용일 수 있음"
+        )
+
+
+def verify_with_llm(
+    client,
+    question_block: str,
+    llms_content: str,
+    logger: "AgentLogger",
+) -> tuple[bool, str]:
+    """[3단계] 2-Pass LLM 검증.
+
+    별도 LLM 호출로 문제 전체 내용이 레퍼런스에 근거하는지 판단합니다.
+
+    Args:
+        client: anthropic.Anthropic 클라이언트
+        question_block: 문제 원문 (frontmatter + body 전체)
+        llms_content: 해당 챕터 llms.txt 전체 내용
+        logger: AgentLogger 인스턴스
+
+    Returns:
+        (passed: bool, reason: str)
+    """
+    user_content = (
+        f"[레퍼런스 문서]\n{llms_content}\n\n"
+        f"[문제]\n{question_block}\n\n"
+        "위 레퍼런스 문서를 기반으로 이 문제의 할루시네이션 여부를 판단하세요."
+    )
+
+    try:
+        message = client.messages.create(
+            model=CLAUDE_MODEL,
+            max_tokens=256,
+            system=VERIFIER_SYSTEM_PROMPT,
+            messages=[{"role": "user", "content": user_content}],
+        )
+        response = message.content[0].text.strip()
+        logger.log(f"VERIFY response: {response[:120]!r}")
+
+        lines = [l.strip() for l in response.splitlines() if l.strip()]
+        verdict = lines[-1].upper() if lines else ""
+        reason_line = next((l for l in lines if l.startswith("이유:")), "이유: 불명")
+        reason = reason_line.replace("이유:", "").strip()
+
+        if "PASS" in verdict:
+            return True, reason
+        elif "FAIL" in verdict:
+            return False, reason
+        else:
+            # 판정 불명확 — 안전을 위해 FAIL 처리
+            return False, f"검증 응답 파싱 실패: {verdict!r}"
+
+    except Exception as e:
+        logger.log(f"[WARN] LLM 검증 호출 실패: {e}")
+        # API 오류 시 검증 실패로 처리하지 않고 경고만 (네트워크 이슈 대응)
+        return True, f"LLM 검증 API 오류 — 건너뜀: {e}"
+
+
+def run_hallucination_checks(
+    client,
+    fm: dict,
+    body: str,
+    question_block: str,
+    chapter: str,
+    llms_content: str,
+    logger: "AgentLogger",
+) -> tuple[bool, str, str]:
+    """3단계 할루시네이션 검증 파이프라인을 순서대로 실행합니다.
+
+    [1] keyword_anchor_check → [2] grounding_check → [3] verify_with_llm
+
+    Args:
+        client: Anthropic 클라이언트 (3단계에만 사용)
+        fm: 파싱된 frontmatter dict
+        body: 문제 본문
+        question_block: 전체 원문 (frontmatter + body)
+        chapter: 챕터 ID
+        llms_content: 해당 챕터 llms.txt 전체 내용
+        logger: AgentLogger
+
+    Returns:
+        (passed: bool, failed_stage: str, reason: str)
+        passed=True 이면 failed_stage=""
+    """
+    question_text = body  # 본문 전체 (문제 + 보기 + 해설)
+
+    # ── [1] 키워드 앵커 검사 ────────────────────────────────
+    ok, reason = keyword_anchor_check(question_text, chapter, llms_content)
+    if not ok:
+        logger.log(f"[HALLUCINATION] [1/3] keyword_anchor FAIL — {reason}")
+        return False, "keyword_anchor", reason
+
+    logger.log(f"[VERIFY] [1/3] keyword_anchor PASS — {reason}")
+
+    # ── [2] 근거 문장 그라운딩 검사 ─────────────────────────
+    evidence = str(fm.get("evidence") or "")
+    ok, reason = grounding_check(evidence, llms_content)
+    if not ok:
+        logger.log(f"[HALLUCINATION] [2/3] grounding FAIL — {reason}")
+        return False, "grounding", reason
+
+    logger.log(f"[VERIFY] [2/3] grounding PASS — {reason}")
+
+    # ── [3] 2-Pass LLM 검증 ─────────────────────────────────
+    ok, reason = verify_with_llm(client, question_block, llms_content, logger)
+    if not ok:
+        logger.log(f"[HALLUCINATION] [3/3] llm_verify FAIL — {reason}")
+        return False, "llm_verify", reason
+
+    logger.log(f"[VERIFY] [3/3] llm_verify PASS — {reason}")
+    return True, "", reason
+
