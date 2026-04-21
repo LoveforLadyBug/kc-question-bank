@@ -20,6 +20,133 @@ API를 활용해 애플리케이션의 엔드포인트를 모니터링하고 업
 
 ---
 
+# SOURCE: https://docs.kakaocloud.com/service/management/advanced-managed-prometheus
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Advanced Managed Prometheus(AMP) 서비스는 클라우드 환경에서 메트릭 데이터를 실시간으로 수집, 저장, 분석할 수 있는 관리형 모니터링 서비스입니다. 자동화된 설치와 설정, 장애 복구 기능을 제공하여 운영 부담을 줄이고, Kubernetes 및 다양한 리소스를 효율적으로 모니터링할 수 있도록 지원합니다.
+Advanced Managed Prometheus(AMP) 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+카카오클라우드에서 제공하는 Advanced Managed Prometheus에 대한 개요입니다.
+
+## 📄️ 주요 개념
+
+카카오클라우드 Advanced Managed Prometheus 서비스의 주요 개념을 소개합니다.
+
+## 🗃️ How-to Guides
+
+3 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드의 Advanced Managed Prometheus 서비스 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+카카오클라우드의 Advanced Managed Prometheus 서비스 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다. Alert Center 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Alert Center의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+IAM 역할, 알림 정책 등의 구성 요소를 설명합니다.
+
+## 🗃️ How-to Guides
+
+6 항목
+
+## 📄️ 문제 해결
+
+Alert Center 서비스 사용 중 발생하는 트러블 슈팅에 대한 안내입니다.
+
+## 📄️ 서비스 요금 및 쿼터
+
+Alert Center의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Alert Center의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/certificate-manager
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Certificate Manager 서비스는 SSL 인증서를 하나의 통합된 메뉴에서 등록 및 삭제하고, 다양한 서비스에 연동하여 일관되게 관리할 수 있는 서비스입니다.
+Certifacate Manager 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+카카오클라우드 Certificate Manager 서비스의 특징 및 주요 기능을 설명합니다.
+
+## 📄️ 주요 개념
+
+카카오클라우드의 Certificate Manager 서비스에 대한 주요 개념을 소개합니다.
+
+## 🗃️ How-to Guides
+
+1 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드 Certificate Manager 서비스의 요금 및 쿼터 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+카카오클라우드 Certificate Manager 서비스의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Cloud Trail은 사용자의 활동을 자동으로 수집하고 기록하는 서비스로, 사용자의 로그인, 리소스 생성, 변경, 삭제 등의 사용자 활동을 간편하게 추적하고 관리할 수 있도록 설계되었습니다.
+Cloud Trail 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Cloud Trail의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+조회할 수 있는 조직/프로젝트 이벤트를 설명합니다.
+
+## 📄️ 서비스별 이벤트 목록
+
+조회할 수 있는 조직/프로젝트 이벤트를 설명합니다.
+
+## 🗃️ How-to Guides
+
+3 항목
+
+## 📄️ 문제 해결
+
+Cloud Trail 서비스 사용 중 발생하는 트러블 슈팅에 대한 안내입니다.
+
+## 📄️ 서비스 요금 및 쿼터
+
+Cloud Trail의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Cloud Trail의 릴리즈 내역을 제공합니다.
+
+---
+
 # SOURCE: https://docs.kakaocloud.com/service/management/iam
 # FETCHED: 2026-04-21
 # CATEGORY: Management & IAM
@@ -53,6 +180,34 @@ IAM의 요금 정보를 안내합니다.
 ## 📄️ 릴리즈 노트
 
 IAM의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/maintenance
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Maintenance 서비스는 클라우드 PaaS환경에서 서비스의 인스턴스 및 엔진의 업그레이드,OS 업데이트, 설정 변경 등 주요 유지관리 작업을 사용자가 원하는 일정에 맞춰 사전 스케줄링할 수 있도록 지원합니다. 사용자는 운영 중단 가능성이 있는 작업을 사전에 인지하고, 원하는 시간에 맞춰 OS 및 엔진 업그레이드를 스케줄링할 수 있어, 계획적인 유지관리와 장애 예방을 통해 서비스 안정성과 운영 효율성을 높일 수 있습니다. Maintenance 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Maintenance의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+서비스 주요 개념과 Maintenance의 구성 요소를 설명합니다.
+
+## 🗃️ How-to Guides
+
+4 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+Maintenance의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Maintenance의 릴리즈 내역을 제공합니다.
 
 ---
 
@@ -92,69 +247,3840 @@ Monitoring의 릴리즈 내역을 제공합니다.
 
 ---
 
-# SOURCE: https://docs.kakaocloud.com/service/management/alert-center
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring-flow
 # FETCHED: 2026-04-21
 # CATEGORY: Management & IAM
 
-카카오클라우드의 Alert Center는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다. Alert Center 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+카카오클라우드의 Monitoring Flow 서비스는 API를 활용해 애플리케이션의 엔드포인트를 모니터링하고 업무 프로세스를 자동화할 수 있도록 돕습니다. 별도의 코드 없이 사용자가 직관적인 UI환경에서 워크플로우를 설계하고, 설계된 시나리오를 통해 실시간 모니터링이 가능하여 시스템 상태를 추적하며 운영 효율성을 높입니다. Monitoring Flow 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
 
 ## 📄️ 개요
 
-Alert Center의 사용 목적 및 사례와 특징에 대해 안내합니다.
+Monitoring Flow의 사용 목적 및 사례와 특징에 대해 안내합니다.
 
 ## 📄️ 주요 개념
 
-IAM 역할, 알림 정책 등의 구성 요소를 설명합니다.
+시스템 아키텍처 및 대시보드/메트릭과 같은 구성 요소를 설명합니다.
 
 ## 🗃️ How-to Guides
 
-6 항목
-
-## 📄️ 문제 해결
-
-Alert Center 서비스 사용 중 발생하는 트러블 슈팅에 대한 안내입니다.
+4 항목
 
 ## 📄️ 서비스 요금 및 쿼터
 
-Alert Center의 요금 정보를 안내합니다.
+Monitoring Flow의 요금 정보를 안내합니다.
 
 ## 📄️ 릴리즈 노트
 
-Alert Center의 릴리즈 내역을 제공합니다.
+Monitoring Flow의 릴리즈 내역을 제공합니다.
 
 ---
 
-# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail
+# SOURCE: https://docs.kakaocloud.com/service/management/resource-explorer
 # FETCHED: 2026-04-21
 # CATEGORY: Management & IAM
 
-카카오클라우드의 Cloud Trail은 사용자의 활동을 자동으로 수집하고 기록하는 서비스로, 사용자의 로그인, 리소스 생성, 변경, 삭제 등의 사용자 활동을 간편하게 추적하고 관리할 수 있도록 설계되었습니다.
-Cloud Trail 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+카카오클라우드 Resource Explorer 서비스는 리소스를 이름, 태그, ID 등 다양한 메타데이터로 손쉽게 검색하고, 리소스 상세 페이지로 직접 이동하여 정보를 확인하거나 작업을 수행할 수 있는 탐색 도구입니다.
+Resource Explorer 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
 
 ## 📄️ 개요
 
-Cloud Trail의 사용 목적 및 사례와 특징에 대해 안내합니다.
+카카오클라우드에서 제공하는 Resource Explorer 서비스의 개요입니다.
 
 ## 📄️ 주요 개념
 
-조회할 수 있는 조직/프로젝트 이벤트를 설명합니다.
-
-## 📄️ 서비스별 이벤트 목록
-
-조회할 수 있는 조직/프로젝트 이벤트를 설명합니다.
+카카오클라우드 Resource Explorer 서비스의 주요 개념을 소개합니다.
 
 ## 🗃️ How-to Guides
 
-3 항목
+4 항목
 
-## 📄️ 문제 해결
+## 🗃️ API Reference
 
-Cloud Trail 서비스 사용 중 발생하는 트러블 슈팅에 대한 안내입니다.
+2 항목
 
 ## 📄️ 서비스 요금 및 쿼터
 
-Cloud Trail의 요금 정보를 안내합니다.
+카카오클라우드의 Resource Explorer 서비스 요금 정보를 안내합니다.
 
 ## 📄️ 릴리즈 노트
 
-Cloud Trail의 릴리즈 내역을 제공합니다.
+카카오클라우드의 Resource Explorer 서비스 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/how-to-guides
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 IAM 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 내 역할 조회
+
+내 조직/프로젝트 역할 조회하는 방법을 안내합니다.
+
+## 📄️ 조직 생성 및 관리
+
+조직 생성, 조직 삭제 등 해당 조직을 관리하는 방법을 설명합니다.
+
+## 📄️ 프로젝트 생성 및 관리
+
+서비스를 보유하고, 해당 리소스를 사용하는 상위 개념인 프로젝트를 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 사용자 등록 및 관리
+
+IAM 서비스를 사용하기 위해 사용자를 관리하는 방법을 설명합니다.
+
+## 📄️ 그룹 생성 및 관리
+
+IAM 서비스를 사용하기 위해 사용자와 그룹을 관리하는 방법을 설명합니다.
+
+## 📄️ 서비스 계정 생성 및 관리
+
+서비스를 보유하고, 해당 리소스를 사용하는 상위 개념인 프로젝트를 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 역할 관리
+
+카카오클라우드 IAM의 역할 구성 방식과 사용자/그룹에 대한 권한 할당 방법을 설명합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/iam-main
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 IAM의 각 구성 요소는 고유한 역할을 가지며, 카카오클라우드 내 리소스와 권한을 체계적으로 관리하기 위한 기반을 제공합니다.
+IAM은 아래와 같은 구성 요소로 이루어져 있습니다.
+
+### 조직 ​
+
+조직은 카카오클라우드 IAM 구조의 최상위 단위입니다. 하나의 조직은 여러 프로젝트, 사용자, 그룹, 서비스 계정을 포함 할 수 있으며, 로그인 설정, 사용자 초대, 그룹/프로젝트 생성 등을 중앙에서 관리할 수 있습니다.
+조직 단위에서는 IAM 서비스 외에도 Billing, Cloud Trail, Alert Center 등 글로벌 서비스의 접근 권한을 제어할 수 있습니다.
+하나의 사용자 계정은 여러 조직에 가입하거나 소속될 수 있으며, 각 조직 내에서는 고유해야 합니다.
+조직 단위 역할 예시 조직 관리자, 조직 리더, IAM 조직 관리자, IAM 조직 뷰어, 빌링 관리자, 조직 단위의 서비스별 전용 역할 (예: Alert Center 조직 매니저)
+조직 관리자, 조직 리더, IAM 조직 관리자, IAM 조직 뷰어, 빌링 관리자, 조직 단위의 서비스별 전용 역할 (예: Alert Center 조직 매니저)
+조직에서 사용할 수 있는 역할 유형과 권한 범위는 조직 단위 역할 문서에서 확인할 수 있으며, 조직 생성 및 로그인·보안 설정 절차는 조직 생성 및 관리 문서를 참고하세요.
+
+### 프로젝트 ​
+
+프로젝트는 실제 클라우드 리소스가 생성되고 운영 되는 기본 단위입니다. VM, 네트워크, 스토리지, 데이터 분석 리소스 등은 모두 프로젝트 내에서 생성되며, IAM은 프로젝트 단위를 기반으로 리소스 접근 권한을 제어합니다.
+서비스 리소스 할당량, 접근 권한, 서비스 계정 설정 등은 프로젝트 단위로 관리됩니다.
+개별 프로젝트 단위로 알림 정책, 모니터링, Cloud Trail 연동을 관리할 수 있습니다.
+프로젝트 단위 역할 예시 프로젝트 관리자, 프로젝트 멤버, IAM 프로젝트 관리자, IAM 프로젝트 뷰어, 서비스별 전용 역할 (예: Pub/Sub 게시자)
+프로젝트 관리자, 프로젝트 멤버, IAM 프로젝트 관리자, IAM 프로젝트 뷰어, 서비스별 전용 역할 (예: Pub/Sub 게시자)
+프로젝트에서 사용할 수 있는 역할 유형과 권한 범위는 프로젝트 단위 역할 문서에서 확인할 수 있으며, 프로젝트 생성 및 수정, 삭제 등의 절차는 프로젝트 생성 및 관리 문서를 참고하세요.
+
+### 사용자 ​
+
+사용자는 카카오클라우드 콘솔에 로그인하거나 API를 호출하는 실제 개인 사용자 계정 입니다. 이메일을 기반으로 구성되며, 조직 또는 프로젝트에 소속되어야 권한을 부여받을 수 있습니다.
+하나의 사용자는 여러 조직 및 프로젝트에 속할 수 있으며, 각각 다른 IAM 역할을 가질 수 있습니다.
+사용자에게는 직접 역할을 부여하거나 그룹을 통해 역할을 위임할 수 있습니다.
+사용자의 로그인 기록, API 호출 이력 등은 Cloud Trail을 통해 감사 가능합니다.
+사용자의 역할은 최소 권한 원칙(Least Privilege) 을 기준으로 신중히 할당해야 합니다.
+사용자 등록 및 관리 를 참고해 조직 단위의 사용자 등록 및 관리 방법을 알아보세요.
+
+### 그룹 ​
+
+그룹은 여러 사용자를 하나로 묶어 IAM 역할을 효율적으로 일괄 관리 할 수 있는 단위입니다. 그룹에 역할을 부여하면 모든 구성원에게 권한이 자동 적용되고, 구성원이 그룹에서 제거되면 권한도 회수됩니다. 따라서 권한 변경 이력 추적과 보안 사고 대응에 유용한 구조입니다. 그룹의 구성 및 권한 정책은 다음과 같습니다.
+
+| 정책 구분 | 설명 |
+|---|---|
+| 중첩 여부 | 그룹 내 다른 그룹 포함 불가 |
+| 포함 대상 | - 그룹에는 사용자만 포함 가능 (서비스 계정 제외) - 사용자는 여러 그룹에 동시에 속할 수 있음 |
+| 역할 부여 및 유지 | - IAM 전용 역할, 조직/프로젝트/서비스 역할 모두 가능 - 그룹 제거 또는 삭제 시, 해당 그룹을 통해 사용자에 부여된 역할은 회수되며 직접 부여된 역할은 유지 |
+| API 토큰 처리 | 그룹에서 제거되면 해당 그룹을 통해 발급된 토큰은 즉시 만료 |
+
+다음은 카카오클라우드 IAM에서 그룹을 활용해 조직 및 프로젝트 단위의 권한을 효율적으로 관리하는 예시입니다. 조직 내에는 여러 IAM 그룹이 존재하며, 각 그룹은 특정 업무 목적에 맞춰 사용자와 역할을 묶어 관리합니다.
+그룹 구조
+그룹 생성 및 관리 를 참고해 그룹 구성과 권한 적용 방식에 대해 더 자세히 알아보세요.
+
+### 서비스 계정 ​
+
+서비스 계정은 사용자가 직접 생성할 수 있는 비인터랙티브(non-interactive) 계정으로, 콘솔 로그인 없이 인증 키를 사용해 카카오클라우드 API를 호출하는 데 사용 됩니다. 주로 CI/CD 파이프라인, 외부 시스템 연동 등 자동화된 작업에 활용되며, 프로젝트 단위의 IAM 역할을 통해 리소스 접근 권한을 제어할 수 있습니다.
+서비스 계정의 구성 및 권한 정책은 다음과 같습니다.
+
+| 정책 구분 | 설명 |
+|---|---|
+| 계정 형식 | {사용자정의}-{프로젝트이름}@kc.serviceaccount.com |
+| 로그인 방식 | 콘솔 로그인 불가 (API 호출 전용) |
+| 인증 방식 | IAM 액세스 키, S3 액세스 키를 사용한 토큰 발급 ㄴ 자세한 방법은 서비스 계정의 자격 증명 발급 문서를 참고 |
+| 자격 증명 수 제한 | IAM 액세스 키 및 S3 액세스 키 각각 최대 2개까지 발급 가능 |
+| 생성 수 제한 | 프로젝트당 최대 100개 생성 가능 (비활성 포함) |
+| 역할 및 권한 조건 | 프로젝트 단위 역할만 부여 가능 (조직 역할은 적용되지 않음) ㄴ 특정 API 작업을 수행하려면 프로젝트 내에서 필요한 역할을 직접 부여해야 함 |
+
+서비스 계정은 IAM 사용자 목록에 포함되지 않으며, IAM 사용자 할당량에도 영향을 주지 않습니다.
+서비스 계정 생성 및 관리 를 참고해 서비스 계정의 생성과 관리 방법에 대해 알아보세요.
+
+### 서비스 에이전트 계정 ​
+
+서비스 에이전트 계정은 사용자가 직접 생성하지 않으며, 카카오클라우드 서비스가 리소스를 조작할 때 자동으로 생성되는 시스템 전용 계정 입니다. 서비스의 백엔드에서 필요한 작업을 자동으로 처리하기 위해 사용됩니다.
+예를 들어, Kubernetes Engine에서 노드풀을 추가하면 해당 요청을 수행하기 위해 Kubernetes Engine 전용 서비스 에이전트가 Virtual Machine 인스턴스를 자동으로 생성합니다.
+서비스 에이전트 계정의 구성 및 권한 정책은 다음과 같습니다.
+
+| 정책 구분 | 설명 |
+|---|---|
+| 계정 형식 | {프로젝트이름}@{서비스이름}.kc.serviceaccount.com |
+| 수정 및 삭제 제한 | 사용자가 직접 생성, 수정, 삭제 불가 단, 프로젝트를 삭제하면 해당 프로젝트의 모든 서비스 에이전트 계정도 함께 삭제 |
+| 역할 및 권한 조건 | - 서비스 동작에 필요한 최소한의 IAM 역할만 자동 부여 - 내부 전용 계정 으로 콘솔 로그인 또는 API 호출 등 사용자가 직접 제어할 수 없음 |
+
+콘솔에서 서비스 에이전트 확인 방법은 서비스 에이전트 조회 문서를 참고하세요.
+조직
+프로젝트
+사용자
+그룹
+서비스 계정
+서비스 에이전트 계정
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/iam-overview
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 IAM(Identity and Access Management) 은 클라우드 리소스에 대한 접근 권한을 중앙에서 관리할 수 있는 서비스입니다. 사용자 또는 그룹 단위로 역할을 할당하고, 역할 기반 접근 제어(RBAC)를 통해 권한을 세분화함으로써 안전한 리소스 운영이 가능합니다.
+카카오클라우드의 Cloud Trail 과 연동하면 IAM 자격 증명을 기반으로 콘솔 로그인, 그룹 및 프로젝트 생성, 사용자 추가 등 주요 이벤트를 자동으로 수집하고 추적할 수 있습니다.
+RBAC(role-based access control) : 역할 단위로 권한을 정의하고, 해당 역할을 사용자 또는 그룹에 할당하는 방식의 접근 제어 모델입니다. 권한이 필요한 사용자에게 직접 부여하지 않고, 역할을 통해 간접적으로 부여함으로써 관리 효율성과 보안을 높일 수 있습니다.
+
+## 사용 목적 및 사례 ​
+
+IAM이 적용되지 않은 환경에서는 리소스에 대한 무단 접근, 과도한 권한 부여, 사용자 권한 오용과 같은 보안 문제가 발생할 수 있습니다. 또한 사용자 활동 이력이 중앙에서 일관되게 추적되지 않기 때문에, 보안 사고를 사전에 감지하거나 모니터링하는 것도 어렵습니다.
+카카오클라우드 IAM은 역할 기반 권한 제어 방식을 통해 이러한 문제를 방지하고, 리소스 접근을 중앙에서 일관되게 제어할 수 있도록 지원합니다. 예를 들어, 특정 사용자에게 '빌링 매니저' 역할만 부여하면 해당 사용자는 청구서 조회 및 결제 수단 관리만 수행할 수 있으며, 프로젝트 내 다른 리소스에는 접근할 수 없습니다. 이처럼 IAM은 사용자별 업무 범위에 맞는 최소 권한만을 부여함으로써 보안 수준을 높이고 운영 효율을 개선할 수 있습니다.
+IAM은 역할 기반 접근 제어를 비롯해 그룹 단위 권한 상속, 조직 분리, 외부 IdP 연동, 이벤트 추적 등 다양한 기능을 제공하며, Beyond Compute, Networking, Storage, Container Pack, Billing 등 대부분의 카카오클라우드 서비스와 통합되어 무료로 제공됩니다.
+
+## 시작하기 ​
+
+카카오클라우드 IAM은 카카오클라우드를 처음 사용하는 사용자부터 운영 환경을 관리하는 관리자까지 다양한 수준의 사용자를 위한 문서를 제공합니다.
+IAM 구성 요소 이해 : IAM의 구조와 핵심 개념(조직, 프로젝트, 사용자, 그룹, 역할 등)에 대한 설명은 구성 요소 문서에서 확인할 수 있습니다.
+역할 및 권한 관리 : 프로젝트 또는 조직 단위에서 사용자, 그룹, 역할을 어떻게 설정하고 적용할 수 있는지에 대한 설명은 역할 및 권한 문서에서 확인할 수 있습니다.
+How-to Guides : 실제 사용 시 따라할 수 있는 단계별 절차는 How-to Guides 에서 제공되며, 콘솔 설정, 역할 할당, 외부 IdP 연동 등 다양한 가이드를 포함합니다.
+카카오클라우드를 처음 사용하는 경우, 전체 서비스 개요와 계정 설정 방법을 안내하는 카카오클라우드 시작하기 문서를 먼저 확인하시기 바랍니다.
+사용 목적 및 사례
+시작하기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/iam-pricing
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+## IAM 요금 ​
+
+IAM 서비스는 모든 리전에서 공통적으로 제공되는 글로벌 서비스로, 현재 기본적으로 제공되며 별도의 과금은 발생하지 않습니다. 다만, 향후 API별 과금 항목이 추가될 수 있으니 참고하시기 바랍니다.
+
+## 쿼터 ​
+
+쿼터(Quota)는 카카오클라우드 단일 조직 또는 프로젝트 내에 생성할 수 있는 각 리소스의 최대량 또는 최대 수량을 제한하는 할당량을 의미합니다.
+IAM 서비스 자체에는 별도의 쿼터 제한이 없습니다.
+단, IAM을 통해 생성 및 관리되는 서비스 계정, 액세스 키 등의 리소스에는 프로젝트별 정책 또는 각 서비스의 쿼터 제한이 적용될 수 있습니다.
+IAM 요금
+쿼터
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/iam-release-note
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+### 2026.03.24 ​
+
+
+#### 기능 추가 ​
+
+자원 삭제 시 비밀번호 재인증 방식 제공 조직 내 사용자 및 프로젝트 서비스 계정 삭제 시, 기존의 단순 확인 문구 입력 방식 외에 비밀번호 재인증 방식을 추가했습니다. 중요 자원 삭제 시 본인 확인 절차를 강화하여, 관리자의 조작 실수를 방지하고 보안성을 높였습니다.
+조직 내 사용자 및 프로젝트 서비스 계정 삭제 시, 기존의 단순 확인 문구 입력 방식 외에 비밀번호 재인증 방식을 추가했습니다.
+중요 자원 삭제 시 본인 확인 절차를 강화하여, 관리자의 조작 실수를 방지하고 보안성을 높였습니다.
+비밀번호 변경 시 세션 및 토큰 즉시 만료 옵션 제공 비밀번호 변경 시 현재 활성화된 모든 로그인 세션과 발급된 토큰(액세스 키 발급 토큰 포함)을 즉시 만료시키는 기능을 추가했습니다. 해당 기능을 활성화하면 비밀번호 변경과 동시에 콘솔에서 자동 로그아웃되며, 기존 토큰을 이용한 비정상적 접근을 원천 차단할 수 있습니다.
+비밀번호 변경 시 현재 활성화된 모든 로그인 세션과 발급된 토큰(액세스 키 발급 토큰 포함)을 즉시 만료시키는 기능을 추가했습니다.
+해당 기능을 활성화하면 비밀번호 변경과 동시에 콘솔에서 자동 로그아웃되며, 기존 토큰을 이용한 비정상적 접근을 원천 차단할 수 있습니다.
+감사 로그 및 이벤트 강화 조직 및 사용자 보안 설정의 가시성을 확보하기 위해 신규 Cloud Trail 이벤트 17종을 추가했습니다. 이제 관리자는 보안 관련 주요 변경 사항을 더욱 상세하게 추적하고 모니터링할 수 있습니다.
+조직 및 사용자 보안 설정의 가시성을 확보하기 위해 신규 Cloud Trail 이벤트 17종을 추가했습니다. 이제 관리자는 보안 관련 주요 변경 사항을 더욱 상세하게 추적하고 모니터링할 수 있습니다.
+
+### 2026.01.08 ​
+
+
+#### 기능 개선 ​
+
+IAM 토큰 관련 기능 개선을 진행하였습니다.
+IdP 조직 관리 기능 등의 콘솔 개선을 진행하였습니다.
+
+### 2025.11.11 ​
+
+
+#### 정책 변경 ​
+
+로그인 보안 강화를 위해 로그인 제한 정책을 변경하였습니다. 아이디/비밀번호 또는 2단계 인증이 5회 이상 실패할 경우, 비밀번호 재설정 후 로그인이 가능합니다.
+아이디/비밀번호 또는 2단계 인증이 5회 이상 실패할 경우, 비밀번호 재설정 후 로그인이 가능합니다.
+IAM 리소스를 다양한 형식으로 관리할 수 있도록 입력 데이터에 대한 유효성 조건을 개선하였습니다.
+
+### 2025.09.16 ​
+
+
+#### 기능 개선 ​
+
+콘솔 로그인 시 사용할 수 있는 2단계 인증 수단으로 OTP(일회용 비밀번호) 기능을 추가하였습니다. OTP 등록 방법 : 사용자 프로필 > 계정 정보 > 연락처 및 2단계 인증 정보에서 OTP 등록
+OTP 등록 방법 : 사용자 프로필 > 계정 정보 > 연락처 및 2단계 인증 정보에서 OTP 등록
+
+### 2025.07.24 ​
+
+
+#### 기능 개선 ​
+
+사용자 프로필에서 사용자 역할 정보 조회 기능이 추가되었습니다.
+서비스 계정 생성 시 IAM 역할 선택 기능이 추가되었습니다.
+IAM 서비스 및 Project Management 서비스 관리를 위한 IAM 전용 서비스 역할을 추가하였습니다. IAM 서비스 역할: IAM 조직 관리자, IAM 조직 뷰어 Project Management 역할: IAM 프로젝트 관리자, IAM 프로젝트 뷰어
+IAM 서비스 역할: IAM 조직 관리자, IAM 조직 뷰어
+Project Management 역할: IAM 프로젝트 관리자, IAM 프로젝트 뷰어
+
+### 2025.05.08 ​
+
+
+#### 기능 개선 ​
+
+서비스 계정, 서비스 에이전트 목록을 조회하는 기능을 추가하였습니다. IAM > 프로젝트 > 프로젝트 상세 > 서비스 계정 탭에서 확인 가능 IAM > 프로젝트 > 프로젝트 상세 > 서비스 에이전트 탭에서 확인 가능
+IAM > 프로젝트 > 프로젝트 상세 > 서비스 계정 탭에서 확인 가능
+IAM > 프로젝트 > 프로젝트 상세 > 서비스 에이전트 탭에서 확인 가능
+
+### 2025.04.10 ​
+
+
+#### 기능 개선 ​
+
+서비스 계정 메뉴에 S3 액세스 키 발급 기능을 추가하였습니다. 서비스 계정의 자격증명으로 오브젝트 스토리지의 S3 API를 사용하기 위한 S3 액세스 키 발급 기능
+서비스 계정의 자격증명으로 오브젝트 스토리지의 S3 API를 사용하기 위한 S3 액세스 키 발급 기능
+
+### 2025.02.26 ​
+
+
+#### 기능 개선 ​
+
+사용자 프로필 > 자격 증명 메뉴를 추가하였습니다. 변경 전 : 사용자 프로필 > 계정 설정 > 액세스 키 변경 후 : 사용자 프로필 > 계정 설정 > 자격 증명 > IAM 액세스 키, S3 액세스 키
+변경 전 : 사용자 프로필 > 계정 설정 > 액세스 키
+변경 후 : 사용자 프로필 > 계정 설정 > 자격 증명 > IAM 액세스 키, S3 액세스 키
+S3 액세스 키 발급 기능을 추가하였습니다. 오브젝트 스토리지의 S3 API를 사용하기 위한 사용자 S3 액세스 키 발급 기능
+오브젝트 스토리지의 S3 API를 사용하기 위한 사용자 S3 액세스 키 발급 기능
+콘솔 세션 만료 기능을 추가하였습니다.
+
+#### 정책 변경 ​
+
+조직 소유자 이양 조건을 변경하였습니다. 조직 소유자 이양 시 대상의 핸드폰 번호 필수
+조직 소유자 이양 시 대상의 핸드폰 번호 필수
+
+### 2024.12.02 ​
+
+
+#### 기능 변경 ​
+
+아래 IAM 역할의 권한이 변경되었습니다. (* 지난 11월 15일 배포한 버전부터 적용되었습니다.) 프로젝트 멤버(Member) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 생성 및 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제 프로젝트 리더(Reader) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제
+프로젝트 멤버(Member) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 생성 및 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제
+프로젝트 멤버(Member) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 생성 및 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제
+프로젝트 리더(Reader) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제
+프로젝트 리더(Reader) ㄴ 변경 전 : IAM 서비스 > 프로젝트 관리 > 사용자 조회, 서비스 계정 조회 ㄴ 변경 후 : 프로젝트 관리 모든 권한 삭제
+
+### 2024.11.15 ​
+
+
+#### 기능 개선 ​
+
+편의성을 위해 IAM 프로젝트 관리 기능 위치를 변경했습니다. 변경 전 : IAM 서비스 > 프로젝트 관리 변경 후 : 대시 보드 > 프로젝트 정보 대시 보드 > [Project Management로 이동]
+변경 전 : IAM 서비스 > 프로젝트 관리
+변경 후 : 대시 보드 > 프로젝트 정보 대시 보드 > [Project Management로 이동]
+
+#### 전체 콘솔 UI 개편 ​
+
+IAM 서비스의 콘솔 UI를 개편했습니다. 프로젝트 메뉴 : 사용자/그룹 역할 관리 UI 개선, 사용자/그룹 목록 UI 개선 사용자 메뉴 : 사용자 등록 UI 개선, 조직/프로젝트 역할 관리 UI 개선, 사용자 그룹 관리 UI 개선, 액세스 키 목록 UI 개선 그룹 메뉴 : 그룹의 사용자/IAM 역할 관리 UI 개선, 그룹 목록 UI 개선 액세스 키 메뉴 : 액세스 키 목록 UI 개선 조직 관리 메뉴 : 조직 관리 서비스 UI 개선
+IAM 서비스의 콘솔 UI를 개편했습니다.
+프로젝트 메뉴 : 사용자/그룹 역할 관리 UI 개선, 사용자/그룹 목록 UI 개선
+사용자 메뉴 : 사용자 등록 UI 개선, 조직/프로젝트 역할 관리 UI 개선, 사용자 그룹 관리 UI 개선, 액세스 키 목록 UI 개선
+그룹 메뉴 : 그룹의 사용자/IAM 역할 관리 UI 개선, 그룹 목록 UI 개선
+액세스 키 메뉴 : 액세스 키 목록 UI 개선
+조직 관리 메뉴 : 조직 관리 서비스 UI 개선
+프로젝트 관리 사용자 메뉴 : 사용자 역할 할당/관리 UI 개선, 사용자 목록 UI 개선 그룹 메뉴 : 그룹에 프로젝트 역할 할당 기능, 그룹 목록 UI 개선 서비스 계정 메뉴 : 서비스 계정, 서비스 에이전트 메뉴 분리
+프로젝트 관리
+사용자 메뉴 : 사용자 역할 할당/관리 UI 개선, 사용자 목록 UI 개선
+그룹 메뉴 : 그룹에 프로젝트 역할 할당 기능, 그룹 목록 UI 개선
+서비스 계정 메뉴 : 서비스 계정, 서비스 에이전트 메뉴 분리
+
+### 2024.09.10 ​
+
+
+#### 기능 변경 ​
+
+빌링 뷰어 역할을 변경했습니다. 변경 전 : 역할 할당 시 선택한 프로젝트의 리소스 사용량 및 예상 요금 조회 권한 변경 후 : 전체 프로젝트의 리소스 사용량 및 예상 요금 조회 권한
+변경 전 : 역할 할당 시 선택한 프로젝트의 리소스 사용량 및 예상 요금 조회 권한
+변경 후 : 전체 프로젝트의 리소스 사용량 및 예상 요금 조회 권한
+
+### 2024.08.14 ​
+
+
+#### 정책 변경 ​
+
+사용자 액세스 키 쿼터를 변경했습니다. 변경 전: 제한 없음 변경 후: 사용자 계정별 프로젝트당 2개
+변경 전: 제한 없음
+변경 후: 사용자 계정별 프로젝트당 2개
+2024년 8월 14일부터 사용자 계정별 프로젝트당 액세스 키 발급이 2개로 제한됩니다. 이미 프로젝트당 2개 이상 발급하여 사용 중인 계정은, 기존 액세스 키를 2개 미만으로 삭제해야만 신규 키를 생성할 수 있습니다.
+
+#### 기능 추가 ​
+
+조직 전체 사용자 액세스 키 발급 현황 조회를 위해, IAM > 액세스 키 메뉴를 추가했습니다.
+사용자 액세스 키 발급 현황 조회를 위해, IAM > 사용자 > 사용자 상세 > 액세스 키 탭을 추가했습니다.
+
+### 2024.06.27 ​
+
+
+#### 기능 추가 ​
+
+사용자 콘솔에 마지막 로그인 일시를 추가했습니다. 추가 위치 프로필 "계정 정보" IAM 서비스 "프로젝트 구성원", "사용자", "그룹"
+추가 위치 프로필 "계정 정보" IAM 서비스 "프로젝트 구성원", "사용자", "그룹"
+프로필 "계정 정보"
+IAM 서비스 "프로젝트 구성원", "사용자", "그룹"
+
+### 2024.02.29 ​
+
+
+#### 기능 변경 ​
+
+API 엔드포인트 변경합니다. 기존 엔드포인트 종료일은 2024년 05월 02일 00시 00분입니다.
+엔드포인트가 기존 https://iam.kakaoi.io 에서 https://iam.kakaocloud.com 로 변경되었습니다. 2024년 2월 29일부터 2024년 5월 1일 동안에는 기존 & 변경 엔드포인트 URL을 모두 사용할 수 있습니다. 원활한 서비스 이용을 위하여, 해당 기간 내 신규 엔드포인트 URL로의 변경해 주시기 바랍니다. 본 문서에서는 신규 엔드포인트(2024년 4월 15일 업데이트)를 기준으로 안내합니다.
+https://iam.kakaoi.io
+https://iam.kakaocloud.com
+
+### 2024.01.11 ​
+
+
+#### 기능 추가 ​
+
+보안 기능을 추가했습니다. 계정 및 로그인 보안 강화를 위해 '비밀번호 만료 설정', '콘솔 접근 제어 설정' 신규 기능 추가 '조직 관리' 신규 메뉴를 통해 로그인 및 보안 등 조직 관련 설정 가능
+계정 및 로그인 보안 강화를 위해 '비밀번호 만료 설정', '콘솔 접근 제어 설정' 신규 기능 추가
+'조직 관리' 신규 메뉴를 통해 로그인 및 보안 등 조직 관련 설정 가능
+
+### 2023.11.09 ​
+
+
+#### 기능 추가 ​
+
+조직 레벨 신규 역할을 추가했습니다. 사용자의 권한에 맞게 더 세부적으로 클라우드 서비스를 관리할 수 있도록, '조직 리더 (Reader)' 신규 역할 추가 '조직 리더(Reader)'는 조직 및 프로젝트 정보 조회만 가능 (프로젝트 리소스 조회 및 관리는 불가) IAM 역할 문서 참고
+사용자의 권한에 맞게 더 세부적으로 클라우드 서비스를 관리할 수 있도록, '조직 리더 (Reader)' 신규 역할 추가
+'조직 리더(Reader)'는 조직 및 프로젝트 정보 조회만 가능 (프로젝트 리소스 조회 및 관리는 불가)
+IAM 역할 문서 참고
+
+### 2023.11.02 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 레벨 신규 역할을 추가했습니다. 사용자의 권한에 맞게 더 세부적으로 클라우드 리소스를 관리할 수 있도록, '프로젝트 리더 (Reader)' 신규 역할 추가 '프로젝트 리더(Reader)'는 프로젝트 내 권한이 있는 리소스 조회만 가능 (단, 상세 권한은 서비스별 다를 수 있습니다.) IAM 역할 문서 참고
+사용자의 권한에 맞게 더 세부적으로 클라우드 리소스를 관리할 수 있도록, '프로젝트 리더 (Reader)' 신규 역할 추가
+'프로젝트 리더(Reader)'는 프로젝트 내 권한이 있는 리소스 조회만 가능 (단, 상세 권한은 서비스별 다를 수 있습니다.)
+IAM 역할 문서 참고
+
+### 2023.05.31 ​
+
+
+#### 정책 변경 ​
+
+신규 정책 적용 이후 생성되는 조직 외 기존 조직에도 동일한 정책이 적용됩니다. 적용 서비스: IAM > 프로젝트 내용: 조직당 생성 가능한 프로젝트를 1개로 변경합니다. 단, 기존 조직에서 기존에 생성된 프로젝트 개수에는 영향을 미치지 않습니다.
+적용 서비스: IAM > 프로젝트
+내용: 조직당 생성 가능한 프로젝트를 1개로 변경합니다. 단, 기존 조직에서 기존에 생성된 프로젝트 개수에는 영향을 미치지 않습니다.
+
+### 2023.03.08 ​
+
+
+#### 기능 변경 ​
+
+엔드포인트를 변경했으며, 기존 엔드포인트 종료일은 2023년 06월 01일 00시 00분입니다.
+변경 엔드포인트 기존 엔드포인트 : https://identity.kr-central-1.kakaoi.io/v3 신규 엔드포인트 : https://iam.kakaocloud.com/identity/v3
+기존 엔드포인트 : https://identity.kr-central-1.kakaoi.io/v3
+https://identity.kr-central-1.kakaoi.io/v3
+신규 엔드포인트 : https://iam.kakaocloud.com/identity/v3
+https://iam.kakaocloud.com/identity/v3
+
+### 2022.06.30 ​
+
+
+#### 기능 추가 ​
+
+자격 증명 공급자 연동 기능을 업데이트하여, 카카오 i 클라우드 계정이 아닌 외부 자격 증명 공급자 계정으로 카카오 i 클라우드를 사용하실 수 있습니다.
+사용자 액세스키 생성 시 만료 기한을 설정할 수 있도록 개선했습니다.
+
+### 2021.09.23 ​
+
+
+#### 기능 추가 ​
+
+API를 호출하여 프로젝트 단위로 리소스를 이용하고 관리할 수 있는 계정인 '서비스 계정' 기능이 배포되었습니다.
+
+### 2021.08.17 ​
+
+
+#### 기능 추가 ​
+
+IAM 서비스에서 그룹에 그룹 구성원과 그룹 권한을 추가하고, 그룹 단위로 역할을 손쉽게 관리할 수 있는 '그룹' 기능이 배포되었습니다.
+2026.03.24
+2026.01.08
+2025.11.11
+2025.09.16
+2025.07.24
+2025.05.08
+2025.04.10
+2025.02.26
+2024.12.02
+2024.11.15
+2024.09.10
+2024.08.14
+2024.06.27
+2024.02.29
+2024.01.11
+2023.11.09
+2023.11.02
+2023.05.31
+2023.03.08
+2022.06.30
+2021.09.23
+2021.08.17
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/iam-troubleshoot
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+본 문서는 IAM 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+API 인증 토큰 발급 시, CORS 에러 발생
+API 인증 토큰 사용 가능 기간이 3시간으로 확인됨
+API 인증 토큰 발급 시 Timeout 발생
+"유효하지 않은 토큰 안내" 팝업 발생
+
+## API 인증 토큰 발급 시, CORS 에러 발생 ​
+
+클라이언트 애플리케이션이 API 인증 토큰을 발급받을 때, 아래와 같은 에러가 발생할 수 있습니다.
+Access to XMLHttpRequest at 'https://iam.kakaocloud.com/identity/v3/auth/tokens' from origin 'http://61.109.239.46' has been blocked by CORS policy: Response to preflight request doesn 't pass access control check: No ' Access-Control-Allow-Origin' header is present on the requested resource.
+Access to XMLHttpRequest at 'https://iam.kakaocloud.com/identity/v3/auth/tokens' from origin 'http://61.109.239.46' has been blocked by CORS policy: Response to preflight request doesn 't pass access control check: No ' Access-Control-Allow-Origin' header is present on the requested resource.
+위와 같은 CORS 에러가 발생하는 것은 카카오클라우드 IAM API에서 보안상 외부 출처(origin)로부터의 요청을 허용하지 않기 때문에 발생 합니다. 따라서, 사용자의 애플리케이션에서 API 인증 토큰을 발급받을 경우 카카오클라우드 IAM의 API endpoint로 요청이 이루어지고, 해당 요청이 IAM 서버의 origin과 다르기 때문에 CORS 에러가 발생하게됩니다.
+▶️ 문제 해결: 에러를 방지하기 위해 Proxy 서버 를 설정하여 클라이언트 요청을 받아 IAM 서버로 전달하여 응답(토큰 발급)을 받는 식의 우회가 가능합니다.
+
+## API 인증 토큰 사용 가능 기간이 3시간으로 확인됨 ​
+
+토큰 만료 기간이 3시간으로 확인이 되는 것은 issued_at 과 expired_at 시간이 UTC 기준 이기 때문입니다.
+issued_at
+expired_at
+▶️ 문제 해결: 토큰 발급 시 확인되는 issued_at 과 expired_at 시간에 +9H 를 하면 KST 기준으로 확인이 가능합니다. 이 경우, 토큰 사용 가능 기간은 12시간 입니다.
+issued_at
+expired_at
+
+## API 인증 토큰 발급 시 Timeout 발생 ​
+
+API 인증 토큰을 발급받는 특정 서버에서 API 인증 토큰 발급 시, Timeout이 발생하는 이유는 관련 서버에서 API 인증 토큰 발급에 대한 루프 코드 로 인해 해당 서버 IP에 대해 API 인증 토큰 발급이 차단될 수 있습니다.
+▶️ 문제 해결: 다음과 같이 서버 IP의 차단 여부를 확인하여 문제를 해결합니다.
+문제가 되는 서버와 같은 IP를 사용하는 하나의 서버를 추가로 생성하여 두 서버에서 인증 토큰 발급이 되는지 확인합니다.
+문제가 되는 서버와 같은 IP를 사용하는 하나의 서버를 추가로 생성하여 두 서버에서 인증 토큰 발급이 되는지 확인합니다.
+인증 토큰 발급이 이루어지지 않았다면, 아래의 두 가지 방법으로 해결할 수 있습니다. 새로운 IP 주소를 할당한 서버를 운영 카카오클라우드 문의를 통해 해당 서버 IP 차단에 대한 해제 요청
+인증 토큰 발급이 이루어지지 않았다면, 아래의 두 가지 방법으로 해결할 수 있습니다.
+새로운 IP 주소를 할당한 서버를 운영
+카카오클라우드 문의를 통해 해당 서버 IP 차단에 대한 해제 요청
+
+## "유효하지 않은 토큰 안내" 팝업 발생 ​
+
+콘솔에 로그인한 후, "유효하지 않은 토큰 안내" 팝업은 한 브라우저 내에서 로그인 정보가 중복될 경우 발생합니다.
+▶️ 문제 해결: 한 브라우저 내에서 하나의 로그인(IAM) 정보 만으로 로그인하면 문제가 해결됩니다.
+API 인증 토큰 발급 시, CORS 에러 발생
+API 인증 토큰 사용 가능 기간이 3시간으로 확인됨
+API 인증 토큰 발급 시 Timeout 발생
+"유효하지 않은 토큰 안내" 팝업 발생
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/iam/roles
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 IAM은 역할 기반 접근 제어(Role Based Access Control, RBAC) 방식을 사용하며, 조직, 프로젝트, 서비스 등 리소스의 관리 범위와 목적에 따라 역할을 구분합니다.
+각 역할은 적용 범위와 기능이 다르며, 여러 역할을 조합해 보다 세분화된 권한 제어가 가능합니다.
+주요 역할 유형에 따른 적용 범위와 권한은 다음 표와 같습니다.
+
+| 역할 유형 | 적용 범위 | 주요 권한 | 예시 |
+|---|---|---|---|
+| 조직 역할 | 조직 단위 | - 사용자·그룹·역할·프로젝트·빌링 관리 - IAM 조직 리소스 제어 | 조직 관리자, 빌링 관리자 등 |
+| 프로젝트 역할 | 프로젝트 단위 | - 프로젝트 내 리소스 생성·수정·삭제 - IAM 프로젝트 리소스 제어 | 프로젝트 관리자, 프로젝트 리더 등 |
+| 서비스 역할 | 특정 서비스 단위 | 서비스별 리소스 생성·관리·운영 | Object Storage 매니저, Pub/Sub 게시자 등 |
+
+사용자 또는 그룹에는 일반적으로 조직 또는 프로젝트 역할을 부여 하며, IAM 리소스 제어나 서비스별 접근이 필요한 경우에는 서비스 역할을 선택적으로 활용 합니다.
+역할은 필요에 따라 여러 개를 함께 부여할 수 있지만, 모든 역할은 최소 권한 원칙(Least Privilege) 에 따라 신중히 설정해야 합니다.
+
+### 역할별 권한 보기 ​
+
+각 역할 유형을 클릭하면 세부 권한과 구성 요소를 확인할 수 있습니다.
+
+## 📄️ 조직 역할
+
+조직 단위에서 리소스 및 사용자, 결제 관련 기능을 관리하기 위한 역할입니다.
+
+## 📄️ 프로젝트 역할
+
+프로젝트 리소스의 생성, 수정, 삭제, 조회 등 실질적인 작업 권한을 정의합니다.
+
+## 📄️ 서비스 역할
+
+특정 서비스 리소스의 사용 또는 관리 권한을 세분화하여 제어하기 위한 역할입니다.
+역할별 권한 보기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/how-to-guides
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Monitoring 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 모니터링 에이전트 설치
+
+모니터링 에이전트를 설치하는 방법을 Linux와 Windows 환경에서 설명합니다.
+
+## 📄️ 대시보드 활용
+
+컴퓨팅 자원 상태를 실시간 모니터링할 수 있는 대시보드의 활용법을 설명합니다.
+
+## 📄️ 탐색기 사용하기
+
+모니터링 서비스에서 수집한 메트릭과 로그를 서비스별 리소스 단위로 조회하는 탐색기의 사용 방법을 설명합니다.
+
+## 📄️ Metric Export 사용
+
+메트릭 익스포트를 사용하는 방법을 설명합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-main
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 사용자는 대시보드에서 웹 환경의 주요 리소스에 대한 실시간 모니터링이 가능하며, 메트릭 및 로그 정책을 설정하여 체계적인 모니터링 시스템을 구성할 수 있습니다. Monitoring 서비스를 통해 사용자의 리소스를 유연하고 효율적으로 관리할 수 있으며, 관리에 필요한 리소스를 최소화할 수 있습니다.
+
+### Monitoring 서비스 시스템 아키텍처 ​
+
+Monitoring 서비스는 사용자가 자원 운영 관리에 필요한 여러 정책을 설정하여 원하는 데이터를 수집할 수 있도록 구성되어 있습니다. 미리 등록된 정책에 따라 장애가 발생할 시, 알림을 통해 모니터링 이력을 조회하며 장애를 빠르게 확인할 수 있습니다.
+모니터링 서비스 아키텍처
+
+## Monitoring 주요 개념 ​
+
+
+### 대시보드 ​
+
+모니터링 서비스에서 대시보드를 이용하여 주요 리소스에 대한 실시간 모니터링이 가능합니다. 제공되는 대시보드 유형은 아래와 같습니다.
+
+| 유형 | 설명 |
+|---|---|
+| 기본 대시보드 | 카카오클라우드에서 기본 제공하는 대시보드로 별도의 설정 없이 바로 사용 중인 리소스의 메트릭 조회 - 기본 대시보드는 사용자의 임의 수정이 불가능하며 제공되는 메트릭의 조회만 가능 |
+| 커스텀 대시보드 | 사용자가 직접 대시보드를 생성하고 대시보드 내에 원하는 서비스의 메트릭 차트를 추가하여 관리할 수 있는 대시보드 - 모니터링 지원  메트릭은 모니터링 메트릭 참고 |
+
+카카오클라우드 모니터링 에이전트를 설치해야 메트릭을 확인할 수 있습니다. 설치 방법은 에이전트 설치하기 를 참고하시기 바랍니다.
+
+### 대시보드 지원 서비스 ​
+
+
+| 구분 | 서비스 상세 |
+|---|---|
+| 대시보드 지원 서비스 | Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server ㄴ GPU Networking ㄴ Load Balancing Container Pack ㄴ Kubernetes Engine(기본) Data Store ㄴ MySQL ㄴ PostgreSQL ㄴ MemStore Analytics ㄴ Pub/Sub |
+
+Monitoring 서비스 시스템 아키텍처
+Monitoring 주요 개념 대시보드 대시보드 지원 서비스
+대시보드
+대시보드 지원 서비스
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-metric
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring 서비스에서 제공하는 메트릭을 설명합니다.
+
+## Virtual Machine, GPU, Bare Metal Server 메트릭 ​
+
+Virtual Machine, GPU, Bare Metal Server에서 공통으로 수집되는 주요 시스템 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+GPU 전용 메트릭
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % | 주요 성능 지표 |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % | 사용자 프로세스 부하 확인 |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % | 커널/시스템 부하 확인 |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % | I/O 병목 현상 진단 |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % | 코어별 부하 불균형 확인 |
+| mem_usage | 자체 메모리 사용률 | % | 주요 메모리 경고 |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) | 절대적 사용량 확인 |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) | 리눅스 전용 |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) | 리눅스 전용 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| disk_used_percent | 디스크 사용률 | % | 용량 부족 알림 |
+| disk_used | 디스크 사용량 | bytes(IEC) | 절대적 사용량 확인 |
+| disk_read_bytes_persec | 초당 디스크 읽기 바이트 크기 | bytes/s(IEC) | 읽기 성능 지연 확인 |
+| disk_write_bytes_persec | 초당 디스크 쓰기 바이트 크기 | bytes/s(IEC) | 쓰기 성능 지연 확인 |
+| disk_read_iops | 초당 디스크 읽기 작업 완료 개수 (IOPS) | count/s | 읽기 작업 부하 확인 |
+| disk_write_iops | 초당 디스크 쓰기 작업 완료 개수 (IOPS) | count/s | 쓰기 작업 부하 확인 |
+| disk_inodes_usage | 디스크 inode 사용률 | % | inode 부족 경고 (Linux) |
+| disk_free | 사용 가능한 디스크 용량 | bytes(IEC) | 참고 정보 |
+| disk_total | 디스크 총 용량 | bytes(IEC) | 참고 정보 |
+| disk_inodes_free | 사용 가능한 inode 개수 | count | 참고 정보 |
+| disk_inodes_total | 총 예약된 inode 개수 | count | 참고 정보 |
+| disk_inodes_used | inode 사용량 | count | 참고 정보 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) | 수신 트래픽 확인 |
+| network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) | 송신 트래픽 확인 |
+| network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s | 수신 패킷 부하 확인 |
+| network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s | 송신 패킷 부하 확인 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| nvidia_smi_utilization_gpu | GPU 코어별 사용률 | % | GPU 성능 부하 확인 |
+| nvidia_smi_memory_used | GPU 코어별 사용 중인 메모리 | MiB(IEC) | GPU 메모리 사용량 확인 |
+| nvidia_smi_memory_free | GPU 코어별 사용 가능한 메모리 | MiB(IEC) | GPU 메모리 여유분 확인 |
+| nvidia_smi_memory_total | GPU 코어별 전체 메모리 | MiB(IEC) | GPU 메모리 총량 확인 |
+| nvidia_smi_power_draw | GPU 코어별 전력 소비량 | watt | 전력 사용량 확인 |
+
+
+#### Virtual Machine, 버스터블 인스턴스 전용 메트릭 ​
+
+다음 메트릭은 버스터블(Burstable) 옵션이 적용된 t1i 계열 인스턴스 에서만 수집됩니다. (단, t1i.medium.dns.default 타입은 제외)
+t1i.medium.dns.default
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_credit_usage | 누적된 CPU 크레딧 사용량으로 기준 성능을 초과하여 CPU를 사용할 때 소비된 크레딧 양 | count |
+| cpu_credit_balance | 현재 인스턴스에 남아 있는 CPU 크레딧 잔여량으로 기준 성능 이하로 동작할 때 적립 | count |
+
+mem_buffered , mem_cached , disk_inodes_usage 메트릭은 Linux OS 가 설치된 서버에서만 수집 및 제공됩니다.
+mem_buffered
+mem_cached
+disk_inodes_usage
+nvidia_smi 메트릭은 GPU가 장착된 서버 에서만 수집됩니다.
+nvidia_smi
+GPU 인스턴스 라이브러리 호환성: GPU 인스턴스의 NVIDIA 라이브러리를 업데이트할 경우, CUDA 버전과 호환성 을 반드시 확인하세요. 호환되지 않는 경우, 모니터링 에이전트가 NVIDIA 메트릭을 수집하지 못할 수 있습니다.
+네트워크 알림 정책: network_rx_bytes_persec 메트릭으로 Alert Center 알림 정책을 설정할 경우, 해당 정책은 모든 네트워크 인터페이스 에 적용됩니다. 다중 NIC 인스턴스에서는 연결된 인터페이스 중 하나라도 설정된 임계치를 초과하면 알림이 발송됩니다.
+network_rx_bytes_persec
+
+## Libvirt 메트릭 ​
+
+Libvirt 환경에서 수집되는 가상화 기반 서버의 주요 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_info_cpu_time_seconds_total | 사용한 총 CPU 시간 | count |
+| libvirt_domain_info_virtual_cpus | CPU 코어 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_block_stats_read_bytes_total | 디스크에서 읽은 바이트 크기 | bytes(IEC) |
+| libvirt_domain_block_stats_write_bytes_total | 디스크에서 쓴 바이트 크기 | bytes(IEC) |
+| libvirt_domain_block_stats_read_requests_total | 디스크 읽기 요청의 횟수 | count |
+| libvirt_domain_block_stats_write_requests_total | 디스크 쓰기 요청의 횟수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_interface_stats_receive_bytes_total | 네트워크 인터페이스에서 받은 바이트 크기 | bytes(IEC) |
+| libvirt_domain_interface_stats_transmit_bytes_total | 네트워크 인터페이스에서 보낸 바이트 크기 | bytes(IEC) |
+| libvirt_domain_interface_stats_receive_packets_total | 네트워크 인터페이스에서 받은 패킷 개수 | packets |
+| libvirt_domain_interface_stats_transmit_packets_total | 네트워크 인터페이스에서 보낸 패킷 개수 | packets |
+| libvirt_domain_interface_stats_receive_drops_total | 네트워크 인터페이스에서 받지 못한 패킷 개수 | packets |
+
+
+## Kubernetes Engine 메트릭 ​
+
+Kubernetes Engine 환경에서 수집되는 주요 클러스터, 노드, 파드 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+클러스터
+노드
+파드 및 컨테이너
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cluster_autoscaler_node_group_min_count | 노드 그룹의 오토스케일링 시 최소 노드 개수 | count |
+| cluster_autoscaler_node_group_max_count | 노드 그룹의 오토스케일링 시 최대 노드 개수 | count |
+| cluster_autoscaler_node_group_target_count | 노드 그룹의 오토스케일링 시 목표 노드 개수 | count |
+| node_count | 현재 노드 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| kube_node_status_allocatable | 노드에서 파드에 할당할 수 있는 리소스 양 | none |
+| kube_node_status_capacity | 노드의 총 리소스 용량 | none |
+| node_cpu_seconds_total | 노드 CPU의 각 모드에서 사용된 시간 | count |
+| node_filesystem_avail_bytes | 노드의 루트가 아닌 사용자 영역에서 사용 가능한 파일 시스템 용량 | bytes(IEC) |
+| node_filesystem_size_bytes | 노드 파일 시스템의 전체 크기 | bytes(IEC) |
+| node_memory_Active_bytes | 현재 사용 중이나 재사용 가능한 메모리(Active) | bytes(IEC) |
+| node_memory_Buffers_bytes | 커널의 디스크 I/O 버퍼로 사용되는 메모리 | bytes(IEC) |
+| node_memory_Cached_bytes | 파일 시스템 캐시로 사용되는 메모리 | bytes(IEC) |
+| node_memory_MemAvailable_bytes | 새 프로세스를 위해 즉시 사용 가능한 메모리 | bytes(IEC) |
+| node_memory_MemFree_bytes | 현재 아무런 할당도 되지 않은 메모리 | bytes(IEC) |
+| node_memory_MemTotal_bytes | 노드의 총 메모리 용량 | bytes(IEC) |
+| node_memory_SReclaimable_bytes | Slab 캐시 중 회수 가능한(Reclaimable) 메모리 | bytes(IEC) |
+| node_network_receive_bytes_total | 네트워크 디바이스에서 받은 총 바이트 크기 | bytes(IEC) |
+| node_network_transmit_bytes_total | 네트워크 디바이스에서 보낸 총 바이트 크기 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| kube_pod_container_info | 파드 내 컨테이너의 기본 정보 | none |
+| kube_pod_container_resource_limits | 컨테이너가 요청한 리소스의 상한값(Limit) | none |
+| kube_pod_container_resource_requests | 컨테이너가 요청한 리소스 값(Request) | none |
+| kube_pod_container_status_running | 컨테이너의 상태가 Running인지 여부 | count |
+| kube_pod_container_status_terminated | 컨테이너의 상태가 Terminated인지 여부 | count |
+| kube_pod_info | 파드에 대한 정보 | none |
+| container_cpu_usage_seconds_total | 컨테이너가 소비한 총 CPU 시간 | count |
+| container_memory_working_set_bytes | 컨테이너가 사용 중이며 OS가 회수할 수 없는 메모리 | bytes(IEC) |
+| container_network_receive_bytes_total | 컨테이너가 받은 네트워크 총 바이트 | bytes(IEC) |
+| container_network_transmit_bytes_total | 컨테이너가 보낸 네트워크 총 바이트 | bytes(IEC) |
+
+
+## Load Balancing 메트릭 ​
+
+Load Balancer 리소스의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| lb_bytes_in_persec | 초당 인바운드 트래픽(수신 바이트) | bytes/s(IEC) |
+| lb_bytes_out_persec | 초당 아웃바운드 트래픽(송신 바이트) | bytes/s(IEC) |
+| lb_connections_persec | 초당 연결(Connection) 생성 개수 | count/s |
+| lb_current_connections | 현재 유지 중인 연결(Connection) 개수 | count |
+| lb_healthy_host_count | 연결 가능한 정상 대상(Healthy host) 개수 | count |
+| lb_unhealthy_host_count | 연결 불가능한 비정상 대상(Unhealthy host) 개수 | count |
+
+
+## MySQL 메트릭 ​
+
+MySQL 인스턴스의 스토리지, 네트워크, 쿼리, 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+쿼리
+커넥션 및 인스턴스
+InnoDB 및 Binary Log
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % |
+| mem_swap_total | 총 swap 메모리 | bytes(IEC) |
+| mem_swap_cached | 캐시된 swap 메모리 | bytes(IEC) |
+| mem_swap_free | 사용 가능한 swap 메모리 | bytes(IEC) |
+| mem_usage | 자체 메모리 사용률 | % |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_logstorage_disk_write_bytes_persec | 로그 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| mysql_defaultstorage_disk_write_bytes_persec | 기본 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| mysql_logstorage_disk_read_bytes_persec | 로그 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| mysql_defaultstorage_disk_read_bytes_persec | 기본 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| mysql_logstorage_disk_write_iops | 로그 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| mysql_defaultstorage_disk_write_iops | 기본 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| mysql_logstorage_disk_read_iops | 로그 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| mysql_defaultstorage_disk_read_iops | 기본 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| mysql_logstorage_disk_used | 로그 스토리지 디스크 사용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_used | 기본 스토리지 디스크 사용량 | bytes(IEC) |
+| mysql_logstorage_disk_used_percent | 로그 스토리지 디스크 사용률 | % |
+| mysql_defaultstorage_disk_used_percent | 기본 스토리지 디스크 사용률 | % |
+| mysql_logstorage_disk_inodes_usage | 로그 스토리지 inode 사용률 | % |
+| mysql_defaultstorage_disk_inodes_usage | 기본 스토리지 inode 사용률 | % |
+| mysql_defaultstorage_disk_free | 기본 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_total | 기본 스토리지 디스크 총 용량 | bytes(IEC) |
+| mysql_logstorage_disk_free | 로그 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| mysql_logstorage_disk_total | 로그 스토리지 디스크 총 용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_inodes_free | 기본 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| mysql_defaultstorage_disk_inodes_total | 기본 스토리지 디스크 총 inode 개수 | count |
+| mysql_defaultstorage_disk_inodes_used | 기본 스토리지 디스크 inode 사용량 | count |
+| mysql_logstorage_disk_inodes_free | 로그 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| mysql_logstorage_disk_inodes_total | 로그 스토리지 디스크 총 inode 개수 | count |
+| mysql_logstorage_disk_inodes_used | 로그 스토리지 디스크 inode 사용량 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) |
+| mysql_network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) |
+| mysql_network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| mysql_network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_query_persec | 초당 쿼리 횟수(QPS) | count/s |
+| mysql_com_insert_count | 5분 동안 INSERT 쿼리 수행 횟수 | count |
+| mysql_com_select_count | 5분 동안 SELECT 쿼리 수행 횟수 | count |
+| mysql_com_update_count | 5분 동안 UPDATE 쿼리 수행 횟수 | count |
+| mysql_com_delete_count | 5분 동안 DELETE 쿼리 수행 횟수 | count |
+| mysql_com_commit_count | 5분 동안 COMMIT 쿼리 수행 횟수 | count |
+| mysql_slow_query_count | 5분 동안 수행된 Slow 쿼리 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_connections_count | 현재 연결된 Connection 개수 | count |
+| mysql_max_connections_count | 최대 연결 가능한 Connection 개수 | count |
+| mysql_connection_usage_percent | 최대 Connection 대비 현재 연결 비율 | % |
+| mysql_instance_status | 인스턴스 상태 | count |
+| mysql_instance_group_status | 인스턴스 그룹 상태 | count |
+| mysql_uptime | 인스턴스 기동 시간 | duration |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_innodb_buffer_pool_read_requests | Buffer Pool 전체 요청 개수 | count |
+| mysql_innodb_buffer_pool_reads | Buffer Pool에서 직접 읽은 요청 개수 | count |
+| mysql_innodb_buffer_cache_hit_ratio | Buffer Pool 캐시 히트율 | % |
+| mysql_innodb_row_lock_current_waits | 현재 행 잠금 개수 | count |
+| mysql_innodb_row_lock_time | 행 잠금에 소요된 시간 | milliseconds |
+| mysql_binary_size_bytes | Binary Log 크기 | bytes(IEC) |
+| mysql_binary_files_count | Binary Log 파일 개수 | count |
+| mysql_variables_max_binlog_size | 최대 Binary Log 크기 설정값 | bytes(IEC) |
+| mysql_replication_lag | Binlog 복제 지연 시간 | seconds |
+
+
+## PostgreSQL 메트릭 ​
+
+PostgreSQL 인스턴스의 디스크, 네트워크, 연결, 트랜잭션 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+커넥션 및 운영 상태
+복제 및 트랜잭션
+워크로드 및 성능
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % |
+| mem_swap_total | 총 swap 메모리 | bytes(IEC) |
+| mem_swap_cached | 캐시된 swap 메모리 | bytes(IEC) |
+| mem_swap_free | 사용 가능한 swap 메모리 | bytes(IEC) |
+| mem_usage | 자체 메모리 사용률 | % |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_defaultstorage_disk_read_bytes_persec | 기본 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| pg_defaultstorage_disk_write_bytes_persec | 기본 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| pg_defaultstorage_disk_read_iops | 기본 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| pg_defaultstorage_disk_write_iops | 기본 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| pg_defaultstorage_disk_used | 기본 스토리지 디스크 사용량 | bytes(IEC) |
+| pg_defaultstorage_disk_used_percent | 기본 스토리지 디스크 사용률 | % |
+| pg_defaultstorage_disk_inodes_usage | 기본 스토리지 inode 사용률 | % |
+| pg_defaultstorage_disk_free | 기본 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| pg_defaultstorage_disk_total | 기본 스토리지 디스크 총 용량 | bytes(IEC) |
+| pg_defaultstorage_disk_inodes_free | 기본 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| pg_defaultstorage_disk_inodes_total | 기본 스토리지 디스크 총 inode 개수 | count |
+| pg_defaultstorage_disk_inodes_used | 기본 스토리지 디스크 inode 사용량 | count |
+| pg_logstorage_disk_read_bytes_persec | 로그 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| pg_logstorage_disk_write_bytes_persec | 로그 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| pg_logstorage_disk_read_iops | 로그 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| pg_logstorage_disk_write_iops | 로그 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| pg_logstorage_disk_used | 로그 스토리지 디스크 사용량 | bytes(IEC) |
+| pg_logstorage_disk_used_percent | 로그 스토리지 디스크 사용률 | % |
+| pg_logstorage_disk_inodes_usage | 로그 스토리지 inode 사용률 | % |
+| pg_logstorage_disk_free | 로그 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| pg_logstorage_disk_total | 로그 스토리지 디스크 총 용량 | bytes(IEC) |
+| pg_logstorage_disk_inodes_free | 로그 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| pg_logstorage_disk_inodes_total | 로그 스토리지 디스크 총 inode 개수 | count |
+| pg_logstorage_disk_inodes_used | 로그 스토리지 디스크 inode 사용량 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) |
+| pg_network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) |
+| pg_network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| pg_network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_active_time | 활성 세션이 소비한 총 시간 | ms |
+| pg_idle_in_transaction_time | Idle in transaction 상태 유지 시간 | ms |
+| pg_numbackends | 현재 연결된 백엔드 프로세스 개수 | count |
+| pg_session_time | 세션이 활성 상태로 유지된 시간 | ms |
+| pg_sessions | 전체 세션 개수 | count |
+| pg_sessions_abandoned | 세션 강제 종료(연결 끊김) 개수 | count |
+| pg_sessions_fatal | 치명적 오류로 종료된 세션 개수 | count |
+| pg_sessions_killed | 운영자에 의해 강제 종료된 세션 개수 | count |
+| pg_datid | 데이터베이스 식별자(ID) | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_replication_lag | 복제 지연 시간 | seconds |
+| pg_xact_commit | 커밋된 트랜잭션 개수 | count |
+| pg_xact_rollback | 롤백된 트랜잭션 개수 | count |
+| pg_xid_age | 특정 프로세스의 XID Age | count |
+| pg_xid_age_per_group | 인스턴스 그룹별 XID Age | count |
+| pg_temp_file_ratio | 전체 트랜잭션 대비 임시 파일 비율 | % |
+| pg_temp_file_ratio_per_group | 인스턴스 그룹별 임시 파일 비율 | % |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_blk_read_time | 블록 읽기 시간 | ms |
+| pg_blk_write_time | 블록 쓰기 시간 | ms |
+| pg_blks_hit | 캐시에서 읽은 블록 개수 | count |
+| pg_blks_read | 디스크에서 읽은 블록 개수 | count |
+| pg_buffer_hit_ratio | Buffer hit 비율 | % |
+| pg_checksum_failures | 체크섬 오류 개수 | count |
+| pg_conflicts | 트랜잭션 충돌 개수 | count |
+| pg_deadlocks | 발생한 데드락 개수 | count |
+| pg_temp_bytes | 임시 파일 사용량 | bytes |
+| pg_temp_files | 생성된 임시 파일 개수 | count |
+| pg_tup_deleted | 삭제된 튜플 개수 | count |
+| pg_tup_fetched | 검색된 튜플 개수 | count |
+| pg_tup_inserted | 삽입된 튜플 개수 | count |
+| pg_tup_returned | 반환된 튜플 개수 | count |
+| pg_tup_updated | 업데이트된 튜플 개수 | count |
+
+
+## MemStore 메트릭 ​
+
+MemStore 인스턴스의 메모리, 네트워크, 복제 및 CPU 사용 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+커넥션 및 동작 상태
+키 및 캐시 통계
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_used_cpu_sys | 전체 시스템 CPU 사용량 | count |
+| memstore_used_cpu_sys_main_thread | 메인 스레드의 시스템 CPU 사용량 | count |
+| memstore_used_cpu_user | 전체 사용자 CPU 사용량 | count |
+| memstore_used_cpu_user_main_thread | 메인 스레드의 사용자 CPU 사용량 | count |
+| memstore_memory_usage | 전체 메모리 사용률 | % |
+| memstore_used_memory | MemStore가 사용 중인 메모리 크기 | bytes(IEC) |
+| memstore_used_memory_peak | 사용한 최대 메모리 | bytes(IEC) |
+| memstore_used_memory_peak_perc | 전체 메모리 대비 최대 사용 비율 | % |
+| memstore_used_memory_dataset | 실제 데이터 저장에 사용되는 메모리 | bytes(IEC) |
+| memstore_used_memory_dataset_perc | 실제 데이터 저장에 사용되는 메모리 비율 | % |
+| memstore_used_memory_overhead | 내부 데이터 구조 관리에 필요한 오버헤드 메모리 | bytes(IEC) |
+| memstore_used_memory_lua | Lua 스크립트 실행에 사용된 메모리 | bytes(IEC) |
+| memstore_allocator_allocated | allocator에 할당된 메모리(내부 단편 포함) | bytes(IEC) |
+| memstore_allocator_active | allocator에서 활성화된 메모리(외부 단편 포함) | bytes(IEC) |
+| memstore_allocator_resident | allocator에서 관리 중인 resident 메모리 | bytes(IEC) |
+| memstore_allocator_rss_bytes | RSS 메모리 크기 | bytes(IEC) |
+| memstore_allocator_frag_bytes | 활성 메모리와 할당 메모리의 차이 | bytes(IEC) |
+| memstore_allocator_frag_ratio | 활성 메모리 대비 할당 메모리 비율 | % |
+| memstore_allocator_rss_ratio | resident 메모리 대비 활성 메모리 비율 | % |
+| memstore_mem_fragmentation_bytes | 사용 중인 resident 메모리와 할당된 메모리의 차이 | bytes(IEC) |
+| memstore_mem_fragmentation_ratio | 사용 중인 resident 메모리와 할당된 메모리의 비율 | % |
+| memstore_rss_overhead_bytes | 프로세스 RSS와 allocator resident 메모리 간의 차이 | bytes(IEC) |
+| memstore_rss_overhead_ratio | 프로세스 RSS와 allocator resident 메모리 간의 비율 | % |
+| memstore_total_system_memory | MemStore가 실행 중인 시스템의 총 메모리 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| disk_free | 사용 가능한 디스크 용량 | bytes(IEC) |
+| disk_total | 디스크 총 용량 | bytes(IEC) |
+| disk_inodes_free | 사용 가능한 inode 개수 | count |
+| disk_inodes_used | 사용 중인 inode 개수 | count |
+| disk_inodes_total | 총 예약된 inode 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_instantaneous_input_kbps | 초당 네트워크 입력 속도 | KiB/s(IEC) |
+| memstore_instantaneous_output_kbps | 초당 네트워크 출력 속도 | KiB/s(IEC) |
+| memstore_total_net_input_bytes | 총 네트워크 입력 바이트 | bytes(IEC) |
+| memstore_total_net_output_bytes | 총 네트워크 출력 바이트 | bytes(IEC) |
+| memstore_instantaneous_ops_per_sec | 초당 처리 명령어 개수 | count |
+| memstore_cmdstat_calls_persec | 초당 명령어 호출 횟수 | count/s |
+| memstore_total_commands_processed | 총 처리된 명령어 개수 | count |
+| memstore_total_reads_processed | 총 처리된 읽기 이벤트 개수 | count |
+| memstore_total_writes_processed | 총 처리된 쓰기 이벤트 개수 | count |
+| memstore_io_threaded_reads_processed | I/O 스레드에서 처리된 읽기 이벤트 개수 | count |
+| memstore_io_threaded_writes_processed | I/O 스레드에서 처리된 쓰기 이벤트 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_connected_slaves | 연결된 Replica 개수 | count |
+| memstore_replication_lag | Replica 복제 지연 시간 | s |
+| memstore_clients | 현재 연결된 클라이언트 개수 | count |
+| memstore_maxclients | 최대로 연결 가능한 클라이언트 개수 | count |
+| memstore_client_ratio | 최대 클라이언트 대비 현재 연결 비율 | % |
+| memstore_blocked_clients | 대기 중인 클라이언트 개수(BLPOP 등 명령) | count |
+| memstore_cluster_connections | 클러스터 버스에서 사용 중인 소켓 개수 | count |
+| memstore_cluster_enabled | 클러스터 활성화 여부 | count |
+| memstore_pubsub_channels | Pub/Sub 채널 개수 | count |
+| memstore_pubsub_patterns | Pub/Sub 패턴 개수 | count |
+| memstore_uptime | 인스턴스 기동 시간 | s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_keyspace_hits | 적중한 키 개수 | count |
+| memstore_keyspace_misses | 적중 실패한 키 개수 | count |
+| memstore_keyspace_hitrate_percent | 키 적중률 | % |
+| memstore_evicted_keys | 메모리 제한으로 인해 제거된 키 개수 | count |
+| memstore_expired_keys | 만료된 키 개수 | count |
+| memstore_lazyfree_pending_objects | Lazy Free로 해제 대기 중인 객체 개수 | count |
+| memstore_lazyfreed_objects | Lazy Free로 해제된 객체 개수 | count |
+| memstore_lru_clock | LRU 알고리즘을 위한 내부 시간 값 | count |
+
+
+#### 버스터블 인스턴스 전용 메트릭 ​
+
+다음 메트릭은 버스터블(Burstable) 옵션이 적용된 t1i 계열 인스턴스 에서만 수집됩니다.
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_credit_usage | CPU 크레딧 사용량 | count |
+| cpu_credit_balance | CPU 크레딧 잔여량 | count |
+
+
+## Hadoop Eco 메트릭 ​
+
+Hadoop Eco 환경에서 수집되는 주요 HBase, HDFS, Yarn, Kafka 관련 시스템 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+HBase
+HDFS (NameNode)
+Yarn (ResourceManager)
+Kafka
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| HBase_Master_JvmMetrics_MemHeapMaxM | HBase Master의 JVM 힙 메모리 최대 크기 | MB |
+| HBase_Master_JvmMetrics_MemHeapUsedM | HBase Master의 JVM 힙 메모리 사용량 | MB |
+| HBase_Master_Server_numDeadRegionServers | 비정상(Dead) 상태의 Region Server 개수 | count |
+| HBase_Master_Server_numRegionServers | 정상 동작 중인 Region Server 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Hadoop_NameNode_JvmMetrics_MemHeapMaxM | NameNode의 JVM 힙 메모리 최대 크기 | MB |
+| Hadoop_NameNode_JvmMetrics_MemHeapUsedM | NameNode의 JVM 힙 메모리 사용량 | MB |
+| Hadoop_NameNode_JvmMetrics_GcTimeMillis | NameNode JVM의 GC 수행 시간 | count |
+| Hadoop_NameNode_FSNamesystem_CapacityTotal | 전체 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityUsed | 사용 중인 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityRemaining | 사용 가능한 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityUsedNonDFS | 비 DFS 용도로 사용된 용량 (로그, 임시 파일 등) | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_NumLiveDataNodes | 정상 동작 중인 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_NumDeadDataNodes | 비정상(Dead) 상태의 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_StaleDataNodes | 상태 갱신이 중단된 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_CorruptBlocks | 손상된 블록 개수 | count |
+| Hadoop_NameNode_FSNamesystem_TotalLoad | 현재 활성 클라이언트 연결 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Yarn_ResourceManager_JvmMetrics_MemHeapMaxM | ResourceManager의 JVM 힙 메모리 최대 크기 | MB |
+| Yarn_ResourceManager_JvmMetrics_MemHeapUsedM | ResourceManager의 JVM 힙 메모리 사용량 | MB |
+| Yarn_ResourceManager_JvmMetrics_GcTimeMillis | ResourceManager JVM의 GC 수행 시간 | count |
+| Yarn_ResourceManager_ClusterMetrics_NumActiveNMs | 정상 동작 중인 NodeManager 개수 | count |
+| Yarn_ResourceManager_ClusterMetrics_NumShutdownNMs | 종료된 NodeManager 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AllocatedMB | 할당된 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_AvailableMB | 사용 가능한 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_PendingMB | 대기 중인 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_ReservedMB | 예약된 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_AllocatedVCores | 할당된 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AvailableVCores | 사용 가능한 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_PendingVCores | 대기 중인 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_ReservedVCores | 예약된 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsRunning | 실행 중인 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsCompleted | 완료된 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsFailed | 실패한 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsKilled | 강제 종료된 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsPending | 대기 중인 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsSubmitted | 제출된 애플리케이션 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Kafka_Active_Brokers | 정상 동작 중인 Broker 개수 | count |
+| Kafka_Total_Topics | 운영 중인 Topic 개수 | count |
+
+
+## Pub/Sub 메트릭 ​
+
+Pub/Sub 서비스의 메시지 게시, 구독, 저장 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기
+Alert Center : 메트릭 기반 알림 정책 설정
+게시 (Publish)
+구독 (Subscription)
+저장 및 내보내기 (Export)
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_published_message_count_persec | 초당 게시된 메시지 개수 | count/s |
+| pubsub_published_message_bytes_persec | 초당 게시된 메시지 크기 | bytes/s(IEC) |
+| pubsub_publish_request_count_persec | 초당 게시 요청 횟수 | count/s |
+| pubsub_topic_storage_used_bytes | 토픽 보관 데이터 크기 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_ack_request_count_persec | 초당 확인 처리 요청 횟수 | count/s |
+| pubsub_acked_message_count_persec | 초당 확인 처리된 메시지 개수 | count/s |
+| pubsub_unprocessed_messages | 미처리 메시지 개수 | count |
+| pubsub_pulled_message_count_persec | 초당 pull된 메시지 개수 | count/s |
+| pubsub_streaming_pull_response_count_persec | 초당 streaming pull 응답 개수 | count/s |
+| pubsub_push_count_persec | 초당 push 요청 횟수 | count/s |
+| pubsub_pushed_message_count_persec | 초당 push된 메시지 개수 | count/s |
+| pubsub_subscription_storage_used_bytes | 서브스크립션 보관 데이터 크기 | bytes(IEC) |
+| pubsub_seek_request_count_permin | 분당 시점 되돌리기(Seek) 요청 횟수 | count/m |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_exported_message_count_persec | 초당 Object Storage로 내보내기 처리된 메시지 개수 | count/s |
+| pubsub_object_storage_api_call_count_permin | 분당 Object Storage API 호출 횟수 | count/m |
+
+
+## Direct Connect 메트릭 ​
+
+Direct Connect 가상 인터페이스의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| dx_virtual_interface_input_bits_persec | 가상 인터페이스에서 받은 초당 비트 크기 | bits/s(IEC) |
+| dx_virtual_interface_output_bits_persec | 가상 인터페이스에서 보낸 초당 비트 크기 | bits/s(IEC) |
+| dx_virtual_interface_input_packets_persec | 가상 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| dx_virtual_interface_output_packets_persec | 가상 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| dx_virtual_intrerface_state | Direct Connect 가상 인터페이스의 연결 상태 | count |
+
+
+## Gateway Load Balancer 메트릭 ​
+
+Gateway Load Balancer 및 Endpoint Service의 트래픽, 연결, 헬스 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션 및 엔드포인트
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| gwlb_bytes_in_persec | Gateway Load Balancer에서 받은 총 바이트 | bytes/s(IEC) |
+| gwlb_bytes_out_persec | Gateway Load Balancer에서 보낸 총 바이트 | bytes/s(IEC) |
+| eps_bytes_in_persec | Endpoint Service에서 받은 총 바이트 | bytes/s(IEC) |
+| eps_bytes_out_persec | Endpoint Service에서 보낸 총 바이트 | bytes/s(IEC) |
+| ep_bytes_in_persec | Endpoint에서 받은 총 바이트 | bytes/s(IEC) |
+| ep_bytes_out_persec | Endpoint에서 보낸 총 바이트 | bytes/s(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| gwlb_current_connections | Gateway Load Balancer의 활성 connection 개수 | count |
+| gwlb_healthy_host_count | Gateway Load Balancer의 healthy 상태 host 개수 | count |
+| gwlb_unhealthy_host_count | Gateway Load Balancer의 unhealthy 상태 host 개수 | count |
+| eps_current_connections | Endpoint Service의 활성 connection 개수 | count |
+| eps_endpoint_count | Endpoint Service에 연결된 endpoint 개수 | count |
+| ep_current_connections | Endpoint의 활성 connection 개수 | count |
+
+
+## Private Endpoint 메트릭 ​
+
+Private Endpoint의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| ep_bytes_in_persec | Endpoint에서 받은 총 바이트 | bytes/s(IEC) |
+| ep_bytes_out_persec | Endpoint에서 보낸 총 바이트 | bytes/s(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| ep_current_connections | Endpoint의 활성 connection 개수 | count |
+
+Virtual Machine, GPU, Bare Metal Server 메트릭
+Libvirt 메트릭
+Kubernetes Engine 메트릭
+Load Balancing 메트릭
+MySQL 메트릭
+PostgreSQL 메트릭
+MemStore 메트릭
+Hadoop Eco 메트릭
+Pub/Sub 메트릭
+Direct Connect 메트릭
+Gateway Load Balancer 메트릭
+Private Endpoint 메트릭
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-overview
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+클라우드 환경에서는 서버, 네트워크, 애플리케이션, 리소스 상태를 실시간으로 모니터링하는 것이 중요합니다. 카카오클라우드의 Monitoring 서비스는 카카오클라우드에서 운영되고 있는 컴퓨팅 리소스 및 애플리케이션의 상태와 변경 사항을 대시보드에서 실시간으로 확인하고 관리할 수 있도록 지원하는 서비스입니다. Monitoring 서비스는 카카오클라우드의 Alert Center 와 연동할 수 있습니다. Alert Center에서 주요 메트릭 및 로그에 대한 임계치 알림을 설정하면, 해당 알림 정책에 대한 임계치가 도달하는 즉시 담당자에게 알림 메시지를 발송하여 보다 효율적으로 리소스를 관리할 수 있습니다.
+Monitoring 서비스를 사용하기 위해서는 모니터링 에이전트 설치 가 필요합니다.
+카카오클라우드의 Monitoring 은 클라우드 환경에서 서버, 네트워크, 애플리케이션, 리소스 상태를 실시간으로 모니터링합니다. 사용자 활동(로그인, 리소스 생성 및 변경 등)에 대한 모니터링은 Cloud Trail 서비스를 참고하시기 바랍니다.
+
+## 사용 목적 및 사례 ​
+
+Monitoring 서비스를 사용하지 않으면 시스템의 현재 상태를 파악하기 어려워 장애나 이상 상태를 빠르게 감지하지 못하고, 장애 대응도 지연될 수 있습니다. 또한, 리소스를 효율적으로 관리하기 어렵기 때문에 리소스 비용이 증가되거나 성능 저하 문제가 발생할 수 있습니다.
+카카오클라우드의 Monitoring 서비스를 사용하면, 클라우드 환경에서 시스템 및 리소스를 지속적으로 모니터링하여 문제를 신속하게 해결할 수 있으며, 이를 통해 서비스 가용성, 안정성, 보안 및 성능을 향상하고 비즈니스 운영에 필요한 데이터를 수집하여 활용할 수 있습니다.
+
+## 특징 ​
+
+
+#### 기본 대시보드 ​
+
+Beyond Compute Service와 같은 주요 서비스에 대한 기본 대시보드를 제공하며, 별다른 설정 없이도 리소스에 대한 주요 메트릭을 즉시 확인 가능
+
+#### 커스텀 대시보드 ​
+
+커스텀 대시보드에서는 사용자가 직접 대시보드에서 모니터링할 리소스와 메트릭을 설정하여 여러 종류의 리소스를 한눈에 파악할 수 있도록 대시보드를 구성 가능
+
+#### 탐색기 ​
+
+모니터링 서비스에서 수집한 메트릭(Metric)과 로그(Log)를 서비스별 리소스 단위로 조회 가능
+
+#### 카카오클라우드의 Alert Center와 연계 ​
+
+주요 메트릭 및 로그에 대한 임계치 알림을 설정하여 실시간 알림 메시지 발송 가능
+
+#### 무료로 제공 ​
+
+추가 비용 없이 카카오클라우드 계정에 제공
+
+## 시작하기 ​
+
+Monitoring 서비스에 대한 자세한 사용 가이드는 How-to Guides 문서에서 안내합니다. 카카오클라우드를 처음 시작하신다면 먼저 카카오클라우드 시작하기 를 참고하시기 바랍니다.
+사용 목적 및 사례
+특징
+시작하기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-pricing
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+## Monitoring 요금 ​
+
+Monitoring 서비스의 사양 및 요금은 카카오클라우드 사이트의 요금 안내 를 참고하시기 바랍니다.
+
+## 쿼터 ​
+
+쿼터(Quota)는 카카오클라우드 단일 조직 또는 프로젝트 내에 생성할 수 있는 각 리소스의 최대량 또는 최대 수량을 제한하는 할당량을 의미합니다. Monitoring 서비스에는 별도의 쿼터가 존재하지 않습니다.
+
+## QSS ​
+
+Metric Export는 Query Samples Scanned, QSS 단위를 사용하여 서비스 과금을 하고 있습니다. 자세한 설명은 서비스 과금 단위: QSS 를 참고하시기 바랍니다.
+Monitoring 요금
+쿼터
+QSS
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-release-note
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+### 2026.03.05 ​
+
+
+#### 기능 추가 ​
+
+Resource Explorer에서 생성한 커스텀 태그 단위로 기본대시보드의 차트를 조회할 수 있는 기능이 추가되었습니다. 기본 대시보드 상세 페이지에서 조회 단위 '태그 단위' 선택해 조회할 수 있습니다.
+
+### 2026.02.26 ​
+
+
+#### 기능 추가 ​
+
+로그탐색기 지원 서비스에 Advanced Managed Search가 추가되었습니다.
+
+### 2025.11.24 ​
+
+
+#### 기능 추가 ​
+
+커스텀 대시보드, 메트릭 탐색기 지원 서비스에 Libvirt가 추가되었습니다.
+Metric Export, Libvirt 디스크 메트릭에 block_device 레이블이 추가되었습니다.
+MySQL, PostgreSQL 기본대시보드에 디스크 사용 관련 차트가 추가되었습니다.
+PosgreSQL에 워크로드 및 성능 메트릭이 추가되었습니다.
+
+### 2025.09.30 ​
+
+
+#### 기능 추가 ​
+
+네트워크 인터페이스의 패킷 관련 Libvirt 메트릭이 추가되었습니다.
+
+### 2025.07.24 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Hadoop Eco) 지원 서비스가 추가되었습니다.
+Server, MySQL, MemStore, PostgreSQL, Disk, PostgreSQL, 임시파일, XID 메트릭이 추가되었습니다.
+기본 대시보드의 Load Balancing에 대상 그룹(Pool) 기준 Healthy 차트가 추가되었습니다.
+정상 상태로 복구될 수 없는 리소스는 기본 대시보드의 모니터링 대상 목록에서 제외되는 정책이 적용되었습니다.
+
+### 2025.04.29 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Gateway Load Balancer, Private Endpoint) 지원 서비스가 추가되었습니다.
+기본 대시보드에 Gateway Load Balancer, Private Endpoint 서비스가 추가되었습니다. ※ 해당 서비스를 이용 중인 서비스에만 노출됩니다.
+Kubernetes Engine 메트릭이 추가되었습니다.
+BCS 모니터링 서비스, 범례 이름이 타겟 디바이스 명으로 변경되었습니다.
+
+### 2025.04.01 ​
+
+
+#### kr-central-1 리전 종료 안내 ​
+
+kr-central-1 리전 종료로 인해 해당 리전에서는 본 서비스가 중단되었으며, kr-central-2 리전에서는 변함없이 안정적으로 이용하실 수 있습니다.
+
+### 2025.03.27 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Kubernetes Engine, Direct Connect, Libvirt) 지원 서비스가 추가되었습니다.
+Kubernetes Engine, Direct Connect, Libvirt 메트릭이 추가되었습니다.
+기본 대시보드에 Direct Connect 서비스가 추가되었습니다. ※ 해당 서비스를 이용 중인 서비스에만 노출됩니다.
+
+### 2025.02.27 ​
+
+
+#### 기능 추가 ​
+
+로그 탐색기의 지원 서비스로 Advanced Managed Prometheus가 추가되었습니다.
+
+### 2025.02.10 ​
+
+
+#### 기능 추가 ​
+
+Pub/Sub 기본/커스텀 대시보드가 추가되었습니다.
+Metric Export의 지원 서비스로 PostgreSQL이 추가되었습니다.
+
+### 2025.01.14 ​
+
+
+#### 기능 추가 ​
+
+Kubernetes Engine 기본 대시보드에 노드 풀 리소스 오토스케일링 차트가 추가되었습니다.
+
+### 2024.08.27 ​
+
+
+#### 기능 개선 및 변경 ​
+
+모니터링 내 Redis 명칭을 MemStore로 변경했습니다.
+Metric Export 내 Redis 명칭이 MemStore로 변경되었습니다.
+
+### 2024.07.09 ​
+
+
+#### 기능 변경 ​
+
+모니터링 에이전트 버전이 v1.0.0으로 업데이트되었습니다.
+
+### 2024.06.13 ​
+
+
+#### 기능 추가 ​
+
+기본 대시 보드 지원 서비스로 Kubernetes Engine이 추가되었습니다.
+Shift + Enter를 누르면 Metric 쿼리 차트를 조회할 수 있도록 개선했습니다.
+Monitoring 엔드포인트가 https://monitoring.kr-central-2.kakaoi.io 에서 https://monitoring.kr-central-2.kakaocloud.com 으로 변경되었습니다.
+https://monitoring.kr-central-2.kakaoi.io
+https://monitoring.kr-central-2.kakaocloud.com
+Metric Export 경로가 /metric 에서 /metric-export 으로 변경되었습니다.
+/metric
+/metric-export
+
+### 2024.02.06 ​
+
+
+#### 기능 추가 및 개선 ​
+
+Redis 메트릭을 추가했습니다.
+
+### 2023.12.04 ​
+
+
+#### 기능 추가 ​
+
+Monitoring Export 를 추가하여 Prometheus 내 커스텀 대시보드를 구성할 수 있습니다.
+Burstable 옵션 관련 메트릭이 추가되었습니다.
+
+### 2023.07.24 ​
+
+
+#### 기능 추가 및 개선 ​
+
+PromQL을 지원하여, Prometheus Query Language를 통해 메트릭 데이터를 조회, 차트를 생성할 수 있습니다.
+조회된 메트릭 항목을 그룹 조건으로 묶어서 차트에 표현할 수 있습니다.
+차트 생성 시 메트릭 필터에서 항목과 리소스를 선택란에 = 외에, != , =~ , !~ 와 같이 regex 선택 기능이 추가되었습니다.
+=
+!=
+=~
+!~
+사용자가 직접 메트릭의 Unit 표시를 선택하고 이를 차트에서 확인할 수 있습니다.
+차트에 조회된 항목을 클릭하여 개별 항목을 활성/비활성화할 수 있습니다.
+
+### 2022.10.31 ​
+
+
+#### 기능 추가 및 개선 ​
+
+모니터링 서비스에서 Virtual Machine/Bare Metal Server, Load Balancer, MySQL, Redis에 대한 기본 대시보드를 제공합니다.
+커스텀 대시보드를 이용해 사용자가 직접 대시보드를 생성, 차트를 추가/수정/삭제를 통해 관리할 수 있습니다.
+메트릭 탐색기 추가: 대시보드에 차트를 등록하지 않아도 필요한 때에 즉시 원하는 서비스의 메트릭을 조회할 수 있습니다.
+로그 검색 수정: 로그 정책 내에 있던 로그 검색 기능이 탐색기 > 로그 탐색기로 변경되었습니다.
+
+### 2022.08.24 ​
+
+
+#### 기능 추가 ​
+
+메트릭 정책 생성 시, MySQL과 Redis를 선택하여 모니터링 정책을 생성할 수 있습니다.
+
+### 2021.11.30 ​
+
+
+#### 서비스 출시 ​
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 자세한 설명은 Monitoring 공식 문서 를 참고해 주세요.
+2026.03.05
+2026.02.26
+2025.11.24
+2025.09.30
+2025.07.24
+2025.04.29
+2025.04.01
+2025.03.27
+2025.02.27
+2025.02.10
+2025.01.14
+2024.08.27
+2024.07.09
+2024.06.13
+2024.02.06
+2023.12.04
+2023.07.24
+2022.10.31
+2022.08.24
+2021.11.30
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-troubleshoot
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+본 문서는 Monitoring 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+모니터링 에이전트 관련 오류 Not found file in path. Please Check path and permission Collection took longer than expected; not complete after interval of 10s
+Not found file in path. Please Check path and permission
+Collection took longer than expected; not complete after interval of 10s
+Metric Export API 사용 시 발생하는 오류 Default Error Page: 페이지를 찾을 수 없습니다. not supported kakaocloud service-type header. result에 어떠한 값도 없음 (데이터 확인 불가)
+Default Error Page: 페이지를 찾을 수 없습니다.
+not supported kakaocloud service-type header.
+result에 어떠한 값도 없음 (데이터 확인 불가)
+
+## 모니터링 에이전트 관련 오류 ​
+
+
+### Not found file in path. Please Check path and permission ​
+
+모니터링 에이전트 설치한 후 sudo journalctl -u kic_monitor_agent -f 명령어로 로그를 확인할 때 아래와 같은  오류가 발생할 수 있습니다.
+sudo journalctl -u kic_monitor_agent -f
+Jul 18 09:15:35 host-172-16-2-147 kic_monitor_agent [ 10046 ] : 2024 -07-18T09:15:35Z W ! [ inputs.tail ] Not found file in path. Please Check path and permission: { 작성한 로그 파일 }
+Jul 18 09:15:35 host-172-16-2-147 kic_monitor_agent [ 10046 ] : 2024 -07-18T09:15:35Z W ! [ inputs.tail ] Not found file in path. Please Check path and permission: { 작성한 로그 파일 }
+이 오류는 로그 파일 경로나 권한 문제로 발생하며, 주요 원인은 다음과 같습니다.
+
+#### 원인 1: 로그 파일의 경로나 로그 파일 이름을 잘못 작성한 경우 ​
+
+▶️ 해결 방법: /etc/default/kic_monitor_agent 파일의 KIC_LOG_FILE_PATH 에 올바른 파일 경로와 이름을 입력한 후, 모니터링 에이전트를 재시작합니다.
+/etc/default/kic_monitor_agent
+KIC_LOG_FILE_PATH
+/etc/kic_monitor_agent 파일에서 로그 파일 경로를 수정합니다. # 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+/etc/kic_monitor_agent 파일에서 로그 파일 경로를 수정합니다.
+/etc/kic_monitor_agent
+# 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+# 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent
+모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent
+sudo systemctl restart kic_monitor_agent
+에이전트가 정상적으로 실행되는지 확인합니다. sudo journalctl -u kic_monitor_agent -f
+에이전트가 정상적으로 실행되는지 확인합니다.
+sudo journalctl -u kic_monitor_agent -f
+sudo journalctl -u kic_monitor_agent -f
+
+#### 원인 2: 모니터링 에이전트 설치 후, 서비스 사용자를 임의로 변경했을 경우 ​
+
+에이전트 설치 시 기본 사용자(root)를 변경하면 권한 문제로 오류가 발생할 수 있습니다. 두 가지 해결 방법이 있습니다.
+▶️ 해결 방법 1: 모니터링 에이전트 서비스 사용자를 root 로 변경
+root
+[ Service ] EnvironmentFile = -/etc/default/kic_monitor_agent User = root # root로 변경
+[ Service ] EnvironmentFile = -/etc/default/kic_monitor_agent User = root # root로 변경
+▶️ 해결 방법 2: 서비스 사용자가 로그 파일의 read 권한이 없을 경우, read 권한을 부여
+read
+read
+# 예시 user, group, other 모두에게 read 권한 부여 sudo chmod 444 { 로그 파일 }
+# 예시 user, group, other 모두에게 read 권한 부여 sudo chmod 444 { 로그 파일 }
+
+### Collection took longer than expected; not complete after interval of 10s ​
+
+모니터링 에이전트를 설치한 인스턴스 내에서 다음의 오류가 발생했다면, 짧은 수집 간격으로 인해 에이전트가 데이터를 수집하지 못한 것 입니다.
+Apr 01 11 :03:20 ${오류가 발생한 인스턴스} kic_monitor_agent [ 52839 ] : 2024 -04-01T02:03:20Z W ! [ inputs.disk ] Collection took longer than expected ; not complete after interval of 10s
+Apr 01 11 :03:20 ${오류가 발생한 인스턴스} kic_monitor_agent [ 52839 ] : 2024 -04-01T02:03:20Z W ! [ inputs.disk ] Collection took longer than expected ; not complete after interval of 10s
+▶️ 해결 방법: 수집 간격(interval) 설정을 기본값( 10s )보다 큰 값으로 수정합니다.
+10s
+/etc/kic_monitor_agent/kic_monitor_agent.conf 파일에서 interval 값을 기본값( 10s )보다 큰 값으로 수정 후 저장합니다. interval 값 수정 [ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+/etc/kic_monitor_agent/kic_monitor_agent.conf 파일에서 interval 값을 기본값( 10s )보다 큰 값으로 수정 후 저장합니다.
+/etc/kic_monitor_agent/kic_monitor_agent.conf
+interval
+10s
+[ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+[ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+모니터링 에이전트를 재시작합니다. 모니터링 에이전트 재시작 sudo systemctl restart kic_monitor_agent
+모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent
+sudo systemctl restart kic_monitor_agent
+모니터링 에이전트가 정상적으로 실행되는지 확인합니다. 모니터링 에이전트 실행 확인 sudo journalctl -u kic_monitor_agent -f
+모니터링 에이전트가 정상적으로 실행되는지 확인합니다.
+sudo journalctl -u kic_monitor_agent -f
+sudo journalctl -u kic_monitor_agent -f
+
+## Metric Export API 사용 시 발생하는 오류 ​
+
+
+### Default Error Page: 페이지를 찾을 수 없습니다. ​
+
+Metric Export API를 호출 시 잘못된 접근 환경일 때 발생할 수 있습니다.
+< html > < head > < meta charset = "UTF-8" > < title > Default Error Page < /title > < /head > < body > < div style = "text-align:center" > < br/ > < br/ > < br/ > < br/ > < br/ > < br/ > < h1 className = "header" > 페이지를 찾을 수 없습니다. < /h 1 > < p > < span style = "color: gray;" > 요청한 주소가 변경 또는 삭제되었거나, 잘못된 주소여서 페이지를 찾을 수 없습니다. < /span > < br/ > < span style = "color: gray;" > 입력한 URL이 올바른지 다시 확인해 주시기 바랍니다. < /span > < /p > < /div > < /body > < /html >
+< html > < head > < meta charset = "UTF-8" > < title > Default Error Page < /title > < /head > < body > < div style = "text-align:center" > < br/ > < br/ > < br/ > < br/ > < br/ > < br/ > < h1 className = "header" > 페이지를 찾을 수 없습니다. < /h 1 > < p > < span style = "color: gray;" > 요청한 주소가 변경 또는 삭제되었거나, 잘못된 주소여서 페이지를 찾을 수 없습니다. < /span > < br/ > < span style = "color: gray;" > 입력한 URL이 올바른지 다시 확인해 주시기 바랍니다. < /span > < /p > < /div > < /body > < /html >
+
+#### 원인 1: 클라이언트가 Public Virtual Machine이 아님 ​
+
+▶️ 문제 해결: Metric Export API를 호출하는 클라이언트가 퍼블릭 IP를 갖는 VM 이거나 인터넷 게이트웨이 연결이 있는 VPC에 생성된 VM 인지 확인합니다.
+
+#### 원인 2: 프로젝트에 존재하지 않는 사용자 ​
+
+▶️ 문제 해결: 사용자를 Metric Export API를 호출하는 클라이언트의 프로젝트 내에 프로젝트 구성원으로 초대 합니다.
+
+#### 원인 3: 사용자 액세스 키 오류 혹은 만료 ​
+
+▶️ 문제 해결: 사용자 액세스 키 ID와 보안 액세스 키가 정확히 입력 되었는지 확인하며, 정확히 입력했다면 키가 만료되지는 않았는지 확인합니다.
+사용자 액세스 키는 카카오클라우드 콘솔 우측 상단에 위치한 프로필의 액세스 키 에서 확인 및 발급받을 수 있습니다. 자세한 설명은 액세스 키 발급 가이드 를 참고해 주세요.
+
+### not supported kakaocloud service-type header. ​
+
+Metric Export API 사용 시, 아래와 같은 응답을 받을 수 있습니다. 이러한 응답은 service-type 을 잘못 입력했을 경우 발생합니다.
+service-type
+{ "status" : "error" , "errorType" : "bad_data" , "error" : "not supported kakaocloud service-type header. current header value is {잘못 작성한 service-type}" }
+{ "status" : "error" , "errorType" : "bad_data" , "error" : "not supported kakaocloud service-type header. current header value is {잘못 작성한 service-type}" }
+▶️ 문제 해결: 정해진 service-type 헤더를 정확히 작성 했는지 확인합니다.
+service-type
+curl -X GET 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" # 확인해야 할 헤더
+curl -X GET 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" # 확인해야 할 헤더
+카카오클라우드에서 조회 가능한 service-type 은 아래와 같습니다.
+service-type
+Virtual Machine, GPU, Bare metal Server (입력값: server )
+server
+Mysql (입력값: mysql )
+mysql
+MemStore (입력값: memstore )
+memstore
+Load Balancing (입력값: lb )
+lb
+
+### result에 어떠한 값도 없음 (데이터 확인 불가) ​
+
+Metric Export API 사용 시, 아래와 같이 응답을 받을 수 있습니다. 이러한 응답은 service-type 과 맞지 않는 메트릭 요청 시 발생할 수 있습니다.
+service-type
+{ "status" : "success" , "data" : { "resultType" : "vector" , "result" : [ ] } }
+{ "status" : "success" , "data" : { "resultType" : "vector" , "result" : [ ] } }
+
+#### 원인 1: service-type에 해당하는 메트릭을 조회하지 않았을 경우 ​
+
+다음과 같이 잘못된 요청의 경우, 데이터가 없는 응답을 받을 수 있습니다.
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ # service-type이 server인데, -d "query=lb_bytes_in_persec" # Load Balancer에 해당하는 메트릭일 때
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ # service-type이 server인데, -d "query=lb_bytes_in_persec" # Load Balancer에 해당하는 메트릭일 때
+▶️ 문제 해결: service-type 에 해당하는 메트릭을 요청합니다. 서비스별로 제공되는 메트릭은 모니터링 메트릭 문서를 참고해 주세요.
+service-type
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ -d "query=cpu_usage" # 변경
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ -d "query=cpu_usage" # 변경
+
+#### 원인 2: 해당 인스턴스에 모니터링 에이전트가 설치되어 있지 않았을 경우 ​
+
+Grafana에서 특정 인스턴스의 메트릭을 조회할 수 없다면, 모니터링 에이전트 가 해당 인스턴스에 설치되지 않아 메트릭을 확인할 수 없는 것일 수 있습니다.
+▶️ 문제 해결: 모니터링 에이전트 설치 가이드 를 참고하여 모니터링 에이전트를 설치한 후, 메트릭을 확인합니다.
+Load Balancing, MySQL, MemStore 메트릭의 경우, 모니터링 에이전트를 설치하지 않아도 메트릭을 확인할 수 있습니다.
+모니터링 에이전트 관련 오류 Not found file in path. Please Check path and permission Collection took longer than expected; not complete after interval of 10s
+Not found file in path. Please Check path and permission
+Collection took longer than expected; not complete after interval of 10s
+Metric Export API 사용 시 발생하는 오류 Default Error Page: 페이지를 찾을 수 없습니다. not supported kakaocloud service-type header. result에 어떠한 값도 없음 (데이터 확인 불가)
+Default Error Page: 페이지를 찾을 수 없습니다.
+not supported kakaocloud service-type header.
+result에 어떠한 값도 없음 (데이터 확인 불가)
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-main
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center 는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다.
+
+## IAM 기반 역할 관리 ​
+
+Alert Center 서비스의 역할 관리는 카카오클라우드의 IAM 역할 기반 액세스 제어(RBAC)를 따릅니다. 따라서 IAM의 프로젝트 역할과 연계하여 알림 수신자를 관리할 수 있으며, 기본적으로 Alert Center 매니저가 알림을 받을 수신자를 관리할 수 있도록 지원합니다. IAM 역할별 자세한 내용과 사용자 역할 관리는 각각 IAM > 주요 개념 과 사용자 IAM 역할 관리 를 참고해 주세요.
+나의 역할은 카카오클라우드 콘솔 > 우측 상단 프로필 > 조직 역할 또는 프로젝트 역할 에서 확인할 수 있습니다.
+
+#### 조직 역할 ​
+
+
+| 권한 | 조직 관리자(Admin) | Alert Center 조직 매니저(Manager) | Alert Center 조직 뷰어(Viewer) |
+|---|---|---|---|
+| 알림 정책 생성, 수정, 삭제 | ✓ | ✓ |  |
+| 알림 정책 열람 | ✓ | ✓ | ✓ |
+| 수신 채널 생성, 수정, 삭제 | ✓ | ✓ |  |
+| 수신 채널 열람 | ✓ | ✓ | ✓ |
+| 발신 내역 열람 | ✓ | ✓ | ✓ |
+| 필수 공지 알림 수신자 설정 | ✓ | ✓ |  |
+| 필수 공지 알림 열람 | ✓ | ✓ | ✓ |
+
+
+#### 프로젝트 역할 ​
+
+
+| 권한 | 프로젝트 관리자(Admin) | 프로젝트 멤버 (Member) | 프로젝트 리더 (Reader) | Alert Center 프로젝트 매니저(Manager) | Alert Center 프로젝트 뷰어(Viewer) |
+|---|---|---|---|---|---|
+| 알림 정책 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| 알림 정책 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 수신 채널 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| 수신 채널 열람 | ✓ | ✓ (수신자 목록 제외) | ✓ (수신자 목록 제외) | ✓ | ✓ |
+| 발신 내역 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 알림 내역 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Silence 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| Silence 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+
+## 알림 정책 ​
+
+알림 정책은 알림을 받을 상황과 방법을 정의한 것으로 Alert Center에서는 서비스 이벤트를 기반으로 알림을 설정할 수 있습니다. 이벤트는 서비스별로 설정할 수 있으며 알림 설정 가능한 서비스는 지속적으로 추가될 예정입니다. 자세한 설명은 알림 정책 생성 및 관리 를 참고하시기 바랍니다.
+
+### 이벤트 조건 유형별 알림 설정 가능 서비스 ​
+
+
+| 구분 | kr-central-2 지원 서비스 | 설명 |
+|---|---|---|
+| 메트릭 | - Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server - MemStore - MySQL - Load Balancing - Monitoring Flow - PostgreSQL - Pub/Sub | 시스템 전반의 성능에 대한 알림을 메트릭 기반으로 설정 |
+| 로그 | - Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server | 로그 기반의 알림 설정 |
+| 이벤트 | 조직 이벤트 - IAM - Billing 프로젝트 이벤트 - Virtual Machine - Bare Metal Server - VPC - Load Balancing - Transit Gateway - Kubernetes Engine - Object Storage - File Storage - MySQL - PostgreSQL - MemStore - Hadoop Eco - Data Query - Pub/Sub - Advanced Managed Kafka - IAM - Monitoring - Alert Center - Advanced Managed Prometheus - Kubeflow - DNS - Monitoring Flow - Resource Explorer - Maintenance - Key Management Service - Secrets Manager | 카카오클라우드 서비스별 특화 이벤트 알림 |
+
+
+#### 메트릭 알림 정책 ​
+
+메트릭(Metric) 기반의 정책은 컴퓨팅 리소스의 상태와 변화를 모니터링하고, 시스템 전반의 성능 변경 사항에 대응할 수 있습니다. 또한 메트릭에서 제공하는 CPU, Memory, Disk I/O 등 다양한 항목으로 발생하는 이벤트에 대한 알림 설정을 할 수 있습니다.
+제공하는 메트릭에 대한 자세한 설명은 Monitoring 문서를 참고하시기 바랍니다.
+
+#### 로그 알림 정책 ​
+
+로그(Log) 기반의 정책은 인스턴스에서 발생하는 로그 기반으로 운영 문제를 더욱 효율적으로 해결할 수 있습니다. 로그값 중 특정 키워드를 설정하여 해당 키워드가 발생할 때마다 알림이 발생하게 됩니다. Alert Center에서는 단순 키워드뿐 아니라 인스턴스 이름 등 키워드 유형을 다양하게 제공합니다.
+
+| 분류 | 설명 |
+|---|---|
+| 키워드 | 유형 구분 없이 특정 문자열 검색 |
+| 인스턴스 ID | Beyond Compute Service(BCS)에 설치된 인스턴스 중 특정 인스턴스 ID |
+| 호스트 | Beyond Compute Service(BCS)에 설치된 인스턴스의 호스트명 |
+| 파일 경로 | 로그 파일의 경로 |
+
+
+#### 이벤트 알림 정책 ​
+
+이벤트(Event) 기반의 정책은 발생하는 액션에 대한 이벤트를 실시간으로 감지하여 동작합니다. Alert Center 서비스는 카카오클라우드의 서비스별로 알맞은 이벤트 항목을 알림으로 받아볼 수 있도록 제공합니다. 예를 들어, Container Registry 서비스의 경우 리포지포리 삭제/생성, 가비지 컬렉션 실행/완료 등에 대한 이벤트 항목을 제공합니다. 또한 이러한 이벤트 항목에 대해 세부적인 필터를 추가하여, 보다 정확한 알림을 받아볼 수 있습니다.
+
+## 알림 내역 ​
+
+설정한 알림 정책에 의해 발생한 모든 알림을 한 곳에서 확인할 수 있습니다. 불필요한 알림이 반복적으로 발생한다면 Silence 설정을 통해 원하는 기간 동안 알림을 억제할 수 있습니다. 자세한 설명은 알림 내역 조회 및 Silence 설정 문서를 참고하시기 바랍니다.
+
+## 수신 채널 ​
+
+알림 정책에 수신 채널을 등록하면, 알림 발생 시 지정한 채널로 알림 내용을 전달받을 수 있습니다. 자세한 설명은 수신 채널 생성 및 관리 를 참고하시기 바랍니다.
+
+### 설정 가능한 채널 ​
+
+
+| 분류 | 설명 |
+|---|---|
+| 이메일 | 사용자의 등록된 이메일로 알림 내용 발송 |
+| 문자 | 사용자의 등록된 휴대 번호로 알림 문자 메시지 발송 |
+| 알림톡 | 카카오톡의 비즈메시지 서비스 - 사용자의 카카오톡 메시지로 알림 내용 발송 |
+| 슬랙 | 사용자가 설정한 슬랙 채널에 챗봇 메시지로 알림 내용 발송 |
+| 웹훅 | 사용자가 설정한 웹훅으로 알림 내용 발송 |
+| Pub/Sub | 사용자가 설정한 카카오클라우드의 Pub/Sub의 토픽으로 알림 내용 발송 |
+
+
+### 설정 가능한 수신자 ​
+
+
+| 분류 | 설명 |
+|---|---|
+| 사용자 | 개별 사용자를 수신자로 선택할 수 있습니다. - 조직: 조직 내 구성원 중 선택 - 프로젝트: 프로젝트 내 구성원 중 선택 |
+| 그룹 | 그룹을 수신자로 선택할 수 있으며, 그룹 내 모든 사용자가 수신자로 설정됩니다. - 조직: 조직의 그룹 중 선택 - 프로젝트: 해당 프로젝트에 접근 권한이 있는 그룹 중 선택 |
+
+
+## 발신 내역 ​
+
+서비스별 메시지 발송 결과를 조회할 수 있습니다. 메시지 발송 상태는 성공 , 실패 , 발신 중 이 있으며, 발신 실패 개수 정보와 에러 코드 및 실패 정보를 확인할 수 있습니다. 자세한 설명은 발신 내역 조회 를 참고하시기 바랍니다.
+성공
+실패
+발신 중
+IAM 기반 역할 관리 조직 역할 프로젝트 역할
+조직 역할
+프로젝트 역할
+알림 정책 이벤트 조건 유형별 알림 설정 가능 서비스 메트릭 알림 정책 로그 알림 정책 이벤트 알림 정책
+이벤트 조건 유형별 알림 설정 가능 서비스 메트릭 알림 정책 로그 알림 정책 이벤트 알림 정책
+메트릭 알림 정책
+로그 알림 정책
+이벤트 알림 정책
+알림 내역
+수신 채널 설정 가능한 채널 설정 가능한 수신자
+설정 가능한 채널
+설정 가능한 수신자
+발신 내역
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-overview
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center 는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다.
+
+## 사용 목적 및 사례 ​
+
+Alert Center 서비스를 사용하여 알림 정책과 수신 채널을 설정할 수 있습니다. 알림 정책은 메트릭, 로그, 이벤트에 대해 설정할 수 있으며, 수신 채널은 이메일, 문자, 일림톡, 슬랙, 웹훅에서 사용할 수 있습니다.
+
+## 특징 ​
+
+
+#### 서비스 맞춤형 이벤트 및 알림 정책 제공 ​
+
+카카오클라우드에서 제공하는 서비스별로 특화된 이벤트 알림 설정이 가능하며, 기본으로 제공하는 이벤트 항목을 선택하면, 손쉽게 서비스에 대한 알림을 받아 볼 수 있음
+이벤트 조건 유형별로 [알림 정책] 설정 가능
+
+#### 다양한 수신 채널 유형 지원 ​
+
+하나의 알림 정책에 여러 개의 수신 채널을 선택할 수 있음
+채널 유형별 템플릿으로 알림이 발송되어 예상하지 못한 환경에서도 신속한 대응에 용이함
+
+#### 프로젝트 내 수신자 관리 ​
+
+프로젝트 내 권한을 가진 사용자를 수신자로 등록, 관리할 수 있음
+
+#### 알림 발신 내역 통합 관리 ​
+
+발송 상태와 에러 코드 및 실패 정보를 하나의 화면에서 확인할 수 있도록 통합 관리 기능을 제공
+발신 일시 또는 서비스별로 메시지 발송 결과를 조회할 수 있으며, 확인이 필요한 발신 내역에 대하여 필터링 가능
+
+## 시작하기 ​
+
+Alert Center 서비스에 대한 자세한 사용 가이드는 How-to Guides 문서에서 안내합니다. 카카오클라우드를 처음 시작하신다면 먼저 카카오클라우드 시작하기 를 참고하시기 바랍니다.
+사용 목적 및 사례
+특징
+시작하기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-pricing
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+## Alert Center 요금 ​
+
+Alert Center 서비스의 사양 및 요금은 카카오클라우드 사이트의 요금 안내 를 참고하시기 바랍니다.
+
+## 쿼터 ​
+
+쿼터(Quota)는 카카오클라우드 단일 조직 또는 프로젝트 내에 생성할 수 있는 각 리소스의 최대량 또는 최대 수량을 제한하는 할당량을 의미합니다. Alert Center 서비스에는 별도의 쿼터가 존재하지 않습니다.
+Alert Center 요금
+쿼터
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-release-note
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+### 2026.03.13 ​
+
+
+#### GPU 알림 정책 전환 ​
+
+카카오클라우드 GPU 서비스가 Virtual Machine 서비스로 통합됨에 따라 Alert Center에서 GPU 서비스로 생성된 알림 정책이 모두 Virtual Machine 서비스의 알림 정책으로 변경되었습니다. 알림 정책에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2026.02.26 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Cluster Scaling Vertical, Cluster Scaling Vertical Complete, Cluster Scaling Vertical Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Cluster Scaling Vertical, Cluster Scaling Vertical Complete, Cluster Scaling Vertical Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Snapshot Create Success, Snapshot Create Failure, Snapshot Delete Success, Snapshot Delete Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Snapshot Create Success, Snapshot Create Failure, Snapshot Delete Success, Snapshot Delete Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+
+### 2026.01.06 ​
+
+
+#### 기능 추가 ​
+
+필수 공지 알림 메일 수신 시 앞으로 메일 템플릿 내에서 알림이 발생한 조직의 이름을 확인할 수 있습니다.
+Alert Center 서비스에서 발생하는 필수 공지 알림 수신자 업데이트 시 발생하는 조직 이벤트 Update Announcement Recipient로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Alert Center 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 Alert Center 조직 이벤트 를 참고해 주세요.
+
+### 2025.12.04 ​
+
+
+#### 이메일 알림 수신 기준 변경 ​
+
+Alert Center에서 이메일 알림 수신을 선택한 사용자는 앞으로 사용자 ID 이메일로 알림을 수신하게 됩니다.
+앞으로 IAM 계정정보 내 '언락용 이메일'은 Alert Center의 이메일 알림 수신처로 사용되지 않으므로, 연락용 이메일 정보를 따로 등록하지 않더라도 Alert Center의 이메일 알림을 수신할 수 있습니다.
+
+#### 기능 추가 ​
+
+카오클라우드 제품 및 서비스의 지속적인 기능을 보장하기 위해 고객에게 에메일로 알림을 발송하는 필수 공지 알림 기능을 추가했습니다.
+필수 공지 알림은 조직 단위로 발송되기 때문에 조직 역할이 있는 사용자만 접근할 수 있습니다.
+자세한 설명은 필수 공지 알림 문서를 참고해 주세요.
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Alert Center 서비스 배포에 따라 Alert Center에서 발생하는 조직 이벤트(Create Alert Policy, Update Alert Policy, Delete Alert Policy, Create Channel, Update Channel, Delete Channel), 프로젝트 이벤트(Create Alert Policy, Update Alert Policy, Delete Alert Policy, Create Channel, Update Channel, Delete Channel, Create Silence, Update Silence, Delete Silence)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Alert Center 서비스의 조직 및 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Alert Center 조직 이벤트 , Alert Center 프로젝트 이벤트 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Volume Update)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Virtual Machine 를 참고해 주세요.
+카카오클라우드 Resource Explorer 서비스 배포에 따라 Resource Explorer에서 발생하는 프로젝트 이벤트(Create Tags, Delete Tags, Apply Tags)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Resource Explorer 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Resource Explorer 를 참고해 주세요.
+카카오클라우드 Key Management Service 서비스 배포에 따라 Key Management Service에서 발생하는 프로젝트 이벤트(Create Key, Delete Key, Create Key Version, Delete Key Version)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Key Management Service 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Key Management Service 를 참고해 주세요.
+카카오클라우드 Secrets Manager 서비스 배포에 따라 Secret Manager에서 발생하는 프로젝트 이벤트(Create Secret, Delete Secret, Create Secret Version, Delete Secret Version)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Secret Manager 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Secret Manager 를 참고해 주세요.
+
+### 2025.09.23 ​
+
+
+#### 기능 추가 ​
+
+설정한 알림 정책에 의해 발생한 알림을 알림 내역 페이지에서 확인할 수 있습니다.
+이제 수신 채널의 사용 여부와 관계없이 발생한 알림을 알림 내역 페이지에서 조회할 수 있을 뿐만 아니라 불필요한 알림이 반복적으로 발생하는 경우에 Silence 생성 으로 특정 시간동안 알림을 억제할 수 있습니다.
+알림 내역 및 Silence에 대한 자세한 설명은 알림 내역 조회 및 Silence 설정 문서를 참고해 주세요.
+
+### 2025.09.19 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Maintenance 서비스 배포에 따라 Kubeflow에서 발생하는 프로젝트 이벤트(Maintenance Plan Created, Maintenance Plan Completed, Maintenance Started, Maintence Failed 등)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Maintenance 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Maintenance 를 참고해 주세요.
+
+### 2025.08.08 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubeflow 서비스 배포에 따라 Kubeflow에서 발생하는 프로젝트 이벤트(Kubeflow Nodepool Update Start, Kubeflow Nodepool Update End)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubeflow 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubeflow 를 참고해 주세요.
+
+### 2025.07.25 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine에서 발생하는 프로젝트 이벤트(Remove Node Request)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubernetes Engine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubernetes Engine 를 참고해 주세요.
+
+### 2025.07.01 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 VPC 서비스 배포에 따라 VPC에서 발생하는 프로젝트 이벤트(Network Interface Create, Network Interface Delete, Network Interface Update, VPC Update, Subnet Update, Routing Table Update)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 VPC 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 VPC 를 참고해 주세요.
+
+### 2025.06.13 ​
+
+
+#### 지원 서비스 축소 ​
+
+카카오클라우드 CDN 서비스에서 인증서 관리 기능이 제거됨에 따라, 해당 기능에 기반한 프로젝트 이벤트(Certificate Expire Alarm)에 대한 알림이 더 이상 제공되지 않습니다. 이에 따라 Alert Center의 이벤트 알림 설정 대상 서비스에서 CDN이 제외되었습니다. 알림 설정이 가능한 서비스 목록은 이벤트 조건 유형별 알림 설정 가능 서비스 문서를 참고해 주세요.
+
+### 2025.05.30 ​
+
+
+#### 기능 추가 ​
+
+알림 정책 생성 시, 이벤트 항목에 대해 리소스 기준 필터 조건 을 설정할 수 있습니다.
+리소스 이름이 정확히 일치하거나, 특정 문자열로 시작/끝나거나, 지정한 문자열의 포함 여부 또는 정규식을 기준으로 알림 수신 대상을 세분화할 수 있습니다.
+Alert Center는 이제 Cloud Trail과 동일한 이벤트 데이터 를 사용하며, 이벤트명 하단에 리소스 유형이 함께 표기 되어 이벤트 식별이 더 명확해졌습니다.
+알림 정책의 개념과 생성 방법에 대한 자세한 설명은 알림 정책 문서와 알림 정책 생성 을 참고해 주세요.
+
+### 2025.05.20 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 PostgreSQL 서비스 배포에 따라 PostgreSQL에서 발생하는 프로젝트 이벤트(Instance Group Backup Schedule Update, Instance Volume Extend End)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 PostgreSQL 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Data Query 를 참고해 주세요.
+
+### 2025.04.29 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Data Query 서비스 배포에 따라 Data Query 서비스의 Cloud Trail 프로젝트 이벤트 이름을 모두 변경되었습니다. Data Query 이벤트 알림을 설정한 경우 변경된 이벤트로 알림 수신할 수 있도록 일괄 적용했습니다. 또한 Data Query에서 발생하는 프로젝트 이벤트(Create Data Source, Delete Data Source, Data Source Creation Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Data Query 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Data Query 를 참고해 주세요.
+
+### 2025.04.23 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 발생하는 조직 이벤트(Console Login Fail)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 IAM 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 IAM 을 참고해 주세요.
+
+### 2025.04.01 ​
+
+
+#### kr-central-1 리전 종료 안내 ​
+
+kr-central-1 리전 종료로 인해 해당 리전에서는 본 서비스가 중단되었으며, kr-central-2 리전에서는 변함없이 안정적으로 이용하실 수 있습니다.
+
+### 2025.03.27 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Backup Copy Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MySQL 을 참고해 주세요.
+
+### 2025.03.20 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 MySQL 서비스 배포에 따라 MySQL에서 발생하는 프로젝트 이벤트(Instance Group의 Scaling-in/Out 및 Instance의 Log Export)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MySQL 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MySQL 을 참고해 주세요.
+
+### 2025.03.18 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 수신 채널 생성 시 IAM 그룹을 수신자로 지정할 수 있습니다. IAM 그룹으로 사용자를 관리하고 있는 경우 수신자 유형을 그룹으로 선택하여 간편하게 수신 채널을 생성할 수 있습니다. 그룹 수신자 또는 수신 채널에 대한 자세한 설명은 수신 채널 생성 및 관리 를 참고해 주세요.
+
+#### 프로젝트 역할 권한 축소 ​
+
+2025.2.10 릴리즈 에서 추가된 Alert Center 서비스의 IAM 역할이 정식으로 적용되었습니다. 이로 인해 프로젝트 멤버 역할로 Alert Center 서비스를 이용하고 있던 경우 알림 정책, 수신 채널, 발신 내역 조회 외 생성 및 관리 기능은 제한됩니다. 또한 프로젝트 멤버나 프로젝트 리더 역할만 할당받은 경우 수신 채널 조회 시 수신자 목록은 확인할 수 없습니다. A
+
+### 2025.02.27 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Hadoop Eco 서비스 배포에 따라 Hadoop Eco에서 발생하는 프로젝트 이벤트로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Hadoop Eco 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Hadoop Eco 를 참고해 주세요.
+
+### 2025.02.26 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 발생하는 조직 이벤트로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 IAM 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 IAM 을 참고해 주세요.
+
+### 2025.02.11 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 Pub/Sub 서비스의 메트릭 알림 정책을 생성할 수 있습니다. Pub/Sub 토픽 또는 서브스크립션의 메트릭을 기반으로 알림을 수신할 조건을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2025.02.10 ​
+
+
+#### 서비스 역할 추가 ​
+
+카카오클라우드 Alert Center 서비스의 새로운 IAM 역할을 추가했습니다. 현재(2025.02.10 기준) 프로젝트 멤버 역할만으로 Alert Center 서비스의 모든 기능을 사용할 권한이 부여되지만 2025년 3월 18일부터 Alert Center 조직 매니저, 프로젝트 매니저, 조직 뷰어, 프로젝트 뷰어 역할을 할당받은 사용자만 역할에 맞는 서비스 사용 권한을 갖게 됩니다. 해당 기한 내에 Alert Center 서비스에 특정 권한이 필요한 사용자에게 적합한 역할을 부여해 주시기 바랍니다.
+
+### 2025.01.14 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine의 리소스 기반 오토 스케일링 시 발생하는 프로젝트 이벤트로 알림을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubernetes Engine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubernetes Engine 을 참고해 주세요.
+
+### 2024.12.26 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 Advanced Managed Prometheus 서비스의 전용 알림 정책을 생성할 수 있습니다. Prometheus 룰 파일에 설정된 조건에 따라 알림을 수신하고, Advanced Managed Prometheus 서비스의 프로젝트 이벤트 알림을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2024.12.05 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MemStore 신규 이벤트를 추가했습니다.
+
+### 2024.12.04 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Data Query를 추가했습니다.
+
+### 2024.12.03 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 PostgreSQL을 추가했습니다.
+
+### 2024.11.21 ​
+
+
+#### 기능 축소 ​
+
+DevOps Pipeline의 알림 지원을 종료했습니다.
+
+### 2024.11.19 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Pub/Sub 신규 이벤트를 추가했습니다.
+
+### 2024.11.05 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Advanced Managed Kafka를 추가했습니다.
+
+### 2024.09.30 ​
+
+
+#### 기능 변경 ​
+
+Service Agent를 적용했습니다.
+
+### 2024.09.10 ​
+
+
+#### 기능 추가 ​
+
+메트릭 알림 제공 서비스에 Monitoring Flow를 추가했습니다.
+프로젝트 이벤트에 Monitoring Flow를 추가했습니다.
+
+### 2024.08.14 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 DNS를 추가했습니다.
+
+### 2024.07.30 ​
+
+알림 정책 설정 기능을 개선했습니다.
+
+#### 기능 개선 ​
+
+MySQL 메트릭 알림 조건 설정 시 인스턴스 그룹을 지정할 수 있도록 개선했습니다.
+MemStore 메트릭 알림 조건 설정 시 클러스터를 지정할 수 있도록 개선했습니다.
+
+### 2024.06.26 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Kubernetes Engine을 추가했습니다.
+
+### 2024.03.20 ​
+
+
+#### 기능 추가 ​
+
+메인 채널 알림 발송이 실패한 경우 대체 채널로 알림을 수신하는 대체 채널 기능을 추가했습니다.
+
+### 2024.02.27 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Pub/Sub을 추가했습니다.
+
+### 2023.12.07 ​
+
+
+#### 기능 추가 ​
+
+발생한 알림 정보를 Pub/Sub Topic에 게시하도록 수신 채널에 기능을 추가했습니다.
+
+### 2023.09.21 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MySQL을 추가했습니다.
+
+### 2023.08.09 ​
+
+
+#### 기능 추가 ​
+
+조직 이벤트에 IAM과 Billing을 추가했습니다.
+프로젝트 이벤트에 Object Storage, File Storage, Kubeflow를 추가했습니다.
+
+### 2023.07.27 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MemStore를 추가했습니다.
+
+### 2023.05.31 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Transit Gateway를 추가했습니다.
+
+### 2023.02.16 ​
+
+
+#### 서비스 출시 ​
+
+카카오클라우드 서비스 알림 통합 관리 서비스인 Alert Center를 출시했습니다.
+프로젝트 이벤트를 제공하는 서비스는 다음과 같습니다. Container Registry Virtual Machine Bare Metal Server VPC Load Balancing IAM Monitoring
+Container Registry
+Virtual Machine
+Bare Metal Server
+VPC
+Load Balancing
+IAM
+Monitoring
+2026.03.13
+2026.02.26
+2026.01.06
+2025.12.04
+2025.09.23
+2025.09.19
+2025.08.08
+2025.07.25
+2025.07.01
+2025.06.13
+2025.05.30
+2025.05.20
+2025.04.29
+2025.04.23
+2025.04.01
+2025.03.27
+2025.03.20
+2025.03.18
+2025.02.27
+2025.02.26
+2025.02.11
+2025.02.10
+2025.01.14
+2024.12.26
+2024.12.05
+2024.12.04
+2024.12.03
+2024.11.21
+2024.11.19
+2024.11.05
+2024.09.30
+2024.09.10
+2024.08.14
+2024.07.30
+2024.06.26
+2024.03.20
+2024.02.27
+2023.12.07
+2023.09.21
+2023.08.09
+2023.07.27
+2023.05.31
+2023.02.16
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-troubleshoot
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+본 문서는 Alert Center 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+문자 및 알림톡 수신 채널 설정 시 알림 미수신 문제
+로그 기반 알림 미수신 문제
+
+## 문자 및 알림톡 수신 채널 설정 시 알림 미수신 문제 ​
+
+알림 정책을 설정했음에도 수신 채널(문자, 알림톡) 을 통해 알림이 도착하지 않는 경우, 수신 대상 IAM 사용자 계정 의 연락처 정보(휴대폰 번호) 가 누락되었을 가능성이 있습니다.
+▶️ 문제 해결: 이 경우 다음 단계를 따라 연락처 정보를 기입할 수 있습니다.
+알림을 수신할 사용자로 콘솔에 로그인합니다.
+화면 우측 상단의 계정 아이콘을 클릭하고, 계정 정보를 선택합니다.
+연락처 정보에서 휴대폰 번호란에 알림을 받을 번호를 입력합니다.
+
+## 로그 기반 알림 미수신 문제 ​
+
+로그를 기반으로 알림이 설정되어 있으나 알림이 도착하지 않는 경우, 발생 원인과 해결 방법은 다음과 같습니다.
+
+#### 원인 1: /etc/default/kic_monitor_agnet 파일의 KIC_LOG_FILE_PATH 설정 오류 ​
+
+/etc/default/kic_monitor_agnet
+KIC_LOG_FILE_PATH
+다음 명령어를 사용하여 /etc/default/kic_monitor_agent 파일에서 KIC_LOG_FILE_PATH 경로를 확인하거나 수정합니다. sudo vi /etc/default/kic_monitor_agent
+다음 명령어를 사용하여 /etc/default/kic_monitor_agent 파일에서 KIC_LOG_FILE_PATH 경로를 확인하거나 수정합니다.
+/etc/default/kic_monitor_agent
+KIC_LOG_FILE_PATH
+sudo vi /etc/default/kic_monitor_agent
+sudo vi /etc/default/kic_monitor_agent
+수정 후, 아래 명령어로 모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+수정 후, 아래 명령어로 모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+
+#### 원인 2: 로그 파일의 읽기(READ) 권한 부족 ​
+
+다음 명령어를 통해 로그 파일에 대한 READ 권한을 부여합니다. sudo chmod +r ${로그 파일 경로}
+다음 명령어를 통해 로그 파일에 대한 READ 권한을 부여합니다.
+sudo chmod +r ${로그 파일 경로}
+sudo chmod +r ${로그 파일 경로}
+권한을 설정한 후, 모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+권한을 설정한 후, 모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+
+#### 원인 3: 알림 조건 설정 중, 여러 키워드가 논리곱( AND )으로 동작하는 문제 ​
+
+AND
+알림 조건을 설정할 때, 조건 하나에 여러 키워드 를 추가하는 경우, 해당 키워드들이 **논리곱( AND )**으로 동작하여 특정 키워드가 포함되지 않은 로그 이벤트는 알림이 발생하지 않을 수 있습니다.
+AND
+▶️ 문제 해결: 각 조건에 개별 키워드를 입력 하여 조건을 분리합니다. 이를 통해 각 조건은 **논리합( OR )**으로 동작하게 되어, 설정한 모든 키워드에 대한 모니터링이 가능합니다.
+OR
+문자 및 알림톡 수신 채널 설정 시 알림 미수신 문제
+로그 기반 알림 미수신 문제
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/how-to-guides
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Alert Center 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 알림 정책 생성 및 관리
+
+서비스에서 발생한 문제를 파악하기 위해 알림 및 관련 정책을 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 알림 내역 조회 및 Silence 설정
+
+설정한 알림 정책에 따라 알림 내역을 조회하는 방법을 설명하고 특정 기간 동안 알림을 억제하는 Silence 설정 방법을 설명합니다.
+
+## 📄️ 수신 채널 생성 및 관리
+
+알림을 전송받는 수신 채널을 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 발신 내역 조회
+
+설정한 알림 정책에 따라 발신 내역을 조회하는 방법을 설명합니다.
+
+## 📄️ 필수 공지 알림 관리
+
+Alert Center의 필수 공지 알림에 대해 설명합니다.
+
+## 📄️ 부록. Alert Center에서 VM Evacuation 실시간 알림 설정
+
+Alert Center를 이용하여 VM Evacuation 알림을 받을 수 있습니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-event
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+## 조회할 수 있는 조직 이벤트 ​
+
+Cloud Trail에서 조회할 수 있는 조직 이벤트는 다음과 같습니다.
+
+### IAM ​
+
+다음은 조회할 수 있는 조직 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 조직 이벤트 이름 | 설명 |
+|---|---|---|---|
+| IAM | Auth | Console Login | 콘솔 로그인 |
+| IAM | Auth | Console Login Fail | 콘솔 로그인 실패 |
+| IAM | Auth | Console Logout | 콘솔 로그아웃 |
+| IAM | Auth | User Password Register | 초대한 사용자 초기 비밀번호 등록 |
+| IAM | Auth | User Password Reset | 사용자 비밀번호 재설정 |
+| IAM | Auth | User Password Update | 사용자 비밀번호 변경 |
+| IAM | User | User Add | 사용자 추가 |
+| IAM | User | User Delete | 사용자 삭제 |
+| IAM | User | Domain Role Assign | 사용자에게 조직 역할 할당 |
+| IAM | User | Domain Role Unassign | 사용자의 조직 역할 일괄 제거 |
+| IAM | User | User Email Update | 사용자 연락용 이메일 업데이트 |
+| IAM | User | User Phone Update | 사용자 휴대폰 번호 업데이트 |
+| IAM | User | User OTP Create | 사용자 OTP 생성 |
+| IAM | User | User OTP Enable | 사용자 OTP 활성화 |
+| IAM | User | User OTP Delete | 사용자 OTP 삭제 |
+| IAM | User | User Invite Resend | 사용자 초대 |
+| IAM | User | Group Member Add | 그룹에 사용자 추가 |
+| IAM | User | Group Member Remove | 그룹에서 사용자 내보내기 |
+| IAM | Group | Domain Group Assign | 그룹에 조직 역할 할당 |
+| IAM | Group | Domain Group Unassign | 그룹의 조직 역할 일괄 제거 |
+| IAM | Group | Project Group Assign | 그룹에 프로젝트 역할 할당 |
+| IAM | Group | Project Group Unassign | 그룹의 프로젝트 역할 일괄 제거 |
+| IAM | Group | Group Create | 그룹 생성 |
+| IAM | Group | Group Delete | 그룹 삭제 |
+| IAM | Project | Project Create | 프로젝트 생성 |
+| IAM | Project | Project Update | 프로젝트 정보 수정 |
+| IAM | Application Credential | User Access Key Create | 사용자 계정의 액세스 키 생성 |
+| IAM | Application Credential | User Access Key Delete | 사용자 계정의 액세스 키 삭제 |
+| IAM | Credential | S3 Access Key Create | 사용자 계정의 S3 액세스 키 생성 |
+| IAM | Credential | S3 Access Key Delete | 사용자 계정의 S3 액세스 키 삭제 |
+| IAM | Domain | Domain MFA Update | 조직 2단계 인증 활성/비활성 |
+| IAM | Domain | Domain Access Granted IP Create | 콘솔 접근 허용 아이피 생성 |
+| IAM | Domain | Domain Access Granted IP Update | 콘솔 접근 허용 아이피 변경 |
+| IAM | Domain | Domain Access Granted IP Delete | 콘솔 접근 허용 아이피 삭제 |
+| IAM | Domain | Domain Access Granted IP Delete | 콘솔 접근 허용 아이피 일괄 삭제 |
+| IAM | Domain | Domain Security Info Update | 보안 설정 정보 수정 |
+| IAM | Domain | Domain IDP Enable | IdP 연동 활성화 |
+| IAM | Domain | Domain IDP Disable | IdP 연동 비활성화 |
+
+
+### Alert Center ​
+
+다음은 조회할 수 있는 조직 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Alert Center | Channel | Create Channel | 수신 채널 생성 |
+| Alert Center | Channel | Update Channel | 수신 채널 수정 |
+| Alert Center | Channel | Delete Channel | 수신 채널 삭제 |
+| Alert Center | Alert Policy | Create Alert Policy | 알림 정책 생성 |
+| Alert Center | Alert Policy | Update Alert Policy | 알림 정책 수정 |
+| Alert Center | Alert Policy | Delete Alert Policy | 알림 정책 삭제 |
+| Alert Center | Announcement Recipient | Update Announcement Recipient | 필수 공지 알림 수신자 업데이트 |
+
+
+### Billing ​
+
+다음은 조회할 수 있는 조직 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 조직 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Billing | Billing Group | Billing Group Detail View | 빌링 그룹 세부 정보 조회 |
+| Billing | Billing Group | Billing Group Update | 빌링 그룹 수정 |
+| Billing | Billing Group | Billing Group Delete | 빌링 그룹 삭제 |
+| Billing | Billing Group | Billing Group Create | 빌링 그룹 생성 |
+| Billing | Billing Group | Billing Group User View | 빌링 그룹 사용자 권한 조회 |
+| Billing | Billing Group | Billing Group User Update | 빌링 그룹 사용자 권한 수정 |
+| Billing | Billing Group | Billing Group View | 빌링 그룹 목록 조회 |
+| Billing | Billing Group | Billing Group Of User View | 빌링 그룹 사용자 목록 조회 |
+| Billing | Billing Group | Billing Group Project View | 빌링 그룹 프로젝트 목록 조회 |
+| Billing | Billing Group | Billing Group User Delete | 빌링 그룹 권한 삭제 |
+| Billing | Cost Report | Cost Report Project View | 예상 요금 조회 프로젝트 목록 조회 |
+| Billing | Cost Report | Cost Report Monthly View | 예상 요금 조회(월별) 조회 |
+| Billing | Cost Report | Cost Report Daily View | 예상 요금 조회(일별) 조회 |
+| Billing | Cost Report | Cost Report Project Detail View | 예상 요금 조회 프로젝트 상세 조회 |
+| Billing | Cost Report | View Cost Report Summary | 예상 요금 조회 리포트 요약 정보 조회 |
+| Billing | Cost Report | View Cost Report Filter | 예상 요금 조회 리포트 필터 조회 |
+| Billing | Cost Report | View Cost Report Detail | 예상 요금 조회 리포트 상세 내용 조회 |
+| Billing | Cost Report | View Cost Report Monthly Overview | 특정 월 예상 요금 조회 리포트 요약 정보 조회 |
+| Billing | Cost Report | Download Cost Report PDF | 예상 요금 조회 PDF 다운로드 |
+| Billing | Cost Report | Download Cost Report Excel | 예상 요금 조회 Excel 다운로드 |
+| Billing | Invoice | Invoice Project View | 청구서 프로젝트별 조회 |
+| Billing | Invoice | Invoice Service View | 청구서 서비스별 조회 |
+| Billing | Invoice | Invoice Service Document View | 청구서 서비스별 엑셀 다운로드 |
+| Billing | Invoice | Invoice Project Detail View | 청구서 프로젝트별 조회 |
+| Billing | Invoice | Invoice Project Document View | 청구서 프로젝트별 엑셀 다운로드 |
+| Billing | Invoice | Invoice Start Month View | 청구서 조회 |
+| Billing | Invoice | Invoice Credit View | 청구서 상단 요약 크레딧 항목 조회 |
+| Billing | Credit | Credit View | 크레딧 목록 조회 |
+| Billing | Credit | Credit Service View | 크레딧 적용 서비스 조회 |
+| Billing | Credit | Credit History View | 크레딧 이용내역 조회 |
+| Billing | Payment | Payment Create | 결제 수단 등록 또는 변경 |
+| Billing | Payment | Payment Receipt View | 신용카드 매출전표 조회 |
+| Billing | Payment | Payment Check | 결제 수단 체크 |
+| Billing | Payment | Payment View | 결제 수단 목록 조회 |
+
+
+## 조회할 수 있는 프로젝트 이벤트 ​
+
+Cloud Trail에서 조회할 수 있는 프로젝트 이벤트는 다음과 같습니다.
+
+### Virtual Machine ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 |
+|---|---|---|
+| Virtual Machine | Instance | Instance Create |
+| Virtual Machine | Instance | Instance Stop |
+| Virtual Machine | Instance | Instance Shelve |
+| Virtual Machine | Instance | Instance Start |
+| Virtual Machine | Instance | Instance Reboot |
+| Virtual Machine | Instance | Instance Delete |
+| Virtual Machine | Instance | Instance Resize |
+| Virtual Machine | Instance | Instance Volume Attach |
+| Virtual Machine | Instance | Instance Volume Detach |
+| Virtual Machine | Instance | Instance Error |
+| Virtual Machine | Instance | Instance Migrate Start |
+| Virtual Machine | Instance | Instance Evacuate Start |
+| Virtual Machine | Instance | Instance Migrate Finished |
+| Virtual Machine | Instance | Instance Evacuate Finished |
+| Virtual Machine | Keypair | Keypair Create |
+| Virtual Machine | Keypair | Keypair Delete |
+| Virtual Machine | Block Storage | Volume Create |
+| Virtual Machine | Block Storage | Volume Update |
+| Virtual Machine | Block Storage | Volume Delete |
+| Virtual Machine | Block Storage | Volume Resize |
+| Virtual Machine | Snapshot | Snapshot Create |
+| Virtual Machine | Snapshot | Snapshot Delete |
+| Virtual Machine | Snapshot | Snapshot Restore |
+| Virtual Machine | Snapshot | Create Snapshot Success |
+| Virtual Machine | Snapshot | Create Snapshot Failure |
+| Virtual Machine | Snapshot | Delete Snapshot Success |
+| Virtual Machine | Snapshot | Delete Snapshot Failure |
+| Virtual Machine | Image | Image Create |
+| Virtual Machine | Image | Image Update |
+| Virtual Machine | Image | Image Delete |
+
+
+### Bare Metal Server ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 |
+|---|---|---|
+| Bare Metal Server | Instance | Instance Create |
+| Bare Metal Server | Instance | Instance Stop |
+| Bare Metal Server | Instance | Instance Start |
+| Bare Metal Server | Instance | Instance Reboot |
+| Bare Metal Server | Instance | Instance Delete |
+| Bare Metal Server | Instance | Instance Rebuild |
+| Bare Metal Server | Instance | Instance Error |
+
+
+### VPC ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| VPC | Security Group | Security Group Create | 보안 그룹 생성 |
+| VPC | Security Group | Security Group Delete | 보안 그룹 삭제 |
+| VPC | Security Group | Security Group Rule Create | 보안 그룹 규칙 생성 |
+| VPC | Security Group | Security Group Rule Delete | 보안 그룹 규칙 삭제 |
+| VPC | Public IP | Public IP Create | 퍼블릭 IP 생성 |
+| VPC | Public IP | Public IP Delete | 퍼블릭 IP 삭제 |
+| VPC | Public IP | Public IP Update | 퍼블릭 IP 수정 |
+| VPC | VPC | VPC Create | VPC 생성 |
+| VPC | VPC | VPC Delete | VPC 삭제 |
+| VPC | VPC | VPC Update | VPC 수정 |
+| VPC | Subnet | Subnet Create | 서브넷 생성 |
+| VPC | Subnet | Subnet Delete | 서브넷 삭제 |
+| VPC | Subnet | Subnet Update | 서브넷 수정 |
+| VPC | Routing Table | Routing Table Create | 라우팅 테이블 생성 |
+| VPC | Routing Table | Routing Table Delete | 라우팅 테이블 삭제 |
+| VPC | Routing Table | Routing Table Update | 라우팅 테이블 수정 |
+| VPC | Route | Route Create | 라우트 생성 |
+| VPC | Route | Route Delete | 라우트 삭제 |
+| VPC | Route | Route Update | 라우트 수정 |
+| VPC | Network Interface | Network Interface Create | 네트워크 인터페이스 생성 |
+| VPC | Network Interface | Network Interface Delete | 네트워크 인터페이스 삭제 |
+| VPC | Network Interface | Network Interface Update | 네트워크 인터페이스 수정 |
+
+
+### Load Balancing ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 |
+|---|---|---|
+| Load Balancing | Load Balancer | Load Balancer Create |
+| Load Balancing | Load Balancer | Load Balancer Delete |
+| Load Balancing | Listener | Listener Create |
+| Load Balancing | Listener | Listener Delete |
+| Load Balancing | Listener | Listener Update |
+| Load Balancing | Target Group | Target Group Create |
+| Load Balancing | Target Group | Target Group Delete |
+| Load Balancing | Target Group | Target Group Update |
+| Load Balancing | Health Check | Heath Check Create |
+| Load Balancing | Health Check | Health Check Delete |
+| Load Balancing | Health Check | Health Check Update |
+
+
+### DNS ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| DNS | Zone | Zone Create | DNS 영역 생성 |
+| DNS | Zone | Zone Delete | DNS 영역 삭제 |
+| DNS | Record | Record Create | 레코드 생성 |
+| DNS | Record | Record Update | 레코드 수정 |
+| DNS | Record | Record Delete | 레코드 삭제 |
+
+
+### Transit Gateway ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 |
+|---|---|---|
+| Transit Gateway | Transit Gateway | Transit Gateway Create |
+| Transit Gateway | Transit Gateway | Transit Gateway Delete |
+| Transit Gateway | Transit Gateway | Transit Gateway Update |
+| Transit Gateway | VPC Attachment | VPC Attachment Create |
+| Transit Gateway | VPC Attachment | VPC Attachment Delete |
+| Transit Gateway | VPC Attachment | VPC Attachment Update |
+| Transit Gateway | Route Table | Route Table Create |
+| Transit Gateway | Route Table | Route Table Delete |
+| Transit Gateway | Route Table | Route Table Update |
+| Transit Gateway | Route Table | Route Table Association Create |
+| Transit Gateway | Route Table | Route Table Association Delete |
+| Transit Gateway | Static Route | Static Route Create |
+| Transit Gateway | Static Route | Static Route Delete |
+
+
+### Kubernetes Engine ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Kubernetes Engine | Cluster | Create Cluster Request | 클러스터 생성 요청 |
+| Kubernetes Engine | Cluster | Update Cluster Request | 클러스터 업데이트 요청 |
+| Kubernetes Engine | Cluster | Upgrade Cluster Version | 클러스터 버전 업그레이드 요청 |
+| Kubernetes Engine | Cluster | Delete Cluster Request | 클러스터 삭제 요청 |
+| Kubernetes Engine | Nodepool | Create Nodepool Request | 노드 풀 생성 요청 |
+| Kubernetes Engine | Nodepool | Update Nodepool Request | 노드 풀 업데이트 요청 |
+| Kubernetes Engine | Nodepool | Upgrade Nodepool Version | 노드 풀 버전 업그레이드 요청 |
+| Kubernetes Engine | Nodepool | Update Nodepool User Data | 노드 풀 User-Data 업데이트 요청 |
+| Kubernetes Engine | Nodepool | Update Nodepool User Labels | 노드 풀 User-Label 업데이트 요청 |
+| Kubernetes Engine | Nodepool | Delete nodepool Request | 노드 풀 삭제 요청 |
+| Kubernetes Engine | Node | Cordon Node Request | 노드 스케줄링 차단 요청 |
+| Kubernetes Engine | Node | Uncordon Node Request | 노드 스케줄링 차단 해제 요청 |
+| Kubernetes Engine | Node | Restore Node | 노드 재생성 요청 |
+| Kubernetes Engine | Node | Remove Node Request | 노드 삭제 요청 |
+| Kubernetes Engine | Scheduled Scaling | Create Scheduled Scaling | 예약 기반 오토 스케일링 생성 |
+| Kubernetes Engine | Scheduled Scaling | Delete Scheduled Scaling | 예약 기반 오토 스케일링 삭제 |
+| Kubernetes Engine | Scheduled Scaling | Scheduled Scaling Action Executing | 예약 기반 오토 스케일링 실행 |
+| Kubernetes Engine | Scheduled Scaling | Scheduled Scaling Action Success | 예약 기반 오토 스케일링 성공 |
+| Kubernetes Engine | Scheduled Scaling | Scheduled Scaling Action Failed | 예약 기반 오토 스케일링 실패 |
+| Kubernetes Engine | Resource-Based Autoscaling | Resource-Based Autoscaling Scale In | 리소스 기반 오토 스케일링 노드 Scale In 실행 |
+| Kubernetes Engine | Resource-Based Autoscaling | Resource-Based Autoscaling Scale Out | 리소스 기반 오토 스케일링 노드 Scale Out 실행 |
+
+
+### Container Registry ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 |
+|---|---|---|
+| Container Registry | Project | Garbage Collection Run |
+| Container Registry | Project | Garbage Collection Done |
+| Container Registry | Repository | Repository Create |
+| Container Registry | Repository | Repository Update |
+| Container Registry | Repository | Repository Role Update |
+| Container Registry | Repository | Repository Delete |
+| Container Registry | Image | Image Update |
+| Container Registry | Image | Image Expires Update |
+| Container Registry | Image | Image Delete |
+| Container Registry | Tag | Image Push |
+| Container Registry | Tag | Image Scan Done |
+| Container Registry | Tag | Tag Add |
+| Container Registry | Tag | Tag Restore |
+| Container Registry | Tag | Tag Delete |
+
+
+### Object Storage ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Object Storage | Bucket | Bucket Create | 버킷 생성 |
+| Object Storage | Bucket | Bucket Delete | 버킷 삭제 |
+| Object Storage | Bucket | Bucket Lifecycle Create | 버킷 Lifecycle 생성 |
+| Object Storage | Bucket | Bucket Lifecycle Delete | 버킷 Lifecycle 삭제 |
+| Object Storage | Bucket | Bucket Permissions Setting | 버킷 접근 제어(퍼블릭 액세스) 설정 |
+| Object Storage | Bucket | Bucket CORS Policy Update | 버킷 CORS 수정 |
+| Object Storage | Bucket Assignment | Assignment Update | 버킷 역할 수정 |
+| Object Storage | Bucket Assignment | Assignment Create | 버킷 역할 추가 |
+| Object Storage | Bucket Assignment | Assignment Delete | 버킷 역할 삭제 |
+
+
+### File Storage ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| File Storage | Instance | Instance Create | 인스턴스 생성 |
+| File Storage | Instance | Instance Update | 인스턴스 설정 수정 |
+| File Storage | Instance | Instance Delete | 인스턴스 삭제 |
+| File Storage | Instance | Instance Restore | 인스턴스 복원 |
+| File Storage | Backup | Backup Start | 백업 시작 |
+| File Storage | Backup | Backup Finished | 백업 완료 |
+| File Storage | Backup | Backup Update | 백업 수정 |
+| File Storage | Backup | Backup Delete | 백업 삭제 |
+| File Storage | Backup | Backup Restore Start | 백업 복원 시작 |
+| File Storage | Backup | Backup Restore Finished | 백업 복원 완료 |
+
+
+### MySQL ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| MySQL | Instance Group | Instance Group Create | 인스턴스 그룹 생성 |
+| MySQL | Instance Group | Instance Group Delete | 인스턴스 그룹 삭제 |
+| MySQL | Instance Group | Instance Group Error | 인스턴스 그룹 에러 |
+| MySQL | Instance Group | Instance Group Start Switchover | 인스턴스 그룹 Switchover 시작 |
+| MySQL | Instance Group | Instance Group End Switchover | 인스턴스 그룹 Switchover 완료 |
+| MySQL | Instance Group | Instance Group Switchover Error | 인스턴스 그룹 Switchover 에러 |
+| MySQL | Instance Group | Instance Group Start Failover | 인스턴스 그룹 Failover 시작 |
+| MySQL | Instance Group | Instance Group End Failover | 인스턴스 그룹 Failover 완료 |
+| MySQL | Instance Group | Instance Group Update Backup Schedule | 인스턴스 그룹 자동 백업 스케줄 업데이트 |
+| MySQL | Instance Group | Instance Group Update Parameter Group Start | 연결된 파라미터 그룹 업데이트 시작 |
+| MySQL | Instance Group | Instance Group Update Parameter Group End | 연결된 파라미터 그룹 업데이트 완료 |
+| MySQL | Instance Group | Instance Group Update Parameter Group Error | 연결된 파라미터 그룹 업데이트 에러 |
+| MySQL | Instance Group | Instance Group Retry Parameter Group Start | 연결된 파라미터 그룹 재적용 시작 |
+| MySQL | Instance Group | Instance Group Retry Parameter Group End | 연결된 파라미터 그룹 재적용 완료 |
+| MySQL | Instance Group | Instance Group Retry Parameter Group Error | 연결된 파라미터 그룹 재적용 에러 |
+| MySQL | Instance Group | Scaling-In Start | Standby 삭제 시작 |
+| MySQL | Instance Group | Scaling-In End | Standby 삭제 완료 |
+| MySQL | Instance Group | Scaling-In Error | Standby 삭제 에러 |
+| MySQL | Instance Group | Scaling-Out Start | Standby 추가 시작 |
+| MySQL | Instance Group | Scaling-Out End | Standby 추가 완료 |
+| MySQL | Instance Group | Scaling-Out Error | Standby 추가 에러 |
+| MySQL | Instance Group | Scaling-Up Start | 인스턴스 그룹 유형 변경(스케일 업) 시작 |
+| MySQL | Instance Group | Scaling-Up End | 인스턴스 그룹 유형 변경(스케일 업) 완료 |
+| MySQL | Instance Group | Scaling-Up Error | 인스턴스 그룹 유형 변경(스케일 업) 에러 |
+| MySQL | Instance Group | Scaling-Down Start | 인스턴스 그룹 유형 변경(스케일 다운) 시작 |
+| MySQL | Instance Group | Scaling-Down End | 인스턴스 그룹 유형 변경(스케일 다운) 완료 |
+| MySQL | Instance Group | Scaling-Down Error | 인스턴스 그룹 유형 변경(스케일 다운) 에러 |
+| MySQL | Instance Group | Maintenance Start | 메인터넌스 작업 시작 |
+| MySQL | Instance Group | Maintenance End | 메인터넌스 작업 완료 |
+| MySQL | Instance Group | Maintenance Error | 메인터넌스 작업 에러 |
+| MySQL | Instance Group | Update Security Group Start | 보안 그룹 업데이트 시작 |
+| MySQL | Instance Group | Update Security Group End | 보안 그룹 업데이트 완료 |
+| MySQL | Instance Group | Update Security Group Error | 보안 그룹 업데이트 에러 |
+| MySQL | Instance Group | Rebooting Start | 인스턴스 그룹 내 인스턴스 재시작 |
+| MySQL | Instance Group | Rebooting End | 인스턴스 그룹 내 인스턴스 재시작 완료 |
+| MySQL | Instance Group | Rebooting Error | 인스턴스 그룹 내 인스턴스 재시작 에러 |
+| MySQL | Instance | Instance Error | 인스턴스 생성 에러 |
+| MySQL | Instance | Instance Start Restart | 인스턴스 재시작 |
+| MySQL | Instance | Instance End Restart | 인스턴스 재시작 완료 |
+| MySQL | Instance | Instance Restart Error | 인스턴스 재시작 에러 |
+| MySQL | Instance | Instance Start Volume Extend | 인스턴스 볼륨 확장 시작 |
+| MySQL | Instance | Instance End Volume Extend | 인스턴스 볼륨 확장 종료 |
+| MySQL | Instance | Instance Volume Extend Error | 인스턴스 볼륨 확장 에러 |
+| MySQL | Instance | Log Export Start | 로그 추출 시작 |
+| MySQL | Instance | Log Export End | 로그 추출 완료 |
+| MySQL | Instance | Log Export Error | 로그 추출 에러 |
+| MySQL | Instance | Engine Version Upgrade Start | 엔진 버전 업그레이드 시작 |
+| MySQL | Instance | Engine Version Upgrade End | 엔진 버전 업그레이드 종료 |
+| MySQL | Instance | Engine Version Upgrade Error | 엔진 버전 업그레이드 에러 |
+| MySQL | Instance | Kernel Version Upgrade Start | 커널 버전 업그레이드 시작 |
+| MySQL | Instance | Kernel Version Upgrade End | 커널 버전 업그레이드 종료 |
+| MySQL | Instance | Kernel Version Upgrade Error | 커널 버전 업그레이드 에러 |
+| MySQL | Instance | OS Version Upgrade Start | OS 버전 업그레이드 시작 |
+| MySQL | Instance | OS Version Upgrade End | OS 버전 업그레이드 종료 |
+| MySQL | Instance | OS Version Upgrade Error | OS 버전 업그레이드 에러 |
+| MySQL | Instance | Instance Resizing Start | 인스턴스 유형 변경(Scaling up/down) 시작 |
+| MySQL | Instance | Instance Resizing End | 인스턴스 유형 변경(Scaling up/down) 완료 |
+| MySQL | Instance | Instance Resizing Error | 인스턴스 유형 변경(Scaling up/down) 에러 |
+| MySQL | Instance | Instance Resizing Rollback Start | 인스턴스 유형 변경 실패 시 성공한 인스턴스들에 대한 롤백 시작 |
+| MySQL | Instance | Instance Resizing Rollback End | 인스턴스 유형 변경 롤백 완료 |
+| MySQL | Instance | Instance Resizing Rollback Error | 인스턴스 유형 변경 롤백 에러 |
+| MySQL | Instance | Instance Storage Warning | 인스턴스 디스크 사용량 경고, 인스턴스 디스크 여유 용량이 30GB 미만인 경우 |
+| MySQL | Instance | Instance Storage Error | 인스턴스 디스크 사용량 에러, 인스턴스 디스크 여유 용량이 5GB 미만인 경우 |
+| MySQL | Backup | Backup Start | 백업 시작 |
+| MySQL | Backup | Backup End | 백업 완료 |
+| MySQL | Backup | Backup Delete | 백업 삭제 |
+| MySQL | Backup | Backup Error | 백업 에러 |
+| MySQL | Backup | Scheduled Backup Start | 자동 백업 시작 |
+| MySQL | Backup | Scheduled Backup End | 자동 백업 완료 |
+| MySQL | Backup | Scheduled Backup Delete | 자동 백업 삭제 |
+| MySQL | Backup | Scheduled Backup Error | 자동 백업 에러 |
+| MySQL | Parameter Group | Parameter Group Create | 파라미터 그룹 생성 |
+| MySQL | Parameter Group | Parameter Group Update | 연결된 인스턴스 그룹이 없는 파라미터 그룹 업데이트 |
+| MySQL | Parameter Group | Parameter Group Delete | 파라미터 그룹 삭제 |
+| MySQL | Parameter Group | Parameter Group Update Start | 연결된 인스턴스 그룹이 있는 파라미터 그룹 업데이트 시작 |
+| MySQL | Parameter Group | Parameter Group Update End | 연결된 인스턴스 그룹이 있는 파라미터 그룹 업데이트 완료 |
+| MySQL | Parameter Group | Parameter Group Update Error | 연결된 인스턴스 그룹이 있는 파라미터 그룹 업데이트 에러 |
+| MySQL | Parameter Group | Parameter Group Reset | 연결된 인스턴스 그룹이 없는 파라미터 그룹 재설정 |
+| MySQL | Parameter Group | Parameter Group Reset Start | 연결된 인스턴스 그룹이 있는 파라미터 그룹 재설정 시작 |
+| MySQL | Parameter Group | Parameter Group Reset End | 연결된 인스턴스 그룹이 있는 파라미터 그룹 재설정 완료 |
+| MySQL | Parameter Group | Parameter Group Reset Error | 연결된 인스턴스 그룹이 있는 파라미터 그룹 재설정 에러 |
+| MySQL | Parameter Group | Parameter Group Rollback | 연결된 인스턴스 그룹이 없는 파라미터 그룹 롤백 |
+| MySQL | Parameter Group | Parameter Group Rollback Start | 연결된 인스턴스 그룹이 있는 파라미터 그룹 롤백 시작 |
+| MySQL | Parameter Group | Parameter Group Rollback End | 연결된 인스턴스 그룹이 있는 파라미터 그룹 롤백 완료 |
+| MySQL | Parameter Group | Parameter Group Rollback Error | 연결된 인스턴스 그룹이 있는 파라미터 그룹 롤백 에러 |
+
+
+### MemStore ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| MemStore | Cluster | Cluster Create | 클러스터 생성 요청 |
+| MemStore | Cluster | Cluster Create Failed | 클러스터 생성 요청 실패 |
+| MemStore | Cluster | Cluster Delete | 클러스터 삭제 요청 |
+| MemStore | Cluster | Cluster Shard Add | 샤드 추가 요청 |
+| MemStore | Cluster | Cluster Shard Delete | 샤드 삭제 요청 |
+| MemStore | Cluster | Cluster Node Add | 노드 추가 요청 |
+| MemStore | Cluster | Cluster Node Delete | 노드 삭제 요청 |
+| MemStore | Cluster | Cluster Failover | Failover 상황 발생 |
+| MemStore | Cluster | Cluster Failover Complete | Failover 조치 완료 |
+| MemStore | Cluster | Cluster Switchover | Switchover(Primary 변경) 상황 발생 |
+| MemStore | Cluster | Cluster Node Down | 노드 장애 상황 발생 |
+| MemStore | Cluster | Node Recovery | 노드 장애 후 복구 상황 발생 |
+| MemStore | Cluster | Cluster Recovery Complete | 클러스터 장애 상황 조치 완료 |
+| MemStore | Cluster | Cluster Backup Schedule Update | 백업 주기 설정 변경 |
+| MemStore | Backup | Backup Create | 수동 백업 생성 요청 |
+| MemStore | Backup | Backup Create Complete | 수동 백업 생성 완료 |
+| MemStore | Backup | Backup Create Failed | 수동 백업 생성 실패 |
+| MemStore | Backup | Scheduled Backup Create | 자동 백업 생성 |
+| MemStore | Backup | Scheduled Backup Create Complete | 자동 백업 완료 |
+| MemStore | Backup | Scheduled Backup Create Failed | 자동 백업 생성 실패 |
+| MemStore | Backup | Backup Delete | 수동 백업 삭제 요청 |
+| MemStore | Backup | Backup Delete Complete | 수동 백업 삭제 완료 |
+| MemStore | Backup | Scheduled Backup Delete | 자동 백업 삭제 요청 |
+| MemStore | Backup | Scheduled Backup Delete Complete | 자동 백업 삭제 완료 |
+| MemStore | Backup | Backup Copy | 백업 복사 요청 |
+| MemStore | Backup | Backup Copy Complete | 백업 복사 완료 |
+| MemStore | Backup | Backup Copy Failed | 백업 복사 실패 |
+| MemStore | Backup | Backup Export | 백업 내보내기 요청 |
+| MemStore | Backup | Backup Export Complete | 백업 내보내기 완료 |
+| MemStore | Backup | Backup Export Failed | 백업 내보내기 실패 |
+| MemStore | Parameter Group | Parameter Group Create | 파라미터 그룹 생성 요청 |
+| MemStore | Parameter Group | Parameter Group Delete | 파라미터 그룹 삭제 요청 |
+| MemStore | Parameter Group | Parameter Group Apply Failed | 파라미터 그룹 적용 실패 |
+| MemStore | Parameter Group | Parameter Group Apply Complete | 파라미터 그룹 적용 완료 |
+| MemStore | Parameter Group | Parameters Update | 파라미터 수정 요청 |
+| MemStore | Parameter Group | Parameters Rollback | 파라미터 롤백 요청 |
+| MemStore | Parameter Group | Parameters Reset | 파라미터 초기화 요청 |
+
+
+### PostgreSQL ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| PostgreSQL | Instance Group | Instance Group Create | 인스턴스 그룹 생성 |
+| PostgreSQL | Instance Group | Instance Group Delete | 인스턴스 그룹 삭제 |
+| PostgreSQL | Instance Group | Instance Group Error | 인스턴스 그룹 에러 |
+| PostgreSQL | Instance Group | Instance Group List | 인스턴스 그룹 목록 조회 |
+| PostgreSQL | Instance Group | Instance Group Get | 인스턴스 그룹 상세 조회 |
+| PostgreSQL | Instance Group | Instance Group Switchover Start | 인스턴스 그룹 Switchover 시작 |
+| PostgreSQL | Instance Group | Instance Group Switchover End | 인스턴스 그룹 Switchover 완료 |
+| PostgreSQL | Instance Group | Instance Group Switchover Error | 인스턴스 그룹 Switchover 에러 |
+| PostgreSQL | Instance Group | Instance Group Failover Start | 인스턴스 그룹 Failover 시작 |
+| PostgreSQL | Instance Group | Instance Group Failover End | 인스턴스 그룹 Failover 완료 |
+| PostgreSQL | Instance Group | Instance Group Failover Error | 인스턴스 그룹 Failover 에러 |
+| PostgreSQL | Instance Group | Instance Group Volume Extend Start | 인스턴스 그룹 볼륨 확장 시작 |
+| PostgreSQL | Instance Group | Instance Group Volume Extend End | 인스턴스 그룹 볼륨 확장 완료 - 인스턴스 그룹 내 볼륨 확장에 실패한 인스턴스의 정보는 트레일 로그 내 Additional Info에서 확인 가능(해당 인스턴스의 볼륨 확장은 성공 시까지 재시도) |
+| PostgreSQL | Instance Group | Instance Group Volume Extend Error | 인스턴스 그룹 볼륨 확장 에러 |
+| PostgreSQL | Instance Group | Instance Group Restart Start | 인스턴스 그룹 재시작 |
+| PostgreSQL | Instance Group | Instance Group Restart End | 인스턴스 그룹 재시작 완료 |
+| PostgreSQL | Instance Group | Instance Group Restart Error | 인스턴스 그룹 재시작 에러 |
+| PostgreSQL | Instance Group | Instance Group Backup Schedule Update | 인스턴스 그룹 백업 스케줄 업데이트 |
+| PostgreSQL | Instance | Instance List | 인스턴스 목록 조회 |
+| PostgreSQL | Instance | Instance Get | 인스턴스 상세 조회 |
+| PostgreSQL | Instance | Instance Error | 인스턴스 에러 |
+| PostgreSQL | Instance | Instance Volume Extend End | 인스턴스 볼륨 확장 종료 - 인스턴스 그룹 내 볼륨 확장 에러 인스턴스의 볼륨 확장 재시도 성공 시 발생 |
+| PostgreSQL | Backup | Backup List | 백업 조회 |
+| PostgreSQL | Backup | Backup Get | 백업 상세 조회 |
+| PostgreSQL | Backup | Backup Start | 백업 시작 |
+| PostgreSQL | Backup | Backup End | 백업 완료 |
+| PostgreSQL | Backup | Backup Delete | 백업 삭제 |
+| PostgreSQL | Backup | Backup Error | 백업 에러 |
+
+
+### Hadoop Eco ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Initialize | 클러스터 생성 요청 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco VM Create | 클러스터 VM 생성 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install | Hadoop Eco 컴포넌트 설치 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Start | Hadoop Eco 컴포넌트 실행 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(User) | 사용자 요청으로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(User Command) | 스케줄링 작업 완료로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(Error) | 에러 발생으로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(Failed to create vm) | VM 생성 중 에러 발생으로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(Failed to destroy vm) | VM 종료 중 에러 발생으로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(Check time over) | 클러스터 생성 시간 초과로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(User deleted VM) | 사용자의 VM 삭제로 클러스터 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale out initializing) | 증설을 위한 VM 생성 요청 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale out creating) | 증설 대상 VM 생성 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale out installing) | 증설한 VM에 Hadoop Eco 컴포넌트 설치 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale out starting) | 증설한 VM에 Hadoop Eco 컴포넌트 실행 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale out running) | 기존 클러스터와 증설된 VM 동작 확인 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale in Initializing) | 클러스터 축소 요청 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale in ready) | 축소를 위한 VM 컴포넌트의 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale in starting) | 축소 대상 VM 컴포넌트의 종료 확인 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Running(Scale in terminating) | 축소 대상 VM 삭제 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Failed to scale out | 증설 대상 VM 생성 실패 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Failed to scale out vm | 증설 대상 VM 컴포넌트 설치, 실행 실패 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Failed to scale in | 축소 대상 VM 삭제 실패 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Failed to scale in vm | 축소 대상 VM 컴포넌트의 종료 실패 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminate(Install error) | 클러스터 생성 실패로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Openstack Resource Depletion) |  |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Openstack Quota Exceeded) | 오픈스택 리소스 부족으로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Openstack Error) | 오픈스택 오류로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Network Error) | 네트워크 오류로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Security Group Error) | 보안 그룹 오류로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Install Failed(Component Error) | 컴포넌트 오류로 인한 종료 |
+| Hadoop Eco | Hadoop HDE, Hbase HDE, Trino HDE, Dataflow HDE | Hadoop Eco Terminated(User deleted VM) | 사용자의 VM 임의 삭제로 인한 종료 |
+| Hadoop Eco | Hadoop HDE | API Key Create | API 키 생성 |
+| Hadoop Eco | Hadoop HDE | API Key Delete | API 키 삭제 |
+| Hadoop Eco | Hadoop HDE | Hadoop Eco Job Cluster Create | Hadoop Eco 잡클러스터 생성 |
+| Hadoop Eco | Hadoop HDE | Hadoop Eco Job Cluster Schedule Start | Hadoop Eco 잡클러스터 실행 |
+| Hadoop Eco | Hadoop HDE | Hadoop Eco Job Cluster Schedule Stop | Hadoop Eco 잡클러스터 중지 |
+| Hadoop Eco | Hadoop HDE | Hadoop Eco Job Cluster Terminate | Hadoop Eco 잡클러스터 종료 |
+| Hadoop Eco | Hadoop HDE | Spark History Server Create Succeed | 스파크 히스토리 서버 생성 성공 |
+| Hadoop Eco | Hadoop HDE | Spark History Server Create Failed | 스파크 히스토리 서버 생성 실패 |
+| Hadoop Eco | Hadoop HDE | Spark History Server Deleted | 스파크 히스토리 서버 삭제 |
+
+이벤트 별 리소스 유형 버전은 아래와 같습니다.
+
+| 리소스 유형 | 버전 |
+|---|---|
+| Hadoop HDE | 1.0.1, 1.1.2, 2.0.1, 2.1.0 |
+| Hbase HDE | 1.0.1, 1.1.2, 2.0.1, 2.1.0 |
+| Trino HDE | 1.1.2, 2.0.1, 2.1.0 |
+| Dataflow HDE | 1.1.2, 2.0.1, 2.1.0 |
+
+
+### Data Catalog ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Data Catalog | Data Catalog | Create Data Catalog | Data Catalog 서비스 설치 |
+| Data Catalog | Catalog | Create Catalog | 카탈로그 생성 |
+| Data Catalog | Catalog | Delete Catalog | 카탈로그 삭제 |
+| Data Catalog | Database | Create Database | 데이터베이스 생성 |
+| Data Catalog | Database | Alter Database | 데이터베이스 수정 |
+| Data Catalog | Database | Drop Database | 데이터베이스 삭제 |
+| Data Catalog | Database | Cleanup Inactive Database | 비활성 데이터베이스 삭제 |
+| Data Catalog | Table | Create Table | 테이블 생성 |
+| Data Catalog | Table | Alter Table | 테이블 수정 |
+| Data Catalog | Table | Drop Table | 테이블 삭제 |
+| Data Catalog | Table | Cleanup Inactive Table | 비활성 테이블 삭제 |
+| Data Catalog | Table | Create Column | 칼럼 생성 |
+| Data Catalog | Table | Alter Column | 칼럼 수정 |
+| Data Catalog | Table | Drop Column | 칼럼 삭제 |
+| Data Catalog | Table | Add Table Param | 테이블 파라미터 추가 |
+| Data Catalog | Table | Update Table Param | 테이블 파라미터 수정 |
+| Data Catalog | Table | Delete Table Param | 테이블 파라미터 삭제 |
+| Data Catalog | Table | Add Serde Param | Serde 파라미터 추가 |
+| Data Catalog | Table | Update Serde Param | Serde 파라미터 수정 |
+| Data Catalog | Crawler :Connection | Start Crawler Connection Test | 커넥션 테스트 시작 |
+| Data Catalog | Crawler :Connection | End Crawler Connection Test | 커넥션 테스트 종료 |
+| Data Catalog | Crawler :Management | Create Crawler | 크롤러 생성 |
+| Data Catalog | Crawler :Management | Alter Crawler | 크롤러 수정 |
+| Data Catalog | Crawler :Management | Delete Crawler | 크롤러 삭제 |
+| Data Catalog | Crawler :Management | Cleanup Inactive Crawler | 비정상 크롤러 삭제 |
+| Data Catalog | Crawler :Management | Result Of Crawler Management | 크롤러 관리 작업 결과 |
+| Data Catalog | Crawler :Run | On Demand Run Crawler | 크롤러 즉시 실행 |
+| Data Catalog | Crawler :Run | Result Of Crawler Run Record | 크롤러 실행 결과 |
+| Data Catalog | Database | Catalog Status Rollback | 작업 실패로 인한 데이터베이스 상태 변경 |
+| Data Catalog | Table | Catalog Status Rollback | 작업 실패로 인한 테이블 상태 변경 |
+
+
+### Data Query ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Data Query | Data Source | Create Data Source | 데이터 소스 생성 |
+| Data Query | Data Source | Delete Data Source | 데이터 소스 삭제 |
+| Data Query | Data Source | Data Source Creation Failure | 데이터 소스 생성 실패 |
+| Data Query | Query Result Location | Create Query Result Location | 쿼리 결과 저장 위치 설정 |
+| Data Query | Query Result Location | Update Query Result Location | 쿼리 결과 저장 위치 수정 |
+| Data Query | Query | Query Execution Success | 쿼리 실행 성공 |
+| Data Query | Query | Query Execution Failure | 쿼리 실행 실패 |
+| Data Query | Query | Query Execution Aborted | 쿼리 실행 중단 |
+| Data Query | Query Result | Query Result Upload Success | 쿼리 결과 업로드 성공 |
+| Data Query | Query Result | Query Result Upload Failure | 쿼리 결과 업로드 실패 |
+| Data Query | Saved Query | Create Saved Query | 저장 쿼리 생성 |
+| Data Query | Saved Query | Update Saved Query | 저장 쿼리 수정 |
+| Data Query | Saved Query | Delete Saved Query | 저장 쿼리 삭제 |
+
+
+### Pub/Sub ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Pub/Sub | Topic | Create Topic | 토픽 생성 요청 |
+| Pub/Sub | Topic | Update Topic | 토픽 수정 요청 |
+| Pub/Sub | Topic | Delete Topic | 토픽 삭제 요청 |
+| Pub/Sub | Subscription | Create Subscription | 서브스크립션 생성 요청 |
+| Pub/Sub | Subscription | Update Subscription | 서브스크립션 수정 요청 |
+| Pub/Sub | Subscription | Delete Subscription | 서브스크립션 삭제 요청 |
+| Pub/Sub | Subscription | Seek Subscription | 서브스크립션 시점 되돌리기 요청 |
+| Pub/Sub | Subscription | Start Subscription Export | 서브스크립션 내보내기 활성화 요청 |
+| Pub/Sub | Subscription | Stop Subscription Export | 서브스크립션 내보내기 비활성화 요청 |
+| Pub/Sub | Subscription | Deactivate Subscription | 서브스크립션이 유효하지 않은 상태로 변경(Error, Expired, Invalid bucket, Unauthorized) |
+
+
+### Advanced Managed Kafka ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Advanced Managed Kafka | Cluster | Cluster Start | 클러스터 생성 요청 |
+| Advanced Managed Kafka | Cluster | Cluster Extend | 볼륨 확장 |
+| Advanced Managed Kafka | Cluster | Cluster Expand | 클러스터 확장 |
+| Advanced Managed Kafka | Cluster | Cluster Update | 클러스터 세부 설정 변경 |
+| Advanced Managed Kafka | Cluster | Cluster Delete | 클러스터 삭제 |
+| Advanced Managed Kafka | Cluster | Cluster Get | 클러스터 상세 조회 |
+
+
+### Advanced Managed Search ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Advanced Managed Search | Cluster | Create Cluster | 클러스터 생성 요청 |
+| Advanced Managed Search | Cluster | Extend Cluster Volume | 볼륨 확장 |
+| Advanced Managed Search | Cluster | Scale Out Cluster | 클러스터 확장 |
+| Advanced Managed Search | Cluster | Delete Cluster | 클러스터 삭제 |
+
+
+### IAM ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| IAM | Auth | Choose Project | 프로젝트 선택 |
+| IAM | User | Project Member Assign | 사용자에게 프로젝트 역할 할당 |
+| IAM | User | Project Member Unassign | 사용자의 프로젝트 역할 일괄 제거 |
+| IAM | Application Credential | Service Account Access Key Create | 서비스 계정 액세스 키 생성 |
+| IAM | Application Credential | Service Account Access Key Delete | 서비스 계정 액세스 키 삭제 |
+| IAM | Service Account | Service Account Create | 서비스 계정 생성 |
+| IAM | Service Account | Service Account Delete | 서비스 계정 삭제 |
+| IAM | Service Account | Service Account Activate | 서비스 계정 활성화 |
+| IAM | Service Account | Service Account Deactivate | 서비스 계정 비활성화 |
+
+
+### Monitoring ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Monitoring | Custom Dashboard | Custom Dashboard Create | 커스텀 대시보드 생성 |
+| Monitoring | Custom Dashboard | Custom Dashboard Delete | 커스텀 대시보드 삭제 |
+| Monitoring | Custom Dashboard | Custom Dashboard Update | 커스텀 대시보드 수정 |
+| Monitoring | Custom Dashboard | Custom Dashboard Copy | 커스텀 대시보드 복사 |
+
+
+### Alert Center ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Alert Center | Channel | Create Channel | 수신 채널 생성 |
+| Alert Center | Channel | Update Channel | 수신 채널 수정 |
+| Alert Center | Channel | Delete Channel | 수신 채널 삭제 |
+| Alert Center | Alert Policy | Create Alert Policy | 알림 정책 생성 |
+| Alert Center | Alert Policy | Update Alert Policy | 알림 정책 수정 |
+| Alert Center | Alert Policy | Delete Alert Policy | 알림 정책 삭제 |
+| Alert Center | Silence | Create Silence | Silence 생성 |
+| Alert Center | Silence | Delete Silence | Silence 만료/삭제 |
+
+
+### Cloud Trail ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Cloud Trail | Archive | Upload Log Error | 로그 저장 에러 |
+
+
+### Monitoring Flow ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Monitoring Flow | Flow Connection | Flow Connection Create | 플로우 커넥션 생성 |
+| Monitoring Flow | Flow Connection | Flow Connection Update | 플로우 커넥션 수정 |
+| Monitoring Flow | Flow Connection | Flow Connection Delete | 플로우 커넥션 삭제 |
+| Monitoring Flow | Subnet Channel | Subnet Channel Connect Request | 서브넷 채널 연결 요청 |
+| Monitoring Flow | Subnet Channel | Subnet Channel Connect | 서브넷 채널 연결 완료 - 생성하는 경우, RunningError -> Active 될 시 이벤트 발생 |
+| Monitoring Flow | Subnet Channel | Subnet Channel Error | 서브넷 채널 에러 |
+| Monitoring Flow | Subnet Channel | Subnet Channel Disconnect Request | 서브넷 채널 연결 해제 요청 |
+| Monitoring Flow | Subnet Channel | Subnet Channel Disconnect | 서브넷 채널 연결 해제 |
+| Monitoring Flow | Scenario | Scenario Create | 시나리오 생성 |
+| Monitoring Flow | Scenario | Scenario Copy | 시나리오 복사 |
+| Monitoring Flow | Scenario | Scenario Update | 시나리오 수정 |
+| Monitoring Flow | Scenario | Scenario Delete | 시나리오 삭제 |
+
+
+### Advanced Managed Prometheus ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Advanced Managed Prometheus | Workspace | Workspace Create | 워크스페이스 생성 |
+| Advanced Managed Prometheus | Workspace | Workspace Delete | 워크스페이스 삭제 |
+| Advanced Managed Prometheus | Workspace | Workspace Update | 워크스페이스 수정 |
+| Advanced Managed Prometheus | Workspace | Workspace Get | 워크스페이스 조회 |
+
+
+### Maintenance ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Maintenance | Maintenance Plan | Maintenance Plan Created | 메인터넌스 플랜 생성 |
+| Maintenance | Maintenance Plan | Maintenance Plan Completed | 메인터넌스 플랜 완료 |
+| Maintenance | Maintenance Plan | Reserve Maintenance Plan | 사용자 일정 설정 |
+| Maintenance | Maintenance Plan | Change Reservation Date | 사용자 일정 변경 |
+| Maintenance | Maintenance Plan | Maintenance Started | 작업 시작 |
+| Maintenance | Maintenance Plan | Maintenance Failed | 작업 실패 |
+| Maintenance | Maintenance Plan | Cancel Maintenance | 작업 제외 |
+
+
+### Resource Explorer ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Resource Explorer | Tags | Create Tags | 태그 생성 |
+| Resource Explorer | Tags | Delete Tags | 태그 삭제 |
+| Resource Explorer | Tags | Apply Tags | 태그 지정 |
+
+
+### Kubeflow ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Kubeflow | Application | Kubeflow Create | Kubeflow 생성 성공 |
+| Kubeflow | Application | Kubeflow Delete | Kubeflow 삭제 성공 |
+| Kubeflow | Application | Kubeflow Undisplay | Kubeflow 목록에서 제거 |
+| Kubeflow | User | Failed to send email | Kubeflow 이메일 발송 실패 |
+| Kubeflow | User | Kubeflow User Create | Kubeflow 사용자 생성 |
+| Kubeflow | User | Kubeflow User Update | Kubeflow 사용자 수정 |
+| Kubeflow | User | Kubeflow User Delete | Kubeflow 사용자 삭제 |
+| Kubeflow | User | Kubeflow User Password Reset | Kubeflow 사용자 비밀번호 초기화 |
+| Kubeflow | Group | Kubeflow Group Create | Kubeflow 그룹 생성 |
+| Kubeflow | Group | Kubeflow Group Update | Kubeflow 그룹 수정 |
+| Kubeflow | Group | Kubeflow Group Delete | Kubeflow 그룹 삭제 |
+| Kubeflow | Group User | Kubeflow Group User Delete | Kubeflow 그룹에서 사용자 삭제 |
+| Kubeflow | Nodepool | Kubeflow Nodepool Update Start | Kubeflow 노드 풀 업데이트 시작 |
+| Kubeflow | Nodepool | Kubeflow Nodepool Update End | Kubeflow 노드 풀 업데이트 완료 |
+
+
+### KMS ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Key Management Service | Key | Create Key | 키 생성 |
+| Key Management Service | Key | Delete Key | 키 삭제 |
+| Key Management Service | Key | Get Service Key | 서비스 키 조회 |
+| Key Management Service | Key | Update Key Rotation | 키 순환 주기 수정 |
+| Key Management Service | Key Version | Create Data Key | 데이터 키 생성 |
+| Key Management Service | Key Version | Encrypt Data | 데이터 암호화 |
+| Key Management Service | Key Version | Decrypt Data | 데이터 복호화 |
+| Key Management Service | Key Version | Get Public Key | 퍼블릭 키 조회 |
+| Key Management Service | Key Version | Sign Data | 데이터 전자 서명 |
+| Key Management Service | Key Version | Verify Data | 서명 검증 |
+| Key Management Service | Key Version | Generate HMAC | HMAC 생성 |
+| Key Management Service | Key Version | Verify HMAC | HMAC 검증 |
+| Key Management Service | Key Version | Create Key Version | 키 버전 생성 |
+| Key Management Service | Key Version | Delete Key Version | 키 버전 삭제 |
+| Key Management Service | Key Version | Deactivate Key Version | 키 버전 비활성화 |
+| Key Management Service | Key Version | Schedule Key Version Deletion | 키 버전 삭제 예약 |
+| Key Management Service | Key Version | Cancel Schedule Key Version Deletion | 키 버전 삭제 예약 취소 |
+
+
+### Secrets Manager ​
+
+다음은 조회할 수 있는 프로젝트 이벤트입니다.
+
+| 서비스 이름 | 리소스 유형 | 프로젝트 이벤트 이름 | 설명 |
+|---|---|---|---|
+| Secrets Manager | Secret | Create Secret | 시크릿 생성 |
+| Secrets Manager | Secret | Delete Secret | 시크릿 삭제 |
+| Secrets Manager | Secret | Update Secret Protection Key | 시크릿 보호키 수정 |
+| Secrets Manager | Secret Version | Create Secret Version | 시크릿 버전 생성 |
+| Secrets Manager | Secret Version | Delete Secret Version | 시크릿 버전 삭제 |
+| Secrets Manager | Secret Version | Activate Secret Version | 시크릿 버전 활성화 |
+| Secrets Manager | Secret Version | Deactivate Secret Version | 시크릿 버전 비활성화 |
+| Secrets Manager | Secret Version | Schedule Secret Version Deletion | 시크릿 버전 삭제 예약 |
+| Secrets Manager | Secret Version | Cancel Schedule Secret Version Deletion | 시크릿 버전 삭제 예약 취소 |
+| Secrets Manager | Secret Version | Get Secret Version Value | 시크릿 버전 값 조회 |
+
+조회할 수 있는 조직 이벤트 IAM Alert Center Billing
+IAM
+Alert Center
+Billing
+조회할 수 있는 프로젝트 이벤트 Virtual Machine Bare Metal Server VPC Load Balancing DNS Transit Gateway Kubernetes Engine Container Registry Object Storage File Storage MySQL MemStore PostgreSQL Hadoop Eco Data Catalog Data Query Pub/Sub Advanced Managed Kafka Advanced Managed Search IAM Monitoring Alert Center Cloud Trail Monitoring Flow Advanced Managed Prometheus Maintenance Resource Explorer Kubeflow KMS Secrets Manager
+Virtual Machine
+Bare Metal Server
+VPC
+Load Balancing
+DNS
+Transit Gateway
+Kubernetes Engine
+Container Registry
+Object Storage
+File Storage
+MySQL
+MemStore
+PostgreSQL
+Hadoop Eco
+Data Catalog
+Data Query
+Pub/Sub
+Advanced Managed Kafka
+Advanced Managed Search
+IAM
+Monitoring
+Alert Center
+Cloud Trail
+Monitoring Flow
+Advanced Managed Prometheus
+Maintenance
+Resource Explorer
+Kubeflow
+KMS
+Secrets Manager
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-main
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Cloud Trail 은 사용자의 활동을 자동으로 수집, 기록하는 서비스로 로그인 및 리소스 생성, 변경, 삭제 등 사용자의 다양한 활동을 이벤트 단위로 추적하고 활동 정보를 관리할 수 있습니다.
+
+## IAM 기반 역할 관리 ​
+
+Cloud Trail 서비스의 역할 관리는 카카오클라우드의 IAM 역할 기반 액세스 제어(RBAC)를 따릅니다. 기본적으로 프로젝트 역할(프로젝트 관리자, 프로젝트 멤버, 프로젝트 리더)이 있는 경우 프로젝트 이벤트를 조회할 수 있습니다. 조직 역할 중 조직 관리자 및 Cloud Trail 서비스 한정 역할인 트레일 뷰어 역할이 있는 경우 해당 프로젝트가 속한 조직의 조직 이벤트까지 조회할 수 있습니다. IAM 역할별 자세한 내용과 사용자 역할 관리는 각각 IAM > 주요 개념 과 사용자 IAM 역할 관리 를 참고해 주세요.
+나의 역할은 카카오클라우드 콘솔 > 우측 상단 프로필 > 조직 역할 또는 프로젝트 역할 에서 확인할 수 있습니다.
+
+#### 조직 역할 ​
+
+프로젝트 역할이 있는 사용자가 아래의 조직 역할까지 있는 경우 프로젝트 이벤트와 조직 이벤트를 모두 조회할 수 있습니다.
+
+| 권한 | 조직 관리자(Admin) | 트레일 뷰어(Viewer) |
+|---|---|---|
+| 조직 이벤트 조회 | ✓ | ✓ |
+| 프로젝트 이벤트 조회 | ✓ | ✓ |
+
+
+#### 프로젝트 역할 ​
+
+
+| 권한 | 프로젝트 관리자(Admin) | 프로젝트 멤버(Member) | 프로젝트 리더(Reader) |
+|---|---|---|---|
+| 조직 이벤트 조회 |  |  |  |
+| 프로젝트 이벤트 조회 | ✓ | ✓ | ✓ |
+
+
+## 주요 개념 ​
+
+Cloud Trail 서비스의 주요 용어는 다음과 같습니다.
+
+| 주요 용어 | 설명 |
+|---|---|
+| 이벤트 | 사용자 활동을 기록하는 단위 - 조직/프로젝트 이벤트로 유형 구분 - 발생 일자, 이벤트 이름, 사용자, 서비스, 로그 등의 정보 확인 가능 |
+| 조직 이벤트 | 조직 단위 서비스에서 발생한 이벤트 - IAM 역할이 조직 관리자(Admin), 트레일 뷰어(Viewer)인 경우만 조회 가능 - 예시: 프로젝트 생성, 프로젝트 삭제, 빌링 조회 |
+| 프로젝트 이벤트 | 프로젝트 단위 서비스에서 발생한 이벤트 - 프로젝트 내 모든 사용자 조회 가능 - 예시: 리소스 생성, 리소스 삭제 |
+| 사용자 | 이벤트에 기록된 활동을 한 계정 - 리소스 생성 시 생성자, 사양 변경 시 작업자 등 활동의 주체를 확인 가능 |
+| 서비스 이름 | 이벤트가 발생한 서비스 - Virtual Machine, IAM 등으로 표기 |
+| 리소스 유형 | 이벤트가 발생한 서비스의 리소스 유형 |
+| 리소스 이름 | 이벤트가 발생한 서비스의 리소스 이름 |
+| 이벤트 로그 | JSON 형식의 이벤트 로그 |
+
+카카오클라우드 콘솔 IAM 역할 유형에 대한 자세한 설명은 IAM 역할 을 참고하시기 바랍니다.
+IAM 기반 역할 관리
+주요 개념
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-overview
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Cloud Trail 은 사용자의 활동을 자동으로 수집하고 기록하는 서비스로, 사용자의 로그인, 리소스 생성, 변경, 삭제 등의 사용자 활동을 간편하게 추적하고 관리할 수 있도록 설계되었습니다.
+Cloud Trail에서 사용자 활동을 기록하는 단위를 "이벤트"라고 하며, 이벤트에 기록된 활동을 수행한 사람을 "사용자"라고 정의합니다. 카카오클라우드의 특정 사용자가 리소스를 생성했거나 사양을 변경한 경우, 이런 모든 활동이 Cloud Trail을 통해 기록됩니다.
+콘솔에서 프로젝트에서 발생한 최근 90일간의 이벤트를 조회할 수 있어 보안 정책을 준수하고 있는지 확인하는 감사 자료로 활용할 수 있습니다. 또한 프로젝트에 최근 어떤 활동이 있었는지, 권한이 없는 사용자가 프로젝트에 접근하거나 작업한 적이 있었는지 등을 확인할 수 있습니다.
+Cloud Trail에서 수집하는 이벤트는 조직 범위 서비스에서 발생한 이벤트인 조직 이벤트 와 프로젝트 범위 서비스에서 발생한 이벤트인 프로젝트 이벤트 로 구분됩니다.
+카카오클라우드의 Cloud Trail 은 사용자 활동에 초점을 맞춰 이벤트를 자동으로 수집하고 기록합니다. 사용자 활동이 아닌 서버, 네트워크, 애플리케이션, 리소스 상태 등을 모니터링하는 서비스는 카카오클라우드의 Monitoring 문서를 참고하시기 바랍니다.
+
+## 사용 목적 및 사례 ​
+
+클라우드 환경에서 보안 모니터링이 없는 경우, 보안 이벤트를 실시간으로 감지하고 대응할 수 없어 보안 위험을 증가시킬 수 있습니다. 보안 사고가 발생하더라도, 원인과 범위를 추적할 수 없습니다.
+따라서, 클라우드 보안 및 규정 준수, 효율적인 리소스 사용, 비정상적인 활동 등을 탐지하기 위해 Cloud Trail을 사용하여 클라우드 환경에서 발생하는 모든 활동을 모니터링하고 기록하는 것을 권장합니다.
+
+## 특징 ​
+
+
+#### 필터링을 통한 활동 추적 ​
+
+목적에 따라 기간, 서비스, 사용자 등 다양한 필터링을 사용해 원하는 이벤트 정보를 쉽게 추적 가능
+
+#### 감사 자료 활용 ​
+
+최근 90일간 서비스와 리소스를 이용한 사용자 활동이 상세하게 기록하여, 보안 정책을 준수하고 있는지 확인하는 감사 자료로 활용할 수 있음
+
+#### 프로젝트 기반 이벤트 기록 ​
+
+프로젝트에서 발생한 최근 90일간의 이벤트를 조회 가능
+프로젝트에 최근 어떤 활동이 있었는지, 권한이 없는 사용자가 프로젝트에 접근, 작업한 적은 없었는지 콘솔에서 쉽게 확인 가능
+
+#### 이벤트 대시보드 제공 ​
+
+프로젝트에서 발생한 이벤트들을 대시보드에서 그래프로 확인 가능
+조회 기간에 따라 어떤 서비스에서 이벤트가 많이 발생했는지 이벤트 현황을 파악할 수 있음
+
+#### 상세한 정보 제공 ​
+
+사용자 활동을 관리할 수 있도록 상세한 이벤트 정보를 제공(이벤트 발생 시간, 이벤트 이름, 사용자 ID, 소스 IP, 리소스 유형, 리소스 이름, 리소스 ID 및 로그 등)
+
+#### 무료로 제공 ​
+
+추가 비용 없이 카카오클라우드 계정에 제공
+
+## 시작하기 ​
+
+Cloud Trail 서비스에 대한 자세한 사용 가이드는 How-to Guides 문서에서 안내합니다. 카카오클라우드를 처음 시작하신다면 먼저 카카오클라우드 시작하기 를 참고하시기 바랍니다.
+사용 목적 및 사례
+특징
+시작하기
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-pricing
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+## Cloud Trail 요금 ​
+
+Cloud Trail 서비스의 사양 및 요금은 카카오클라우드 사이트의 요금 안내 를 참고하시기 바랍니다.
+
+## 쿼터 ​
+
+쿼터(Quota)는 카카오클라우드 단일 조직 또는 프로젝트 내에 생성할 수 있는 각 리소스의 최대량 또는 최대 수량을 제한하는 할당량을 의미합니다. Cloud Trail 서비스에는 별도의 쿼터가 존재하지 않습니다.
+Cloud Trail 요금
+쿼터
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-release-note
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+### 2026.04.07 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 MySQL 서비스 배포에 따라 MySQL에서 확인할 수 있는 프로젝트 이벤트 목록(인스턴스 그룹의 Scaling-Up, Scaling-Down, 인스턴스의 Instance Resizing 시 발생하는 이벤트 및 Instance Storage Warning, Instance Storage Error)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 MySQL 항목을 참고해 주세요.
+
+### 2025.11.04 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Resource Explorer 서비스 배포에 따라 Resource Explorer에서 확인할 수 있는 프로젝트 이벤트 목록(Create Tags, Delete Tags, Apply Tags)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Resource Explorer 항목을 참고해 주세요.
+
+### 2025.10.14 ​
+
+
+#### 기능 개선 ​
+
+트레일 이벤트 로그 저장 기능 사용 시 로그 저장 주기를 1시간 또는 10분 중 원하는 주기로 설정할 수 있게 되었습니다. 로그 저장 관리에 대한 자세한 내용은 로그 저장 관리 문서를 참고해 주세요.
+1시간
+10분
+
+### 2025.09.19 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Maintenance 서비스 배포에 따라 Maintenance에서 확인할 수 있는 프로젝트 이벤트 목록(Maintenance Plan Created, Maintenance Plan Completed, Maintenance Started, Maintence Failed 등)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Maintenance 항목을 참고해 주세요.
+
+### 2025.09.15 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 KMS 서비스와 Secrets Manager 서비스 배포에 따라 KMS에서 확인할 수 있는 프로젝트 이벤트 목록(Key와 Key Version에 대한 이벤트)과 Secrets Manager에서 확인할 수 있는 프로젝트 이벤트 목록(Secret과 Secret Version에 대한 이벤트)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 KMS 와 Secrets Manager 항목을 참고해 주세요.
+
+### 2025.08.08 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Alert Center 서비스 배포에 따라 Alert Center에서 확인할 수 있는 프로젝트 이벤트 목록(Create Silence, Delete Silence)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Alert Center 항목을 참고해 주세요.
+
+### 2025.08.08 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubeflow 서비스 배포에 따라 Kubeflow에서 확인할 수 있는 프로젝트 이벤트 목록(Kubeflow Nodepool Update Start, Kubeflow Nodepool Update End)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Kubeflow 항목을 참고해 주세요.
+
+### 2025.08.08 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Cloud Trail 서비스 배포에 따라 Cloud Trail에서 확인할 수 있는 프로젝트 이벤트 목록(Upload Log Error)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Cloud Trail 항목을 참고해 주세요.
+
+### 2025.07.31 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 MySQL 서비스 배포에 따라 MySQL에서 확인할 수 있는 프로젝트 이벤트 목록(Maintenance Start, Maintenance End, Maintanence Error, Rebooting Start, Rebooting End, Rebooting Error)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 MySQL 항목을 참고해 주세요.
+
+### 2025.07.24 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine에서 확인할 수 있는 프로젝트 이벤트 목록(Remove Node Request)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Kubernetes Engine 항목을 참고해 주세요.
+
+### 2025.07.01 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 VPC 서비스 배포에 따라 VPC에서 확인할 수 있는 프로젝트 이벤트 목록(Network Interface Create, Network Interface Delete, Network Interface Update, VPC Update, Subnet Update, Routing Table Update)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 VPC 항목을 참고해 주세요.
+
+### 2025.06.05 ​
+
+
+#### 기능 개선 ​
+
+트레일 이벤트 로그 저장 시 파일 확장자 선택 기능이 추가되었습니다. 이제 로그 저장 시 사용자가 로그 파일의 확장자를 .gz , .gzip , .zip 중에서 선택할 수 있습니다. 확장자는 로그 저장 관리에서 변경할 수 있으며, 변경된 설정은 이후 저장되는 로그부터 적용됩니다. 로그 저장 관리에 대한 자세한 내용은 로그 저장 관리 문서를 참고해 주세요.
+.gz
+.gzip
+.zip
+
+### 2025.05.22 ​
+
+
+#### 기능 개선 ​
+
+트레일 이벤트 로그 저장 기능 사용 시 버킷에 저장되는 로그 파일의 확장자가 .zip에서 .gzip으로 변경되었습니다. 로그 저장 관리에 대한 자세한 내용은 로그 저장 관리 문서를 참고해 주세요.
+
+### 2025.05.20 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 PostgreSQL 서비스 배포에 따라 PostgreSQL에서 확인할 수 있는 프로젝트 이벤트 목록(Instance Group Backup Schedule Update, Instance Volume Extend End)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 PostgreSQL 항목을 참고해 주세요.
+
+### 2025.04.29 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Data Query 서비스 배포에 따라 Data Query 서비스의 프로젝트 이벤트 이름을 모두 변경했습니다. 또한 Data Query에서 확인할 수 있는 프로젝트 이벤트 목록(Create Data Source, Delete Data Source, Data Source Creation Failure)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Data Query 항목을 참고해 주세요.
+
+### 2025.04.24 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Pub/Sub 서비스 배포에 따라 Pub/Sub 서비스의 프로젝트 이벤트 이름을 모두 변경했습니다. Pub/Sub 이벤트 알림을 설정한 경우 변경된 이벤트로 알림 수신할 수 있도록 일괄 적용했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Pub/Sub 항목을 참고해 주세요.
+
+### 2025.04.23 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 확인할 수 있는 조직 이벤트 목록(Console Login Fail)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 조직 이벤트 문서의 IAM 항목을 참고해 주세요.
+
+### 2025.04.01 ​
+
+
+#### kr-central-1 리전 종료 안내 ​
+
+kr-central-1 리전 종료로 인해 해당 리전에서는 본 서비스가 중단되었으며, kr-central-2 리전에서는 변함없이 안정적으로 이용하실 수 있습니다.
+
+### 2025.03.27 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 확인할 수 있는 프로젝트 이벤트 목록(Backup Copy Failed)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 MemStore 항목을 참고해 주세요.
+
+### 2025.02.27 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Hadoop Eco 서비스 배포에 따라 Hadoop Eco에서 확인할 수 있는 프로젝트 이벤트 목록(Spark History Server)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Hadoop Eco 항목을 참고해 주세요.
+
+### 2025.02.26 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 확인할 수 있는 조직 이벤트 목록을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 조직 이벤트 문서의 IAM 항목을 참고해 주세요.
+
+### 2025.01.14 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine에서 확인할 수 있는 프로젝트 이벤트 목록(Resource-Based Autoscaling Scale In/Out)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Kubernetes Engine 항목을 참고해 주세요.
+
+### 2024.12.25 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Advanced Managed Prometheus 서비스 배포에 따라 Advanced Managed Prometheus에서 확인할 수 있는 프로젝트 이벤트 목록(클러스터 생성 요청, 클러스터 확장, 클러스터 삭제 등)을 추가했습니다. 자세한 이벤트 목록은 조회할 수 있는 프로젝트 이벤트 문서의 Advanced Managed Prometheus 항목을 참고해 주세요.
+
+### 2024.12.05 ​
+
+
+#### 이벤트 추가 ​
+
+MemStore 신규 이벤트를 추가했습니다.
+
+### 2024.12.04 ​
+
+
+#### 이벤트 추가 ​
+
+Data Query 신규 이벤트를 추가했습니다.
+
+### 2024.12.03 ​
+
+
+#### 이벤트 추가 ​
+
+PostgreSQL 신규 이벤트를 추가했습니다.
+
+### 2024.11.05 ​
+
+
+#### 이벤트 추가 ​
+
+Advanced Managed Kafka 신규 이벤트를 추가했습니다.
+
+### 2024.09.09 ​
+
+
+#### 이벤트 추가 ​
+
+Monitoring Flow 신규 이벤트를 추가했습니다.
+
+### 2024.08.14 ​
+
+
+#### 이벤트 추가 ​
+
+DNS 신규 이벤트를 추가했습니다.
+
+### 2023.11.30 ​
+
+
+#### 이벤트 추가 ​
+
+MySQL Restart 이벤트를 추가했습니다. (kr-central-2)
+
+### 2023.11.13 ​
+
+
+#### 이벤트 추가 ​
+
+MySQL Backup, Transit Gateway Share, Virtual Machine Migrate 이벤트를 추가했습니다. (kr-central-2)
+
+### 2023.09.04 ​
+
+
+#### 이벤트 추가 ​
+
+File Storage 이벤트를 추가했습니다. (kr-central-2)
+VM, GPU, Bare Metal Server instance 이벤트를 추가했습니다. (kr-central-1, kr-central-2)
+IAM User access key 이벤트를 추가했습니다. (kr-central-1, kr-central-2)
+
+### 2023.07.28 ​
+
+
+#### 서비스 정식 버전(GA) 출시 ​
+
+
+#### 로그 저장 관리 기능 추가(kr-central-1 & 2 적용) ​
+
+로그 저장을 통해 발생 후 90일이 지난 이벤트 조회 가능
+지정한 Object Storage 버킷에 도메인, 프로젝트 이벤트 적재
+
+### 2023.07.27 ​
+
+
+#### 이벤트 추가 ​
+
+Redis 이벤트(Cluster, Shard, Node의 추가, 삭제, Failover, Node Recovery)를 추가했습니다. (kr-central-2)
+
+### 2023.07.24 ​
+
+
+#### 이벤트 추가 ​
+
+Alert Center 이벤트(Channel, Alert Policy 생성, 삭제, 업데이트)를 추가했습니다. (kr-central-2)
+
+### 2023.07.13 ​
+
+
+#### 이벤트 추가 ​
+
+Hadoop Eco 이벤트(생성/삭제)를 추가했습니다. (kr-central-2)
+
+### 2023.07.07 ​
+
+
+#### 이벤트 추가 ​
+
+Kubeflow 이벤트(생성/삭제)를 추가했습니다. (kr-central-2)
+
+### 2023.06.26 ​
+
+
+#### 이벤트 추가 ​
+
+Kubeflow 이벤트(생성/삭제)를 추가했습니다. (kr-central-1)
+
+### 2023.06.08 ​
+
+
+#### 이벤트 추가 및 변경 ​
+
+GPU, VM(Instance Shelve), IAM, Monitoring 이벤트를 추가/변경했습니다.
+서비스 이름을 Load Balancer에서 Load Balancing으로 변경했습니다.
+
+### 2023.05.31 ​
+
+
+#### 기능 개선 ​
+
+Cloud Trail에서 지원하던 기존 서비스들 외 kr-central-1&2에서 지원하는 Transit Gateway 등의 서비스 이벤트 조회할 수 있도록 개선했습니다.
+kr-central-2 리전 오픈에 따른 서비스 카테고리 변경 사항을 반영했습니다.
+
+### 2023.05.30 ​
+
+
+#### 이벤트 추가 ​
+
+DevOps Pipeline 신규 이벤트(서비스/인증서 생성, 삭제)를 추가했습니다.
+
+### 2023.05.25 ​
+
+
+#### 이벤트 추가 ​
+
+CDN 이벤트(서비스/인증서 생성, 삭제 등)를 추가했습니다.
+
+### 2023.01.18 ​
+
+
+#### 이벤트 추가 ​
+
+CDN 신규 이벤트를 추가했습니다.
+
+### 2022.10.24 ​
+
+
+#### 기능 개선 ​
+
+
+#### 조직 이벤트 추가 ​
+
+VPC 생성, 삭제 등 조직 범위의 이벤트를 조회할 수 있습니다.
+조직 이벤트는 IAM 역할이 조직 소유자, 조직 관리자, 트레일 뷰어인 경우만 조회할 수 있습니다.
+
+#### 프로젝트 이벤트 추가 ​
+
+Object Storage 권한 설정, File Storage 생성, 삭제 등의 이벤트를 조회할 수 있습니다.
+
+### 2022.08.17 ​
+
+
+#### 기능 개선 ​
+
+
+#### 대시보드 조회 기간 확대 ​
+
+최근 1주 전 외 1개월, 90일 전 이벤트도 그래프로 확인할 수 있습니다.
+
+#### 조직 이벤트 추가 ​
+
+프로젝트 생성, 삭제, 빌링 조회 등 조직 범위의 이벤트를 조회할 수 있습니다.
+조직 이벤트는 IAM 역할이 조직 소유자, 조직 관리자, 트레일 뷰어인 경우만 조회할 수 있습니다.
+
+#### 프로젝트 이벤트 추가 ​
+
+Bare Metal Server 서비스의 이벤트를 조회할 수 있습니다.
+
+### 2022.06.15 ​
+
+
+#### 기능 개선 ​
+
+지원 이벤트 추가 및 대시보드 제공을 위한 업데이트를 진행했습니다.
+
+### 2022.05.12 ​
+
+
+#### 기능 개선 ​
+
+지원 이벤트 추가 및 사용성을 개선했습니다.
+2026.04.07
+2025.11.04
+2025.10.14
+2025.09.19
+2025.09.15
+2025.08.08
+2025.08.08
+2025.08.08
+2025.07.31
+2025.07.24
+2025.07.01
+2025.06.05
+2025.05.22
+2025.05.20
+2025.04.29
+2025.04.24
+2025.04.23
+2025.04.01
+2025.03.27
+2025.02.27
+2025.02.26
+2025.01.14
+2024.12.25
+2024.12.05
+2024.12.04
+2024.12.03
+2024.11.05
+2024.09.09
+2024.08.14
+2023.11.30
+2023.11.13
+2023.09.04
+2023.07.28
+2023.07.27
+2023.07.24
+2023.07.13
+2023.07.07
+2023.06.26
+2023.06.08
+2023.05.31
+2023.05.30
+2023.05.25
+2023.01.18
+2022.10.24
+2022.08.17
+2022.06.15
+2022.05.12
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/cloud-trail-troubleshoot
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+본 문서는 Cloud Trail 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+
+## Object Storage에 이벤트 로그가 저장되지 않는 문제 ​
+
+Cloud Trail에서 이벤트 로그 저장 설정을 했으나 Object Storage에 로그가 저장되지 않는 경우, Cloud Trail에 이벤트가 생성된 시점이 1시간 이내인지 확인 해야 합니다.
+Cloud Trail은 이벤트를 생성하고 한 시간 단위 로 Object Storage에 로그를 기록합니다. 따라서, Cloud Trail 내에 새로운 이벤트가 생성되지 않은 상태라면 Object Storage에는 로그가 저장되지 않습니다.
+Object Storage에 이벤트 로그가 저장되지 않는 문제
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/cloud-trail/how-to-guides
+# FETCHED: 2026-04-21
+# CATEGORY: Management & IAM
+
+카카오클라우드 Cloud Trail 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 대시보드 조회
+
+최근 90일간 발생한 프로젝트 이벤트의 현황을 조회하는 방법을 설명합니다.
+
+## 📄️ 이벤트 조회
+
+사용자 활동을 기록하는 단위인 이벤트를 조회하는 방법을 설명합니다.
+
+## 📄️ 로그 저장 관리
+
+관련 로그를 저장하고 관리하는 방법을 설명합니다.

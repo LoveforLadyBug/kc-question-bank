@@ -244,21 +244,30 @@ def token_jaccard(a: str, b: str) -> float:
 HALLUCINATION_SUSPECT = "hallucination-suspect"
 
 # 2-Pass 검증에 사용할 검증 전용 시스템 프롬프트
-VERIFIER_SYSTEM_PROMPT = """\
-당신은 KakaoCloud 문제은행의 검증(verifier) 에이전트입니다.
+VERIFIER_SYSTEM_PROMPT = """\당신은 KakaoCloud 문제은행의 검증(verifier) 에이전트입니다.
 제공된 [레퍼런스 문서]와 [문제]를 비교하여 할루시네이션 여부를 판단합니다.
 
-판단 기준 (모두 충족해야 PASS):
-1. 정답 보기의 핵심 내용이 레퍼런스에 명시적으로 언급되어 있는가?
-2. evidence(근거 인용) 문장의 내용이 레퍼런스와 일치하는가?
-3. 해설(## 해설)이 레퍼런스 내용과 충돌하지 않는가?
-4. 오답 포인트(## 오답 포인트)가 레퍼런스를 왜곡하지 않는가?
+중요: 레퍼런스 문서는 서비스 소개 공식 페이지로, 내용이 매우 간략할 수 있습니다.
 
-출력 형식 (두 줄만):
+FAIL 로 판단해야 하는 경우 (명백한 오류가 있을 때만):
+1. 정답 보기의 내용이 완전히 거짓이거나 업계 표준과 정반대인가?
+2. 해설이 존재하지 않는 커맨드/URL/포맷을 만들어냈는가?
+3. 오답 포인트가 실제로는 정답인 내용을 오답으로 분류하는가?
+4. 카카오클라우드 서비스명/특징을 완전히 잘못 기술했는가?
+
+PASS 해야 하는 경우:
+- 레퍼런스에 명시되지 않은 일반적인 클라우드 개념이라도, 현업에서 보편적으로 인정되는 내용이면 PASS
+- 카카오클라우드 공식 서비스명(BCS, VPC, IAM 등)을 정확히 사용한다면 PASS
+- 레퍼런스 문서가 짧아서 직접 근거를 찾지 못해도, 내용이 거짓 정보가 아니라면 PASS
+- Scale-up/Scale-out, 고가용성, 보안 그룹 등 일반 클라우드 개념은 PASS
+
+명확히 틀린 정보가 있을 때만 FAIL로 판단하세요. 의심스러우면 PASS입니다.
+
+출력 형식 (정확히 두 줄, 다른 내용 없이):
 PASS 또는 FAIL
 이유: (한 줄, 50자 이내)
 
-마지막 줄이 반드시 PASS 또는 FAIL 중 하나여야 합니다.
+첫 번째 줄이 반드시 PASS 또는 FAIL 단어로 시작해야 합니다.
 """
 
 
@@ -367,9 +376,18 @@ def verify_with_llm(
         logger.log(f"VERIFY response: {response[:120]!r}")
 
         lines = [l.strip() for l in response.splitlines() if l.strip()]
-        verdict = lines[-1].upper() if lines else ""
-        reason_line = next((l for l in lines if l.startswith("이유:")), "이유: 불명")
-        reason = reason_line.replace("이유:", "").strip()
+        # 첫 번째 또는 마지막 줄에서 PASS/FAIL 탐색
+        verdict = ""
+        for line in lines:
+            upper = line.upper()
+            if "PASS" in upper and not "FAIL" in upper:
+                verdict = "PASS"
+                break
+            elif "FAIL" in upper:
+                verdict = "FAIL"
+                break
+        reason_line = next((l for l in lines if l.startswith("이유:") or l.startswith("reason:")), "이유: 불명")
+        reason = reason_line.split(":", 1)[-1].strip()
 
         if "PASS" in verdict:
             return True, reason
