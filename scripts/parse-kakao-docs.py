@@ -24,8 +24,19 @@ ALLOWED_DOMAIN = "docs.kakaocloud.com"
 # 공식 docs 사이드바 기준으로 세부 문서 URL까지 포함
 CHAPTER_URLS: dict[str, list[tuple[str, str]]] = {
     "01-cloud-fundamentals": [
-        ("https://docs.kakaocloud.com/service", "Cloud Fundamentals"),
         ("https://docs.kakaocloud.com/start", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/api-preparation", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/architecture-resource", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/cloud-intro", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/console-guide", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/help-channel", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide/create-project", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide/create-vpc", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide/register-payment-method", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide/register-user-to-org", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/quickstart-guide/sign-up", "Cloud Fundamentals"),
+        ("https://docs.kakaocloud.com/start/service-status", "Cloud Fundamentals"),
     ],
     "02-bcs": [
         ("https://docs.kakaocloud.com/service/bcs", "Beyond Compute Service"),
