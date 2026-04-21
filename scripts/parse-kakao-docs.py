@@ -13,7 +13,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
 
-import requests
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 from bs4 import BeautifulSoup
 
 from harness import ROOT, CHAPTER_REF_SLUG, AgentLogger, ref_path, load_question_file
@@ -33,6 +33,10 @@ CHAPTER_URLS: dict[str, list[tuple[str, str]]] = {
         ("https://docs.kakaocloud.com/service/bcs/bcs-specifications", "Beyond Compute Service"),
         ("https://docs.kakaocloud.com/service/bcs/vm", "Beyond Compute Service"),
         ("https://docs.kakaocloud.com/service/bcs/bms", "Beyond Compute Service"),
+        # 심층 정보 수집 기준 반영 (Concept, Spec, Use-case, Constraint)
+        ("https://docs.kakaocloud.com/service/bcs/gpu", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/storage-attachment", "Beyond Compute Service"),
+        ("https://docs.kakaocloud.com/service/bcs/vm-migration", "Beyond Compute Service"),
     ],
     "03-bns": [
         ("https://docs.kakaocloud.com/service/networking", "Beyond Networking Service"),
@@ -93,36 +97,36 @@ def korean_char_ratio(text: str) -> float:
 
 
 def fetch_page(url: str, logger: AgentLogger) -> str | None:
-    """URL을 fetch. UTF-8 강제 디코딩. 일시적 오류 시 최대 FETCH_RETRIES회 재시도."""
+    """URL을 fetch. Playwright를 사용하여 JS 동적 렌더링을 처리합니다."""
     _assert_allowed_domain(url)
     for attempt in range(1, FETCH_RETRIES + 1):
         try:
-            r = requests.get(
-                url,
-                timeout=10,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; kc-question-bank/1.0)"},
-            )
-            if r.status_code == 200:
-                # requests가 Content-Type 헤더 기반으로 인코딩을 잘못 감지할 수 있으므로
-                # UTF-8로 강제 지정하여 한국어 깨짐 방지
-                r.encoding = 'utf-8'
-                logger.log(f"FETCH {url} OK (attempt={attempt})")
-                return r.text
-            logger.log(f"FETCH {url} FAIL (HTTP {r.status_code}, attempt={attempt})")
-            return None  # HTTP 오류는 재시도해도 의미 없음
-        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                page = browser.new_page()
+                logger.log(f"FETCH {url} (attempt={attempt})")
+                
+                page.goto(url, wait_until="networkidle", timeout=15000)
+                
+                try:
+                    page.wait_for_selector("main, article, .content", timeout=5000)
+                except PlaywrightTimeoutError:
+                    pass
+                
+                html = page.content()
+                browser.close()
+                logger.log(f"FETCH {url} OK")
+                return html
+        except Exception as e:
             logger.log(f"FETCH {url} RETRY ({e}, attempt={attempt}/{FETCH_RETRIES})")
             if attempt < FETCH_RETRIES:
                 time.sleep(FETCH_RETRY_DELAY)
-        except Exception as e:
-            logger.log(f"FETCH {url} FAIL ({e})")
-            return None
     logger.log(f"FETCH {url} FAIL (최대 재시도 횟수 초과)")
     return None
 
 
 def html_to_text(html: str) -> str:
-    """HTML에서 본문 텍스트 추출. AI 요약 없이 원문 그대로 (AGENTS.md §2)."""
+    """HTML에서 본문 텍스트 추출. Markdown 표 포맷팅 지원."""
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
         tag.decompose()
@@ -134,15 +138,37 @@ def html_to_text(html: str) -> str:
         or soup.body
         or soup
     )
+    if not main:
+        return ""
+
+    for table in main.find_all("table"):
+        md_table = []
+        rows = table.find_all("tr")
+        for i, row in enumerate(rows):
+            cols = row.find_all(["th", "td"])
+            col_texts = [c.get_text(separator=" ", strip=True).replace("\n", " ") for c in cols]
+            if not col_texts:
+                continue
+            md_table.append("| " + " | ".join(col_texts) + " |")
+            if i == 0 and cols and cols[0].name == "th":
+                md_table.append("|" + "|".join(["---"] * len(cols)) + "|")
+            elif i == 0 and not table.find("th"):
+                 md_table.append("|" + "|".join(["---"] * len(cols)) + "|")
+
+        wrapper = soup.new_tag("pre")
+        wrapper.string = "\n" + "\n".join(md_table) + "\n"
+        table.replace_with(wrapper)
 
     lines: list[str] = []
-    for el in main.find_all(["h1", "h2", "h3", "h4", "p", "li", "td", "th", "pre", "code"]):
+    for el in main.find_all(["h1", "h2", "h3", "h4", "p", "li", "pre", "code"]):
         text = el.get_text(separator=" ", strip=True)
         if not text:
             continue
         if el.name in ("h1", "h2", "h3", "h4"):
             level = int(el.name[1])
             lines.append(f"\n{'#' * level} {text}\n")
+        elif el.name == "pre" and text.startswith("|"):
+            lines.append("\n" + text + "\n")
         else:
             lines.append(text)
 
