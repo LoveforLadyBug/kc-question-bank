@@ -1,4 +1,4 @@
-import { CHAPTERS } from '../lib/questions'
+import { CHAPTERS } from '../lib/constants'
 
 export async function getStaticProps() {
   return { props: {} }

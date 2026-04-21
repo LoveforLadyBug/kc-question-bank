@@ -2,17 +2,9 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const QUESTIONS_ROOT = path.join(process.cwd(), '..', 'questions')
+export { CHAPTERS } from './constants'
 
-export const CHAPTERS = [
-  { id: '01-cloud-fundamentals', name: 'Cloud Fundamentals' },
-  { id: '02-bcs',                name: 'Beyond Compute Service' },
-  { id: '03-bns',                name: 'Beyond Networking Service' },
-  { id: '04-bss',                name: 'Beyond Storage Service' },
-  { id: '05-container-pack',     name: 'Container Pack' },
-  { id: '06-data-store',         name: 'Data Store' },
-  { id: '07-management-iam',     name: 'Management & IAM' },
-]
+const QUESTIONS_ROOT = path.join(process.cwd(), '..', 'questions')
 
 /** questions/{chapter}/q{NNN}.md 중 status: active만 반환 */
 export function getActiveQuestions(chapter) {
