@@ -241,6 +241,9 @@ def html_to_text(html: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "nav", "footer", "header", "aside"]):
         tag.decompose()
+        
+    for div in soup.find_all("div", class_=re.compile(r"theme-doc-toc|theme-doc-sidebar|tableOfContents|breadcrumbs", re.I)):
+        div.decompose()
 
     main = (
         soup.find("main")
@@ -339,10 +342,22 @@ def run(chapter: str, logger: AgentLogger) -> None:
     category = urls[0][1]
     pages: list[tuple[str, str, str]] = []
 
+    seen_content_hashes = set()
     for url, _ in urls:
         html = fetch_page(url, logger)
         if html:
             text = html_to_text(html)
+            text_stripped = text.strip()
+            if not text_stripped:
+                logger.log(f"SKIP {url} (Empty content)")
+                continue
+                
+            content_hash = hash(text_stripped)
+            if content_hash in seen_content_hashes:
+                logger.log(f"SKIP {url} (Duplicated content)")
+                continue
+            seen_content_hashes.add(content_hash)
+            
             ratio = korean_char_ratio(text)
             if ratio < 0.03:
                 # 한글 비율이 3% 미만 → JS 렌더링 필요 또는 인코딩 문제 의심
