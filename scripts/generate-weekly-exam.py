@@ -52,7 +52,7 @@ def select_and_activate(chapter: str, count: int, global_selected_texts: list[st
         
         is_duplicate = False
         for s_combined in global_selected_texts:
-            if token_jaccard(combined_text, s_combined) >= 0.8:
+            if token_jaccard(combined_text, s_combined) >= 0.6:
                 is_duplicate = True
                 break
                 
