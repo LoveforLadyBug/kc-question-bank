@@ -2,7 +2,7 @@ import json
 import random
 from pathlib import Path
 from datetime import date
-from harness import ROOT, load_question_file, save_question_file, extract_sections
+from harness import ROOT, load_question_file, save_question_file, extract_sections, token_jaccard
 import sys
 
 def parse_choices(choices_text: str) -> dict[str, str]:
@@ -19,7 +19,7 @@ def parse_choices(choices_text: str) -> dict[str, str]:
             choices["D"] = line[4:].strip()
     return choices
 
-def select_and_activate(chapter: str, count: int) -> list[dict]:
+def select_and_activate(chapter: str, count: int, global_selected_texts: list[str]) -> list[dict]:
     q_dir = ROOT / "questions" / chapter
     if not q_dir.exists():
         print(f"[WARN] {chapter} dir not found")
@@ -43,7 +43,29 @@ def select_and_activate(chapter: str, count: int) -> list[dict]:
         print(f"[ERROR] {chapter}에서 {count}개를 뽑기에 유효한 문제가 부족합니다 (현재 {len(candidates)}개).")
         sys.exit(1)
         
-    selected = random.sample(candidates, count)
+    random.shuffle(candidates)
+    selected = []
+    
+    for p, fm, body in candidates:
+        sections = extract_sections(body)
+        combined_text = sections.get("문제", "").strip() + " " + sections.get("보기", "").strip()
+        
+        is_duplicate = False
+        for s_combined in global_selected_texts:
+            if token_jaccard(combined_text, s_combined) >= 0.8:
+                is_duplicate = True
+                break
+                
+        if not is_duplicate:
+            selected.append((p, fm, body))
+            global_selected_texts.append(combined_text)
+            if len(selected) == count:
+                break
+                
+    if len(selected) < count:
+        print(f"[ERROR] {chapter}에서 중복을 제외하고 나니 {count}개를 채우지 못했습니다 (현재 {len(selected)}개).")
+        sys.exit(1)
+        
     results = []
     
     for p, fm, body in selected:
@@ -77,9 +99,11 @@ def select_and_activate(chapter: str, count: int) -> list[dict]:
 def main():
     print("문제 선별 및 Active 승격 시작...")
     
+    global_selected_texts = []
+    
     # 배분 비율: Fundamentals 65% (13문제), BCS 35% (7문제)
-    fundamentals = select_and_activate("01-cloud-fundamentals", 13)
-    bcs = select_and_activate("02-bcs", 7)
+    fundamentals = select_and_activate("01-cloud-fundamentals", 13, global_selected_texts)
+    bcs = select_and_activate("02-bcs", 7, global_selected_texts)
     
     all_selected = fundamentals + bcs
     random.shuffle(all_selected)
