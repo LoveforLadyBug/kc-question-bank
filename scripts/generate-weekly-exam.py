@@ -19,7 +19,7 @@ def parse_choices(choices_text: str) -> dict[str, str]:
             choices["D"] = line[4:].strip()
     return choices
 
-def select_and_activate(chapter: str, count: int, global_selected_texts: list[str]) -> list[dict]:
+def select_and_activate(chapter: str, count: int, global_selected_texts: list[str], global_seen_topics: set) -> list[dict]:
     q_dir = ROOT / "questions" / chapter
     if not q_dir.exists():
         print(f"[WARN] {chapter} dir not found")
@@ -47,6 +47,10 @@ def select_and_activate(chapter: str, count: int, global_selected_texts: list[st
     selected = []
     
     for p, fm, body in candidates:
+        topic = fm.get("topic", "").strip()
+        if topic and topic in global_seen_topics:
+            continue
+            
         sections = extract_sections(body)
         combined_text = sections.get("문제", "").strip() + " " + sections.get("보기", "").strip()
         
@@ -59,6 +63,8 @@ def select_and_activate(chapter: str, count: int, global_selected_texts: list[st
         if not is_duplicate:
             selected.append((p, fm, body))
             global_selected_texts.append(combined_text)
+            if topic:
+                global_seen_topics.add(topic)
             if len(selected) == count:
                 break
                 
@@ -100,10 +106,11 @@ def main():
     print("문제 선별 및 Active 승격 시작...")
     
     global_selected_texts = []
+    global_seen_topics = set()
     
     # 배분 비율: Fundamentals 65% (13문제), BCS 35% (7문제)
-    fundamentals = select_and_activate("01-cloud-fundamentals", 13, global_selected_texts)
-    bcs = select_and_activate("02-bcs", 7, global_selected_texts)
+    fundamentals = select_and_activate("01-cloud-fundamentals", 13, global_selected_texts, global_seen_topics)
+    bcs = select_and_activate("02-bcs", 7, global_selected_texts, global_seen_topics)
     
     all_selected = fundamentals + bcs
     random.shuffle(all_selected)
