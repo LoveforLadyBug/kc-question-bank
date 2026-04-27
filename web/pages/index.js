@@ -14,6 +14,13 @@ export default function Home() {
       </div>
 
       <div className="chapter-grid" style={{ marginBottom: '2rem' }}>
+        <a href="/exam.html" style={{ textDecoration: 'none', gridColumn: 'span 2' }}>
+          <div className="chapter-card active" style={{ border: '2px solid #FEE500', background: '#FFFDE7', height: '100%' }}>
+            <h2>📝 A/B/C/D 세트 모의고사 (전 챕터)</h2>
+            <p className="count">세트별 55문제 × 4세트 = 총 220문제</p>
+            <span className="badge" style={{ background: '#3B5ADB', color: 'white' }}>응시하기</span>
+          </div>
+        </a>
         <Link href="/quiz/weekly" style={{ textDecoration: 'none', gridColumn: 'span 2' }}>
           <div className="chapter-card active" style={{ border: '2px solid #4f46e5', background: '#f5f3ff', height: '100%' }}>
             <h2>🔥 주간 모의고사 (Fundamentals & BCS)</h2>
@@ -21,16 +28,6 @@ export default function Home() {
             <span className="badge" style={{ background: '#4f46e5', color: 'white' }}>응시하기</span>
           </div>
         </Link>
-      </div>
-
-      <div className="maintenance-banner">
-        <div className="maintenance-icon">🔍</div>
-        <h2 className="maintenance-title">문제 점검 중입니다.</h2>
-        <p className="maintenance-desc">
-          현재 문제 품질 검토가 진행 중입니다.<br />
-          점검이 완료되는 대로 다시 이용하실 수 있습니다.<br />
-          이용에 불편을 드려 죄송합니다.
-        </p>
       </div>
 
       <div className="chapter-grid">
