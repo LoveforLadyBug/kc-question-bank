@@ -206,7 +206,6 @@ def build_question_html(q: dict, idx: int, uid: str) -> str:
     </div>
     <div class="question-actions">
       <button class="btn-submit" onclick="submitAnswer('{qid}')">제출</button>
-      <button class="btn-explain" onclick="toggleExplanation('{qid}')" style="display:none">해설 보기</button>
     </div>
     <div class="explanation" id="exp-{qid}" style="display:none">
 {explanation_html}
@@ -638,16 +637,6 @@ function submitAnswer(qid) {{
   // 제출 버튼 비활성
   card.querySelector('.btn-submit').disabled = true;
 
-  // 오답이면 해설 자동 펼침 / 정답이면 해설 버튼 숨김
-  const expBtn = card.querySelector('.btn-explain');
-  const expDiv = document.getElementById('exp-' + qid);
-  if (!isCorrect) {{
-    if (expDiv) expDiv.style.display = 'block';
-    if (expBtn) {{ expBtn.style.display = 'inline-block'; expBtn.textContent = '해설 닫기'; }}
-  }} else {{
-    if (expBtn) expBtn.style.display = 'none';
-  }}
-
   if (currentSet) updateProgress(currentSet);
 }}
 
@@ -719,8 +708,6 @@ function resetSet(setName) {{
     card.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
     const submit = card.querySelector('.btn-submit');
     if (submit) submit.disabled = false;
-    const expBtn = card.querySelector('.btn-explain');
-    if (expBtn) {{ expBtn.style.display = 'none'; expBtn.textContent = '해설 보기'; }}
     const exp = document.getElementById('exp-' + card.id);
     if (exp) exp.style.display = 'none';
     const badge = document.getElementById('badge-' + card.id);
