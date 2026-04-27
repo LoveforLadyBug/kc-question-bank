@@ -2,16 +2,16 @@
 build-exam-html.py — A/B/C/D 세트 인터랙티브 HTML 모의고사 생성기
 draft/review/active 문제 모두 포함 (상태 무관).
 
-세트 구성:
-  Set A: q001~q005 (챕터별 5문제 × 11챕터 = 55문제)
-  Set B: q006~q010
-  Set C: q011~q015
-  Set D: q016~q020
+세트 구성 (세트별 60문제):
+  핵심 55문제: 챕터별 5문제 × 11챕터
+    Set A: q001~q005 / B: q006~q010 / C: q011~q015 / D: q016~q020
+  보너스 5문제: 다른 세트 문제 중 챕터 균형을 맞춰 추가 (결정적 선택)
 """
 
 from __future__ import annotations
 import re
 import sys
+import random
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -79,29 +79,55 @@ def extract_sections(body: str) -> dict[str, str]:
     return sections
 
 
-def load_questions_for_set(set_name: str) -> list[dict]:
-    """세트(A~D)에 해당하는 문제 로드."""
+def load_one_question(chapter_dir: str, chapter_label: str, num: int) -> dict | None:
+    q_dir = ROOT / "questions" / chapter_dir
+    p = q_dir / f"q{num:03d}.md"
+    if not p.exists():
+        return None
+    text = p.read_text(encoding="utf-8")
+    fm, body = parse_frontmatter(text)
+    sections = extract_sections(body)
+    return {"fm": fm, "chapter_label": chapter_label, "sections": sections,
+            "chapter_dir": chapter_dir, "num": num}
+
+
+def load_questions_for_set(set_name: str, bonus: int = 5) -> list[dict]:
+    """세트(A~D)에 해당하는 문제 로드 + 보너스 문제 추가 (총 55+bonus문제)."""
     lo, hi = SETS[set_name]
-    questions = []
+    core: list[dict] = []
     for chapter_dir, chapter_label in CHAPTERS:
-        q_dir = ROOT / "questions" / chapter_dir
-        if not q_dir.exists():
-            print(f"  [WARN] {q_dir} 없음", file=sys.stderr)
-            continue
         for num in range(lo, hi + 1):
-            p = q_dir / f"q{num:03d}.md"
-            if not p.exists():
-                print(f"  [WARN] {p} 없음", file=sys.stderr)
-                continue
-            text = p.read_text(encoding="utf-8")
-            fm, body = parse_frontmatter(text)
-            sections = extract_sections(body)
-            questions.append({
-                "fm": fm,
-                "chapter_label": chapter_label,
-                "sections": sections,
-            })
-    return questions
+            q = load_one_question(chapter_dir, chapter_label, num)
+            if q:
+                core.append(q)
+
+    # 보너스: 다른 세트에서 챕터 균형을 고려해 결정적(deterministic)으로 선택
+    other_set_names = [s for s in SETS if s != set_name]
+    # 세트별 "오프셋 문제"를 체계적으로 선택 (A→B의 1번, C의 1번, D의 1번 ... 순환)
+    bonus_pool: list[dict] = []
+    rng = random.Random(ord(set_name))  # 세트 이름으로 고정 시드
+    for other_set in other_set_names:
+        olo, ohi = SETS[other_set]
+        # 각 다른 세트에서 챕터별 1문제씩 후보 추가
+        for chapter_dir, chapter_label in CHAPTERS:
+            num = rng.randint(olo, ohi)
+            q = load_one_question(chapter_dir, chapter_label, num)
+            if q:
+                bonus_pool.append(q)
+
+    # bonus_pool에서 bonus개 선택 (챕터 다양성 보장: 이미 core에 없는 챕터 우선)
+    core_chapters = {q["chapter_dir"] for q in core}
+    # 사실 core는 모든 챕터를 포함하므로, 단순히 rng로 shuffle 후 앞에서 추출
+    rng.shuffle(bonus_pool)
+    selected_bonus = bonus_pool[:bonus]
+
+    # 보너스에 "보너스" 표시 추가
+    for q in selected_bonus:
+        q["is_bonus"] = True
+
+    all_questions = core + selected_bonus
+    rng.shuffle(all_questions)
+    return all_questions
 
 
 def escape_html(s: str) -> str:
@@ -199,12 +225,13 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
         questions_html = "\n".join(
             build_question_html(q, i + 1, f"{set_name}-{i+1:03d}") for i, q in enumerate(questions)
         )
+        n = len(questions)
         set_panels += f"""
 <div class="set-panel" id="set-{set_name}" style="display:none">
   <div class="set-header">
-    <h2>세트 {set_name} — 55문제</h2>
+    <h2>세트 {set_name} — {n}문제</h2>
     <div class="set-progress">
-      <span id="progress-{set_name}">0 / 55 답변</span>
+      <span id="progress-{set_name}">0 / {n} 답변</span>
       <span id="score-{set_name}" style="display:none"></span>
     </div>
     <button class="btn-show-all" onclick="showAllAnswers('{set_name}')">전체 정답 보기</button>
@@ -450,20 +477,21 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
 <header>
   <div>
     <h1>☁️ KakaoCloud Essential Basic Course</h1>
-    <div class="subtitle">모의고사 — A/B/C/D 세트 각 55문제</div>
+    <div class="subtitle">모의고사 — A/B/C/D 세트 각 60문제</div>
   </div>
 </header>
 
 <div id="home">
   <div class="set-selector">
     <h2>세트를 선택하세요</h2>
-    <p>세트별로 챕터당 5문제씩 총 55문제가 출제됩니다. 세트끼리 문제가 겹치지 않습니다.</p>
+    <p>세트별 60문제 · 11개 챕터 전체 커버 · 입장 시 랜덤 세트가 자동 선택됩니다.</p>
     <div class="set-buttons">
-      <button class="btn-set" onclick="selectSet('A')">A<small>q001~005</small></button>
-      <button class="btn-set" onclick="selectSet('B')">B<small>q006~010</small></button>
-      <button class="btn-set" onclick="selectSet('C')">C<small>q011~015</small></button>
-      <button class="btn-set" onclick="selectSet('D')">D<small>q016~020</small></button>
+      <button class="btn-set" id="btn-A" onclick="selectSet('A')">A<small>60문제</small></button>
+      <button class="btn-set" id="btn-B" onclick="selectSet('B')">B<small>60문제</small></button>
+      <button class="btn-set" id="btn-C" onclick="selectSet('C')">C<small>60문제</small></button>
+      <button class="btn-set" id="btn-D" onclick="selectSet('D')">D<small>60문제</small></button>
     </div>
+    <p style="margin-top:16px; font-size:0.85rem; color:var(--muted)" id="random-notice"></p>
   </div>
 </div>
 
@@ -471,12 +499,25 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
 
 <script>
 let currentSet = null;
+const SET_NAMES = ['A', 'B', 'C', 'D'];
 
-function selectSet(name) {{
+function selectSet(name, fromRandom) {{
   document.getElementById('home').style.display = 'none';
   document.querySelectorAll('.set-panel').forEach(p => p.style.display = 'none');
   document.querySelectorAll('.btn-set').forEach(b => b.classList.remove('active'));
-  document.getElementById('set-' + name).style.display = 'block';
+  document.getElementById('btn-' + name).classList.add('active');
+  const panel = document.getElementById('set-' + name);
+  panel.style.display = 'block';
+
+  // 뒤로가기 버튼 삽입 (없으면)
+  if (!panel.querySelector('.back-to-home')) {{
+    const btn = document.createElement('button');
+    btn.className = 'back-btn back-to-home';
+    btn.textContent = '← 세트 선택으로';
+    btn.onclick = goHome;
+    panel.insertBefore(btn, panel.firstChild);
+  }}
+
   currentSet = name;
   updateProgress(name);
 }}
@@ -484,8 +525,18 @@ function selectSet(name) {{
 function goHome() {{
   document.getElementById('home').style.display = 'block';
   document.querySelectorAll('.set-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.btn-set').forEach(b => b.classList.remove('active'));
   currentSet = null;
 }}
+
+// 페이지 진입 시 A~D 랜덤 자동선택
+window.addEventListener('DOMContentLoaded', function() {{
+  const picked = SET_NAMES[Math.floor(Math.random() * SET_NAMES.length)];
+  document.getElementById('random-notice').textContent =
+    '🎲 랜덤으로 세트 ' + picked + '가 선택되었습니다. 아래 버튼으로 직접 바꿀 수 있습니다.';
+  // 짧은 딜레이 후 자동 진입
+  setTimeout(() => selectSet(picked, true), 800);
+}});
 
 function submitAnswer(qid) {{
   const card = document.getElementById(qid);
