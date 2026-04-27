@@ -232,13 +232,25 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     <h2>세트 {set_name} — {n}문제</h2>
     <div class="set-progress">
       <span id="progress-{set_name}">0 / {n} 답변</span>
-      <span id="score-{set_name}" style="display:none"></span>
     </div>
-    <button class="btn-show-all" onclick="showAllAnswers('{set_name}')">전체 정답 보기</button>
     <button class="btn-reset" onclick="resetSet('{set_name}')">초기화</button>
   </div>
+
+  <!-- 시험 완료 배너 (완료 전 hidden) -->
+  <div class="completion-banner" id="completion-{set_name}" style="display:none">
+    <div class="completion-score" id="completion-score-{set_name}"></div>
+    <div class="completion-detail" id="completion-detail-{set_name}"></div>
+    <button class="btn-goto-wrong" onclick="scrollToWrongNote('{set_name}')">📋 오답 노트 보기</button>
+  </div>
+
   <div class="questions-container" id="questions-{set_name}">
 {questions_html}
+  </div>
+
+  <!-- 오답 노트 (완료 전 hidden) -->
+  <div class="wrong-note" id="wrong-note-{set_name}" style="display:none">
+    <h3 class="wrong-note-title">📋 오답 노트</h3>
+    <div id="wrong-note-body-{set_name}"></div>
   </div>
 </div>
 """
@@ -466,9 +478,67 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
   }}
   .back-btn:hover {{ background: var(--bg); }}
 
+  /* 완료 배너 */
+  .completion-banner {{
+    margin: 0 0 24px;
+    padding: 20px 24px;
+    background: linear-gradient(135deg, #2F9E44 0%, #2B8A3E 100%);
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }}
+  .completion-score {{
+    font-size: 1.8rem;
+    font-weight: 800;
+    flex: 1;
+    min-width: 160px;
+  }}
+  .completion-detail {{
+    font-size: 0.95rem;
+    opacity: 0.9;
+    flex: 2;
+    line-height: 1.6;
+  }}
+  .btn-goto-wrong {{
+    padding: 10px 20px;
+    background: white;
+    color: #2B8A3E;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }}
+  .btn-goto-wrong:hover {{ background: #D3F9D8; }}
+
+  /* 오답 노트 */
+  .wrong-note {{
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 2px solid var(--border);
+  }}
+  .wrong-note-title {{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--wrong);
+  }}
+  .wrong-note .question-card {{
+    border-color: var(--wrong);
+    border-width: 2px;
+  }}
+  .wrong-note .explanation {{
+    display: block !important;
+  }}
+
   @media (max-width: 600px) {{
     .set-header {{ flex-direction: column; align-items: flex-start; }}
     .btn-set {{ width: 90px; height: 90px; }}
+    .completion-banner {{ flex-direction: column; }}
   }}
 </style>
 </head>
@@ -561,13 +631,22 @@ function submitAnswer(qid) {{
   badge.textContent = isCorrect ? '✅ 정답!' : `❌ 오답 (정답: ${{correct}})`;
   badge.className = 'result-badge ' + (isCorrect ? 'badge-correct' : 'badge-wrong');
 
-  // 카드 테두리
+  // 카드 테두리 + 상태
   card.classList.add(isCorrect ? 'correct-card' : 'wrong-card');
   card.dataset.answered = isCorrect ? 'correct' : 'wrong';
 
-  // 버튼 상태
+  // 제출 버튼 비활성
   card.querySelector('.btn-submit').disabled = true;
-  card.querySelector('.btn-explain').style.display = 'inline-block';
+
+  // 오답이면 해설 자동 펼침 / 정답이면 해설 버튼 숨김
+  const expBtn = card.querySelector('.btn-explain');
+  const expDiv = document.getElementById('exp-' + qid);
+  if (!isCorrect) {{
+    if (expDiv) expDiv.style.display = 'block';
+    if (expBtn) {{ expBtn.style.display = 'inline-block'; expBtn.textContent = '해설 닫기'; }}
+  }} else {{
+    if (expBtn) expBtn.style.display = 'none';
+  }}
 
   if (currentSet) updateProgress(currentSet);
 }}
@@ -584,30 +663,52 @@ function toggleExplanation(qid) {{
   }}
 }}
 
-function showAllAnswers(setName) {{
-  const panel = document.getElementById('set-' + setName);
-  panel.querySelectorAll('.question-card').forEach(card => {{
-    if (card.dataset.answered !== 'false') return;
-    const qid = card.id;
-    const correct = card.dataset.correct;
-    card.querySelectorAll('.choice').forEach(label => {{
-      label.style.pointerEvents = 'none';
-      if (label.dataset.letter === correct) label.classList.add('correct-choice');
+function showCompletion(setName, correctCount, total) {{
+  const wrongCount = total - correctCount;
+  const pct = Math.round(correctCount / total * 100);
+
+  // 완료 배너
+  const banner = document.getElementById('completion-' + setName);
+  document.getElementById('completion-score-' + setName).textContent =
+    `${{pct}}점  (${{correctCount}} / ${{total}})`;
+  let detail = `정답 ${{correctCount}}개 · 오답 ${{wrongCount}}개`;
+  if (wrongCount === 0) detail += '  🎉 만점입니다!';
+  document.getElementById('completion-detail-' + setName).textContent = detail;
+  banner.style.display = wrongCount > 0 ? 'flex' : 'block';
+  if (wrongCount === 0) banner.querySelector('.btn-goto-wrong').style.display = 'none';
+
+  // 오답 노트 생성 (오답만)
+  if (wrongCount > 0) {{
+    const noteBody = document.getElementById('wrong-note-body-' + setName);
+    noteBody.innerHTML = '';
+    const panel = document.getElementById('questions-' + setName);
+    let noteIdx = 1;
+    panel.querySelectorAll('.question-card').forEach(card => {{
+      if (card.dataset.answered !== 'wrong') return;
+      const clone = card.cloneNode(true);
+      // 헤더 번호를 오답 노트 순번으로
+      clone.querySelector('.q-num').textContent = noteIdx++;
+      // 해설 강제 표시
+      const expDiv = clone.querySelector('.explanation');
+      if (expDiv) expDiv.style.display = 'block';
+      // 버튼 제거
+      clone.querySelectorAll('.btn-submit, .btn-explain, .question-actions').forEach(el => el.remove());
+      noteBody.appendChild(clone);
     }});
-    card.dataset.answered = 'shown';
-    card.querySelector('.btn-submit').disabled = true;
-    card.querySelector('.btn-explain').style.display = 'inline-block';
-    const badge = document.getElementById('badge-' + qid);
-    badge.style.display = 'inline-block';
-    badge.textContent = `정답: ${{correct}}`;
-    badge.className = 'result-badge badge-correct';
-  }});
-  updateProgress(setName);
+    document.getElementById('wrong-note-' + setName).style.display = 'block';
+  }}
+
+  // 배너로 스크롤
+  banner.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+}}
+
+function scrollToWrongNote(setName) {{
+  document.getElementById('wrong-note-' + setName).scrollIntoView({{ behavior: 'smooth' }});
 }}
 
 function resetSet(setName) {{
   if (!confirm('이 세트의 모든 답변을 초기화할까요?')) return;
-  const panel = document.getElementById('set-' + setName);
+  const panel = document.getElementById('questions-' + setName);
   panel.querySelectorAll('.question-card').forEach(card => {{
     card.dataset.answered = 'false';
     card.classList.remove('correct-card', 'wrong-card');
@@ -616,19 +717,24 @@ function resetSet(setName) {{
       label.classList.remove('correct-choice', 'wrong-choice', 'selected');
     }});
     card.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
-    card.querySelector('.btn-submit').disabled = false;
-    card.querySelector('.btn-explain').style.display = 'none';
-    const expId = 'exp-' + card.id;
-    const exp = document.getElementById(expId);
+    const submit = card.querySelector('.btn-submit');
+    if (submit) submit.disabled = false;
+    const expBtn = card.querySelector('.btn-explain');
+    if (expBtn) {{ expBtn.style.display = 'none'; expBtn.textContent = '해설 보기'; }}
+    const exp = document.getElementById('exp-' + card.id);
     if (exp) exp.style.display = 'none';
     const badge = document.getElementById('badge-' + card.id);
     if (badge) badge.style.display = 'none';
   }});
+  // 완료 배너 & 오답 노트 숨김
+  document.getElementById('completion-' + setName).style.display = 'none';
+  document.getElementById('wrong-note-' + setName).style.display = 'none';
+  document.getElementById('wrong-note-body-' + setName).innerHTML = '';
   updateProgress(setName);
 }}
 
 function updateProgress(setName) {{
-  const panel = document.getElementById('set-' + setName);
+  const panel = document.getElementById('questions-' + setName);
   const cards = panel.querySelectorAll('.question-card');
   const total = cards.length;
   let answered = 0, correct = 0;
@@ -639,10 +745,10 @@ function updateProgress(setName) {{
     }}
   }});
   document.getElementById('progress-' + setName).textContent = `${{answered}} / ${{total}} 답변`;
-  const scoreEl = document.getElementById('score-' + setName);
-  if (answered > 0) {{
-    scoreEl.textContent = ` | 정답률 ${{Math.round(correct/answered*100)}}% (${{correct}}/${{answered}})`;
-    scoreEl.style.display = 'inline';
+
+  // 전체 완료 시 결과 표시
+  if (answered === total) {{
+    showCompletion(setName, correct, total);
   }}
 }}
 
