@@ -9,8 +9,8 @@ beautifulsoup4>=4.12.0   # HTML 파싱
 # Markdown 파싱 (validate-quality.py, build-exam.py)
 python-frontmatter>=1.1.0  # YAML frontmatter 읽기/쓰기
 
-# Claude API 호출 (generate-questions.py)
-anthropic>=0.25.0
+openai>=1.0.0
+anthropic>=0.39.0
 
 # 환경변수 관리 (모든 스크립트)
 python-dotenv>=1.0.0

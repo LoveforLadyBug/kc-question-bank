@@ -115,12 +115,17 @@ active → deprecated : 사람만
 
 신규 문제 파일 생성 시 이 포맷을 따릅니다.
 
+> **chapter 허용 값**: `01-cloud-overview`, `02-kakao-services/bcs`,
+> `02-kakao-services/bns`, `02-kakao-services/bss`,
+> `02-kakao-services/container-pack`, `02-kakao-services/data-store`,
+> `03-billing`, `04-security`, `05-operations`, `06-account`, `07-complex`
+
 ```markdown
 ---
 id: q{NNN}
 chapter: {chapter}
 topic: {topic}                  # question-taxonomy.md §4 목록에서 선택
-difficulty: {1~5}               # difficulty-rubric.md 기준
+difficulty: {1~3}               # 1=기본, 2=이해, 3=응용. difficulty-rubric.md 기준
 type: single                    # 현재는 single만 사용
 tags: [{service-tag}, {cognitive-tag}]  # 총 2~4개
 source: https://docs.kakaocloud.com/...  # 필수. 추측 금지

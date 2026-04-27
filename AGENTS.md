@@ -18,6 +18,7 @@
 | `parser` | 공식 문서 파싱 및 레퍼런스 저장 | `scripts/parse-kakao-docs.py` |
 | `generator` | 레퍼런스 기반 문제 초안 생성 | `scripts/generate-questions.py` |
 | `validator` | 문제 품질 자동 점수 계산 | `scripts/validate-quality.py` |
+| `refiner` | 기존 문제 자동 보정 및 90점 이상 active 승인 | `scripts/refine-questions.py` |
 
 > **빌드 에이전트** (`scripts/build-exam.py`) 는 AI를 사용하지 않는 순수 조립 스크립트입니다.
 > 에이전트 규칙의 적용 대상이 아닙니다.
@@ -192,7 +193,7 @@ python scripts/validate-quality.py --chapter 02-bcs --force
 
 | 작업 | 이유 |
 |------|------|
-| `status: draft/review → active` 변경 | 최종 품질 판단은 사람의 책임 |
+| `status: draft/review → active` 변경 | 최종 품질 판단은 사람의 책임 (단, `refiner` 에이전트가 90점 이상 달성 시 자동 변경 허용) |
 | `reviewed_by` 필드 기입 | 리뷰 책임 추적을 위해 실명 필요 |
 | `status: active → deprecated` 변경 | 문제 폐기는 팀 합의 필요 |
 | 정답 변경 | 오류 발견 시 팀 논의 후 수동 수정 |

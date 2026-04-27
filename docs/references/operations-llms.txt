@@ -1,0 +1,1859 @@
+# SOURCE: https://docs.kakaocloud.com/service/management
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+Management는 카카오클라우드를 더욱 안전하게 사용할 수 있도록 지원하는 관리형 서비스 그룹입니다.
+리소스 접근 제어, 사용자 권한 관리, 클라우드 리소스 모니터링 등 일관성 있는 관리 기능을 통해 사용자의 클라우드 환경을 제어할 수 있습니다.
+
+#### 서비스 구성 ​
+
+사용자 역할에 따라 세분화된 접근 권한을 부여하여, 리소스를 안전하고 효율적으로 관리할 수 있습니다.
+대시보드에서 주요 서비스 리소스를 모니터링하고, 설정한 차트로 메트릭과 로그를 확인할 수 있습니다.
+서비스 이벤트나 리소스 장애 발생 시 알림을 받을 수 있도록 정책과 수신 채널을 설정하는 서비스입니다.
+사용자의 로그인, 리소스 생성·변경·삭제 등의 활동을 자동으로 수집·기록하고 손쉽게 추적할 수 있는 서비스입니다.
+API를 활용해 애플리케이션의 엔드포인트를 모니터링하고 업무 프로세스를 자동화할 수 있도록 돕습니다
+클라우드 환경에서 메트릭 데이터를 실시간으로 수집, 저장, 분석할 수 있는 관리형 모니터링 서비스입니다.
+사용자가 보유한 SSL 인증서를 카카오클라우드에 등록하여 사용할 수 있는 서비스입니다.
+리소스 메타데이터를 활용해 리소스를 쉽고 빠르게 검색하고, 태그를 생성해 원하는 기준으로 분류하고 관리할 수 있습니다.
+클라우드 리소스의 안정적인 운영을 위한 자동화된 유지관리 서비스입니다.
+다양한 정보를 튜토리얼과 새소식에서 확인하실 수 있습니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/advanced-managed-prometheus
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드 Advanced Managed Prometheus(AMP) 서비스는 클라우드 환경에서 메트릭 데이터를 실시간으로 수집, 저장, 분석할 수 있는 관리형 모니터링 서비스입니다. 자동화된 설치와 설정, 장애 복구 기능을 제공하여 운영 부담을 줄이고, Kubernetes 및 다양한 리소스를 효율적으로 모니터링할 수 있도록 지원합니다.
+Advanced Managed Prometheus(AMP) 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+카카오클라우드에서 제공하는 Advanced Managed Prometheus에 대한 개요입니다.
+
+## 📄️ 주요 개념
+
+카카오클라우드 Advanced Managed Prometheus 서비스의 주요 개념을 소개합니다.
+
+## 🗃️ How-to Guides
+
+3 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드의 Advanced Managed Prometheus 서비스 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+카카오클라우드의 Advanced Managed Prometheus 서비스 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다. Alert Center 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Alert Center의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+IAM 역할, 알림 정책 등의 구성 요소를 설명합니다.
+
+## 🗃️ How-to Guides
+
+6 항목
+
+## 📄️ 문제 해결
+
+Alert Center 서비스 사용 중 발생하는 트러블 슈팅에 대한 안내입니다.
+
+## 📄️ 서비스 요금 및 쿼터
+
+Alert Center의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Alert Center의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/maintenance
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Maintenance 서비스는 클라우드 PaaS환경에서 서비스의 인스턴스 및 엔진의 업그레이드,OS 업데이트, 설정 변경 등 주요 유지관리 작업을 사용자가 원하는 일정에 맞춰 사전 스케줄링할 수 있도록 지원합니다. 사용자는 운영 중단 가능성이 있는 작업을 사전에 인지하고, 원하는 시간에 맞춰 OS 및 엔진 업그레이드를 스케줄링할 수 있어, 계획적인 유지관리와 장애 예방을 통해 서비스 안정성과 운영 효율성을 높일 수 있습니다. Maintenance 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Maintenance의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+서비스 주요 개념과 Maintenance의 구성 요소를 설명합니다.
+
+## 🗃️ How-to Guides
+
+4 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+Maintenance의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Maintenance의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 사용자는 대시보드에서 웹 환경의 주요 리소스에 대한 실시간 모니터링이 가능하며, 메트릭 및 로그 정책을 설정하여 체계적인 모니터링 시스템을 구성할 수 있습니다. Monitoring 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Monitoring의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 사용자는 대시보드에서 웹 환경의 주요 리소스에 대한 실시간 모니터링이 가능하며, 메트릭 및 로그 정책을 설정하여 체계적인 모니터링 시스템을 구성할 수 있습니다. Monitoring 서비스를 통해 사용자의 리소스를 유연하고 효율적으로 관리할 수 있으며, 관리에 필요한 리소스를 최소화할 수 있습니다.
+
+## 📄️ 모니터링 메트릭
+
+카카오클라우드의 Monitoring 서비스에서 제공하는 메트릭을 설명합니다.
+
+## 🗃️ How-to Guides
+
+4 항목
+
+## 📄️ 문제 해결
+
+본 문서는 Monitoring 관련 문제를 해결하기 위한 가이드입니다.
+
+## 📄️ 서비스 요금 및 쿼터
+
+Monitoring의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Monitoring의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring-flow
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring Flow 서비스는 API를 활용해 애플리케이션의 엔드포인트를 모니터링하고 업무 프로세스를 자동화할 수 있도록 돕습니다. 별도의 코드 없이 사용자가 직관적인 UI환경에서 워크플로우를 설계하고, 설계된 시나리오를 통해 실시간 모니터링이 가능하여 시스템 상태를 추적하며 운영 효율성을 높입니다. Monitoring Flow 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+Monitoring Flow의 사용 목적 및 사례와 특징에 대해 안내합니다.
+
+## 📄️ 주요 개념
+
+시스템 아키텍처 및 대시보드/메트릭과 같은 구성 요소를 설명합니다.
+
+## 🗃️ How-to Guides
+
+4 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+Monitoring Flow의 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+Monitoring Flow의 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/resource-explorer
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드 Resource Explorer 서비스는 리소스를 이름, 태그, ID 등 다양한 메타데이터로 손쉽게 검색하고, 리소스 상세 페이지로 직접 이동하여 정보를 확인하거나 작업을 수행할 수 있는 탐색 도구입니다.
+Resource Explorer 서비스의 개요 및 주요 개념, 사용자 가이드는 다음과 같습니다.
+
+## 📄️ 개요
+
+카카오클라우드에서 제공하는 Resource Explorer 서비스의 개요입니다.
+
+## 📄️ 주요 개념
+
+카카오클라우드 Resource Explorer 서비스의 주요 개념을 소개합니다.
+
+## 🗃️ How-to Guides
+
+4 항목
+
+## 🗃️ API Reference
+
+2 항목
+
+## 📄️ 서비스 요금 및 쿼터
+
+카카오클라우드의 Resource Explorer 서비스 요금 정보를 안내합니다.
+
+## 📄️ 릴리즈 노트
+
+카카오클라우드의 Resource Explorer 서비스 릴리즈 내역을 제공합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/how-to-guides
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드 Monitoring 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 모니터링 에이전트 설치
+
+모니터링 에이전트를 설치하는 방법을 Linux와 Windows 환경에서 설명합니다.
+
+## 📄️ 대시보드 활용
+
+컴퓨팅 자원 상태를 실시간 모니터링할 수 있는 대시보드의 활용법을 설명합니다.
+
+## 📄️ 탐색기 사용하기
+
+모니터링 서비스에서 수집한 메트릭과 로그를 서비스별 리소스 단위로 조회하는 탐색기의 사용 방법을 설명합니다.
+
+## 📄️ Metric Export 사용
+
+메트릭 익스포트를 사용하는 방법을 설명합니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-main
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 사용자는 대시보드에서 웹 환경의 주요 리소스에 대한 실시간 모니터링이 가능하며, 메트릭 및 로그 정책을 설정하여 체계적인 모니터링 시스템을 구성할 수 있습니다. Monitoring 서비스를 통해 사용자의 리소스를 유연하고 효율적으로 관리할 수 있으며, 관리에 필요한 리소스를 최소화할 수 있습니다.
+
+### Monitoring 서비스 시스템 아키텍처 ​
+
+Monitoring 서비스는 사용자가 자원 운영 관리에 필요한 여러 정책을 설정하여 원하는 데이터를 수집할 수 있도록 구성되어 있습니다. 미리 등록된 정책에 따라 장애가 발생할 시, 알림을 통해 모니터링 이력을 조회하며 장애를 빠르게 확인할 수 있습니다.
+모니터링 서비스 아키텍처
+
+## Monitoring 주요 개념 ​
+
+
+### 대시보드 ​
+
+모니터링 서비스에서 대시보드를 이용하여 주요 리소스에 대한 실시간 모니터링이 가능합니다. 제공되는 대시보드 유형은 아래와 같습니다.
+
+| 유형 | 설명 |
+|---|---|
+| 기본 대시보드 | 카카오클라우드에서 기본 제공하는 대시보드로 별도의 설정 없이 바로 사용 중인 리소스의 메트릭 조회 - 기본 대시보드는 사용자의 임의 수정이 불가능하며 제공되는 메트릭의 조회만 가능 |
+| 커스텀 대시보드 | 사용자가 직접 대시보드를 생성하고 대시보드 내에 원하는 서비스의 메트릭 차트를 추가하여 관리할 수 있는 대시보드 - 모니터링 지원  메트릭은 모니터링 메트릭 참고 |
+
+카카오클라우드 모니터링 에이전트를 설치해야 메트릭을 확인할 수 있습니다. 설치 방법은 에이전트 설치하기 를 참고하시기 바랍니다.
+
+### 대시보드 지원 서비스 ​
+
+
+| 구분 | 서비스 상세 |
+|---|---|
+| 대시보드 지원 서비스 | Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server ㄴ GPU Networking ㄴ Load Balancing Container Pack ㄴ Kubernetes Engine(기본) Data Store ㄴ MySQL ㄴ PostgreSQL ㄴ MemStore Analytics ㄴ Pub/Sub |
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-metric
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Monitoring 서비스에서 제공하는 메트릭을 설명합니다.
+
+## Virtual Machine, GPU, Bare Metal Server 메트릭 ​
+
+Virtual Machine, GPU, Bare Metal Server에서 공통으로 수집되는 주요 시스템 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+GPU 전용 메트릭
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % | 주요 성능 지표 |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % | 사용자 프로세스 부하 확인 |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % | 커널/시스템 부하 확인 |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % | I/O 병목 현상 진단 |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % | 코어별 부하 불균형 확인 |
+| mem_usage | 자체 메모리 사용률 | % | 주요 메모리 경고 |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) | 절대적 사용량 확인 |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) | 리눅스 전용 |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) | 리눅스 전용 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| disk_used_percent | 디스크 사용률 | % | 용량 부족 알림 |
+| disk_used | 디스크 사용량 | bytes(IEC) | 절대적 사용량 확인 |
+| disk_read_bytes_persec | 초당 디스크 읽기 바이트 크기 | bytes/s(IEC) | 읽기 성능 지연 확인 |
+| disk_write_bytes_persec | 초당 디스크 쓰기 바이트 크기 | bytes/s(IEC) | 쓰기 성능 지연 확인 |
+| disk_read_iops | 초당 디스크 읽기 작업 완료 개수 (IOPS) | count/s | 읽기 작업 부하 확인 |
+| disk_write_iops | 초당 디스크 쓰기 작업 완료 개수 (IOPS) | count/s | 쓰기 작업 부하 확인 |
+| disk_inodes_usage | 디스크 inode 사용률 | % | inode 부족 경고 (Linux) |
+| disk_free | 사용 가능한 디스크 용량 | bytes(IEC) | 참고 정보 |
+| disk_total | 디스크 총 용량 | bytes(IEC) | 참고 정보 |
+| disk_inodes_free | 사용 가능한 inode 개수 | count | 참고 정보 |
+| disk_inodes_total | 총 예약된 inode 개수 | count | 참고 정보 |
+| disk_inodes_used | inode 사용량 | count | 참고 정보 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) | 수신 트래픽 확인 |
+| network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) | 송신 트래픽 확인 |
+| network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s | 수신 패킷 부하 확인 |
+| network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s | 송신 패킷 부하 확인 |
+
+
+| 메트릭 이름 | 설명 | 단위 | 권장 용도 |
+|---|---|---|---|
+| nvidia_smi_utilization_gpu | GPU 코어별 사용률 | % | GPU 성능 부하 확인 |
+| nvidia_smi_memory_used | GPU 코어별 사용 중인 메모리 | MiB(IEC) | GPU 메모리 사용량 확인 |
+| nvidia_smi_memory_free | GPU 코어별 사용 가능한 메모리 | MiB(IEC) | GPU 메모리 여유분 확인 |
+| nvidia_smi_memory_total | GPU 코어별 전체 메모리 | MiB(IEC) | GPU 메모리 총량 확인 |
+| nvidia_smi_power_draw | GPU 코어별 전력 소비량 | watt | 전력 사용량 확인 |
+
+
+#### Virtual Machine, 버스터블 인스턴스 전용 메트릭 ​
+
+다음 메트릭은 버스터블(Burstable) 옵션이 적용된 t1i 계열 인스턴스 에서만 수집됩니다. (단, t1i.medium.dns.default 타입은 제외)
+t1i.medium.dns.default
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_credit_usage | 누적된 CPU 크레딧 사용량으로 기준 성능을 초과하여 CPU를 사용할 때 소비된 크레딧 양 | count |
+| cpu_credit_balance | 현재 인스턴스에 남아 있는 CPU 크레딧 잔여량으로 기준 성능 이하로 동작할 때 적립 | count |
+
+mem_buffered , mem_cached , disk_inodes_usage 메트릭은 Linux OS 가 설치된 서버에서만 수집 및 제공됩니다.
+mem_buffered
+mem_cached
+disk_inodes_usage
+nvidia_smi 메트릭은 GPU가 장착된 서버 에서만 수집됩니다.
+nvidia_smi
+GPU 인스턴스 라이브러리 호환성: GPU 인스턴스의 NVIDIA 라이브러리를 업데이트할 경우, CUDA 버전과 호환성 을 반드시 확인하세요. 호환되지 않는 경우, 모니터링 에이전트가 NVIDIA 메트릭을 수집하지 못할 수 있습니다.
+네트워크 알림 정책: network_rx_bytes_persec 메트릭으로 Alert Center 알림 정책을 설정할 경우, 해당 정책은 모든 네트워크 인터페이스 에 적용됩니다. 다중 NIC 인스턴스에서는 연결된 인터페이스 중 하나라도 설정된 임계치를 초과하면 알림이 발송됩니다.
+network_rx_bytes_persec
+
+## Libvirt 메트릭 ​
+
+Libvirt 환경에서 수집되는 가상화 기반 서버의 주요 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_info_cpu_time_seconds_total | 사용한 총 CPU 시간 | count |
+| libvirt_domain_info_virtual_cpus | CPU 코어 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_block_stats_read_bytes_total | 디스크에서 읽은 바이트 크기 | bytes(IEC) |
+| libvirt_domain_block_stats_write_bytes_total | 디스크에서 쓴 바이트 크기 | bytes(IEC) |
+| libvirt_domain_block_stats_read_requests_total | 디스크 읽기 요청의 횟수 | count |
+| libvirt_domain_block_stats_write_requests_total | 디스크 쓰기 요청의 횟수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| libvirt_domain_interface_stats_receive_bytes_total | 네트워크 인터페이스에서 받은 바이트 크기 | bytes(IEC) |
+| libvirt_domain_interface_stats_transmit_bytes_total | 네트워크 인터페이스에서 보낸 바이트 크기 | bytes(IEC) |
+| libvirt_domain_interface_stats_receive_packets_total | 네트워크 인터페이스에서 받은 패킷 개수 | packets |
+| libvirt_domain_interface_stats_transmit_packets_total | 네트워크 인터페이스에서 보낸 패킷 개수 | packets |
+| libvirt_domain_interface_stats_receive_drops_total | 네트워크 인터페이스에서 받지 못한 패킷 개수 | packets |
+
+
+## Kubernetes Engine 메트릭 ​
+
+Kubernetes Engine 환경에서 수집되는 주요 클러스터, 노드, 파드 리소스 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+클러스터
+노드
+파드 및 컨테이너
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cluster_autoscaler_node_group_min_count | 노드 그룹의 오토스케일링 시 최소 노드 개수 | count |
+| cluster_autoscaler_node_group_max_count | 노드 그룹의 오토스케일링 시 최대 노드 개수 | count |
+| cluster_autoscaler_node_group_target_count | 노드 그룹의 오토스케일링 시 목표 노드 개수 | count |
+| node_count | 현재 노드 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| kube_node_status_allocatable | 노드에서 파드에 할당할 수 있는 리소스 양 | none |
+| kube_node_status_capacity | 노드의 총 리소스 용량 | none |
+| node_cpu_seconds_total | 노드 CPU의 각 모드에서 사용된 시간 | count |
+| node_filesystem_avail_bytes | 노드의 루트가 아닌 사용자 영역에서 사용 가능한 파일 시스템 용량 | bytes(IEC) |
+| node_filesystem_size_bytes | 노드 파일 시스템의 전체 크기 | bytes(IEC) |
+| node_memory_Active_bytes | 현재 사용 중이나 재사용 가능한 메모리(Active) | bytes(IEC) |
+| node_memory_Buffers_bytes | 커널의 디스크 I/O 버퍼로 사용되는 메모리 | bytes(IEC) |
+| node_memory_Cached_bytes | 파일 시스템 캐시로 사용되는 메모리 | bytes(IEC) |
+| node_memory_MemAvailable_bytes | 새 프로세스를 위해 즉시 사용 가능한 메모리 | bytes(IEC) |
+| node_memory_MemFree_bytes | 현재 아무런 할당도 되지 않은 메모리 | bytes(IEC) |
+| node_memory_MemTotal_bytes | 노드의 총 메모리 용량 | bytes(IEC) |
+| node_memory_SReclaimable_bytes | Slab 캐시 중 회수 가능한(Reclaimable) 메모리 | bytes(IEC) |
+| node_network_receive_bytes_total | 네트워크 디바이스에서 받은 총 바이트 크기 | bytes(IEC) |
+| node_network_transmit_bytes_total | 네트워크 디바이스에서 보낸 총 바이트 크기 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| kube_pod_container_info | 파드 내 컨테이너의 기본 정보 | none |
+| kube_pod_container_resource_limits | 컨테이너가 요청한 리소스의 상한값(Limit) | none |
+| kube_pod_container_resource_requests | 컨테이너가 요청한 리소스 값(Request) | none |
+| kube_pod_container_status_running | 컨테이너의 상태가 Running인지 여부 | count |
+| kube_pod_container_status_terminated | 컨테이너의 상태가 Terminated인지 여부 | count |
+| kube_pod_info | 파드에 대한 정보 | none |
+| container_cpu_usage_seconds_total | 컨테이너가 소비한 총 CPU 시간 | count |
+| container_memory_working_set_bytes | 컨테이너가 사용 중이며 OS가 회수할 수 없는 메모리 | bytes(IEC) |
+| container_network_receive_bytes_total | 컨테이너가 받은 네트워크 총 바이트 | bytes(IEC) |
+| container_network_transmit_bytes_total | 컨테이너가 보낸 네트워크 총 바이트 | bytes(IEC) |
+
+
+## Load Balancing 메트릭 ​
+
+Load Balancer 리소스의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| lb_bytes_in_persec | 초당 인바운드 트래픽(수신 바이트) | bytes/s(IEC) |
+| lb_bytes_out_persec | 초당 아웃바운드 트래픽(송신 바이트) | bytes/s(IEC) |
+| lb_connections_persec | 초당 연결(Connection) 생성 개수 | count/s |
+| lb_current_connections | 현재 유지 중인 연결(Connection) 개수 | count |
+| lb_healthy_host_count | 연결 가능한 정상 대상(Healthy host) 개수 | count |
+| lb_unhealthy_host_count | 연결 불가능한 비정상 대상(Unhealthy host) 개수 | count |
+
+
+## MySQL 메트릭 ​
+
+MySQL 인스턴스의 스토리지, 네트워크, 쿼리, 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+쿼리
+커넥션 및 인스턴스
+InnoDB 및 Binary Log
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % |
+| mem_swap_total | 총 swap 메모리 | bytes(IEC) |
+| mem_swap_cached | 캐시된 swap 메모리 | bytes(IEC) |
+| mem_swap_free | 사용 가능한 swap 메모리 | bytes(IEC) |
+| mem_usage | 자체 메모리 사용률 | % |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_logstorage_disk_write_bytes_persec | 로그 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| mysql_defaultstorage_disk_write_bytes_persec | 기본 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| mysql_logstorage_disk_read_bytes_persec | 로그 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| mysql_defaultstorage_disk_read_bytes_persec | 기본 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| mysql_logstorage_disk_write_iops | 로그 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| mysql_defaultstorage_disk_write_iops | 기본 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| mysql_logstorage_disk_read_iops | 로그 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| mysql_defaultstorage_disk_read_iops | 기본 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| mysql_logstorage_disk_used | 로그 스토리지 디스크 사용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_used | 기본 스토리지 디스크 사용량 | bytes(IEC) |
+| mysql_logstorage_disk_used_percent | 로그 스토리지 디스크 사용률 | % |
+| mysql_defaultstorage_disk_used_percent | 기본 스토리지 디스크 사용률 | % |
+| mysql_logstorage_disk_inodes_usage | 로그 스토리지 inode 사용률 | % |
+| mysql_defaultstorage_disk_inodes_usage | 기본 스토리지 inode 사용률 | % |
+| mysql_defaultstorage_disk_free | 기본 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_total | 기본 스토리지 디스크 총 용량 | bytes(IEC) |
+| mysql_logstorage_disk_free | 로그 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| mysql_logstorage_disk_total | 로그 스토리지 디스크 총 용량 | bytes(IEC) |
+| mysql_defaultstorage_disk_inodes_free | 기본 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| mysql_defaultstorage_disk_inodes_total | 기본 스토리지 디스크 총 inode 개수 | count |
+| mysql_defaultstorage_disk_inodes_used | 기본 스토리지 디스크 inode 사용량 | count |
+| mysql_logstorage_disk_inodes_free | 로그 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| mysql_logstorage_disk_inodes_total | 로그 스토리지 디스크 총 inode 개수 | count |
+| mysql_logstorage_disk_inodes_used | 로그 스토리지 디스크 inode 사용량 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) |
+| mysql_network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) |
+| mysql_network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| mysql_network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_query_persec | 초당 쿼리 횟수(QPS) | count/s |
+| mysql_com_insert_count | 5분 동안 INSERT 쿼리 수행 횟수 | count |
+| mysql_com_select_count | 5분 동안 SELECT 쿼리 수행 횟수 | count |
+| mysql_com_update_count | 5분 동안 UPDATE 쿼리 수행 횟수 | count |
+| mysql_com_delete_count | 5분 동안 DELETE 쿼리 수행 횟수 | count |
+| mysql_com_commit_count | 5분 동안 COMMIT 쿼리 수행 횟수 | count |
+| mysql_slow_query_count | 5분 동안 수행된 Slow 쿼리 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_connections_count | 현재 연결된 Connection 개수 | count |
+| mysql_max_connections_count | 최대 연결 가능한 Connection 개수 | count |
+| mysql_connection_usage_percent | 최대 Connection 대비 현재 연결 비율 | % |
+| mysql_instance_status | 인스턴스 상태 | count |
+| mysql_instance_group_status | 인스턴스 그룹 상태 | count |
+| mysql_uptime | 인스턴스 기동 시간 | duration |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| mysql_innodb_buffer_pool_read_requests | Buffer Pool 전체 요청 개수 | count |
+| mysql_innodb_buffer_pool_reads | Buffer Pool에서 직접 읽은 요청 개수 | count |
+| mysql_innodb_buffer_cache_hit_ratio | Buffer Pool 캐시 히트율 | % |
+| mysql_innodb_row_lock_current_waits | 현재 행 잠금 개수 | count |
+| mysql_innodb_row_lock_time | 행 잠금에 소요된 시간 | milliseconds |
+| mysql_binary_size_bytes | Binary Log 크기 | bytes(IEC) |
+| mysql_binary_files_count | Binary Log 파일 개수 | count |
+| mysql_variables_max_binlog_size | 최대 Binary Log 크기 설정값 | bytes(IEC) |
+| mysql_replication_lag | Binlog 복제 지연 시간 | seconds |
+
+
+## PostgreSQL 메트릭 ​
+
+PostgreSQL 인스턴스의 디스크, 네트워크, 연결, 트랜잭션 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+커넥션 및 운영 상태
+복제 및 트랜잭션
+워크로드 및 성능
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_usage | 전체 CPU 사용률 | % |
+| cpu_usage_user | CPU 사용률 (사용자 프로세스) | % |
+| cpu_usage_system | CPU 사용률 (시스템 커널) | % |
+| cpu_usage_iowait | CPU 사용률 (I/O 대기) | % |
+| cpu_usage_per_core | 코어별 CPU 사용률 | % |
+| mem_swap_total | 총 swap 메모리 | bytes(IEC) |
+| mem_swap_cached | 캐시된 swap 메모리 | bytes(IEC) |
+| mem_swap_free | 사용 가능한 swap 메모리 | bytes(IEC) |
+| mem_usage | 자체 메모리 사용률 | % |
+| mem_used | 사용 중인 메모리 크기 | bytes(IEC) |
+| mem_buffered | 메모리 사용량 (버퍼) | bytes(IEC) |
+| mem_cached | 메모리 사용량 (캐시) | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_defaultstorage_disk_read_bytes_persec | 기본 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| pg_defaultstorage_disk_write_bytes_persec | 기본 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| pg_defaultstorage_disk_read_iops | 기본 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| pg_defaultstorage_disk_write_iops | 기본 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| pg_defaultstorage_disk_used | 기본 스토리지 디스크 사용량 | bytes(IEC) |
+| pg_defaultstorage_disk_used_percent | 기본 스토리지 디스크 사용률 | % |
+| pg_defaultstorage_disk_inodes_usage | 기본 스토리지 inode 사용률 | % |
+| pg_defaultstorage_disk_free | 기본 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| pg_defaultstorage_disk_total | 기본 스토리지 디스크 총 용량 | bytes(IEC) |
+| pg_defaultstorage_disk_inodes_free | 기본 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| pg_defaultstorage_disk_inodes_total | 기본 스토리지 디스크 총 inode 개수 | count |
+| pg_defaultstorage_disk_inodes_used | 기본 스토리지 디스크 inode 사용량 | count |
+| pg_logstorage_disk_read_bytes_persec | 로그 스토리지 디스크에서 초당 읽은 바이트 크기 | bytes/s(IEC) |
+| pg_logstorage_disk_write_bytes_persec | 로그 스토리지 디스크에서 초당 쓴 바이트 크기 | bytes/s(IEC) |
+| pg_logstorage_disk_read_iops | 로그 스토리지 디스크에서 초당 읽기 작업 완료 개수 | count/s |
+| pg_logstorage_disk_write_iops | 로그 스토리지 디스크에서 초당 쓰기 작업 완료 개수 | count/s |
+| pg_logstorage_disk_used | 로그 스토리지 디스크 사용량 | bytes(IEC) |
+| pg_logstorage_disk_used_percent | 로그 스토리지 디스크 사용률 | % |
+| pg_logstorage_disk_inodes_usage | 로그 스토리지 inode 사용률 | % |
+| pg_logstorage_disk_free | 로그 스토리지 디스크에서 사용 가능한 용량 | bytes(IEC) |
+| pg_logstorage_disk_total | 로그 스토리지 디스크 총 용량 | bytes(IEC) |
+| pg_logstorage_disk_inodes_free | 로그 스토리지 디스크에서 사용 가능한 inode 개수 | count |
+| pg_logstorage_disk_inodes_total | 로그 스토리지 디스크 총 inode 개수 | count |
+| pg_logstorage_disk_inodes_used | 로그 스토리지 디스크 inode 사용량 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_network_rx_bytes_persec | 네트워크 인터페이스에서 받은 초당 바이트 크기 | bytes/s(IEC) |
+| pg_network_tx_bytes_persec | 네트워크 인터페이스에서 보낸 초당 바이트 크기 | bytes/s(IEC) |
+| pg_network_rx_packets_persec | 네트워크 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| pg_network_tx_packets_persec | 네트워크 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_active_time | 활성 세션이 소비한 총 시간 | ms |
+| pg_idle_in_transaction_time | Idle in transaction 상태 유지 시간 | ms |
+| pg_numbackends | 현재 연결된 백엔드 프로세스 개수 | count |
+| pg_session_time | 세션이 활성 상태로 유지된 시간 | ms |
+| pg_sessions | 전체 세션 개수 | count |
+| pg_sessions_abandoned | 세션 강제 종료(연결 끊김) 개수 | count |
+| pg_sessions_fatal | 치명적 오류로 종료된 세션 개수 | count |
+| pg_sessions_killed | 운영자에 의해 강제 종료된 세션 개수 | count |
+| pg_datid | 데이터베이스 식별자(ID) | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_replication_lag | 복제 지연 시간 | seconds |
+| pg_xact_commit | 커밋된 트랜잭션 개수 | count |
+| pg_xact_rollback | 롤백된 트랜잭션 개수 | count |
+| pg_xid_age | 특정 프로세스의 XID Age | count |
+| pg_xid_age_per_group | 인스턴스 그룹별 XID Age | count |
+| pg_temp_file_ratio | 전체 트랜잭션 대비 임시 파일 비율 | % |
+| pg_temp_file_ratio_per_group | 인스턴스 그룹별 임시 파일 비율 | % |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pg_blk_read_time | 블록 읽기 시간 | ms |
+| pg_blk_write_time | 블록 쓰기 시간 | ms |
+| pg_blks_hit | 캐시에서 읽은 블록 개수 | count |
+| pg_blks_read | 디스크에서 읽은 블록 개수 | count |
+| pg_buffer_hit_ratio | Buffer hit 비율 | % |
+| pg_checksum_failures | 체크섬 오류 개수 | count |
+| pg_conflicts | 트랜잭션 충돌 개수 | count |
+| pg_deadlocks | 발생한 데드락 개수 | count |
+| pg_temp_bytes | 임시 파일 사용량 | bytes |
+| pg_temp_files | 생성된 임시 파일 개수 | count |
+| pg_tup_deleted | 삭제된 튜플 개수 | count |
+| pg_tup_fetched | 검색된 튜플 개수 | count |
+| pg_tup_inserted | 삽입된 튜플 개수 | count |
+| pg_tup_returned | 반환된 튜플 개수 | count |
+| pg_tup_updated | 업데이트된 튜플 개수 | count |
+
+
+## MemStore 메트릭 ​
+
+MemStore 인스턴스의 메모리, 네트워크, 복제 및 CPU 사용 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기, Metric Export
+Alert Center : 메트릭 기반 알림 정책 설정
+CPU 및 메모리
+디스크 I/O 및 용량
+네트워크
+커넥션 및 동작 상태
+키 및 캐시 통계
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_used_cpu_sys | 전체 시스템 CPU 사용량 | count |
+| memstore_used_cpu_sys_main_thread | 메인 스레드의 시스템 CPU 사용량 | count |
+| memstore_used_cpu_user | 전체 사용자 CPU 사용량 | count |
+| memstore_used_cpu_user_main_thread | 메인 스레드의 사용자 CPU 사용량 | count |
+| memstore_memory_usage | 전체 메모리 사용률 | % |
+| memstore_used_memory | MemStore가 사용 중인 메모리 크기 | bytes(IEC) |
+| memstore_used_memory_peak | 사용한 최대 메모리 | bytes(IEC) |
+| memstore_used_memory_peak_perc | 전체 메모리 대비 최대 사용 비율 | % |
+| memstore_used_memory_dataset | 실제 데이터 저장에 사용되는 메모리 | bytes(IEC) |
+| memstore_used_memory_dataset_perc | 실제 데이터 저장에 사용되는 메모리 비율 | % |
+| memstore_used_memory_overhead | 내부 데이터 구조 관리에 필요한 오버헤드 메모리 | bytes(IEC) |
+| memstore_used_memory_lua | Lua 스크립트 실행에 사용된 메모리 | bytes(IEC) |
+| memstore_allocator_allocated | allocator에 할당된 메모리(내부 단편 포함) | bytes(IEC) |
+| memstore_allocator_active | allocator에서 활성화된 메모리(외부 단편 포함) | bytes(IEC) |
+| memstore_allocator_resident | allocator에서 관리 중인 resident 메모리 | bytes(IEC) |
+| memstore_allocator_rss_bytes | RSS 메모리 크기 | bytes(IEC) |
+| memstore_allocator_frag_bytes | 활성 메모리와 할당 메모리의 차이 | bytes(IEC) |
+| memstore_allocator_frag_ratio | 활성 메모리 대비 할당 메모리 비율 | % |
+| memstore_allocator_rss_ratio | resident 메모리 대비 활성 메모리 비율 | % |
+| memstore_mem_fragmentation_bytes | 사용 중인 resident 메모리와 할당된 메모리의 차이 | bytes(IEC) |
+| memstore_mem_fragmentation_ratio | 사용 중인 resident 메모리와 할당된 메모리의 비율 | % |
+| memstore_rss_overhead_bytes | 프로세스 RSS와 allocator resident 메모리 간의 차이 | bytes(IEC) |
+| memstore_rss_overhead_ratio | 프로세스 RSS와 allocator resident 메모리 간의 비율 | % |
+| memstore_total_system_memory | MemStore가 실행 중인 시스템의 총 메모리 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| disk_free | 사용 가능한 디스크 용량 | bytes(IEC) |
+| disk_total | 디스크 총 용량 | bytes(IEC) |
+| disk_inodes_free | 사용 가능한 inode 개수 | count |
+| disk_inodes_used | 사용 중인 inode 개수 | count |
+| disk_inodes_total | 총 예약된 inode 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_instantaneous_input_kbps | 초당 네트워크 입력 속도 | KiB/s(IEC) |
+| memstore_instantaneous_output_kbps | 초당 네트워크 출력 속도 | KiB/s(IEC) |
+| memstore_total_net_input_bytes | 총 네트워크 입력 바이트 | bytes(IEC) |
+| memstore_total_net_output_bytes | 총 네트워크 출력 바이트 | bytes(IEC) |
+| memstore_instantaneous_ops_per_sec | 초당 처리 명령어 개수 | count |
+| memstore_cmdstat_calls_persec | 초당 명령어 호출 횟수 | count/s |
+| memstore_total_commands_processed | 총 처리된 명령어 개수 | count |
+| memstore_total_reads_processed | 총 처리된 읽기 이벤트 개수 | count |
+| memstore_total_writes_processed | 총 처리된 쓰기 이벤트 개수 | count |
+| memstore_io_threaded_reads_processed | I/O 스레드에서 처리된 읽기 이벤트 개수 | count |
+| memstore_io_threaded_writes_processed | I/O 스레드에서 처리된 쓰기 이벤트 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_connected_slaves | 연결된 Replica 개수 | count |
+| memstore_replication_lag | Replica 복제 지연 시간 | s |
+| memstore_clients | 현재 연결된 클라이언트 개수 | count |
+| memstore_maxclients | 최대로 연결 가능한 클라이언트 개수 | count |
+| memstore_client_ratio | 최대 클라이언트 대비 현재 연결 비율 | % |
+| memstore_blocked_clients | 대기 중인 클라이언트 개수(BLPOP 등 명령) | count |
+| memstore_cluster_connections | 클러스터 버스에서 사용 중인 소켓 개수 | count |
+| memstore_cluster_enabled | 클러스터 활성화 여부 | count |
+| memstore_pubsub_channels | Pub/Sub 채널 개수 | count |
+| memstore_pubsub_patterns | Pub/Sub 패턴 개수 | count |
+| memstore_uptime | 인스턴스 기동 시간 | s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| memstore_keyspace_hits | 적중한 키 개수 | count |
+| memstore_keyspace_misses | 적중 실패한 키 개수 | count |
+| memstore_keyspace_hitrate_percent | 키 적중률 | % |
+| memstore_evicted_keys | 메모리 제한으로 인해 제거된 키 개수 | count |
+| memstore_expired_keys | 만료된 키 개수 | count |
+| memstore_lazyfree_pending_objects | Lazy Free로 해제 대기 중인 객체 개수 | count |
+| memstore_lazyfreed_objects | Lazy Free로 해제된 객체 개수 | count |
+| memstore_lru_clock | LRU 알고리즘을 위한 내부 시간 값 | count |
+
+
+#### 버스터블 인스턴스 전용 메트릭 ​
+
+다음 메트릭은 버스터블(Burstable) 옵션이 적용된 t1i 계열 인스턴스 에서만 수집됩니다.
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| cpu_credit_usage | CPU 크레딧 사용량 | count |
+| cpu_credit_balance | CPU 크레딧 잔여량 | count |
+
+
+## Hadoop Eco 메트릭 ​
+
+Hadoop Eco 환경에서 수집되는 주요 HBase, HDFS, Yarn, Kafka 관련 시스템 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+HBase
+HDFS (NameNode)
+Yarn (ResourceManager)
+Kafka
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| HBase_Master_JvmMetrics_MemHeapMaxM | HBase Master의 JVM 힙 메모리 최대 크기 | MB |
+| HBase_Master_JvmMetrics_MemHeapUsedM | HBase Master의 JVM 힙 메모리 사용량 | MB |
+| HBase_Master_Server_numDeadRegionServers | 비정상(Dead) 상태의 Region Server 개수 | count |
+| HBase_Master_Server_numRegionServers | 정상 동작 중인 Region Server 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Hadoop_NameNode_JvmMetrics_MemHeapMaxM | NameNode의 JVM 힙 메모리 최대 크기 | MB |
+| Hadoop_NameNode_JvmMetrics_MemHeapUsedM | NameNode의 JVM 힙 메모리 사용량 | MB |
+| Hadoop_NameNode_JvmMetrics_GcTimeMillis | NameNode JVM의 GC 수행 시간 | count |
+| Hadoop_NameNode_FSNamesystem_CapacityTotal | 전체 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityUsed | 사용 중인 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityRemaining | 사용 가능한 HDFS 저장소 용량 | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_CapacityUsedNonDFS | 비 DFS 용도로 사용된 용량 (로그, 임시 파일 등) | bytes(IEC) |
+| Hadoop_NameNode_FSNamesystem_NumLiveDataNodes | 정상 동작 중인 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_NumDeadDataNodes | 비정상(Dead) 상태의 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_StaleDataNodes | 상태 갱신이 중단된 DataNode 개수 | count |
+| Hadoop_NameNode_FSNamesystem_CorruptBlocks | 손상된 블록 개수 | count |
+| Hadoop_NameNode_FSNamesystem_TotalLoad | 현재 활성 클라이언트 연결 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Yarn_ResourceManager_JvmMetrics_MemHeapMaxM | ResourceManager의 JVM 힙 메모리 최대 크기 | MB |
+| Yarn_ResourceManager_JvmMetrics_MemHeapUsedM | ResourceManager의 JVM 힙 메모리 사용량 | MB |
+| Yarn_ResourceManager_JvmMetrics_GcTimeMillis | ResourceManager JVM의 GC 수행 시간 | count |
+| Yarn_ResourceManager_ClusterMetrics_NumActiveNMs | 정상 동작 중인 NodeManager 개수 | count |
+| Yarn_ResourceManager_ClusterMetrics_NumShutdownNMs | 종료된 NodeManager 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AllocatedMB | 할당된 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_AvailableMB | 사용 가능한 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_PendingMB | 대기 중인 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_ReservedMB | 예약된 메모리 크기 | MB |
+| Yarn_ResourceManager_QueueMetrics_AllocatedVCores | 할당된 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AvailableVCores | 사용 가능한 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_PendingVCores | 대기 중인 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_ReservedVCores | 예약된 vCore 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsRunning | 실행 중인 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsCompleted | 완료된 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsFailed | 실패한 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsKilled | 강제 종료된 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsPending | 대기 중인 애플리케이션 개수 | count |
+| Yarn_ResourceManager_QueueMetrics_AppsSubmitted | 제출된 애플리케이션 개수 | count |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| Kafka_Active_Brokers | 정상 동작 중인 Broker 개수 | count |
+| Kafka_Total_Topics | 운영 중인 Topic 개수 | count |
+
+
+## Pub/Sub 메트릭 ​
+
+Pub/Sub 서비스의 메시지 게시, 구독, 저장 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : 커스텀 대시보드, 메트릭 탐색기
+Alert Center : 메트릭 기반 알림 정책 설정
+게시 (Publish)
+구독 (Subscription)
+저장 및 내보내기 (Export)
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_published_message_count_persec | 초당 게시된 메시지 개수 | count/s |
+| pubsub_published_message_bytes_persec | 초당 게시된 메시지 크기 | bytes/s(IEC) |
+| pubsub_publish_request_count_persec | 초당 게시 요청 횟수 | count/s |
+| pubsub_topic_storage_used_bytes | 토픽 보관 데이터 크기 | bytes(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_ack_request_count_persec | 초당 확인 처리 요청 횟수 | count/s |
+| pubsub_acked_message_count_persec | 초당 확인 처리된 메시지 개수 | count/s |
+| pubsub_unprocessed_messages | 미처리 메시지 개수 | count |
+| pubsub_pulled_message_count_persec | 초당 pull된 메시지 개수 | count/s |
+| pubsub_streaming_pull_response_count_persec | 초당 streaming pull 응답 개수 | count/s |
+| pubsub_push_count_persec | 초당 push 요청 횟수 | count/s |
+| pubsub_pushed_message_count_persec | 초당 push된 메시지 개수 | count/s |
+| pubsub_subscription_storage_used_bytes | 서브스크립션 보관 데이터 크기 | bytes(IEC) |
+| pubsub_seek_request_count_permin | 분당 시점 되돌리기(Seek) 요청 횟수 | count/m |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| pubsub_exported_message_count_persec | 초당 Object Storage로 내보내기 처리된 메시지 개수 | count/s |
+| pubsub_object_storage_api_call_count_permin | 분당 Object Storage API 호출 횟수 | count/m |
+
+
+## Direct Connect 메트릭 ​
+
+Direct Connect 가상 인터페이스의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| dx_virtual_interface_input_bits_persec | 가상 인터페이스에서 받은 초당 비트 크기 | bits/s(IEC) |
+| dx_virtual_interface_output_bits_persec | 가상 인터페이스에서 보낸 초당 비트 크기 | bits/s(IEC) |
+| dx_virtual_interface_input_packets_persec | 가상 인터페이스에서 받은 초당 패킷 개수 | packets/s |
+| dx_virtual_interface_output_packets_persec | 가상 인터페이스에서 보낸 초당 패킷 개수 | packets/s |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| dx_virtual_intrerface_state | Direct Connect 가상 인터페이스의 연결 상태 | count |
+
+
+## Gateway Load Balancer 메트릭 ​
+
+Gateway Load Balancer 및 Endpoint Service의 트래픽, 연결, 헬스 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션 및 엔드포인트
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| gwlb_bytes_in_persec | Gateway Load Balancer에서 받은 총 바이트 | bytes/s(IEC) |
+| gwlb_bytes_out_persec | Gateway Load Balancer에서 보낸 총 바이트 | bytes/s(IEC) |
+| eps_bytes_in_persec | Endpoint Service에서 받은 총 바이트 | bytes/s(IEC) |
+| eps_bytes_out_persec | Endpoint Service에서 보낸 총 바이트 | bytes/s(IEC) |
+| ep_bytes_in_persec | Endpoint에서 받은 총 바이트 | bytes/s(IEC) |
+| ep_bytes_out_persec | Endpoint에서 보낸 총 바이트 | bytes/s(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| gwlb_current_connections | Gateway Load Balancer의 활성 connection 개수 | count |
+| gwlb_healthy_host_count | Gateway Load Balancer의 healthy 상태 host 개수 | count |
+| gwlb_unhealthy_host_count | Gateway Load Balancer의 unhealthy 상태 host 개수 | count |
+| eps_current_connections | Endpoint Service의 활성 connection 개수 | count |
+| eps_endpoint_count | Endpoint Service에 연결된 endpoint 개수 | count |
+| ep_current_connections | Endpoint의 활성 connection 개수 | count |
+
+
+## Private Endpoint 메트릭 ​
+
+Private Endpoint의 트래픽 및 연결 상태를 모니터링하기 위한 주요 메트릭으로, 다음 서비스 영역에서 활용할 수 있습니다.
+Monitoring : Metric Export
+네트워크 트래픽
+커넥션
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| ep_bytes_in_persec | Endpoint에서 받은 총 바이트 | bytes/s(IEC) |
+| ep_bytes_out_persec | Endpoint에서 보낸 총 바이트 | bytes/s(IEC) |
+
+
+| 메트릭 이름 | 설명 | 단위 |
+|---|---|---|
+| ep_current_connections | Endpoint의 활성 connection 개수 | count |
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-overview
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+클라우드 환경에서는 서버, 네트워크, 애플리케이션, 리소스 상태를 실시간으로 모니터링하는 것이 중요합니다. 카카오클라우드의 Monitoring 서비스는 카카오클라우드에서 운영되고 있는 컴퓨팅 리소스 및 애플리케이션의 상태와 변경 사항을 대시보드에서 실시간으로 확인하고 관리할 수 있도록 지원하는 서비스입니다. Monitoring 서비스는 카카오클라우드의 Alert Center 와 연동할 수 있습니다. Alert Center에서 주요 메트릭 및 로그에 대한 임계치 알림을 설정하면, 해당 알림 정책에 대한 임계치가 도달하는 즉시 담당자에게 알림 메시지를 발송하여 보다 효율적으로 리소스를 관리할 수 있습니다.
+Monitoring 서비스를 사용하기 위해서는 모니터링 에이전트 설치 가 필요합니다.
+카카오클라우드의 Monitoring 은 클라우드 환경에서 서버, 네트워크, 애플리케이션, 리소스 상태를 실시간으로 모니터링합니다. 사용자 활동(로그인, 리소스 생성 및 변경 등)에 대한 모니터링은 Cloud Trail 서비스를 참고하시기 바랍니다.
+
+## 사용 목적 및 사례 ​
+
+Monitoring 서비스를 사용하지 않으면 시스템의 현재 상태를 파악하기 어려워 장애나 이상 상태를 빠르게 감지하지 못하고, 장애 대응도 지연될 수 있습니다. 또한, 리소스를 효율적으로 관리하기 어렵기 때문에 리소스 비용이 증가되거나 성능 저하 문제가 발생할 수 있습니다.
+카카오클라우드의 Monitoring 서비스를 사용하면, 클라우드 환경에서 시스템 및 리소스를 지속적으로 모니터링하여 문제를 신속하게 해결할 수 있으며, 이를 통해 서비스 가용성, 안정성, 보안 및 성능을 향상하고 비즈니스 운영에 필요한 데이터를 수집하여 활용할 수 있습니다.
+
+## 특징 ​
+
+
+#### 기본 대시보드 ​
+
+Beyond Compute Service와 같은 주요 서비스에 대한 기본 대시보드를 제공하며, 별다른 설정 없이도 리소스에 대한 주요 메트릭을 즉시 확인 가능
+
+#### 커스텀 대시보드 ​
+
+커스텀 대시보드에서는 사용자가 직접 대시보드에서 모니터링할 리소스와 메트릭을 설정하여 여러 종류의 리소스를 한눈에 파악할 수 있도록 대시보드를 구성 가능
+
+#### 탐색기 ​
+
+모니터링 서비스에서 수집한 메트릭(Metric)과 로그(Log)를 서비스별 리소스 단위로 조회 가능
+
+#### 카카오클라우드의 Alert Center와 연계 ​
+
+주요 메트릭 및 로그에 대한 임계치 알림을 설정하여 실시간 알림 메시지 발송 가능
+
+#### 무료로 제공 ​
+
+추가 비용 없이 카카오클라우드 계정에 제공
+
+## 시작하기 ​
+
+Monitoring 서비스에 대한 자세한 사용 가이드는 How-to Guides 문서에서 안내합니다. 카카오클라우드를 처음 시작하신다면 먼저 카카오클라우드 시작하기 를 참고하시기 바랍니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-release-note
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+### 2026.03.05 ​
+
+
+#### 기능 추가 ​
+
+Resource Explorer에서 생성한 커스텀 태그 단위로 기본대시보드의 차트를 조회할 수 있는 기능이 추가되었습니다. 기본 대시보드 상세 페이지에서 조회 단위 '태그 단위' 선택해 조회할 수 있습니다.
+
+### 2026.02.26 ​
+
+
+#### 기능 추가 ​
+
+로그탐색기 지원 서비스에 Advanced Managed Search가 추가되었습니다.
+
+### 2025.11.24 ​
+
+
+#### 기능 추가 ​
+
+커스텀 대시보드, 메트릭 탐색기 지원 서비스에 Libvirt가 추가되었습니다.
+Metric Export, Libvirt 디스크 메트릭에 block_device 레이블이 추가되었습니다.
+MySQL, PostgreSQL 기본대시보드에 디스크 사용 관련 차트가 추가되었습니다.
+PosgreSQL에 워크로드 및 성능 메트릭이 추가되었습니다.
+
+### 2025.09.30 ​
+
+
+#### 기능 추가 ​
+
+네트워크 인터페이스의 패킷 관련 Libvirt 메트릭이 추가되었습니다.
+
+### 2025.07.24 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Hadoop Eco) 지원 서비스가 추가되었습니다.
+Server, MySQL, MemStore, PostgreSQL, Disk, PostgreSQL, 임시파일, XID 메트릭이 추가되었습니다.
+기본 대시보드의 Load Balancing에 대상 그룹(Pool) 기준 Healthy 차트가 추가되었습니다.
+정상 상태로 복구될 수 없는 리소스는 기본 대시보드의 모니터링 대상 목록에서 제외되는 정책이 적용되었습니다.
+
+### 2025.04.29 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Gateway Load Balancer, Private Endpoint) 지원 서비스가 추가되었습니다.
+기본 대시보드에 Gateway Load Balancer, Private Endpoint 서비스가 추가되었습니다. ※ 해당 서비스를 이용 중인 서비스에만 노출됩니다.
+Kubernetes Engine 메트릭이 추가되었습니다.
+BCS 모니터링 서비스, 범례 이름이 타겟 디바이스 명으로 변경되었습니다.
+
+### 2025.04.01 ​
+
+
+#### kr-central-1 리전 종료 안내 ​
+
+kr-central-1 리전 종료로 인해 해당 리전에서는 본 서비스가 중단되었으며, kr-central-2 리전에서는 변함없이 안정적으로 이용하실 수 있습니다.
+
+### 2025.03.27 ​
+
+
+#### 기능 추가 ​
+
+Metric Export(Kubernetes Engine, Direct Connect, Libvirt) 지원 서비스가 추가되었습니다.
+Kubernetes Engine, Direct Connect, Libvirt 메트릭이 추가되었습니다.
+기본 대시보드에 Direct Connect 서비스가 추가되었습니다. ※ 해당 서비스를 이용 중인 서비스에만 노출됩니다.
+
+### 2025.02.27 ​
+
+
+#### 기능 추가 ​
+
+로그 탐색기의 지원 서비스로 Advanced Managed Prometheus가 추가되었습니다.
+
+### 2025.02.10 ​
+
+
+#### 기능 추가 ​
+
+Pub/Sub 기본/커스텀 대시보드가 추가되었습니다.
+Metric Export의 지원 서비스로 PostgreSQL이 추가되었습니다.
+
+### 2025.01.14 ​
+
+
+#### 기능 추가 ​
+
+Kubernetes Engine 기본 대시보드에 노드 풀 리소스 오토스케일링 차트가 추가되었습니다.
+
+### 2024.08.27 ​
+
+
+#### 기능 개선 및 변경 ​
+
+모니터링 내 Redis 명칭을 MemStore로 변경했습니다.
+Metric Export 내 Redis 명칭이 MemStore로 변경되었습니다.
+
+### 2024.07.09 ​
+
+
+#### 기능 변경 ​
+
+모니터링 에이전트 버전이 v1.0.0으로 업데이트되었습니다.
+
+### 2024.06.13 ​
+
+
+#### 기능 추가 ​
+
+기본 대시 보드 지원 서비스로 Kubernetes Engine이 추가되었습니다.
+Shift + Enter를 누르면 Metric 쿼리 차트를 조회할 수 있도록 개선했습니다.
+Monitoring 엔드포인트가 https://monitoring.kr-central-2.kakaoi.io 에서 https://monitoring.kr-central-2.kakaocloud.com 으로 변경되었습니다.
+https://monitoring.kr-central-2.kakaoi.io
+https://monitoring.kr-central-2.kakaocloud.com
+Metric Export 경로가 /metric 에서 /metric-export 으로 변경되었습니다.
+/metric
+/metric-export
+
+### 2024.02.06 ​
+
+
+#### 기능 추가 및 개선 ​
+
+Redis 메트릭을 추가했습니다.
+
+### 2023.12.04 ​
+
+
+#### 기능 추가 ​
+
+Monitoring Export 를 추가하여 Prometheus 내 커스텀 대시보드를 구성할 수 있습니다.
+Burstable 옵션 관련 메트릭이 추가되었습니다.
+
+### 2023.07.24 ​
+
+
+#### 기능 추가 및 개선 ​
+
+PromQL을 지원하여, Prometheus Query Language를 통해 메트릭 데이터를 조회, 차트를 생성할 수 있습니다.
+조회된 메트릭 항목을 그룹 조건으로 묶어서 차트에 표현할 수 있습니다.
+차트 생성 시 메트릭 필터에서 항목과 리소스를 선택란에 = 외에, != , =~ , !~ 와 같이 regex 선택 기능이 추가되었습니다.
+=
+!=
+=~
+!~
+사용자가 직접 메트릭의 Unit 표시를 선택하고 이를 차트에서 확인할 수 있습니다.
+차트에 조회된 항목을 클릭하여 개별 항목을 활성/비활성화할 수 있습니다.
+
+### 2022.10.31 ​
+
+
+#### 기능 추가 및 개선 ​
+
+모니터링 서비스에서 Virtual Machine/Bare Metal Server, Load Balancer, MySQL, Redis에 대한 기본 대시보드를 제공합니다.
+커스텀 대시보드를 이용해 사용자가 직접 대시보드를 생성, 차트를 추가/수정/삭제를 통해 관리할 수 있습니다.
+메트릭 탐색기 추가: 대시보드에 차트를 등록하지 않아도 필요한 때에 즉시 원하는 서비스의 메트릭을 조회할 수 있습니다.
+로그 검색 수정: 로그 정책 내에 있던 로그 검색 기능이 탐색기 > 로그 탐색기로 변경되었습니다.
+
+### 2022.08.24 ​
+
+
+#### 기능 추가 ​
+
+메트릭 정책 생성 시, MySQL과 Redis를 선택하여 모니터링 정책을 생성할 수 있습니다.
+
+### 2021.11.30 ​
+
+
+#### 서비스 출시 ​
+
+카카오클라우드의 Monitoring 서비스는 컴퓨팅 리소스의 상태를 모니터링하여 이벤트 발생 시 알림 기능으로 빠른 이슈 확인과 대처를 지원합니다. 자세한 설명은 Monitoring 공식 문서 를 참고해 주세요.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/monitoring/monitoring-troubleshoot
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+본 문서는 Monitoring 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+
+## 모니터링 에이전트 관련 오류 ​
+
+
+### Not found file in path. Please Check path and permission ​
+
+모니터링 에이전트 설치한 후 sudo journalctl -u kic_monitor_agent -f 명령어로 로그를 확인할 때 아래와 같은  오류가 발생할 수 있습니다.
+sudo journalctl -u kic_monitor_agent -f
+Jul 18 09:15:35 host-172-16-2-147 kic_monitor_agent [ 10046 ] : 2024 -07-18T09:15:35Z W ! [ inputs.tail ] Not found file in path. Please Check path and permission: { 작성한 로그 파일 }
+Jul 18 09:15:35 host-172-16-2-147 kic_monitor_agent [ 10046 ] : 2024 -07-18T09:15:35Z W ! [ inputs.tail ] Not found file in path. Please Check path and permission: { 작성한 로그 파일 }
+이 오류는 로그 파일 경로나 권한 문제로 발생하며, 주요 원인은 다음과 같습니다.
+
+#### 원인 1: 로그 파일의 경로나 로그 파일 이름을 잘못 작성한 경우 ​
+
+▶️ 해결 방법: /etc/default/kic_monitor_agent 파일의 KIC_LOG_FILE_PATH 에 올바른 파일 경로와 이름을 입력한 후, 모니터링 에이전트를 재시작합니다.
+/etc/default/kic_monitor_agent
+KIC_LOG_FILE_PATH
+/etc/kic_monitor_agent 파일에서 로그 파일 경로를 수정합니다. # 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+/etc/kic_monitor_agent 파일에서 로그 파일 경로를 수정합니다.
+/etc/kic_monitor_agent
+# 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+# 로그 탐색기를 통해 조회 가능한 로그 파일 경로 수정 KIC_LOG_FILE_PATH = ""
+모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent
+모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent
+sudo systemctl restart kic_monitor_agent
+에이전트가 정상적으로 실행되는지 확인합니다. sudo journalctl -u kic_monitor_agent -f
+에이전트가 정상적으로 실행되는지 확인합니다.
+sudo journalctl -u kic_monitor_agent -f
+sudo journalctl -u kic_monitor_agent -f
+
+#### 원인 2: 모니터링 에이전트 설치 후, 서비스 사용자를 임의로 변경했을 경우 ​
+
+에이전트 설치 시 기본 사용자(root)를 변경하면 권한 문제로 오류가 발생할 수 있습니다. 두 가지 해결 방법이 있습니다.
+▶️ 해결 방법 1: 모니터링 에이전트 서비스 사용자를 root 로 변경
+root
+[ Service ] EnvironmentFile = -/etc/default/kic_monitor_agent User = root # root로 변경
+[ Service ] EnvironmentFile = -/etc/default/kic_monitor_agent User = root # root로 변경
+▶️ 해결 방법 2: 서비스 사용자가 로그 파일의 read 권한이 없을 경우, read 권한을 부여
+read
+read
+# 예시 user, group, other 모두에게 read 권한 부여 sudo chmod 444 { 로그 파일 }
+# 예시 user, group, other 모두에게 read 권한 부여 sudo chmod 444 { 로그 파일 }
+
+### Collection took longer than expected; not complete after interval of 10s ​
+
+모니터링 에이전트를 설치한 인스턴스 내에서 다음의 오류가 발생했다면, 짧은 수집 간격으로 인해 에이전트가 데이터를 수집하지 못한 것 입니다.
+Apr 01 11 :03:20 ${오류가 발생한 인스턴스} kic_monitor_agent [ 52839 ] : 2024 -04-01T02:03:20Z W ! [ inputs.disk ] Collection took longer than expected ; not complete after interval of 10s
+Apr 01 11 :03:20 ${오류가 발생한 인스턴스} kic_monitor_agent [ 52839 ] : 2024 -04-01T02:03:20Z W ! [ inputs.disk ] Collection took longer than expected ; not complete after interval of 10s
+▶️ 해결 방법: 수집 간격(interval) 설정을 기본값( 10s )보다 큰 값으로 수정합니다.
+10s
+/etc/kic_monitor_agent/kic_monitor_agent.conf 파일에서 interval 값을 기본값( 10s )보다 큰 값으로 수정 후 저장합니다. interval 값 수정 [ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+/etc/kic_monitor_agent/kic_monitor_agent.conf 파일에서 interval 값을 기본값( 10s )보다 큰 값으로 수정 후 저장합니다.
+/etc/kic_monitor_agent/kic_monitor_agent.conf
+interval
+10s
+[ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+[ agent ] ## Default data collection interval for all inputs interval = "30s" # 기존에 설정된 시간(10s)보다 크게 입력
+모니터링 에이전트를 재시작합니다. 모니터링 에이전트 재시작 sudo systemctl restart kic_monitor_agent
+모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent
+sudo systemctl restart kic_monitor_agent
+모니터링 에이전트가 정상적으로 실행되는지 확인합니다. 모니터링 에이전트 실행 확인 sudo journalctl -u kic_monitor_agent -f
+모니터링 에이전트가 정상적으로 실행되는지 확인합니다.
+sudo journalctl -u kic_monitor_agent -f
+sudo journalctl -u kic_monitor_agent -f
+
+## Metric Export API 사용 시 발생하는 오류 ​
+
+
+### Default Error Page: 페이지를 찾을 수 없습니다. ​
+
+Metric Export API를 호출 시 잘못된 접근 환경일 때 발생할 수 있습니다.
+< html > < head > < meta charset = "UTF-8" > < title > Default Error Page < /title > < /head > < body > < div style = "text-align:center" > < br/ > < br/ > < br/ > < br/ > < br/ > < br/ > < h1 className = "header" > 페이지를 찾을 수 없습니다. < /h 1 > < p > < span style = "color: gray;" > 요청한 주소가 변경 또는 삭제되었거나, 잘못된 주소여서 페이지를 찾을 수 없습니다. < /span > < br/ > < span style = "color: gray;" > 입력한 URL이 올바른지 다시 확인해 주시기 바랍니다. < /span > < /p > < /div > < /body > < /html >
+< html > < head > < meta charset = "UTF-8" > < title > Default Error Page < /title > < /head > < body > < div style = "text-align:center" > < br/ > < br/ > < br/ > < br/ > < br/ > < br/ > < h1 className = "header" > 페이지를 찾을 수 없습니다. < /h 1 > < p > < span style = "color: gray;" > 요청한 주소가 변경 또는 삭제되었거나, 잘못된 주소여서 페이지를 찾을 수 없습니다. < /span > < br/ > < span style = "color: gray;" > 입력한 URL이 올바른지 다시 확인해 주시기 바랍니다. < /span > < /p > < /div > < /body > < /html >
+
+#### 원인 1: 클라이언트가 Public Virtual Machine이 아님 ​
+
+▶️ 문제 해결: Metric Export API를 호출하는 클라이언트가 퍼블릭 IP를 갖는 VM 이거나 인터넷 게이트웨이 연결이 있는 VPC에 생성된 VM 인지 확인합니다.
+
+#### 원인 2: 프로젝트에 존재하지 않는 사용자 ​
+
+▶️ 문제 해결: 사용자를 Metric Export API를 호출하는 클라이언트의 프로젝트 내에 프로젝트 구성원으로 초대 합니다.
+
+#### 원인 3: 사용자 액세스 키 오류 혹은 만료 ​
+
+▶️ 문제 해결: 사용자 액세스 키 ID와 보안 액세스 키가 정확히 입력 되었는지 확인하며, 정확히 입력했다면 키가 만료되지는 않았는지 확인합니다.
+사용자 액세스 키는 카카오클라우드 콘솔 우측 상단에 위치한 프로필의 액세스 키 에서 확인 및 발급받을 수 있습니다. 자세한 설명은 액세스 키 발급 가이드 를 참고해 주세요.
+
+### not supported kakaocloud service-type header. ​
+
+Metric Export API 사용 시, 아래와 같은 응답을 받을 수 있습니다. 이러한 응답은 service-type 을 잘못 입력했을 경우 발생합니다.
+service-type
+{ "status" : "error" , "errorType" : "bad_data" , "error" : "not supported kakaocloud service-type header. current header value is {잘못 작성한 service-type}" }
+{ "status" : "error" , "errorType" : "bad_data" , "error" : "not supported kakaocloud service-type header. current header value is {잘못 작성한 service-type}" }
+▶️ 문제 해결: 정해진 service-type 헤더를 정확히 작성 했는지 확인합니다.
+service-type
+curl -X GET 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" # 확인해야 할 헤더
+curl -X GET 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" # 확인해야 할 헤더
+카카오클라우드에서 조회 가능한 service-type 은 아래와 같습니다.
+service-type
+Virtual Machine, GPU, Bare metal Server (입력값: server )
+server
+Mysql (입력값: mysql )
+mysql
+MemStore (입력값: memstore )
+memstore
+Load Balancing (입력값: lb )
+lb
+
+### result에 어떠한 값도 없음 (데이터 확인 불가) ​
+
+Metric Export API 사용 시, 아래와 같이 응답을 받을 수 있습니다. 이러한 응답은 service-type 과 맞지 않는 메트릭 요청 시 발생할 수 있습니다.
+service-type
+{ "status" : "success" , "data" : { "resultType" : "vector" , "result" : [ ] } }
+{ "status" : "success" , "data" : { "resultType" : "vector" , "result" : [ ] } }
+
+#### 원인 1: service-type에 해당하는 메트릭을 조회하지 않았을 경우 ​
+
+다음과 같이 잘못된 요청의 경우, 데이터가 없는 응답을 받을 수 있습니다.
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ # service-type이 server인데, -d "query=lb_bytes_in_persec" # Load Balancer에 해당하는 메트릭일 때
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ # service-type이 server인데, -d "query=lb_bytes_in_persec" # Load Balancer에 해당하는 메트릭일 때
+▶️ 문제 해결: service-type 에 해당하는 메트릭을 요청합니다. 서비스별로 제공되는 메트릭은 모니터링 메트릭 문서를 참고해 주세요.
+service-type
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ -d "query=cpu_usage" # 변경
+curl -vvv -X POST 'https://monitoring.kr-central-2.kakaocloud.com/metric-export/grafana/{PROJECT_ID}/prometheus/api/v1/query' \ -H "Content-Type: application/x-www-form-urlencoded" \ -H "Credential-ID: {ACCESS_KEY_ID}" \ -H "Credential-Secret: {ACCESS_KEY_SECRET}" \ -H "service-type: server" \ -d "query=cpu_usage" # 변경
+
+#### 원인 2: 해당 인스턴스에 모니터링 에이전트가 설치되어 있지 않았을 경우 ​
+
+Grafana에서 특정 인스턴스의 메트릭을 조회할 수 없다면, 모니터링 에이전트 가 해당 인스턴스에 설치되지 않아 메트릭을 확인할 수 없는 것일 수 있습니다.
+▶️ 문제 해결: 모니터링 에이전트 설치 가이드 를 참고하여 모니터링 에이전트를 설치한 후, 메트릭을 확인합니다.
+Load Balancing, MySQL, MemStore 메트릭의 경우, 모니터링 에이전트를 설치하지 않아도 메트릭을 확인할 수 있습니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-main
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center 는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다.
+
+## IAM 기반 역할 관리 ​
+
+Alert Center 서비스의 역할 관리는 카카오클라우드의 IAM 역할 기반 액세스 제어(RBAC)를 따릅니다. 따라서 IAM의 프로젝트 역할과 연계하여 알림 수신자를 관리할 수 있으며, 기본적으로 Alert Center 매니저가 알림을 받을 수신자를 관리할 수 있도록 지원합니다. IAM 역할별 자세한 내용과 사용자 역할 관리는 각각 IAM > 주요 개념 과 사용자 IAM 역할 관리 를 참고해 주세요.
+나의 역할은 카카오클라우드 콘솔 > 우측 상단 프로필 > 조직 역할 또는 프로젝트 역할 에서 확인할 수 있습니다.
+
+#### 조직 역할 ​
+
+
+| 권한 | 조직 관리자(Admin) | Alert Center 조직 매니저(Manager) | Alert Center 조직 뷰어(Viewer) |
+|---|---|---|---|
+| 알림 정책 생성, 수정, 삭제 | ✓ | ✓ |  |
+| 알림 정책 열람 | ✓ | ✓ | ✓ |
+| 수신 채널 생성, 수정, 삭제 | ✓ | ✓ |  |
+| 수신 채널 열람 | ✓ | ✓ | ✓ |
+| 발신 내역 열람 | ✓ | ✓ | ✓ |
+| 필수 공지 알림 수신자 설정 | ✓ | ✓ |  |
+| 필수 공지 알림 열람 | ✓ | ✓ | ✓ |
+
+
+#### 프로젝트 역할 ​
+
+
+| 권한 | 프로젝트 관리자(Admin) | 프로젝트 멤버 (Member) | 프로젝트 리더 (Reader) | Alert Center 프로젝트 매니저(Manager) | Alert Center 프로젝트 뷰어(Viewer) |
+|---|---|---|---|---|---|
+| 알림 정책 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| 알림 정책 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 수신 채널 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| 수신 채널 열람 | ✓ | ✓ (수신자 목록 제외) | ✓ (수신자 목록 제외) | ✓ | ✓ |
+| 발신 내역 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| 알림 내역 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Silence 생성, 수정, 삭제 | ✓ |  |  | ✓ |  |
+| Silence 열람 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+
+## 알림 정책 ​
+
+알림 정책은 알림을 받을 상황과 방법을 정의한 것으로 Alert Center에서는 서비스 이벤트를 기반으로 알림을 설정할 수 있습니다. 이벤트는 서비스별로 설정할 수 있으며 알림 설정 가능한 서비스는 지속적으로 추가될 예정입니다. 자세한 설명은 알림 정책 생성 및 관리 를 참고하시기 바랍니다.
+
+### 이벤트 조건 유형별 알림 설정 가능 서비스 ​
+
+
+| 구분 | kr-central-2 지원 서비스 | 설명 |
+|---|---|---|
+| 메트릭 | - Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server - MemStore - MySQL - Load Balancing - Monitoring Flow - PostgreSQL - Pub/Sub | 시스템 전반의 성능에 대한 알림을 메트릭 기반으로 설정 |
+| 로그 | - Beyond Compute Service ㄴ Virtual Machine ㄴ Bare Metal Server | 로그 기반의 알림 설정 |
+| 이벤트 | 조직 이벤트 - IAM - Billing 프로젝트 이벤트 - Virtual Machine - Bare Metal Server - VPC - Load Balancing - Transit Gateway - Kubernetes Engine - Object Storage - File Storage - MySQL - PostgreSQL - MemStore - Hadoop Eco - Data Query - Pub/Sub - Advanced Managed Kafka - IAM - Monitoring - Alert Center - Advanced Managed Prometheus - Kubeflow - DNS - Monitoring Flow - Resource Explorer - Maintenance - Key Management Service - Secrets Manager | 카카오클라우드 서비스별 특화 이벤트 알림 |
+
+
+#### 메트릭 알림 정책 ​
+
+메트릭(Metric) 기반의 정책은 컴퓨팅 리소스의 상태와 변화를 모니터링하고, 시스템 전반의 성능 변경 사항에 대응할 수 있습니다. 또한 메트릭에서 제공하는 CPU, Memory, Disk I/O 등 다양한 항목으로 발생하는 이벤트에 대한 알림 설정을 할 수 있습니다.
+제공하는 메트릭에 대한 자세한 설명은 Monitoring 문서를 참고하시기 바랍니다.
+
+#### 로그 알림 정책 ​
+
+로그(Log) 기반의 정책은 인스턴스에서 발생하는 로그 기반으로 운영 문제를 더욱 효율적으로 해결할 수 있습니다. 로그값 중 특정 키워드를 설정하여 해당 키워드가 발생할 때마다 알림이 발생하게 됩니다. Alert Center에서는 단순 키워드뿐 아니라 인스턴스 이름 등 키워드 유형을 다양하게 제공합니다.
+
+| 분류 | 설명 |
+|---|---|
+| 키워드 | 유형 구분 없이 특정 문자열 검색 |
+| 인스턴스 ID | Beyond Compute Service(BCS)에 설치된 인스턴스 중 특정 인스턴스 ID |
+| 호스트 | Beyond Compute Service(BCS)에 설치된 인스턴스의 호스트명 |
+| 파일 경로 | 로그 파일의 경로 |
+
+
+#### 이벤트 알림 정책 ​
+
+이벤트(Event) 기반의 정책은 발생하는 액션에 대한 이벤트를 실시간으로 감지하여 동작합니다. Alert Center 서비스는 카카오클라우드의 서비스별로 알맞은 이벤트 항목을 알림으로 받아볼 수 있도록 제공합니다. 예를 들어, Container Registry 서비스의 경우 리포지포리 삭제/생성, 가비지 컬렉션 실행/완료 등에 대한 이벤트 항목을 제공합니다. 또한 이러한 이벤트 항목에 대해 세부적인 필터를 추가하여, 보다 정확한 알림을 받아볼 수 있습니다.
+
+## 알림 내역 ​
+
+설정한 알림 정책에 의해 발생한 모든 알림을 한 곳에서 확인할 수 있습니다. 불필요한 알림이 반복적으로 발생한다면 Silence 설정을 통해 원하는 기간 동안 알림을 억제할 수 있습니다. 자세한 설명은 알림 내역 조회 및 Silence 설정 문서를 참고하시기 바랍니다.
+
+## 수신 채널 ​
+
+알림 정책에 수신 채널을 등록하면, 알림 발생 시 지정한 채널로 알림 내용을 전달받을 수 있습니다. 자세한 설명은 수신 채널 생성 및 관리 를 참고하시기 바랍니다.
+
+### 설정 가능한 채널 ​
+
+
+| 분류 | 설명 |
+|---|---|
+| 이메일 | 사용자의 등록된 이메일로 알림 내용 발송 |
+| 문자 | 사용자의 등록된 휴대 번호로 알림 문자 메시지 발송 |
+| 알림톡 | 카카오톡의 비즈메시지 서비스 - 사용자의 카카오톡 메시지로 알림 내용 발송 |
+| 슬랙 | 사용자가 설정한 슬랙 채널에 챗봇 메시지로 알림 내용 발송 |
+| 웹훅 | 사용자가 설정한 웹훅으로 알림 내용 발송 |
+| Pub/Sub | 사용자가 설정한 카카오클라우드의 Pub/Sub의 토픽으로 알림 내용 발송 |
+
+
+### 설정 가능한 수신자 ​
+
+
+| 분류 | 설명 |
+|---|---|
+| 사용자 | 개별 사용자를 수신자로 선택할 수 있습니다. - 조직: 조직 내 구성원 중 선택 - 프로젝트: 프로젝트 내 구성원 중 선택 |
+| 그룹 | 그룹을 수신자로 선택할 수 있으며, 그룹 내 모든 사용자가 수신자로 설정됩니다. - 조직: 조직의 그룹 중 선택 - 프로젝트: 해당 프로젝트에 접근 권한이 있는 그룹 중 선택 |
+
+
+## 발신 내역 ​
+
+서비스별 메시지 발송 결과를 조회할 수 있습니다. 메시지 발송 상태는 성공 , 실패 , 발신 중 이 있으며, 발신 실패 개수 정보와 에러 코드 및 실패 정보를 확인할 수 있습니다. 자세한 설명은 발신 내역 조회 를 참고하시기 바랍니다.
+성공
+실패
+발신 중
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-overview
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드의 Alert Center 는 카카오클라우드 서비스의 이벤트 및 리소스 장애 발생 시 알림을 받을 수 있는 알림 정책을 설정하고, 알림 수신 채널을 설정하는 서비스입니다. Alert Center에서 알림을 설정하고 적시에 알림을 수신하면, 카카오클라우드 서비스에서 발생한 문제를 신속히 파악하고 문제를 해결할 수 있습니다.
+
+## 사용 목적 및 사례 ​
+
+Alert Center 서비스를 사용하여 알림 정책과 수신 채널을 설정할 수 있습니다. 알림 정책은 메트릭, 로그, 이벤트에 대해 설정할 수 있으며, 수신 채널은 이메일, 문자, 일림톡, 슬랙, 웹훅에서 사용할 수 있습니다.
+
+## 특징 ​
+
+
+#### 서비스 맞춤형 이벤트 및 알림 정책 제공 ​
+
+카카오클라우드에서 제공하는 서비스별로 특화된 이벤트 알림 설정이 가능하며, 기본으로 제공하는 이벤트 항목을 선택하면, 손쉽게 서비스에 대한 알림을 받아 볼 수 있음
+이벤트 조건 유형별로 [알림 정책] 설정 가능
+
+#### 다양한 수신 채널 유형 지원 ​
+
+하나의 알림 정책에 여러 개의 수신 채널을 선택할 수 있음
+채널 유형별 템플릿으로 알림이 발송되어 예상하지 못한 환경에서도 신속한 대응에 용이함
+
+#### 프로젝트 내 수신자 관리 ​
+
+프로젝트 내 권한을 가진 사용자를 수신자로 등록, 관리할 수 있음
+
+#### 알림 발신 내역 통합 관리 ​
+
+발송 상태와 에러 코드 및 실패 정보를 하나의 화면에서 확인할 수 있도록 통합 관리 기능을 제공
+발신 일시 또는 서비스별로 메시지 발송 결과를 조회할 수 있으며, 확인이 필요한 발신 내역에 대하여 필터링 가능
+
+## 시작하기 ​
+
+Alert Center 서비스에 대한 자세한 사용 가이드는 How-to Guides 문서에서 안내합니다. 카카오클라우드를 처음 시작하신다면 먼저 카카오클라우드 시작하기 를 참고하시기 바랍니다.
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-release-note
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+### 2026.03.13 ​
+
+
+#### GPU 알림 정책 전환 ​
+
+카카오클라우드 GPU 서비스가 Virtual Machine 서비스로 통합됨에 따라 Alert Center에서 GPU 서비스로 생성된 알림 정책이 모두 Virtual Machine 서비스의 알림 정책으로 변경되었습니다. 알림 정책에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2026.02.26 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Cluster Scaling Vertical, Cluster Scaling Vertical Complete, Cluster Scaling Vertical Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Cluster Scaling Vertical, Cluster Scaling Vertical Complete, Cluster Scaling Vertical Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Snapshot Create Success, Snapshot Create Failure, Snapshot Delete Success, Snapshot Delete Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Snapshot Create Success, Snapshot Create Failure, Snapshot Delete Success, Snapshot Delete Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MemStore 를 참고해 주세요.
+
+### 2026.01.06 ​
+
+
+#### 기능 추가 ​
+
+필수 공지 알림 메일 수신 시 앞으로 메일 템플릿 내에서 알림이 발생한 조직의 이름을 확인할 수 있습니다.
+Alert Center 서비스에서 발생하는 필수 공지 알림 수신자 업데이트 시 발생하는 조직 이벤트 Update Announcement Recipient로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Alert Center 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 Alert Center 조직 이벤트 를 참고해 주세요.
+
+### 2025.12.04 ​
+
+
+#### 이메일 알림 수신 기준 변경 ​
+
+Alert Center에서 이메일 알림 수신을 선택한 사용자는 앞으로 사용자 ID 이메일로 알림을 수신하게 됩니다.
+앞으로 IAM 계정정보 내 '언락용 이메일'은 Alert Center의 이메일 알림 수신처로 사용되지 않으므로, 연락용 이메일 정보를 따로 등록하지 않더라도 Alert Center의 이메일 알림을 수신할 수 있습니다.
+
+#### 기능 추가 ​
+
+카오클라우드 제품 및 서비스의 지속적인 기능을 보장하기 위해 고객에게 에메일로 알림을 발송하는 필수 공지 알림 기능을 추가했습니다.
+필수 공지 알림은 조직 단위로 발송되기 때문에 조직 역할이 있는 사용자만 접근할 수 있습니다.
+자세한 설명은 필수 공지 알림 문서를 참고해 주세요.
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Alert Center 서비스 배포에 따라 Alert Center에서 발생하는 조직 이벤트(Create Alert Policy, Update Alert Policy, Delete Alert Policy, Create Channel, Update Channel, Delete Channel), 프로젝트 이벤트(Create Alert Policy, Update Alert Policy, Delete Alert Policy, Create Channel, Update Channel, Delete Channel, Create Silence, Update Silence, Delete Silence)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Alert Center 서비스의 조직 및 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Alert Center 조직 이벤트 , Alert Center 프로젝트 이벤트 를 참고해 주세요.
+카카오클라우드 Virtual Machine 서비스 배포에 따라 Virtual Machine에서 발생하는 프로젝트 이벤트(Volume Update)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Virtual Machine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Virtual Machine 를 참고해 주세요.
+카카오클라우드 Resource Explorer 서비스 배포에 따라 Resource Explorer에서 발생하는 프로젝트 이벤트(Create Tags, Delete Tags, Apply Tags)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Resource Explorer 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Resource Explorer 를 참고해 주세요.
+카카오클라우드 Key Management Service 서비스 배포에 따라 Key Management Service에서 발생하는 프로젝트 이벤트(Create Key, Delete Key, Create Key Version, Delete Key Version)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Key Management Service 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Key Management Service 를 참고해 주세요.
+카카오클라우드 Secrets Manager 서비스 배포에 따라 Secret Manager에서 발생하는 프로젝트 이벤트(Create Secret, Delete Secret, Create Secret Version, Delete Secret Version)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Secret Manager 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Secret Manager 를 참고해 주세요.
+
+### 2025.09.23 ​
+
+
+#### 기능 추가 ​
+
+설정한 알림 정책에 의해 발생한 알림을 알림 내역 페이지에서 확인할 수 있습니다.
+이제 수신 채널의 사용 여부와 관계없이 발생한 알림을 알림 내역 페이지에서 조회할 수 있을 뿐만 아니라 불필요한 알림이 반복적으로 발생하는 경우에 Silence 생성 으로 특정 시간동안 알림을 억제할 수 있습니다.
+알림 내역 및 Silence에 대한 자세한 설명은 알림 내역 조회 및 Silence 설정 문서를 참고해 주세요.
+
+### 2025.09.19 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Maintenance 서비스 배포에 따라 Kubeflow에서 발생하는 프로젝트 이벤트(Maintenance Plan Created, Maintenance Plan Completed, Maintenance Started, Maintence Failed 등)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Maintenance 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Maintenance 를 참고해 주세요.
+
+### 2025.08.08 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubeflow 서비스 배포에 따라 Kubeflow에서 발생하는 프로젝트 이벤트(Kubeflow Nodepool Update Start, Kubeflow Nodepool Update End)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubeflow 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubeflow 를 참고해 주세요.
+
+### 2025.07.25 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine에서 발생하는 프로젝트 이벤트(Remove Node Request)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubernetes Engine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubernetes Engine 를 참고해 주세요.
+
+### 2025.07.01 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 VPC 서비스 배포에 따라 VPC에서 발생하는 프로젝트 이벤트(Network Interface Create, Network Interface Delete, Network Interface Update, VPC Update, Subnet Update, Routing Table Update)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 VPC 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 VPC 를 참고해 주세요.
+
+### 2025.06.13 ​
+
+
+#### 지원 서비스 축소 ​
+
+카카오클라우드 CDN 서비스에서 인증서 관리 기능이 제거됨에 따라, 해당 기능에 기반한 프로젝트 이벤트(Certificate Expire Alarm)에 대한 알림이 더 이상 제공되지 않습니다. 이에 따라 Alert Center의 이벤트 알림 설정 대상 서비스에서 CDN이 제외되었습니다. 알림 설정이 가능한 서비스 목록은 이벤트 조건 유형별 알림 설정 가능 서비스 문서를 참고해 주세요.
+
+### 2025.05.30 ​
+
+
+#### 기능 추가 ​
+
+알림 정책 생성 시, 이벤트 항목에 대해 리소스 기준 필터 조건 을 설정할 수 있습니다.
+리소스 이름이 정확히 일치하거나, 특정 문자열로 시작/끝나거나, 지정한 문자열의 포함 여부 또는 정규식을 기준으로 알림 수신 대상을 세분화할 수 있습니다.
+Alert Center는 이제 Cloud Trail과 동일한 이벤트 데이터 를 사용하며, 이벤트명 하단에 리소스 유형이 함께 표기 되어 이벤트 식별이 더 명확해졌습니다.
+알림 정책의 개념과 생성 방법에 대한 자세한 설명은 알림 정책 문서와 알림 정책 생성 을 참고해 주세요.
+
+### 2025.05.20 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 PostgreSQL 서비스 배포에 따라 PostgreSQL에서 발생하는 프로젝트 이벤트(Instance Group Backup Schedule Update, Instance Volume Extend End)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 PostgreSQL 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Data Query 를 참고해 주세요.
+
+### 2025.04.29 ​
+
+
+#### 이벤트 추가 ​
+
+카카오클라우드 Data Query 서비스 배포에 따라 Data Query 서비스의 Cloud Trail 프로젝트 이벤트 이름을 모두 변경되었습니다. Data Query 이벤트 알림을 설정한 경우 변경된 이벤트로 알림 수신할 수 있도록 일괄 적용했습니다. 또한 Data Query에서 발생하는 프로젝트 이벤트(Create Data Source, Delete Data Source, Data Source Creation Failure)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Data Query 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Data Query 를 참고해 주세요.
+
+### 2025.04.23 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 발생하는 조직 이벤트(Console Login Fail)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 IAM 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 IAM 을 참고해 주세요.
+
+### 2025.04.01 ​
+
+
+#### kr-central-1 리전 종료 안내 ​
+
+kr-central-1 리전 종료로 인해 해당 리전에서는 본 서비스가 중단되었으며, kr-central-2 리전에서는 변함없이 안정적으로 이용하실 수 있습니다.
+
+### 2025.03.27 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 MemStore 서비스 배포에 따라 MemStore에서 발생하는 프로젝트 이벤트(Backup Copy Failed)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MemStore 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MySQL 을 참고해 주세요.
+
+### 2025.03.20 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 MySQL 서비스 배포에 따라 MySQL에서 발생하는 프로젝트 이벤트(Instance Group의 Scaling-in/Out 및 Instance의 Log Export)로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 MySQL 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 MySQL 을 참고해 주세요.
+
+### 2025.03.18 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 수신 채널 생성 시 IAM 그룹을 수신자로 지정할 수 있습니다. IAM 그룹으로 사용자를 관리하고 있는 경우 수신자 유형을 그룹으로 선택하여 간편하게 수신 채널을 생성할 수 있습니다. 그룹 수신자 또는 수신 채널에 대한 자세한 설명은 수신 채널 생성 및 관리 를 참고해 주세요.
+
+#### 프로젝트 역할 권한 축소 ​
+
+2025.2.10 릴리즈 에서 추가된 Alert Center 서비스의 IAM 역할이 정식으로 적용되었습니다. 이로 인해 프로젝트 멤버 역할로 Alert Center 서비스를 이용하고 있던 경우 알림 정책, 수신 채널, 발신 내역 조회 외 생성 및 관리 기능은 제한됩니다. 또한 프로젝트 멤버나 프로젝트 리더 역할만 할당받은 경우 수신 채널 조회 시 수신자 목록은 확인할 수 없습니다. A
+
+### 2025.02.27 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Hadoop Eco 서비스 배포에 따라 Hadoop Eco에서 발생하는 프로젝트 이벤트로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Hadoop Eco 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Hadoop Eco 를 참고해 주세요.
+
+### 2025.02.26 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 IAM 서비스 배포에 따라 IAM에서 발생하는 조직 이벤트로 설정할 수 있는 알림이 추가되었습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 IAM 서비스의 조직 이벤트 목록은 각각 알림 정책 생성 문서와 IAM 을 참고해 주세요.
+
+### 2025.02.11 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 Pub/Sub 서비스의 메트릭 알림 정책을 생성할 수 있습니다. Pub/Sub 토픽 또는 서브스크립션의 메트릭을 기반으로 알림을 수신할 조건을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2025.02.10 ​
+
+
+#### 서비스 역할 추가 ​
+
+카카오클라우드 Alert Center 서비스의 새로운 IAM 역할을 추가했습니다. 현재(2025.02.10 기준) 프로젝트 멤버 역할만으로 Alert Center 서비스의 모든 기능을 사용할 권한이 부여되지만 2025년 3월 18일부터 Alert Center 조직 매니저, 프로젝트 매니저, 조직 뷰어, 프로젝트 뷰어 역할을 할당받은 사용자만 역할에 맞는 서비스 사용 권한을 갖게 됩니다. 해당 기한 내에 Alert Center 서비스에 특정 권한이 필요한 사용자에게 적합한 역할을 부여해 주시기 바랍니다.
+
+### 2025.01.14 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Kubernetes Engine 서비스 배포에 따라 Kubernetes Engine의 리소스 기반 오토 스케일링 시 발생하는 프로젝트 이벤트로 알림을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명과 이벤트 알림 설정이 가능한 Kubernetes Engine 서비스의 프로젝트 이벤트 목록은 각각 알림 정책 생성 문서와 Kubernetes Engine 을 참고해 주세요.
+
+### 2024.12.26 ​
+
+
+#### 기능 추가 ​
+
+카카오클라우드 Alert Center에서 이제 Advanced Managed Prometheus 서비스의 전용 알림 정책을 생성할 수 있습니다. Prometheus 룰 파일에 설정된 조건에 따라 알림을 수신하고, Advanced Managed Prometheus 서비스의 프로젝트 이벤트 알림을 설정할 수 있습니다. 알림 정책 생성에 대한 자세한 설명은 알림 정책 생성 문서를 참고해 주세요.
+
+### 2024.12.05 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MemStore 신규 이벤트를 추가했습니다.
+
+### 2024.12.04 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Data Query를 추가했습니다.
+
+### 2024.12.03 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 PostgreSQL을 추가했습니다.
+
+### 2024.11.21 ​
+
+
+#### 기능 축소 ​
+
+DevOps Pipeline의 알림 지원을 종료했습니다.
+
+### 2024.11.19 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Pub/Sub 신규 이벤트를 추가했습니다.
+
+### 2024.11.05 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Advanced Managed Kafka를 추가했습니다.
+
+### 2024.09.30 ​
+
+
+#### 기능 변경 ​
+
+Service Agent를 적용했습니다.
+
+### 2024.09.10 ​
+
+
+#### 기능 추가 ​
+
+메트릭 알림 제공 서비스에 Monitoring Flow를 추가했습니다.
+프로젝트 이벤트에 Monitoring Flow를 추가했습니다.
+
+### 2024.08.14 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 DNS를 추가했습니다.
+
+### 2024.07.30 ​
+
+알림 정책 설정 기능을 개선했습니다.
+
+#### 기능 개선 ​
+
+MySQL 메트릭 알림 조건 설정 시 인스턴스 그룹을 지정할 수 있도록 개선했습니다.
+MemStore 메트릭 알림 조건 설정 시 클러스터를 지정할 수 있도록 개선했습니다.
+
+### 2024.06.26 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Kubernetes Engine을 추가했습니다.
+
+### 2024.03.20 ​
+
+
+#### 기능 추가 ​
+
+메인 채널 알림 발송이 실패한 경우 대체 채널로 알림을 수신하는 대체 채널 기능을 추가했습니다.
+
+### 2024.02.27 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Pub/Sub을 추가했습니다.
+
+### 2023.12.07 ​
+
+
+#### 기능 추가 ​
+
+발생한 알림 정보를 Pub/Sub Topic에 게시하도록 수신 채널에 기능을 추가했습니다.
+
+### 2023.09.21 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MySQL을 추가했습니다.
+
+### 2023.08.09 ​
+
+
+#### 기능 추가 ​
+
+조직 이벤트에 IAM과 Billing을 추가했습니다.
+프로젝트 이벤트에 Object Storage, File Storage, Kubeflow를 추가했습니다.
+
+### 2023.07.27 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 MemStore를 추가했습니다.
+
+### 2023.05.31 ​
+
+
+#### 기능 추가 ​
+
+프로젝트 이벤트에 Transit Gateway를 추가했습니다.
+
+### 2023.02.16 ​
+
+
+#### 서비스 출시 ​
+
+카카오클라우드 서비스 알림 통합 관리 서비스인 Alert Center를 출시했습니다.
+프로젝트 이벤트를 제공하는 서비스는 다음과 같습니다. Container Registry Virtual Machine Bare Metal Server VPC Load Balancing IAM Monitoring
+Container Registry
+Virtual Machine
+Bare Metal Server
+VPC
+Load Balancing
+IAM
+Monitoring
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/alert-center-troubleshoot
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+본 문서는 Alert Center 서비스와 관련된 주요 문제와 해결 방법을 정리한 문서입니다.
+
+## 문자 및 알림톡 수신 채널 설정 시 알림 미수신 문제 ​
+
+알림 정책을 설정했음에도 수신 채널(문자, 알림톡) 을 통해 알림이 도착하지 않는 경우, 수신 대상 IAM 사용자 계정 의 연락처 정보(휴대폰 번호) 가 누락되었을 가능성이 있습니다.
+▶️ 문제 해결: 이 경우 다음 단계를 따라 연락처 정보를 기입할 수 있습니다.
+알림을 수신할 사용자로 콘솔에 로그인합니다.
+화면 우측 상단의 계정 아이콘을 클릭하고, 계정 정보를 선택합니다.
+연락처 정보에서 휴대폰 번호란에 알림을 받을 번호를 입력합니다.
+
+## 로그 기반 알림 미수신 문제 ​
+
+로그를 기반으로 알림이 설정되어 있으나 알림이 도착하지 않는 경우, 발생 원인과 해결 방법은 다음과 같습니다.
+
+#### 원인 1: /etc/default/kic_monitor_agnet 파일의 KIC_LOG_FILE_PATH 설정 오류 ​
+
+/etc/default/kic_monitor_agnet
+KIC_LOG_FILE_PATH
+다음 명령어를 사용하여 /etc/default/kic_monitor_agent 파일에서 KIC_LOG_FILE_PATH 경로를 확인하거나 수정합니다. sudo vi /etc/default/kic_monitor_agent
+다음 명령어를 사용하여 /etc/default/kic_monitor_agent 파일에서 KIC_LOG_FILE_PATH 경로를 확인하거나 수정합니다.
+/etc/default/kic_monitor_agent
+KIC_LOG_FILE_PATH
+sudo vi /etc/default/kic_monitor_agent
+sudo vi /etc/default/kic_monitor_agent
+수정 후, 아래 명령어로 모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+수정 후, 아래 명령어로 모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+
+#### 원인 2: 로그 파일의 읽기(READ) 권한 부족 ​
+
+다음 명령어를 통해 로그 파일에 대한 READ 권한을 부여합니다. sudo chmod +r ${로그 파일 경로}
+다음 명령어를 통해 로그 파일에 대한 READ 권한을 부여합니다.
+sudo chmod +r ${로그 파일 경로}
+sudo chmod +r ${로그 파일 경로}
+권한을 설정한 후, 모니터링 에이전트를 재시작합니다. sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+권한을 설정한 후, 모니터링 에이전트를 재시작합니다.
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+sudo systemctl restart kic_monitor_agent // 에이전트 수동 시작 sudo journalctl -u kic_monitor_agent -f // 에이전트 실행 확인
+
+#### 원인 3: 알림 조건 설정 중, 여러 키워드가 논리곱( AND )으로 동작하는 문제 ​
+
+AND
+알림 조건을 설정할 때, 조건 하나에 여러 키워드 를 추가하는 경우, 해당 키워드들이 **논리곱( AND )**으로 동작하여 특정 키워드가 포함되지 않은 로그 이벤트는 알림이 발생하지 않을 수 있습니다.
+AND
+▶️ 문제 해결: 각 조건에 개별 키워드를 입력 하여 조건을 분리합니다. 이를 통해 각 조건은 **논리합( OR )**으로 동작하게 되어, 설정한 모든 키워드에 대한 모니터링이 가능합니다.
+OR
+
+---
+
+# SOURCE: https://docs.kakaocloud.com/service/management/alert-center/how-to-guides
+# FETCHED: 2026-04-22
+# CATEGORY: Management & IAM
+
+카카오클라우드 Alert Center 서비스를 사용하기 위한 사용자 가이드는 다음과 같습니다.
+카카오클라우드 소개, 빠른 시작 가이드, 콘솔 가이드는 시작하기 카테고리에서 안내합니다. 서비스를 사용하면서 발생하는 문의 사항은 헬프데스크 로 문의주시기 바랍니다.
+
+## 📄️ 알림 정책 생성 및 관리
+
+서비스에서 발생한 문제를 파악하기 위해 알림 및 관련 정책을 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 알림 내역 조회 및 Silence 설정
+
+설정한 알림 정책에 따라 알림 내역을 조회하는 방법을 설명하고 특정 기간 동안 알림을 억제하는 Silence 설정 방법을 설명합니다.
+
+## 📄️ 수신 채널 생성 및 관리
+
+알림을 전송받는 수신 채널을 생성하고 관리하는 방법을 설명합니다.
+
+## 📄️ 발신 내역 조회
+
+설정한 알림 정책에 따라 발신 내역을 조회하는 방법을 설명합니다.
+
+## 📄️ 필수 공지 알림 관리
+
+Alert Center의 필수 공지 알림에 대해 설명합니다.
+
+## 📄️ 부록. Alert Center에서 VM Evacuation 실시간 알림 설정
+
+Alert Center를 이용하여 VM Evacuation 알림을 받을 수 있습니다.
+
+---
+
