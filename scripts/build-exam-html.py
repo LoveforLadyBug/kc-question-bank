@@ -138,21 +138,30 @@ def escape_html(s: str) -> str:
             .replace('"', "&quot;"))
 
 
-def render_choices(보기: str) -> str:
-    """보기 섹션 → HTML 라디오 버튼들."""
-    lines = [l.strip() for l in 보기.strip().splitlines() if l.strip()]
-    html_parts = []
-    for line in lines:
-        m = re.match(r"^-?\s*([A-D])\.\s*(.*)", line)
+def parse_choices(보기: str) -> list[tuple[str, str]]:
+    """보기 섹션 → [(원래 레터, 텍스트)] 리스트."""
+    result = []
+    for line in 보기.strip().splitlines():
+        m = re.match(r"^-?\s*([A-D])\.\s*(.*)", line.strip())
         if m:
-            letter, text = m.group(1), m.group(2)
-            html_parts.append(
-                f'<label class="choice" data-letter="{letter}">'
-                f'<input type="radio" name="{{qid}}" value="{letter}"> '
-                f'<span class="choice-letter">{letter}.</span> {escape_html(text)}'
-                f'</label>'
-            )
-    return "\n".join(html_parts)
+            result.append((m.group(1), m.group(2)))
+    return result
+
+
+def render_choices_shuffled(choices: list[tuple[str, str]], qid_placeholder: str) -> tuple[str, dict]:
+    """셔플된 선택지 HTML + {원래레터: 새레터} 매핑 반환."""
+    new_labels = ["A", "B", "C", "D"]
+    html_parts = []
+    mapping = {}  # 원래 레터 → 새 레터
+    for new_letter, (orig_letter, text) in zip(new_labels, choices):
+        mapping[orig_letter] = new_letter
+        html_parts.append(
+            f'<label class="choice" data-letter="{new_letter}">'
+            f'<input type="radio" name="{qid_placeholder}" value="{new_letter}"> '
+            f'<span class="choice-letter">{new_letter}.</span> {escape_html(text)}'
+            f'</label>'
+        )
+    return "\n".join(html_parts), mapping
 
 
 def render_explanation(sections: dict) -> str:
@@ -176,16 +185,22 @@ def build_question_html(q: dict, idx: int, uid: str) -> str:
     fm = q["fm"]
     sections = q["sections"]
     raw_qid = fm.get("id", f"q{idx:03d}")
-    qid = uid  # page-unique id (e.g. "A-01-q003")
+    qid = uid  # page-unique id (e.g. "A-001")
     difficulty = fm.get("difficulty", "?")
     chapter_label = q["chapter_label"]
-    correct = sections.get("정답", "?").strip()
+    orig_correct = sections.get("정답", "?").strip()
 
     문제_text = sections.get("문제", "(문제 없음)").strip()
     문제_text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", 문제_text)
 
+    # 선택지 셔플 (uid 기반 고정 시드 → 재생성해도 동일 순서)
     보기_text = sections.get("보기", "")
-    choices_html = render_choices(보기_text).replace("{qid}", qid)
+    choices = parse_choices(보기_text)
+    rng = random.Random(uid)
+    rng.shuffle(choices)
+    choices_html, mapping = render_choices_shuffled(choices, qid)
+    correct = mapping.get(orig_correct, orig_correct)  # 셔플 후 새 정답 레터
+
     explanation_html = render_explanation(sections)
 
     diff_class = f"diff-{difficulty}"
