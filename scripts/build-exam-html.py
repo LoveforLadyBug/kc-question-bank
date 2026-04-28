@@ -204,9 +204,6 @@ def build_question_html(q: dict, idx: int, uid: str) -> str:
     <div class="choices" id="choices-{qid}">
 {choices_html}
     </div>
-    <div class="question-actions">
-      <button class="btn-submit" onclick="submitAnswer('{qid}')">제출</button>
-    </div>
     <div class="explanation" id="exp-{qid}" style="display:none">
 {explanation_html}
     </div>
@@ -230,7 +227,7 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
   <div class="set-header">
     <h2>세트 {set_name} — {n}문제</h2>
     <div class="set-progress">
-      <span id="progress-{set_name}">0 / {n} 답변</span>
+      <span id="progress-{set_name}">0 / {n} 선택됨</span>
     </div>
     <button class="btn-reset" onclick="resetSet('{set_name}')">초기화</button>
   </div>
@@ -244,6 +241,12 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
 
   <div class="questions-container" id="questions-{set_name}">
 {questions_html}
+  </div>
+
+  <!-- 일괄 제출 버튼 -->
+  <div class="final-submit-bar" id="submit-bar-{set_name}">
+    <span class="submit-status" id="submit-status-{set_name}">0 / {n} 선택됨</span>
+    <button class="btn-final-submit" id="btn-final-{set_name}" onclick="submitAll('{set_name}')">최종 제출</button>
   </div>
 
   <!-- 오답 노트 (완료 전 hidden) -->
@@ -477,6 +480,37 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
   }}
   .back-btn:hover {{ background: var(--bg); }}
 
+  /* 일괄 제출 바 */
+  .final-submit-bar {{
+    position: sticky;
+    bottom: 0;
+    background: var(--card-bg);
+    border-top: 2px solid var(--border);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 50;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+  }}
+  .submit-status {{ font-size: 0.9rem; color: var(--muted); }}
+  .submit-status.all-selected {{ color: var(--correct); font-weight: 700; }}
+  .btn-final-submit {{
+    padding: 12px 32px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background 0.15s, transform 0.1s;
+  }}
+  .btn-final-submit:hover {{ background: #2F4AC8; transform: translateY(-1px); }}
+  .btn-final-submit:disabled {{ background: var(--muted); cursor: default; transform: none; }}
+  .btn-final-submit.submitted {{ display: none; }}
+
   /* 완료 배너 */
   .completion-banner {{
     margin: 0 0 24px;
@@ -607,49 +641,55 @@ window.addEventListener('DOMContentLoaded', function() {{
   setTimeout(() => selectSet(picked, true), 800);
 }});
 
-function submitAnswer(qid) {{
-  const card = document.getElementById(qid);
-  const correct = card.dataset.correct;
-  const selected = document.querySelector(`input[name="${{qid}}"]:checked`);
-  if (!selected) {{ alert('선택지를 고르세요.'); return; }}
+function submitAll(setName) {{
+  const panel = document.getElementById('questions-' + setName);
+  const cards = panel.querySelectorAll('.question-card');
+  const total = cards.length;
 
-  const answer = selected.value;
-  const isCorrect = answer === correct;
+  // 미선택 문항 확인
+  let unanswered = 0;
+  cards.forEach(card => {{
+    const qid = card.id;
+    const sel = document.querySelector(`input[name="${{qid}}"]:checked`);
+    if (!sel) unanswered++;
+  }});
+  if (unanswered > 0) {{
+    if (!confirm(`아직 ${{unanswered}}문제를 선택하지 않았습니다. 그대로 제출할까요?\n(미선택 문제는 오답 처리됩니다)`)) return;
+  }}
 
-  // 선택지 스타일 적용
-  card.querySelectorAll('.choice').forEach(label => {{
-    label.style.pointerEvents = 'none';
-    const letter = label.dataset.letter;
-    if (letter === correct) label.classList.add('correct-choice');
-    else if (letter === answer && !isCorrect) label.classList.add('wrong-choice');
+  let correct = 0;
+  cards.forEach(card => {{
+    const qid = card.id;
+    const correctAnswer = card.dataset.correct;
+    const sel = document.querySelector(`input[name="${{qid}}"]:checked`);
+    const answer = sel ? sel.value : null;
+    const isCorrect = answer === correctAnswer;
+
+    if (isCorrect) correct++;
+
+    // 선택지 잠금 + 색상
+    card.querySelectorAll('.choice').forEach(label => {{
+      label.style.pointerEvents = 'none';
+      const letter = label.dataset.letter;
+      if (letter === correctAnswer) label.classList.add('correct-choice');
+      else if (letter === answer && !isCorrect) label.classList.add('wrong-choice');
+    }});
+
+    // 결과 배지
+    const badge = document.getElementById('badge-' + qid);
+    badge.style.display = 'inline-block';
+    badge.textContent = isCorrect ? '✅ 정답' : (answer ? `❌ 오답 (정답: ${{correctAnswer}})` : `⬜ 미선택 (정답: ${{correctAnswer}})`);
+    badge.className = 'result-badge ' + (isCorrect ? 'badge-correct' : 'badge-wrong');
+
+    card.classList.add(isCorrect ? 'correct-card' : 'wrong-card');
+    card.dataset.answered = isCorrect ? 'correct' : 'wrong';
   }});
 
-  // 결과 배지
-  const badge = document.getElementById('badge-' + qid);
-  badge.style.display = 'inline-block';
-  badge.textContent = isCorrect ? '✅ 정답!' : `❌ 오답 (정답: ${{correct}})`;
-  badge.className = 'result-badge ' + (isCorrect ? 'badge-correct' : 'badge-wrong');
+  // 제출 바 숨김
+  document.getElementById('submit-bar-' + setName).style.display = 'none';
 
-  // 카드 테두리 + 상태
-  card.classList.add(isCorrect ? 'correct-card' : 'wrong-card');
-  card.dataset.answered = isCorrect ? 'correct' : 'wrong';
-
-  // 제출 버튼 비활성
-  card.querySelector('.btn-submit').disabled = true;
-
-  if (currentSet) updateProgress(currentSet);
-}}
-
-function toggleExplanation(qid) {{
-  const exp = document.getElementById('exp-' + qid);
-  const btn = document.querySelector(`#${{qid}} .btn-explain`);
-  if (exp.style.display === 'none') {{
-    exp.style.display = 'block';
-    btn.textContent = '해설 닫기';
-  }} else {{
-    exp.style.display = 'none';
-    btn.textContent = '해설 보기';
-  }}
+  // 완료 결과 표시
+  showCompletion(setName, correct, total);
 }}
 
 function showCompletion(setName, correctCount, total) {{
@@ -706,40 +746,35 @@ function resetSet(setName) {{
       label.classList.remove('correct-choice', 'wrong-choice', 'selected');
     }});
     card.querySelectorAll('input[type=radio]').forEach(r => r.checked = false);
-    const submit = card.querySelector('.btn-submit');
-    if (submit) submit.disabled = false;
     const exp = document.getElementById('exp-' + card.id);
     if (exp) exp.style.display = 'none';
     const badge = document.getElementById('badge-' + card.id);
     if (badge) badge.style.display = 'none';
   }});
-  // 완료 배너 & 오답 노트 숨김
   document.getElementById('completion-' + setName).style.display = 'none';
   document.getElementById('wrong-note-' + setName).style.display = 'none';
   document.getElementById('wrong-note-body-' + setName).innerHTML = '';
-  updateProgress(setName);
+  document.getElementById('submit-bar-' + setName).style.display = 'flex';
+  updateSelectionCount(setName);
 }}
 
-function updateProgress(setName) {{
+function updateSelectionCount(setName) {{
   const panel = document.getElementById('questions-' + setName);
   const cards = panel.querySelectorAll('.question-card');
   const total = cards.length;
-  let answered = 0, correct = 0;
+  let selected = 0;
   cards.forEach(card => {{
-    if (card.dataset.answered !== 'false') {{
-      answered++;
-      if (card.dataset.answered === 'correct') correct++;
-    }}
+    if (document.querySelector(`input[name="${{card.id}}"]:checked`)) selected++;
   }});
-  document.getElementById('progress-' + setName).textContent = `${{answered}} / ${{total}} 답변`;
-
-  // 전체 완료 시 결과 표시
-  if (answered === total) {{
-    showCompletion(setName, correct, total);
-  }}
+  const statusEl = document.getElementById('submit-status-' + setName);
+  const progressEl = document.getElementById('progress-' + setName);
+  const allDone = selected === total;
+  statusEl.textContent = allDone ? `✅ ${{total}}문제 모두 선택됨` : `${{selected}} / ${{total}} 선택됨`;
+  statusEl.className = 'submit-status' + (allDone ? ' all-selected' : '');
+  if (progressEl) progressEl.textContent = `${{selected}} / ${{total}} 선택됨`;
 }}
 
-// 선택지 클릭 → 라디오 선택 효과
+// 선택지 클릭 → 라디오 선택 효과 + 카운터 갱신
 document.addEventListener('click', function(e) {{
   const label = e.target.closest('.choice');
   if (!label) return;
@@ -748,6 +783,8 @@ document.addEventListener('click', function(e) {{
   card.querySelectorAll('.choice').forEach(l => l.classList.remove('selected'));
   label.classList.add('selected');
   label.querySelector('input').checked = true;
+  // 현재 세트 카운터 갱신
+  if (currentSet) updateSelectionCount(currentSet);
 }});
 </script>
 </body>
