@@ -265,56 +265,60 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
 <title>KakaoCloud Essential Basic Course — 모의고사</title>
 <style>
   :root {{
-    --kakao-yellow: #FEE500;
-    --kakao-brown: #3C1E1E;
-    --primary: #3B5ADB;
-    --correct: #2F9E44;
-    --wrong: #E03131;
-    --bg: #F8F9FA;
-    --card-bg: #FFFFFF;
-    --border: #DEE2E6;
-    --text: #212529;
-    --muted: #868E96;
+    --primary: #4f46e5;
+    --primary-light: #f5f3ff;
+    --primary-dark: #4338ca;
+    --correct: #22c55e;
+    --correct-bg: #f0fdf4;
+    --wrong: #ef4444;
+    --wrong-bg: #fef2f2;
+    --bg: #f5f7fa;
+    --card-bg: #ffffff;
+    --border: #e5e7eb;
+    --text: #1a1a2e;
+    --muted: #888;
   }}
-  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{
-    font-family: -apple-system, 'Noto Sans KR', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--bg);
     color: var(--text);
+    min-height: 100vh;
     line-height: 1.6;
   }}
   header {{
-    background: var(--kakao-yellow);
-    padding: 16px 24px;
+    background: var(--card-bg);
+    padding: 14px 24px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    border-bottom: 2px solid var(--kakao-brown);
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
   }}
-  header h1 {{ font-size: 1.2rem; color: var(--kakao-brown); font-weight: 800; }}
-  header .subtitle {{ font-size: 0.85rem; color: var(--kakao-brown); opacity: 0.7; }}
+  header h1 {{ font-size: 1.1rem; font-weight: 700; color: var(--text); }}
+  header .subtitle {{ font-size: 0.82rem; color: var(--muted); }}
 
   .set-selector {{
-    max-width: 900px;
-    margin: 32px auto;
-    padding: 0 16px;
+    max-width: 720px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
     text-align: center;
   }}
-  .set-selector h2 {{ font-size: 1.4rem; margin-bottom: 8px; }}
-  .set-selector p {{ color: var(--muted); margin-bottom: 24px; }}
+  .set-selector h2 {{ font-size: 1.5rem; font-weight: 700; margin-bottom: 0.4rem; }}
+  .set-selector p {{ color: var(--muted); font-size: 0.95rem; margin-bottom: 1.8rem; }}
   .set-buttons {{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
   }}
   .btn-set {{
     width: 120px;
     height: 120px;
-    border-radius: 16px;
+    border-radius: 12px;
     border: 2px solid var(--border);
     background: var(--card-bg);
     cursor: pointer;
@@ -322,13 +326,14 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--primary);
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
     transition: all 0.15s;
   }}
-  .btn-set:hover {{ border-color: var(--primary); background: #EEF2FF; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(59,90,219,0.2); }}
+  .btn-set:hover {{ border-color: var(--primary); background: var(--primary-light); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(79,70,229,0.15); }}
   .btn-set.active {{ border-color: var(--primary); background: var(--primary); color: white; }}
   .btn-set small {{ font-size: 0.75rem; font-weight: 400; opacity: 0.7; }}
 
@@ -406,10 +411,10 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     transition: all 0.1s;
     font-size: 0.95rem;
   }}
-  .choice:hover {{ border-color: var(--primary); background: #EEF2FF; }}
-  .choice.selected {{ border-color: var(--primary); background: #EEF2FF; }}
-  .choice.correct-choice {{ border-color: var(--correct) !important; background: #D3F9D8 !important; }}
-  .choice.wrong-choice {{ border-color: var(--wrong) !important; background: #FFE3E3 !important; }}
+  .choice:hover {{ border-color: var(--primary); background: var(--primary-light); }}
+  .choice.selected {{ border-color: var(--primary); background: var(--primary-light); }}
+  .choice.correct-choice {{ border-color: var(--correct) !important; background: var(--correct-bg) !important; }}
+  .choice.wrong-choice {{ border-color: var(--wrong) !important; background: var(--wrong-bg) !important; }}
   .choice input {{ display: none; }}
   .choice-letter {{ font-weight: 700; color: var(--primary); min-width: 20px; }}
 
@@ -425,7 +430,7 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     font-weight: 600;
     transition: background 0.1s;
   }}
-  .btn-submit:hover {{ background: #2F4AC8; }}
+  .btn-submit:hover {{ background: var(--primary-dark); }}
   .btn-submit:disabled {{ background: var(--muted); cursor: default; }}
   .btn-explain {{
     padding: 8px 20px;
@@ -451,18 +456,19 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
   .badge-wrong {{ background: var(--wrong); color: white; }}
 
   .explanation {{
-    margin-top: 12px;
-    padding: 14px;
-    background: var(--bg);
-    border-radius: 8px;
-    font-size: 0.9rem;
-    line-height: 1.7;
+    background: #f8fafc;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
   }}
   .exp-section {{ margin-bottom: 10px; }}
-  .exp-section strong {{ display: block; margin-bottom: 4px; color: var(--primary); }}
-  .exp-section p {{ color: #495057; }}
-  .exp-section ul {{ padding-left: 20px; color: #495057; }}
-  .exp-section ul li {{ margin-bottom: 4px; }}
+  .exp-section strong {{ display: block; margin-bottom: 4px; font-size: 0.85rem; color: var(--primary); }}
+  .exp-section p {{ color: #555; }}
+  .exp-section ul {{ padding-left: 20px; color: #555; }}
+  .exp-section ul li {{ margin-bottom: 4px; font-size: 0.88rem; }}
 
   .back-btn {{
     display: inline-flex;
@@ -479,6 +485,16 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     color: var(--text);
   }}
   .back-btn:hover {{ background: var(--bg); }}
+  .header-home-link {{
+    font-size: 0.85rem;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: background 0.1s;
+  }}
+  .header-home-link:hover {{ background: var(--primary-light); }}
 
   /* 일괄 제출 바 */
   .final-submit-bar {{
@@ -507,7 +523,7 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     font-weight: 700;
     transition: background 0.15s, transform 0.1s;
   }}
-  .btn-final-submit:hover {{ background: #2F4AC8; transform: translateY(-1px); }}
+  .btn-final-submit:hover {{ background: var(--primary-dark); transform: translateY(-1px); }}
   .btn-final-submit:disabled {{ background: var(--muted); cursor: default; transform: none; }}
   .btn-final-submit.submitted {{ display: none; }}
 
@@ -546,7 +562,7 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
     font-weight: 700;
     white-space: nowrap;
   }}
-  .btn-goto-wrong:hover {{ background: #D3F9D8; }}
+  .btn-goto-wrong:hover {{ background: var(--correct-bg); }}
 
   /* 오답 노트 */
   .wrong-note {{
@@ -579,9 +595,10 @@ def build_html(all_sets: dict[str, list[dict]]) -> str:
 
 <header>
   <div>
-    <h1>☁️ KakaoCloud Essential Basic Course</h1>
-    <div class="subtitle">모의고사 — A/B/C/D 세트 각 60문제</div>
+    <h1>KakaoCloud 문제은행</h1>
+    <div class="subtitle">Essential Basic Course 모의고사</div>
   </div>
+  <a href="/kc-question-bank/" class="header-home-link">← 홈으로</a>
 </header>
 
 <div id="home">

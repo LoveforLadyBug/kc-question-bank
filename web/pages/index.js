@@ -2,10 +2,11 @@ import Link from 'next/link'
 import { CHAPTERS } from '../lib/constants'
 
 export async function getStaticProps() {
-  return { props: {} }
+  const basePath = process.env.NODE_ENV === 'production' ? '/kc-question-bank' : ''
+  return { props: { basePath } }
 }
 
-export default function Home() {
+export default function Home({ basePath }) {
   return (
     <div className="container">
       <div className="header">
@@ -14,11 +15,11 @@ export default function Home() {
       </div>
 
       <div className="chapter-grid" style={{ marginBottom: '2rem' }}>
-        <a href="/exam.html" style={{ textDecoration: 'none', gridColumn: 'span 2' }}>
-          <div className="chapter-card active" style={{ border: '2px solid #FEE500', background: '#FFFDE7', height: '100%' }}>
+        <a href={`${basePath}/exam.html`} style={{ textDecoration: 'none', gridColumn: 'span 2' }}>
+          <div className="chapter-card" style={{ border: '2px solid #4f46e5', background: '#f5f3ff', height: '100%' }}>
             <h2>📝 A/B/C/D 세트 모의고사 (전 챕터)</h2>
-            <p className="count">세트별 55문제 × 4세트 = 총 220문제</p>
-            <span className="badge" style={{ background: '#3B5ADB', color: 'white' }}>응시하기</span>
+            <p className="count">세트별 60문제 × 4세트 = 총 240문제</p>
+            <span className="badge" style={{ background: '#4f46e5', color: 'white' }}>응시하기</span>
           </div>
         </a>
         <Link href="/quiz/weekly" style={{ textDecoration: 'none', gridColumn: 'span 2' }}>
